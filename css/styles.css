@@ -1,0 +1,570 @@
+
+
+@font-face {
+    font-family: 'Jost';
+    src: url(../files/jost_files/Jost-VariableFont_wght.ttf) format(TrueType);
+    font-weight: 400 700 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url(../files/jost_files/Jost-Italic-VariableFont_wght.ttf) format(TrueType);
+    font-weight: 400 700 800;
+    font-style: italic;
+}
+
+/*VARIABLES*/
+
+html{
+    --background:#FFF9EE !important;
+    --orange:#D3592C !important;
+    --blue:#76ACB6 !important;
+    --purple:#715A95 !important;
+    --magenta:#AD6095 !important;
+    --pink:#CE6C9E !important;
+    --green: #7CA835 !important;
+    --yellow:#DDD347 !important;
+    --text: #222222 !important;
+    --Jost: 'Jost', Arial, sans-serif;
+    --rhythm: 24px;
+}
+
+.color-orange{
+    color: var(--orange);
+}
+.color-blue{
+    color: var(--blue);
+}
+.color-purple{
+    color: var(--purple);
+}
+.color-pink{
+    color: var(--pink);
+}
+.color-green{
+    color: var(--green);
+}
+.bg-blue{
+    background-color: var(--blue);
+}
+.bg-green{
+    background-color: var(--green);
+}
+.bg-orange{
+    background-color: var(--orange);
+}
+.bg-pink{
+    background-color: var(--pink);
+}
+.bg-purple{
+    background-color: var(--purple);
+}
+
+.text-color-dark{
+    color: var(--text);
+}
+.text-color-light{
+    color: var(--background);
+}
+
+.bg-tan{
+    background-color: var(--background);
+}
+
+body{
+    background-color: var(--background);
+    padding-top: 50px;
+}
+.row{
+    margin: 0;
+}
+
+.icon{
+    height: 30px;
+    width: auto;
+    margin-left: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+p{
+    font-family: var(--Jost);
+    font-size: 20px;
+    margin: 1rem 0;
+}
+
+h1{
+    font-family: var(--Jost);
+    font-size: 10vw;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 10vw;
+    margin: 0px;
+}
+
+h2{
+    font-family: var(--Jost);
+    font-size: 50px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 15px;
+    margin: 20px auto;
+}
+
+h3{
+    font-family: var(--Jost);
+    font-size: 70px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 70px;
+    margin: 0px;
+    color: var(--background);
+}
+
+h4, .nav-link, .dropdown-item{
+    font-family: var(--Jost);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 0px;
+    color: var(--background);
+    text-align: center;
+}
+
+h5{
+    font-family: var(--Jost);
+    font-size: 3.75vw;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.75vw;
+    letter-spacing: 1vw;
+    margin: 0px;
+}
+
+h6{
+    font-family: var(--Jost);
+    font-size: 22px;
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0px;
+}
+
+a{
+    color: var(--orange) !important;
+}
+
+picture, .abstract-img{
+    width: 100%;
+    height: auto;
+}
+
+/*HEADER*/
+
+.name-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*Navigation*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: var(--background) !important;
+    z-index: 4000 !important;
+}
+
+.form-control {
+    border-radius: 4.25rem;
+}
+.nav-logo{
+    width: 200px;
+}
+
+.dropdown-item{
+    font-family: var(--Jost);
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0px;
+    color: var(--orange) !important;
+    width: auto !important;
+    margin: 0 .5rem;
+    padding: .25rem .4rem;
+    border-radius: 50vw;
+}
+.dropdown-menu{
+    background-color: var(--background) !important;
+    border: 0;
+    border-radius: 0 0 20px 20px;
+    left: -8px;
+}
+
+.dropdown-item:hover{
+    background-color: var(--blue);
+    color: var(--background) !important;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../images/general/hamburger-menu.svg) !important;
+}
+
+.dropdown-toggle::after {
+    border: none !important;
+    content: "" !important;
+    display: inline-block;
+    background: url(../images/general/dropdown-icon.svg);
+    background-size: cover;
+    width: 20.5px;
+    height: 12px;
+    vertical-align: 0;
+    margin: 2px 0;
+    margin-left: 6px !important;
+}
+
+/*Home Screen Cards*/
+.card{
+    position: unset;
+    background-color: var(--background);
+    border: none;
+}
+.card > img {
+    width: 65%;
+}
+.card-body{
+    padding: 30px 20px;
+    padding-bottom: 120px;
+    margin-bottom: -100px;
+}
+.card-body > h4{
+    letter-spacing: 8px;
+    font-weight: 400;
+}
+
+.container-fluid{
+    margin: 0 auto;
+    gap: 15px;
+}
+
+.card > div > button {
+    border-radius: 50vw;
+    background-color: var(--background);
+    color: var(--blue);
+    border: none;
+    margin-top: 20px;
+}
+
+.btn-text:hover{
+    color: var(--background) !important;
+}
+.btn{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 5px rgba(255, 249, 238, 0.5);
+}
+.btn:active{
+    transform: scale(0.9);
+}
+.magenta-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--magenta) !important;
+}
+.magenta-hover:hover{
+    background-color: var(--magenta) !important;
+}
+.pink-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--pink) !important;
+}
+.pink-hover:hover{
+    background-color: var(--pink) !important;
+}
+.blue-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--blue) !important;
+}
+.blue-hover:hover{
+    background-color: var(--blue) !important;
+}
+
+/*ABOUT*/
+
+.about img{
+    object-fit:cover;
+    border-radius: 50vw 50vw 0 0;
+    padding: 0;
+}
+
+.about div p{
+    margin: 1vw;
+}
+
+.skills div{
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.skills div img{
+    margin: 1vw;
+    height: 7vw;
+}
+
+.contact-info{
+    max-width: 400px;
+    margin: 30px auto;
+}
+.contact-icon{
+    height: auto;
+    width: 50px;
+    margin: 0.25rem;
+}
+.contact > div > img{
+    object-fit:cover;
+    border-radius: 0 50vw 50vw 0;
+    padding: 0;
+    height: 400px;
+}
+.contact .icon{
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+/*RESUME*/
+.resume-section{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.resume-section div{
+    max-width: 800px;
+}
+.resume-section skills-parent, .skills-section{
+    max-width: 900px;
+}
+.resume-section p, .resume-section li{
+    font-family: var(--Jost);
+    font-size: 20px;
+}
+.resume-section p, .resume-section ul, .resume-section h6{
+    margin: 0.25rem 1rem !important;
+}
+.resume-section div{
+    margin: 0.5rem !important;
+}
+.resume-skills{
+    width: 250px;
+    margin: 0 !important;
+}
+.skills-parent{
+    justify-content: center;
+}
+
+/*FOOTER*/
+
+.footer{
+    margin: 1rem 0;
+    padding: 0.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.footer-link, .footer-link:visited{
+    color: var(--background) !important;
+    text-decoration: none;
+}
+
+
+
+
+
+/*Medium Screens*/
+@media screen and (max-width: 768px) {
+    
+    body{
+        background-color: var(--background);
+        padding-top: 60px;
+    }
+    
+
+    .nav-link{
+        font-family: var(--Jost);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 20px;
+        margin: 0px;
+        color: var(--orange) !important;
+    }
+
+    .dropdown-item{
+        font-family: var(--Jost);
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        margin: 0px;
+        color: var(--orange) !important;
+    }
+
+    /*HOME CARDS*/
+    .card > img {
+        width: 90%;
+    }
+
+    /*ABOUT*/
+
+    .about div h1{
+        font-size: 15vw;
+        line-height: 15vw;
+    }
+    .about h5{
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+
+    .about img{
+        object-fit:cover;
+        border-radius: 50vw 50vw 0 0;
+        padding: 1rem 0;
+        height: 500px;
+    }
+
+    .contact > div > img{
+        height: 250px;
+    }
+
+    /*SKILLS*/
+    
+    .resume-section{
+        margin: 0 2rem;
+    }
+}
+
+
+
+
+
+/*Small Screens*/
+@media screen and (max-width: 576px){
+    /*GENERAL*/
+    body{
+        padding-top: 65px;
+    }
+
+    h1{
+        font-size: 17vw;
+        line-height: 17vw;
+    }
+    h2{
+        font-size: 9vw;
+        line-height: 9vw;
+        letter-spacing: 2vw;
+    }
+    h3{
+        font-size: 11.5vw;
+        line-height: 11.5vw;
+    }
+    h5 {
+        font-size: 9vw;
+        line-height: 12vw;
+    }
+    h6{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    
+
+    picture, .abstract-img {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+    }
+    
+    /*HEADER*/
+    .name-header{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10vw;
+        margin-bottom: 5vw;
+    }
+
+    .first-name{
+        letter-spacing: 5vw;
+        text-align: right;
+    }
+
+    header>div{
+        margin-bottom: 14vw;
+    }
+
+    /*NAVIGATION*/
+    .nav-link{
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    .dropdown-item{
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem;
+        background-color: var(--background) !important;
+    }
+
+    /*HOME CARDS*/
+    .card > img {
+        width: 95%;
+    }
+
+    /*ABOUT*/
+    .about div{
+        padding-bottom: 1vw;
+    }
+
+    .skills div img{
+        margin: 1vw;
+        height: 15vw;
+    }
+    .about img{
+        height: 350px;
+    }
+    .contact > div > img{
+        height: 150px;
+    }
+
+    /*RESUME*/
+    .resume-section p, .resume-section li{
+        font-size: 16px;
+    }
+    .resume-section{
+        margin: 0 1rem;
+    }
+    .skills-parent{
+        justify-content:flex-start;
+    }
+
+    /*FOOTER*/
+    .footer{
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }    
+
+}

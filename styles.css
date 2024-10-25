@@ -1,0 +1,52 @@
+
+
+
+
+
+  
+  @media screen and (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: #333;
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .dropdown:hover .dropdown-content {
+      display: none;
+    }
+  
+    .dropdown-content {
+      position: static;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .arrow {
+      cursor: pointer;
+    }
+  
+    .dropdown-content {
+      display: none;
+    }
+  
+    .dropdown.active .dropdown-content {
+      display: block;
+    }
+  }
+  
