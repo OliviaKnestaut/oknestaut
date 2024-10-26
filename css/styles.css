@@ -269,12 +269,12 @@ picture, .abstract-img{
     gap: 15px;
 }
 
-.card > div > button, .contents-flex button, .case-study-sect button {
-    border-radius: 50vw;
+.card > div > button, .contents-flex button, .case-study-sect button, header > button {
+    border-radius: 50vw !important;
     background-color: var(--background);
     color: var(--blue);
-    border: none;
-    margin-top: 20px;
+    border: none !important;
+    margin-top: 20px !important;
 }
 
 button h4{
