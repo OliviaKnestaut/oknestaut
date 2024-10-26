@@ -31,6 +31,11 @@ img{
     max-width: 100%;
 }
 
+h1.photog-title{
+    font-size: 11vw;
+    line-height: 14vw;
+}
+
 .photo-button-grid{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;

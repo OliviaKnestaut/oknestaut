@@ -31,34 +31,37 @@ html{
 }
 
 .color-orange{
-    color: var(--orange);
+    color: var(--orange) !important;
 }
 .color-blue{
-    color: var(--blue);
+    color: var(--blue) !important;
 }
 .color-purple{
-    color: var(--purple);
+    color: var(--purple) !important;
 }
 .color-pink{
-    color: var(--pink);
+    color: var(--pink) !important;
 }
 .color-green{
-    color: var(--green);
+    color: var(--green) !important;
+}
+.color-tan{
+    color: var(--background) !important;
 }
 .bg-blue{
-    background-color: var(--blue);
+    background-color: var(--blue) !important;
 }
 .bg-green{
-    background-color: var(--green);
+    background-color: var(--green) !important;
 }
 .bg-orange{
-    background-color: var(--orange);
+    background-color: var(--orange) !important;
 }
 .bg-pink{
-    background-color: var(--pink);
+    background-color: var(--pink) !important;
 }
 .bg-purple{
-    background-color: var(--purple);
+    background-color: var(--purple) !important;
 }
 
 .text-color-dark{
@@ -83,13 +86,12 @@ body{
 .icon{
     height: 30px;
     width: auto;
-    margin-left: 1.5rem;
     margin-right: 0.5rem;
 }
 
 p{
     font-family: var(--Jost);
-    font-size: 20px;
+    font-size: 16px;
     margin: 1rem 0;
 }
 
@@ -252,9 +254,14 @@ picture, .abstract-img{
     padding-bottom: 120px;
     margin-bottom: -100px;
 }
-.card-body > h4{
-    letter-spacing: 8px;
+.card-body > h4, .snippit{
+    letter-spacing: 5px;
     font-weight: 400;
+}
+
+.snippit{
+    font-size: 4vw;
+    line-height: 4vw;
 }
 
 .container-fluid{
@@ -262,13 +269,18 @@ picture, .abstract-img{
     gap: 15px;
 }
 
-.card > div > button {
+.card > div > button, .contents-flex button, .case-study-sect button {
     border-radius: 50vw;
     background-color: var(--background);
     color: var(--blue);
     border: none;
     margin-top: 20px;
 }
+
+button h4{
+    margin: 0 !important;
+}
+
 
 .btn-text:hover{
     color: var(--background) !important;
@@ -355,12 +367,8 @@ picture, .abstract-img{
 .resume-section skills-parent, .skills-section{
     max-width: 900px;
 }
-.resume-section p, .resume-section li{
-    font-family: var(--Jost);
-    font-size: 20px;
-}
 .resume-section p, .resume-section ul, .resume-section h6{
-    margin: 0.25rem 1rem !important;
+    margin: 0.25rem 2rem !important;
 }
 .resume-section div{
     margin: 0.5rem !important;
@@ -380,6 +388,7 @@ picture, .abstract-img{
     padding: 0.5rem;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .footer-link, .footer-link:visited{
@@ -388,6 +397,131 @@ picture, .abstract-img{
 }
 
 
+/*CASE STUDIES*/
+
+.case-study-header{
+    width: 90%;
+    margin: 10px auto;
+}
+
+#tessera-img{
+    background-image: url(../images/home/Tessera-Cover.png);
+    height: 58vw;
+}
+#riverfront-img{
+    background-image: url(../images/home/RiverfrontWilm-Cover.png);
+    height: 46vw;
+}
+.case-study-title{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+}
+.case-study-title div{
+    width: fit-content;
+    padding: 4vw;
+}
+.case-study-title div h1{
+    font-size: 8.5vw;
+    line-height: 9vw;
+}
+#tessera-img div{
+    background-color: rgba(206, 108, 158, 0.9);
+}
+#riverfront-img div{
+    background-color: rgba(124 , 168, 53, 0.9);
+}
+
+/*Contents*/
+
+div.contents{
+    color: var(--text);
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    flex-direction: column;
+    line-height: 200%;
+    list-style-type: none;
+    margin: 1vw;
+    text-align: left;
+}
+
+.contents-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3vw;
+    gap: 10px;
+}
+
+.vert-video {
+    width: 300px;
+    height: 520px;
+    margin: 0;
+    background-color: var(--text);
+    padding: 10px;
+}
+
+.contents a{
+    padding: 10px 0;
+    font-size: 24px;
+    line-height: 22px;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+.contents a:hover, .contents a:active{
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.tiny-circle{
+    border-radius: 20vw;
+    background-color: var(--orange);
+    color: var(--background);
+    font-size: 24px;
+    font-weight: 800;
+    padding: 0px 8px 4px 7px;
+}
+
+.study-section{
+    padding: 0 2rem;
+    max-width: 1000px;
+}
+.case-study-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.persona-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+.persona-flex div{
+    width: 50%;
+}
+.persona-flex picture{
+    width: 50%;
+}
+.persona-flex div ul{
+    width: auto;
+}
+
+.case-study-sect h4{
+    margin-top: 1rem;
+    font-size: 30px;
+}
+.case-study-sect img{
+    margin: 10px 0;
+}
 
 
 
@@ -427,14 +561,15 @@ picture, .abstract-img{
 
     /*ABOUT*/
 
-    .about div h1{
-        font-size: 15vw;
+    .about div h1 {
+        font-size: 14.5vw;
         line-height: 15vw;
     }
     .about h5{
         font-size: 5vw;
         line-height: 5vw;
     }
+    
 
     .about img{
         object-fit:cover;
@@ -452,9 +587,33 @@ picture, .abstract-img{
     .resume-section{
         margin: 0 2rem;
     }
+
+    /*CONTENTS*/
+
+    .contents-flex{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    div.contents {
+        font-size: 3vw;
+        margin: 0;
+        margin: 20px;
+    }
+
+    .persona-flex{
+        flex-direction: column;
+    }
+    .persona-flex div{
+        width: 100%;
+    }
+    .persona-flex picture {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
 }
-
-
 
 
 
@@ -498,7 +657,7 @@ picture, .abstract-img{
     .name-header{
         flex-direction: column;
         justify-content: center;
-        margin-top: 10vw;
+        margin-top: 6vw;
         margin-bottom: 5vw;
     }
 
@@ -508,7 +667,7 @@ picture, .abstract-img{
     }
 
     header>div{
-        margin-bottom: 14vw;
+        margin-bottom: 10vw;
     }
 
     /*NAVIGATION*/
@@ -536,7 +695,10 @@ picture, .abstract-img{
     .about div{
         padding-bottom: 1vw;
     }
-
+    .about div h1 {
+        font-size: 14.5vw;
+        line-height: 15vw;
+    }
     .skills div img{
         margin: 1vw;
         height: 15vw;
@@ -546,6 +708,10 @@ picture, .abstract-img{
     }
     .contact > div > img{
         height: 150px;
+    }
+    .about h5 {
+        font-size: 8vw;
+        line-height: 9vw;
     }
 
     /*RESUME*/
@@ -559,12 +725,111 @@ picture, .abstract-img{
         justify-content:flex-start;
     }
 
+    /*CASE STUDY*/    
+    .case-study-header{
+        width: 95%;
+        margin: 10px auto;
+    }
+
+    .case-study-title{
+        height: 56vw;
+    }
+
+    .case-study-title div{
+        padding: 3vw;
+    }
+
+    .case-study-title h1{
+        font-size: 11vw;
+        line-height: 14vw;
+    }
+
+
     /*FOOTER*/
     .footer{
         margin-bottom: 1rem;
         padding: 0.5rem;
         flex-direction: column;
         flex-wrap: nowrap;
+        gap: 0;
     }    
 
+}
+
+@media screen and (max-width: 386px){
+
+    h2 {
+        font-size: 12vw;
+        line-height: 12vw;
+    }
+
+    h3 {
+        font-size: 10.5vw;
+        line-height: 10.5vw;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .nav-logo {
+        width: 175px;
+    }
+
+    header>div {
+        margin-bottom: 4vw;
+    }
+
+    .name-header {
+        margin-top: 1vw;
+        margin-bottom: 4vw;
+    }
+
+    .contact-icon {
+        width: 45px
+    }
+
+    .vert-video {
+        width: 275px;
+        height: 480px;
+    }
+    
+    .contents a{
+        font-size: 18px;
+    }
+
+    .case-study-sect h4 {
+        font-size: 24px;
+    }
+
+}
+
+
+/*Back to Top*/
+.go-top {
+	position: fixed;
+	bottom: 2em;
+	right: 2em;
+    border-radius: 50px;
+	text-decoration: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	font-size: 12px;
+	padding: 1em 1.3em;
+    opacity: 0; /* Start with the button hidden */
+    pointer-events: none;
+    background-color: var(--orange);
+    transition: background-color 0.2s ease-in;
+}
+.go-top img{
+    height: 40px;
+    margin: auto;
+}
+.go-top:hover {
+	background-color: rgba(211, 89, 44, 0.6);
+}
+
+/*Top Offset*/
+
+#overview, #users, #roles, #design-process, #results, #problem, #portraiture, #nature, #architecture {
+    scroll-margin-top: 50px;
 }
