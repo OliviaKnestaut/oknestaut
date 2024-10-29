@@ -280,6 +280,7 @@ picture, .abstract-img{
     position: unset;
     background-color: var(--background);
     border: none;
+    margin-bottom: 1rem;
 }
 .card > img {
     width: 65%;
