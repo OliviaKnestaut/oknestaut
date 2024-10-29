@@ -77,6 +77,9 @@ html{
 .color-pink{
     color: var(--pink) !important;
 }
+.color-magenta{
+    color: var(--magenta) !important;
+}
 .color-green{
     color: var(--green) !important;
 }
@@ -97,6 +100,9 @@ html{
 }
 .bg-purple{
     background-color: var(--purple) !important;
+}
+.bg-magenta{
+    background-color: var(--magenta) !important;
 }
 
 .text-color-dark{
@@ -436,7 +442,7 @@ button h4{
 /*CASE STUDIES*/
 
 .case-study-header{
-    width: 90%;
+    width: 95%;
     margin: 10px auto;
 }
 
@@ -448,6 +454,11 @@ button h4{
     background-image: url(../images/home/RiverfrontWilm-Cover.png);
     height: 46vw;
 }
+
+#righton-img{
+    background-image: url(../images/home/RightOn-Cover.png);
+    height: 42vw;
+}
 .case-study-title{
     background-position: center;
     background-repeat: no-repeat;
@@ -455,21 +466,24 @@ button h4{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 5vw;
+    padding: 20vw;
 }
-.case-study-title div{
-    width: fit-content;
-    padding: 4vw;
+
+.case-study-title div {
+    padding: 1.5vw 2.5vw;
 }
 .case-study-title div h1{
     font-size: 8.5vw;
     line-height: 9vw;
 }
 #tessera-img div{
-    background-color: rgba(206, 108, 158, 0.9);
+    background-color: rgba(211, 89, 44, 0.9);
 }
 #riverfront-img div{
     background-color: rgba(124 , 168, 53, 0.9);
+}
+#righton-img div{
+    background-color: rgba(113 , 90, 149, 0.9);
 }
 
 /*Contents*/
@@ -559,6 +573,19 @@ div.contents{
     margin: 10px 0;
 }
 
+.current-central{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.current-central .pc-img{
+    width: 80%;
+}
+.current-central .mobile-img{
+    width: 18%;
+}
+
 
 
 /*Medium Screens*/
@@ -633,8 +660,7 @@ div.contents{
 
     div.contents {
         font-size: 3vw;
-        margin: 0;
-        margin: 20px;
+        margin: 20px 0;
     }
 
     .persona-flex{
@@ -762,17 +788,9 @@ div.contents{
     }
 
     /*CASE STUDY*/    
-    .case-study-header{
-        width: 95%;
-        margin: 10px auto;
-    }
 
     .case-study-title{
         height: 56vw;
-    }
-
-    .case-study-title div{
-        padding: 3vw;
     }
 
     .case-study-title h1{
@@ -866,6 +884,6 @@ div.contents{
 
 /*Top Offset*/
 
-#overview, #users, #roles, #design-process, #results, #problem, #portraiture, #nature, #architecture {
+#overview, #users, #roles, #research, #design-process, #results, #problem, #portraiture, #nature, #architecture {
     scroll-margin-top: 50px;
 }
