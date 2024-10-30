@@ -586,6 +586,19 @@ div.contents{
     width: 18%;
 }
 
+.wireframes{
+    gap: 1rem;
+    align-items: flex-start;
+}
+.wireframes img{
+    width: 48%;
+}
+
+.righton-btn{
+    margin-top: 0 !important;
+    margin-bottom: 10px;
+}
+
 
 
 /*Medium Screens*/
