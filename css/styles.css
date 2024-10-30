@@ -811,6 +811,13 @@ div.contents{
         line-height: 14vw;
     }
 
+    .wireframes img{
+        width: 100%;
+    }
+    .wireframes{
+        flex-wrap: wrap;
+    }
+
 
     /*FOOTER*/
     .footer{
