@@ -556,6 +556,7 @@ div.contents{
     border-style: inset;
     border-width: 5px;
 }
+
 #database-frame{
     height: 500px;
 }
@@ -856,6 +857,11 @@ picture{
     h6{
         font-size: 18px;
         line-height: 22px;
+    }
+
+    .vert-frame{
+        min-width: 400px;
+        height: 800px;
     }
     
 
