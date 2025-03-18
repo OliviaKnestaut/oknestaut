@@ -289,7 +289,7 @@ picture, .abstract-img{
     margin-bottom: 1rem;
 }
 .card > img {
-    width: 65%;
+    width: 80%;
 }
 .card-body{
     padding: 30px 20px;
@@ -456,6 +456,10 @@ button h4{
     background-image: url(../images/home/Tessera-Cover.png);
     height: 58vw;
 }
+#kims-img{
+    background-image: url(../images/home/Kim-Dragon-Cover.png);
+    height: 58vw;
+}
 #riverfront-img{
     background-image: url(../images/home/RiverfrontWilm-Cover.png);
     height: 46vw;
@@ -495,7 +499,7 @@ button h4{
     width: 300px;
     margin: 10px;
 }
-#tessera-img div{
+#tessera-img div, #kims-img div{
     background-color: rgba(211, 89, 44, 0.9);
 }
 #riverfront-img div{
@@ -545,6 +549,15 @@ div.contents{
     margin: 0;
     background-color: var(--text);
     padding: 10px;
+}
+.vert-frame{
+    width: 430px;
+    height: 932px;
+    border-style: inset;
+    border-width: 5px;
+}
+#database-frame{
+    height: 500px;
 }
 
 .contents a{
@@ -710,8 +723,6 @@ picture{
 .info1 > img{
     width: 75%;
 }
-
-
 
 
 /*Medium Screens*/
@@ -972,6 +983,46 @@ picture{
         flex-direction: column;
     }
 
+}
+
+/*Large Screens*/
+@media screen and (min-width: 1200px){
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .card{
+        width: 49%;
+        
+        
+    }
+    .card-body{
+        flex: initial;
+        margin-bottom: -145px;
+        height: 430px;
+    }
+    .card > img {
+        width: 95%;
+        align-self: flex-end;
+    }
+    .layer-1{
+        margin-bottom: -150px !important;
+    }
+    .layer-2{
+        margin-bottom: -150px !important;
+    }
+    .layer-3{
+        margin-bottom: -200px !important;
+    }
+    
+    h3{
+        font-family: var(--Jost);
+        font-size: 60px;
+        line-height: 60px;
+    }
 }
 
 @media screen and (max-width: 568px){
