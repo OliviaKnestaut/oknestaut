@@ -324,7 +324,7 @@ button h4{
 }
 
 
-.btn-text:hover{
+.btn:hover .btn-text{
     color: var(--background) !important;
 }
 .btn{
@@ -371,7 +371,7 @@ button h4{
 }
 
 .about div p{
-    margin: 1vw;
+    margin: 1vw 4vw;
 }
 
 .skills div{
@@ -942,6 +942,9 @@ picture{
     .skills-parent{
         justify-content:flex-start;
     }
+    .resume-skills{
+        width: 100%;
+    }
 
     /*CASE STUDY*/    
 
@@ -1048,7 +1051,7 @@ picture{
 @media screen and (max-width: 386px){
 
     h2 {
-        font-size: 12vw;
+        font-size: 9vw;
         line-height: 12vw;
     }
 
