@@ -1,0 +1,101 @@
+/* Main App.css - Imports all component styles */
+
+/* Import all CSS modules in order of specificity */
+@import './variables.css';
+@import './typography.css';
+@import './navigation.css';
+@import './footer.css';
+@import './responsive.css';
+
+/* Layout and General Styles */
+
+.row {
+    margin: 0;
+}
+
+.icon {
+    height: 30px;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+picture, .abstract-img {
+    width: 100%;
+    height: auto;
+}
+
+/* Header Layout */
+.name-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* Component Styles - Cards, Buttons, etc. */
+
+/* Cards */
+.card {
+    position: unset;
+    background-color: var(--background);
+    border: none;
+    margin-bottom: 1rem;
+}
+
+.card > img {
+    width: 80%;
+}
+
+.card-body {
+    padding: 30px 20px;
+    padding-bottom: 120px;
+    margin-bottom: -100px;
+}
+
+.card-body > h4, .snippit {
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.snippit {
+    font-size: 4vw;
+    line-height: 4vw;
+}
+
+.container-fluid {
+    margin: 0 auto;
+    gap: 15px;
+}
+
+/* Buttons */
+.card > div > button, 
+.contents-flex button, 
+.case-study-sect button, 
+header > button {
+    border-radius: 50vw !important;
+    background-color: var(--background);
+    color: var(--blue);
+    border: none !important;
+    margin-top: 20px !important;
+}
+
+button h4 {
+    margin: 0 !important;
+}
+
+.btn:hover .btn-text {
+    color: var(--background) !important;
+}
+
+.btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px 5px rgba(255, 249, 238, 0.5);
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
