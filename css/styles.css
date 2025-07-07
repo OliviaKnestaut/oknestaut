@@ -181,7 +181,7 @@ h4, .nav-link, .dropdown-item{
 
 h5{
     font-family: var(--Jost);
-    font-size: 3.75vw;
+    font-size: 2.75vw;
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -653,17 +653,23 @@ div.contents{
 .beetle{
     width: 51%;
 }
+.collection{
+    width: 33%;
+}
 .stamp{
-    width: 47.5%;
+    width: 50%;
 }
 .poly-head{
-    width: 38%;
+    width: 44.5%;
 }
 .pin{
-    width: 58.5%;
+    width: 50%;
+}
+.paul-rand{
+    width: 55%;
 }
 
-.beetle img, .stamp img, .poly-head img, .pin img{
+.beetle img, .stamp img, .poly-head img, .pin img, .collection img, .paul-rand img{
     width: 100%;
 }
 
@@ -851,7 +857,7 @@ picture{
         line-height: 11.5vw;
     }
     h5 {
-        font-size: 9vw;
+        font-size: 6.5vw;
         line-height: 12vw;
     }
     h6{
