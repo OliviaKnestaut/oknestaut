@@ -130,7 +130,7 @@ body{
     margin-right: 0.5rem;
 }
 
-p{
+p, li{
     font-family: var(--Jost);
     font-size: 16px;
     margin: 1rem 0;
