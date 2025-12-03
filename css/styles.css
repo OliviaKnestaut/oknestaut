@@ -118,7 +118,7 @@ html{
 
 body{
     background-color: var(--background);
-    padding-top: 50px;
+    padding-top: 65px;
 }
 .row{
     margin: 0;
@@ -653,24 +653,51 @@ div.contents{
 .beetle{
     width: 51%;
 }
-.collection{
+.collection, .object-text{
     width: 33%;
 }
-.stamp{
+.object-imgs{
+    width: 66%;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.stamp, .pin{
     width: 50%;
+}
+.poster1{
+    width: 70%;
+}
+.poster-text{
+    width: 65%;
 }
 .poly-head{
     width: 44.5%;
 }
-.pin{
-    width: 50%;
-}
+
 .paul-rand{
     width: 55%;
 }
 
-.beetle img, .stamp img, .poly-head img, .pin img, .collection img, .paul-rand img{
+.beetle img, .stamp img, .poly-head img, .pin img, .collection img, .paul-rand img, .process img, .object-imgs img, .poster1 img, .poster2 img{
     width: 100%;
+}
+
+div.object-text, div.poster-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    padding-left: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    div.object-text, div.object-imgs, div.poster-text{
+        width: 100%;
+    }
+
 }
 
 .video-section{
