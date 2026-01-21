@@ -49,12 +49,11 @@
 
 html{
     --background:#FFF9EE !important;
-    --orange:#D3592C !important;
-    --blue:#76ACB6 !important;
-    --purple:#715A95 !important;
-    --magenta:#AD6095 !important;
-    --pink:#CE6C9E !important;
-    --green: #7CA835 !important;
+    --secondary-accent:#76ACB6 !important;
+    --decorative-purple:#715A95 !important;
+    --decorative-pink-dark:#AD6095 !important;
+    --decorative-pink:#CE6C9E !important;
+    --decorative-green: #7CA835 !important;
     --yellow:#DDD347 !important;
     --text: #222222 !important;
     --Jost: 'Jost', Arial, sans-serif;
@@ -106,7 +105,7 @@ h1.photog-title{
 .portrait-btn{
     background: url(../images/photography/portraiture/Olive_Window-Small.jpg);
     box-shadow: inset 0 0 0 1000px rgba(118,172,182,.5);
-    border: var(--blue) 8px solid ;
+    border: var(--secondary-accent) 8px solid ;
     transition: width 0.5s ease-in, border 0.5s ease-out;
 }
 .portrait-btn:hover, .nature-btn:hover, .arch-btn:hover, .portrait-btn:active, .nature-btn:active, .arch-btn:active{
@@ -118,14 +117,14 @@ h1.photog-title{
 .nature-btn{
     background: url(../images/photography/nature/Mammoth_Springs_Small.jpg);
     box-shadow: inset 0 0 0 1000px rgba(124,168,53,.5);
-    border: var(--green) 8px solid ;
+    border: var(--decorative-green) 8px solid ;
     transition: width 0.5s ease-in, border 0.5s ease-out;
 }
 
 .arch-btn{
     background: url(../images/photography/architecture/Philadelphia_City_Hall-Small.jpg);
     box-shadow: inset 0 0 0 1000px rgba(113,90,149,.5);
-    border: var(--purple) 8px solid ;
+    border: var(--decorative-purple) 8px solid ;
     transition: width 0.5s ease-in, border 0.5s ease-out;
 }
 

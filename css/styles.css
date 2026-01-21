@@ -1,5 +1,3 @@
-
-
 @font-face {
     font-family: 'Jost';
     src: url(../files/jost_files/Jost-VariableFont_wght.ttf) format(TrueType);
@@ -52,57 +50,80 @@
 /*VARIABLES*/
 
 html{
+    --primary-accent:#D3592C !important;
+    --primary-accent-dark:#AB4D24 !important;
+    --primary-accent-light:#E9AA8C !important;
+
+    --secondary-accent:#76ACB6 !important;
+    --secondary-accent-dark:#52878A !important;
+    --secondary-accent-light:#ADD1D1 !important;
+
+    --decorative-purple: #715A95 !important;
+    --decorative-purple-dark: #614E72 !important;
+    --decorative-purple-light: #B8AAC1 !important;
+
+    --decorative-green: #7CA835 !important;
+    --decorative-green-dark: #6A882A!important;
+    --decorative-green-light: #BDD191 !important;
+
+    --decorative-pink: #CE6C9E !important;
+    --decorative-pink-dark: #A75B79!important;
+    --decorative-pink-light: #E7B3C5 !important;
+
+
+    --decorative-yellow:#DDD347 !important;
+    --decorative-yellow-dark:#B2A838 !important;
+    --decorative-yellow-light:#EEE79A !important;
+
     --background:#FFF9EE !important;
-    --orange:#D3592C !important;
-    --blue:#76ACB6 !important;
-    --purple:#715A95 !important;
-    --magenta:#AD6095 !important;
-    --pink:#CE6C9E !important;
-    --green: #7CA835 !important;
-    --yellow:#DDD347 !important;
     --text: #222222 !important;
+
     --Jost: 'Jost', Arial, sans-serif;
     --rhythm: 24px;
 }
 
-.color-orange{
-    color: var(--orange) !important;
+/* COLOR CLASSES */
+
+.color-primary-accent{
+    color: var(--primary-accent) !important;
 }
-.color-blue{
-    color: var(--blue) !important;
+.color-secondary-accent{
+    color: var(--secondary-accent) !important;
 }
-.color-purple{
-    color: var(--purple) !important;
+.color-decorative-purple{
+    color: var(--decorative-purple) !important;
 }
-.color-pink{
-    color: var(--pink) !important;
+.color-decorative-pink{
+    color: var(--decorative-pink) !important;
 }
-.color-magenta{
-    color: var(--magenta) !important;
+.color-decorative-pink-dark{
+    color: var(--decorative-pink-dark) !important;
 }
-.color-green{
-    color: var(--green) !important;
+.color-decorative-green{
+    color: var(--decorative-green) !important;
 }
 .color-tan{
     color: var(--background) !important;
 }
-.bg-blue{
-    background-color: var(--blue) !important;
+
+
+.bg-secondary-accent{
+    background-color: var(--secondary-accent) !important;
 }
-.bg-green{
-    background-color: var(--green) !important;
+.bg-decorative-green{
+    background-color: var(--decorative-green) !important;
 }
-.bg-orange{
-    background-color: var(--orange) !important;
+.bg-primary-accent{
+    background-color: var(--primary-accent) !important;
 }
-.bg-pink{
-    background-color: var(--pink) !important;
+.bg-decorative-pink{
+    background-color: var(--decorative-pink) !important;
 }
-.bg-purple{
-    background-color: var(--purple) !important;
+.bg-decorative-purple{
+    background-color: var(--decorative-purple) !important;
 }
-.bg-magenta{
-    background-color: var(--magenta) !important;
+.bg-decorative-pink-dark{
+    background-color: var(--decorative-pink-dark) !important;
 }
 
 .text-color-dark{
@@ -115,6 +136,9 @@ html{
 .bg-tan{
     background-color: var(--background);
 }
+
+
+/* GENERAL STYLES */
 
 body{
     background-color: var(--background);
@@ -201,7 +225,7 @@ h6{
 }
 
 a{
-    color: var(--orange) !important;
+    color: var(--primary-accent) !important;
 }
 
 picture, .abstract-img{
@@ -242,7 +266,7 @@ picture, .abstract-img{
     font-weight: 400;
     line-height: 25px;
     margin: 0px;
-    color: var(--orange) !important;
+    color: var(--primary-accent) !important;
     width: auto !important;
     margin: 0 .5rem;
     padding: .25rem .4rem;
@@ -256,7 +280,7 @@ picture, .abstract-img{
 }
 
 .dropdown-item:hover{
-    background-color: var(--blue);
+    background-color: var(--secondary-accent);
     color: var(--background) !important;
 }
 
@@ -311,10 +335,12 @@ picture, .abstract-img{
     gap: 15px;
 }
 
+/* BUTTONS */
+
 .card > div > button, .contents-flex button, .case-study-sect button, header > button {
     border-radius: 50vw !important;
     background-color: var(--background);
-    color: var(--blue);
+    color: var(--secondary-accent);
     border: none !important;
     margin-top: 20px !important;
 }
@@ -323,7 +349,6 @@ button h4{
     margin: 0 !important;
 }
 
-
 .btn:hover .btn-text{
     color: var(--background) !important;
 }
@@ -331,35 +356,65 @@ button h4{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .btn:hover{
-    transform: scale(1.1);
-    box-shadow: 0 0 20px 5px rgba(255, 249, 238, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 0 15px 2px rgba(255, 249, 238, 0.5);
 }
 .btn:active{
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
-.magenta-hover:focus{
-    box-shadow: 0 0 0 .2rem var(--magenta) !important;
+
+
+.decorative-pink-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--decorative-pink-light) !important;
 }
-.magenta-hover:hover{
-    background-color: var(--magenta) !important;
+.decorative-pink-hover:hover{
+    background-color: var(--decorative-pink-dark) !important;
 }
-.pink-hover:focus{
-    box-shadow: 0 0 0 .2rem var(--pink) !important;
+.decorative-pink-hover:active{
+    background-color: var(--decorative-pink-light) !important;
 }
-.pink-hover:hover{
-    background-color: var(--pink) !important;
+
+
+.decorative-primary-accent:focus{
+    box-shadow: 0 0 0 .2rem var(--primary-accent-light) !important;
 }
-.blue-hover:focus{
-    box-shadow: 0 0 0 .2rem var(--blue) !important;
+.decorative-primary-accent:hover{
+    background-color: var(--primary-accent-dark) !important;
 }
-.blue-hover:hover{
-    background-color: var(--blue) !important;
+.decorative-primary-accent:active{
+    background-color: var(--primary-accent-light) !important;
 }
-.purple-hover:focus{
-    box-shadow: 0 0 0 .2rem var(--purple) !important;
+
+
+.secondary-accent-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--secondary-accent-light) !important;
 }
-.purple-hover:hover{
-    background-color: var(--purple) !important;
+.secondary-accent-hover:hover{
+    background-color: var(--secondary-accent-dark) !important;
+}
+.secondary-accent-hover:active{
+    background-color: var(--secondary-accent-light) !important;
+}
+
+.decorative-green-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--decorative-green-light) !important;
+}
+.decorative-green-hover:hover{
+    background-color: var(--decorative-green-dark) !important;
+}
+.decorative-green-hover:active{
+    background-color: var(--decorative-green-light) !important;
+}
+
+
+.decorative-purple-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--decorative-purple-light) !important;
+}
+.decorative-purple-hover:hover{
+    background-color: var(--decorative-purple-dark) !important;
+}
+.decorative-purple-hover:active{
+    background-color: var(--decorative-purple-light) !important;
 }
 
 /*ABOUT*/
@@ -575,7 +630,7 @@ div.contents{
 
 .tiny-circle{
     border-radius: 20vw;
-    background-color: var(--orange);
+    background-color: var(--primary-accent);
     color: var(--background);
     font-size: 24px;
     font-weight: 800;
@@ -725,16 +780,16 @@ div.object-text, div.poster-text{
     font-size: 6vw;
     line-height: 8vw;
 }
-.trans-blue{
+.trans-secondary-accent{
     background-color: rgba(118, 172, 182, 0.9);
 }
-.trans-pink{
+.trans-decorative-pink{
     background-color: rgba(206, 108, 158, 0.9);
 }
-.trans-green{
+.trans-decorative-green{
     background-color: rgba(124, 168, 53, 0.9);
 }
-.trans-purple{
+.trans-decorative-purple{
     background-color: rgba(113, 90, 149, 0.9);
 }
 
@@ -775,7 +830,7 @@ picture{
         font-weight: 500;
         line-height: 20px;
         margin: 0px;
-        color: var(--orange) !important;
+        color: var(--primary-accent) !important;
     }
 
     .dropdown-item{
@@ -785,7 +840,7 @@ picture{
         font-weight: 400;
         line-height: 20px;
         margin: 0px;
-        color: var(--orange) !important;
+        color: var(--primary-accent) !important;
     }
 
     /*HOME CARDS*/
@@ -1142,7 +1197,7 @@ picture{
 	padding: 1em 1.3em;
     opacity: 0; /* Start with the button hidden */
     pointer-events: none;
-    background-color: var(--orange);
+    background-color: var(--primary-accent);
     transition: background-color 0.2s ease-in;
 }
 .go-top img{
