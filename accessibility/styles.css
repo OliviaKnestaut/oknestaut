@@ -1,0 +1,702 @@
+@font-face {
+    font-family: 'Jost';
+    src: url(../files/jost_files/Jost-VariableFont_wght.ttf) format('truetype');
+    font-weight: 400 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url(../files/jost_files/Jost-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: 400 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+html{
+    --primary-accent:#D3592C !important;
+    --primary-accent-dark:#AB4D24 !important;
+    --primary-accent-light:#E9AA8C !important;
+
+    --secondary-accent:#5099AA !important;
+    --secondary-accent-dark:#52878A !important;
+    --secondary-accent-light:#ADD1D1 !important;
+
+    --decorative-purple: #715A95 !important;
+    --decorative-purple-dark: #614E72 !important;
+    --decorative-purple-light: #B8AAC1 !important;
+
+    --decorative-green: #729B31 !important;
+    --decorative-green-dark: #6A882A!important;
+    --decorative-green-light: #BDD191 !important;
+
+    --decorative-pink: #CE6C9E !important;
+    --decorative-pink-dark: #A75B79!important;
+    --decorative-pink-light: #E7B3C5 !important;
+
+
+    --decorative-yellow:#DDD347 !important;
+    --decorative-yellow-dark:#B2A838 !important;
+    --decorative-yellow-light:#EEE79A !important;
+
+    --background:#FFF9EE !important;
+    --text: #222222 !important;
+
+    --Jost: 'Jost', Arial, sans-serif;
+    --rhythm: 24px;
+}
+
+/* COLOR CLASSES */
+
+.color-primary-accent{
+    color: var(--primary-accent) !important;
+}
+.color-secondary-accent{
+    color: var(--secondary-accent) !important;
+}
+.color-decorative-purple{
+    color: var(--decorative-purple) !important;
+}
+.color-decorative-pink{
+    color: var(--decorative-pink) !important;
+}
+.color-decorative-pink-dark{
+    color: var(--decorative-pink-dark) !important;
+}
+.color-decorative-green{
+    color: var(--decorative-green) !important;
+}
+.color-tan{
+    color: var(--background) !important;
+}
+
+.bg-secondary-accent{
+    background-color: var(--secondary-accent) !important;
+}
+.bg-decorative-green{
+    background-color: var(--decorative-green) !important;
+}
+.bg-primary-accent{
+    background-color: var(--primary-accent) !important;
+}
+.bg-decorative-pink{
+    background-color: var(--decorative-pink) !important;
+}
+.bg-decorative-purple{
+    background-color: var(--decorative-purple) !important;
+}
+.bg-decorative-pink-dark{
+    background-color: var(--decorative-pink-dark) !important;
+}
+
+.text-color-dark{
+    color: var(--text);
+}
+.text-color-light{
+    color: var(--background);
+}
+
+.bg-tan{
+    background-color: var(--background);
+}
+
+/* GENERAL STYLES */
+
+body{
+    background-color: var(--background);
+    padding-top: 5.75rem;
+}
+
+.row{
+    margin: 0;
+}
+
+.icon{
+    height: 2rem;
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+p, li {
+    font-family: var(--Jost);
+    font-size: clamp(0.95rem, 1rem + 0.2vw, 1.125rem);
+    line-height: clamp(1.5rem, 1vw, 2.5rem);
+    margin: 1rem 0;
+}
+
+h1{
+    font-family: var(--Jost);
+    font-size: clamp(2.5rem, 10vw, 9rem);
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    line-height: clamp(3.5rem, 14.5vw, 13rem);
+    margin: 0;
+}
+
+h2{
+    font-family: var(--Jost);
+    font-size: clamp(1.75rem, 3.5vw, 3.5rem);
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    line-height: clamp(2.4rem, 6.6vw, 6.6rem);
+    letter-spacing: clamp(0.25rem, 1vw, 1rem);
+    margin: 2rem auto;
+}
+
+h3{
+    font-family: var(--Jost);
+    font-size: clamp(1.5rem, 4vw, 4.5rem);
+    text-align: center;
+    font-style: normal;
+    font-weight: 800;
+    line-height: clamp(2.25rem, 6vw, 6.5rem);
+    margin: 0;
+    color: var(--background);
+}
+
+h4, .nav-link, .dropdown-item, .btn span{
+    font-family: var(--Jost);
+    font-size: clamp(1.25rem, 1.5vw, 1.75rem);
+    font-style: normal;
+    font-weight: 600;
+    line-height: clamp(1.5rem, 2.25vw, 2.25rem);
+    margin: 0;
+    color: var(--background);
+    text-align: center;
+}
+
+h5, #tagline{
+    font-family: var(--Jost);
+    font-size: clamp(1rem, 2.75vw, 2.5rem);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: clamp(1.8rem, 6vw, 6rem);
+    letter-spacing: clamp(0.05rem, 1vw, 1rem);
+    margin: 0;
+}
+
+h6{
+    font-family: var(--Jost);
+    font-size: clamp(0.95rem, 1.2vw, 1.5rem);
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    line-height: clamp(1.8rem, 2.2vw, 3.3rem);
+    margin: 0;
+}
+
+a{
+    color: var(--primary-accent) !important;
+}
+
+picture, .abstract-img{
+    width: 100%;
+    height: auto;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+.skip-link:focus { top: 0; }
+
+
+/*HEADER*/
+
+.name-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*Navigation*/
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0 1rem;
+    background-color: var(--background);
+    z-index: 4000;
+}
+
+.form-control {
+    border-radius: 4.25rem;
+}
+.nav-logo{
+    width: 12.5rem;
+}
+
+.dropdown-item{
+    font-family: var(--Jost);
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.25rem;        /*1.5x Line Height*/
+    margin: 0;
+    color: var(--primary-accent);
+    width: auto;
+    margin: 0 .5rem;
+    padding: .25rem .4rem;
+    border-radius: 50vw;
+}
+.dropdown-menu{
+    background-color: var(--background);
+    border: 0;
+    border-radius: 0 0 1.25rem 1.25rem;
+    left: -0.5rem;
+}
+
+.dropdown-item:hover{
+    background-color: var(--secondary-accent);
+    color: var(--background) !important;
+}
+
+.navbar-toggler{
+    border: none !important;
+}
+
+.navbar-toggler-icon{
+    background-image: url(../images/general/hamburger-menu.svg) !important;
+}
+
+.dropdown-toggle::after {
+    border: none !important;
+    content: "" !important;
+    display: inline-block;
+    background: url(../images/general/dropdown-icon.svg);
+    background-size: cover;
+    width: 1.25rem;
+    height: 0.75rem;
+    vertical-align: 0;
+    margin: 0.125rem 0;
+    margin-left: 0.375rem !important;
+}
+
+/*Home Screen Cards*/
+.card{
+    position: unset;
+    background-color: var(--background);
+    border: none;
+    margin-bottom: 1rem;
+}
+.card > img {
+    width: 80%;
+}
+.card-body{
+    padding: 2rem;
+    padding-bottom: 7rem;
+    margin-bottom: -6.25rem;
+}
+.card-body > h4, .snippit{
+    letter-spacing: 0.25rem;
+    font-weight: 400;
+}
+
+.container-fluid{
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+
+/* BUTTONS */
+
+.card > div > button, .contents-flex button, .case-study-sect button, header > button {
+    border-radius: 50vw !important;         /*Approx 720px minimum on 1140px screen*/
+    background-color: var(--background);
+    color: var(--secondary-accent);
+    border: none !important;
+    margin-top: 1.25rem !important;
+}
+
+button span{
+    margin: 0 !important;
+}
+
+.btn:hover .btn-text{
+    color: var(--background) !important;
+}
+.btn{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem 0.125rem rgba(255, 249, 238, 0.5);
+}
+.btn:active{
+    transform: scale(0.95);
+}
+
+
+.decorative-pink-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--decorative-pink-light) !important;
+}
+.decorative-pink-hover:hover{
+    background-color: var(--decorative-pink-dark) !important;
+}
+.decorative-pink-hover:active{
+    background-color: var(--decorative-pink-light) !important;
+}
+
+
+.decorative-primary-accent:focus{
+    box-shadow: 0 0 0 .2rem var(--primary-accent-light) !important;
+}
+.decorative-primary-accent:hover{
+    background-color: var(--primary-accent-dark) !important;
+}
+.decorative-primary-accent:active{
+    background-color: var(--primary-accent-light) !important;
+}
+
+
+.secondary-accent-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--secondary-accent-light) !important;
+}
+.secondary-accent-hover:hover{
+    background-color: var(--secondary-accent-dark) !important;
+}
+.secondary-accent-hover:active{
+    background-color: var(--secondary-accent-light) !important;
+}
+
+.decorative-green-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--decorative-green-light) !important;
+}
+.decorative-green-hover:hover{
+    background-color: var(--decorative-green-dark) !important;
+}
+.decorative-green-hover:active{
+    background-color: var(--decorative-green-light) !important;
+}
+
+
+.decorative-purple-hover:focus{
+    box-shadow: 0 0 0 .2rem var(--decorative-purple-light) !important;
+}
+.decorative-purple-hover:hover{
+    background-color: var(--decorative-purple-dark) !important;
+}
+.decorative-purple-hover:active{
+    background-color: var(--decorative-purple-light) !important;
+}
+
+/*ABOUT*/
+
+section.about{
+    padding-top: 3rem;
+}
+
+.about img{
+    object-fit:cover;
+    border-radius: 50vw 50vw 0 0;
+    padding: 0;
+}
+
+.about div p{
+    margin: 1vw 4vw;
+}
+
+.skills div{
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: flex-start;
+}
+
+.skills div img{
+    margin: 1vw;
+    height: 7vw;
+}
+
+.contact-info{
+    max-width: 400px;
+    margin: 30px auto;
+}
+.contact-icon{
+    height: auto;
+    width: 50px;
+    margin: 0.25rem;
+}
+.contact > div > img{
+    object-fit:cover;
+    border-radius: 0 50vw 50vw 0;
+    padding: 0;
+    height: 400px;
+}
+.contact .icon{
+    margin-left: 0;
+    margin-right: 0.5rem;
+}
+
+/*FOOTER*/
+
+.footer{
+    margin: 1rem 0;
+    padding: 0.5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.footer span{
+    font-family: var(--Jost);
+    font-size: clamp(0.95rem, 1rem + 0.2vw, 1.125rem);
+    margin: 1rem 0;
+}
+
+.footer-link, .footer-link:visited{
+    color: var(--background) !important;
+    text-decoration: none;
+}
+
+/*Medium Screens*/
+@media screen and (max-width: 768px) {
+    
+    body{
+        background-color: var(--background);
+        padding-top: 5rem;
+    }
+    
+
+    .nav-link{
+        font-family: var(--Jost);
+        font-size: clamp(1.25rem, 1.25vw, 1.75rem);
+        font-style: normal;
+        font-weight: 500;
+        line-height: 1.875rem;      /*1.5x Line Height*/
+        margin: 0;
+        color: var(--primary-accent) !important;
+    }
+
+    .dropdown-item{
+        font-family: var(--Jost);
+        font-size: clamp(1.25rem, 1.25vw, 1.75rem);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.875rem;      /*1.5x Line Height*/
+        margin: 0;
+        color: var(--primary-accent) !important;
+    }
+
+    /*HOME CARDS*/
+    .card > img {
+        width: 90%;
+    }
+
+    /*ABOUT*/
+
+    .about div h1 {
+        font-size: 14.5vw;
+        line-height: 15vw;
+    }
+    .about h5{
+        font-size: 5vw;
+        line-height: 5vw;
+    }
+
+    .about img{
+        object-fit:cover;
+        border-radius: 50vw 50vw 0 0;
+        padding: 1rem 0;
+        height: 500px;
+    }
+
+    .contact > div > img{
+        height: 250px;
+    }
+}
+
+
+/*Small Screens*/
+@media screen and (max-width: 576px){
+    /*GENERAL*/
+    body{
+        padding-top: 4.5rem;
+    }
+
+    h1{
+        font-size: clamp(2.5rem, 17vw, 6.5rem);
+        line-height: clamp(3.25rem, 20vw, 7.5rem);
+    }
+    h2{
+        font-size: clamp(1.5rem, 9vw, 3rem);
+        line-height: clamp(2.25rem, 13.5vw, 5rem);
+        letter-spacing: clamp(0.25rem, 2vw, 1rem);
+    }
+    h3{
+        font-size: clamp(1.5rem, 11vw, 2.75rem);
+        line-height: clamp(2.25rem, 14vw, 4rem);
+    }
+    h5, #tagline {
+        font-size: clamp(1rem, 6.5vw, 2rem);
+        line-height: clamp(1.8rem, 14.3vw, 4.5rem);
+    }
+    h6{
+        font-size: clamp(1rem, 1rem + 0.5vw, 1.125rem);
+        line-height: 2.5rem;
+    }
+    
+
+    picture, .abstract-img {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem 0;
+    }
+    
+    /*HEADER*/
+    .name-header{
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 6vw;
+        margin-bottom: 5vw;
+    }
+
+    .first-name{
+        letter-spacing: 5vw;
+        text-align: right;
+    }
+
+    header>div{
+        margin-bottom: 10vw;
+    }
+
+    /*NAVIGATION*/
+    .nav-link{
+        font-size: clamp(1.5rem, 4vw, 2.5rem);
+        line-height: clamp(1.5rem, 2.5vw, 2.5rem);
+    }
+
+    .dropdown-item{
+        font-size: clamp(1.25rem, 1.5vw, 1.75rem);
+        line-height: clamp(2rem, 3vw, 3rem);      /*2x Line Height*/
+    }
+
+    .navbar {
+        padding: 0.5rem 1rem;
+        background-color: var(--background) !important;
+    }
+
+    /*HOME CARDS*/
+    .card > img {
+        width: 95%;
+    }
+
+    /*ABOUT*/
+    .about div{
+        padding-bottom: 1vw;
+    }
+    .about div h1 {
+        font-size: 14.5vw;
+        line-height: 15vw;
+    }
+    .skills div img{
+        margin: 1vw;
+        height: 15vw;
+    }
+    .about img{
+        height: 350px;
+    }
+    .contact > div > img{
+        height: 150px;
+    }
+    .about h5 {
+        font-size: 8vw;
+        line-height: 9vw;
+    }
+
+    /*FOOTER*/
+    .footer{
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 0;
+    }  
+    
+    .button-flex{
+        flex-direction: column;
+    }
+}
+
+
+/*Large Screens*/
+@media screen and (min-width: 1200px){
+    body{
+        padding-top: 4.5rem;
+    }
+    
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .card{
+        width: 49%;
+        
+        
+    }
+    .card-body{
+        flex: initial;
+        margin-bottom: -12rem !important;
+        height: 30rem;
+    }
+    .card > img {
+        width: 95%;
+        align-self: flex-end;
+    }
+    .layer-1, .layer-2{
+        margin-bottom: -9rem !important;
+    }
+    .layer-3{
+        margin-bottom: -14rem !important;
+    }
+    
+    h3{
+        font-family: var(--Jost);
+        font-size: clamp(3rem, 4vw, 3.75rem);
+        line-height: clamp(2.8rem, 5.6vw, 5.6rem);       /*1.5x Line Height*/
+    }
+}
+
+/*Tiny Screens*/
+
+@media screen and (max-width: 386px){
+
+    h2 {
+        font-size: 9vw;
+        line-height: 19.8vw;    /*2.2x Line Height*/
+    }
+
+    h3 {
+        font-size: 10.5vw;
+        line-height: 15.75vw;     /*1.5x Line Height*/
+    }
+
+    h4 {
+        font-size: 1.25rem;
+    }
+
+    .nav-logo {
+        width: 11rem;
+    }
+
+    header>div {
+        margin-bottom: 4vw;
+    }
+
+    .name-header {
+        margin-top: 1vw;
+        margin-bottom: 4vw;
+    }
+
+}
