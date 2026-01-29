@@ -42,6 +42,7 @@ html{
 
     --background:#FFF9EE !important;
     --text: #222222 !important;
+    --focus-link: #007bff !important;
 
     --Jost: 'Jost', Arial, sans-serif;
     --rhythm: 24px;
@@ -205,9 +206,11 @@ picture, .abstract-img{
     background: #000;
     color: #fff;
     padding: 8px;
-    z-index: 100;
+    z-index: 1100;
 }
-.skip-link:focus { top: 0; }
+.skip-link:focus {
+    top: 0;
+}
 
 
 /*HEADER*/
@@ -226,12 +229,13 @@ picture, .abstract-img{
     width: 100%;
     padding: 0 1rem;
     background-color: var(--background);
-    z-index: 4000;
+    z-index: 1000;
 }
 
 .form-control {
     border-radius: 4.25rem;
 }
+
 .nav-logo{
     width: 12.5rem;
 }
@@ -311,7 +315,7 @@ picture, .abstract-img{
 /* BUTTONS */
 
 .card > div > button, .contents-flex button, .case-study-sect button, header > button {
-    border-radius: 50vw !important;         /*Approx 720px minimum on 1140px screen*/
+    border-radius: 50vw !important;
     background-color: var(--background);
     color: var(--secondary-accent);
     border: none !important;
@@ -337,9 +341,11 @@ button span{
 }
 
 
-.decorative-pink-hover:focus{
-    box-shadow: 0 0 0 .2rem var(--decorative-pink-light) !important;
+.decorative-primary-accent:focus, .secondary-accent-hover:focus, .decorative-green-hover:focus, .decorative-pink-hover:focus, .decorative-purple-hover:focus {
+    box-shadow: 0 0 0 .2rem var(--background) !important;
+    border: solid .2rem var(--focus-link) !important;
 }
+
 .decorative-pink-hover:hover{
     background-color: var(--decorative-pink-dark) !important;
 }
@@ -347,10 +353,6 @@ button span{
     background-color: var(--decorative-pink-light) !important;
 }
 
-
-.decorative-primary-accent:focus{
-    box-shadow: 0 0 0 .2rem var(--primary-accent-light) !important;
-}
 .decorative-primary-accent:hover{
     background-color: var(--primary-accent-dark) !important;
 }
@@ -358,10 +360,6 @@ button span{
     background-color: var(--primary-accent-light) !important;
 }
 
-
-.secondary-accent-hover:focus{
-    box-shadow: 0 0 0 .2rem var(--secondary-accent-light) !important;
-}
 .secondary-accent-hover:hover{
     background-color: var(--secondary-accent-dark) !important;
 }
@@ -369,9 +367,6 @@ button span{
     background-color: var(--secondary-accent-light) !important;
 }
 
-.decorative-green-hover:focus{
-    box-shadow: 0 0 0 .2rem var(--decorative-green-light) !important;
-}
 .decorative-green-hover:hover{
     background-color: var(--decorative-green-dark) !important;
 }
@@ -379,10 +374,6 @@ button span{
     background-color: var(--decorative-green-light) !important;
 }
 
-
-.decorative-purple-hover:focus{
-    box-shadow: 0 0 0 .2rem var(--decorative-purple-light) !important;
-}
 .decorative-purple-hover:hover{
     background-color: var(--decorative-purple-dark) !important;
 }
@@ -457,6 +448,48 @@ section.about{
     text-decoration: none;
 }
 
+
+/*Large Screens*/
+@media screen and (min-width: 1200px){
+    body{
+        padding-top: 4.5rem;
+    }
+    
+    .card-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    .card{
+        width: 49%;
+        
+        
+    }
+    .card-body{
+        flex: initial;
+        margin-bottom: -12rem !important;
+        height: 30rem;
+    }
+    .card > img {
+        width: 95%;
+        align-self: flex-end;
+    }
+    .layer-1, .layer-2{
+        margin-bottom: -9rem !important;
+    }
+    .layer-3{
+        margin-bottom: -14rem !important;
+    }
+    
+    h3{
+        font-family: var(--Jost);
+        font-size: clamp(3rem, 4vw, 3.75rem);
+        line-height: clamp(2.8rem, 5.6vw, 5.6rem);       /*1.5x Line Height*/
+    }
+}
+
 /*Medium Screens*/
 @media screen and (max-width: 768px) {
     
@@ -513,7 +546,6 @@ section.about{
         height: 250px;
     }
 }
-
 
 /*Small Screens*/
 @media screen and (max-width: 576px){
@@ -623,48 +655,6 @@ section.about{
     
     .button-flex{
         flex-direction: column;
-    }
-}
-
-
-/*Large Screens*/
-@media screen and (min-width: 1200px){
-    body{
-        padding-top: 4.5rem;
-    }
-    
-    .card-container{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
-    }
-    .card{
-        width: 49%;
-        
-        
-    }
-    .card-body{
-        flex: initial;
-        margin-bottom: -12rem !important;
-        height: 30rem;
-    }
-    .card > img {
-        width: 95%;
-        align-self: flex-end;
-    }
-    .layer-1, .layer-2{
-        margin-bottom: -9rem !important;
-    }
-    .layer-3{
-        margin-bottom: -14rem !important;
-    }
-    
-    h3{
-        font-family: var(--Jost);
-        font-size: clamp(3rem, 4vw, 3.75rem);
-        line-height: clamp(2.8rem, 5.6vw, 5.6rem);       /*1.5x Line Height*/
     }
 }
 
