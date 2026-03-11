@@ -1,10 +1,17 @@
+:root {
+    color-scheme: dark;
+    --background: #FFF9EE !important;
+    --text: #222222 !important;
+}
+
+
 .dimbox-container{
     position:fixed;
     inset:0 0 0 0;
     display:flex;
     justify-content:center;
     align-items:center;
-    color:#fff;
+    color:var(--background);
     padding:56px;
     opacity:0;
     transition:opacity .5s;
@@ -30,7 +37,7 @@
     opacity:.75
 }
 .dimbox-container.dimbox-light::before{
-    background-color:#fff
+    background-color:var(--background);
 }
 .dimbox-container *:active,.dimbox-container *:focus,.dimbox-container *:focus-visible{
     outline-style:dotted;
@@ -44,14 +51,14 @@
     height:32px;
     margin-top:-16px;
     margin-left:-16px;
-    border:4px solid #fff;
+    border:4px solid var(--background);
     border-right-color:rgba(0,0,0,0);
     border-radius:50%;
     opacity:.5;
     animation:spin 1s linear infinite
 }
 .dimbox-container.dimbox-light .dimbox-loader{
-    border-color:#000;
+    border-color:var(--background);
     border-right-color:rgba(0,0,0,0)
 }
 .dimbox-container.dimbox-loaded .dimbox-loader{
@@ -63,7 +70,7 @@
     height:32px;
     display:inline-block;
     background-color:rgba(0,0,0,0);
-    color:#fff;
+    color:var(--background);
     padding:0;
     border:none;
     opacity:.5;
@@ -92,7 +99,7 @@
     order:3
 }
 [class^=dimbox-btn]:hover,[class^=dimbox-btn]:active,[class^=dimbox-btn]:focus{
-    color:#fff;
+    color:var(--background);
     opacity:1
 }
 .dimbox-container.dimbox-light [class^=dimbox-btn]:hover,.dimbox-container.dimbox-light [class^=dimbox-btn]:active,.dimbox-container.dimbox-light [class^=dimbox-btn]:focus{
@@ -162,7 +169,7 @@
     opacity:1
 }
 .dimbox-ajax-content,.dimbox-inline-content{
-    background-color:#fff;
+    background-color:var(--background);
     color:#000;
     max-width:768px;
     max-height:calc(100vh - 88px);
@@ -184,7 +191,7 @@
     object-fit:contain
 }
 .dimbox-caption{
-    color:#fff;
+    color:var(--background);
     font-size:.85rem;
     text-align:center;
     margin:8px auto 0 auto;
@@ -247,3 +254,14 @@
             transform:rotate(360deg)
         }
     }/*# sourceMappingURL=dimbox.min.css.map */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background: #222222 !important;
+        --text: #ECECEC !important;
+    }
+
+    .dimbox-caption, .dimbox-btn-prev, .dimbox-btn-next, .dimbox-btn-close, .dimbox-btn-download, .dimbox-btn-fullscreen {
+        color: var(--text) !important;
+    }
+}

@@ -104,10 +104,11 @@ html{
 }
 
 .text-color-dark{
-    color: var(--text);
+    color: var(--text) !important;
+    font-family: var(--Jost);
 }
 .text-color-light{
-    color: var(--background);
+    color: var(--background) !important;
 }
 
 .bg-tan{
@@ -183,7 +184,7 @@ h4, .nav-link, .dropdown-item, .btn span{
 
 h5, .tagline{
     font-family: var(--Jost);
-    font-size: clamp(1rem, 2.75vw, 2.5rem);
+    font-size: clamp(1.5rem, 2.75vw, 2.5rem);
     text-align: center;
     font-style: normal;
     font-weight: 400;
@@ -227,11 +228,18 @@ picture, .abstract-img{
     top: -400px;
     left: -40px;
 }
+.header-link:focus {
+    top: 1rem;
+    left: 1rem;
+}
 .footer-skip-link {
     background: var(--background);
     color: var(--accent-purple) !important;
     text-decoration: none !important;
     left: -2000px;
+}
+.footer-skip-link:focus {
+    left: 2rem;
 }
 .contact-skip-link {
     background: var(--accent-blue);
@@ -240,15 +248,19 @@ picture, .abstract-img{
     margin-top: 0.5rem;
     left: -4000px;
 }
-.header-link:focus {
-    top: 1rem;
-    left: 1rem;
-}
 .contact-skip-link:focus {
     left: -100px;
 }
-.footer-skip-link:focus {
-    left: 2rem;
+.about-skip-link {
+    background: var(--accent-blue);
+    color: var(--background) !important;
+    text-decoration: none !important;
+    margin-top: 0.5rem;
+    left: -6000px;
+    top: 70px;
+}
+.about-skip-link:focus {
+    left: 100px;
 }
 
 /*HEADER*/
@@ -349,6 +361,14 @@ picture, .abstract-img{
     margin: 0 auto;
     gap: 1rem;
 }
+.tools{
+    margin: 1.5rem 0;
+    gap: 0.5rem;
+}
+
+.tools img{
+    height: 2.5vw;
+}
 
 
 /* BUTTONS */
@@ -358,7 +378,6 @@ picture, .abstract-img{
     background-color: var(--background);
     color: var(--accent-blue);
     border: none !important;
-    margin-top: 1.25rem !important;
 }
 
 button span{
@@ -395,7 +414,7 @@ section.about{
     margin: 1vw 4vw;
 }
 
-.skills row{
+.skills row {
     flex-wrap: wrap;
     height: 100%;
     align-items: flex-start;
@@ -404,6 +423,9 @@ section.about{
 .skills row img{
     margin: 1vw;
     height: 7vw;
+}
+.bigger-icons img{
+    height: 12vw !important;
 }
 
 .skills{
@@ -749,7 +771,7 @@ div.contents{
     .card-body{
         flex: initial;
         margin-bottom: -12rem !important;
-        height: 30rem;
+        padding-bottom: 10rem;
     }
     .card > img {
         width: 95%;
@@ -801,6 +823,9 @@ div.contents{
     /*HOME CARDS*/
     .card > img {
         width: 90%;
+    }
+    .tools img{
+    height: 2.5rem;
     }
 
     /*ABOUT*/
@@ -917,6 +942,9 @@ div.contents{
         margin: 1vw;
         height: 15vw;
     }
+    .bigger-icons img{
+        height: 22vw !important;
+    }
     .about img{
         height: 350px;
     }
@@ -973,4 +1001,119 @@ div.contents{
         margin-bottom: 4vw;
     }
 
+}
+
+/* ======================
+    DARK MODE (Independent Section)
+    - Enable by adding `dark-mode` class to the `html` element
+        e.g. <html class="dark-mode"> or set `data-theme="dark"` on html
+    - Automatically follows user system preference via prefers-color-scheme
+    - All color changes are implemented via CSS variables so the rest
+        of the stylesheet adapts automatically.
+   ====================== */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: dark;
+        --background: #222222 !important;
+        --text: #ECECEC !important;
+        --accent-red: #E08A6A !important;
+        --accent-red-dark: #B0543A !important;
+        --accent-red-light: #F5C9B3 !important;
+        --accent-blue: #62B7C5 !important;
+        --accent-blue-dark: #3B7C86 !important;
+        --accent-blue-light: #9DD0D7 !important;
+        --accent-purple: #9B86C9 !important;
+        --accent-purple-dark: #6C57A8 !important;
+        --accent-purple-light: #D5CDEB !important;
+        --accent-green: #8FB86F !important;
+        --accent-green-dark: #5C7A3F !important;
+        --accent-green-light: #CDE6B6 !important;
+        --focus-link: #66B3FF !important;
+    }
+
+    .abstract-img,
+    .navbar-toggler-icon,
+    .dropdown-toggle::after,
+    .nav-logo{
+        filter: contrast(70%) !important;
+    }
+    .invert-img{
+        filter: brightness(0) saturate(100%) invert(99%) sepia(89%) saturate(130%) hue-rotate(182deg) brightness(118%) contrast(85%);
+    }
+    .invert-img2{
+        filter: brightness(150%) contrast(70%) !important;
+    }
+}
+
+html.dark-mode, html[data-theme="dark"], :root.dark-mode, :root[data-theme="dark"] {
+    color-scheme: dark;
+    --background: #222222 !important;
+    --text: #ECECEC !important;
+    --accent-red: #E08A6A !important;
+    --accent-red-dark: #B0543A !important;
+    --accent-red-light: #F5C9B3 !important;
+    --accent-blue: #62B7C5 !important;
+    --accent-blue-dark: #3B7C86 !important;
+    --accent-blue-light: #9DD0D7 !important;
+    --accent-purple: #9B86C9 !important;
+    --accent-purple-dark: #6C57A8 !important;
+    --accent-purple-light: #D5CDEB !important;
+    --accent-green: #8FB86F !important;
+    --accent-green-dark: #5C7A3F !important;
+    --accent-green-light: #CDE6B6 !important;
+    --focus-link: #66B3FF !important;
+}
+
+/* Adjust a few elements that explicitly use var(--background) for color
+    so they remain readable in dark mode. These rules are intentionally
+   minimal — the bulk of the theme swaps are handled by the variables. */
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode .nav-link,
+html.dark-mode .dropdown-item,
+html.dark-mode .btn span,
+html.dark-mode .footer-link,
+html.dark-mode .footer-link:visited,
+html.dark-mode .skip-link,
+:root.dark-mode h3,
+:root.dark-mode h4,
+:root.dark-mode .nav-link,
+:root.dark-mode .dropdown-item,
+:root.dark-mode .btn span,
+:root.dark-mode .footer-link,
+:root.dark-mode .footer-link:visited,
+:root.dark-mode .skip-link,
+html.dark-mode .tools img,
+html[data-theme="dark"] .tools img,
+:root.dark-mode .tools img {
+    filter: brightness(0) saturate(100%) invert(17%) sepia(59%) saturate(0%) hue-rotate(236deg) brightness(92%) contrast(113%) !important;
+}
+
+html[data-theme="dark"] h3,
+html[data-theme="dark"] h4,
+html[data-theme="dark"] .nav-link,
+html[data-theme="dark"] .dropdown-item,
+html[data-theme="dark"] .btn span,
+html[data-theme="dark"] .footer-link,
+html[data-theme="dark"] .footer-link:visited,
+html[data-theme="dark"] .skip-link{
+    color: var(--text) !important;
+}
+
+:root.dark-mode .btn:hover, html.dark-mode .btn:hover, html[data-theme="dark"] .btn:hover{
+    box-shadow: 0 0 1rem 0.125rem rgba(14, 14, 14, 0.6);
+}
+
+/* Make sure focus outlines remain visible against the dark background */
+:root.dark-mode .color-accent-red-hover:focus, :root.dark-mode .color-accent-blue-hover:focus, :root.dark-mode .color-accent-green-hover:focus, :root.dark-mode .color-accent-purple-hover:focus, :root.dark-mode .color-tan-hover,
+html.dark-mode .color-accent-red-hover:focus, html.dark-mode .color-accent-blue-hover:focus, html.dark-mode .color-accent-green-hover:focus, html.dark-mode .color-accent-purple-hover:focus, html.dark-mode .color-tan-hover,
+html[data-theme="dark"] .color-accent-red-hover:focus, html[data-theme="dark"] .color-accent-blue-hover:focus, html[data-theme="dark"] .color-accent-green-hover:focus, html[data-theme="dark"] .color-accent-purple-hover:focus, html[data-theme="dark"] .color-tan-hover {
+    box-shadow: 0 0 0 .2rem var(--background) !important;
+    border: solid .2rem var(--focus-link) !important;
+}
+
+/* JS-applied fallback for footer icons when no dark file is provided */
+.inverted-icon{
+    filter: brightness(0) saturate(100%) invert(17%) sepia(59%) saturate(0%) hue-rotate(236deg) brightness(92%) contrast(113%) !important;
 }
