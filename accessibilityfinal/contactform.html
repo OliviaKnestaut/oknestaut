@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>About | Olivia Knestaut</title>
+    <title>Contact | Olivia Knestaut</title>
     <meta name="author" content="Olivia Knestaut" />
-    <meta name="description" content="Olivia Knestaut, About Page"/>
+    <meta name="description" content="Olivia Knestaut, Contact Page"/>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -58,53 +58,68 @@
         </picture>
     </header>
 
-    <main aria-label="Site Main Content">
-
-        <section class="row col-sm about" aria-label="About Me Section">
-            <article class="col-12 col-md-8 about row justify-content-center" aria-label="About Text Content">
-                <header aria-label="About Header and Name">
-                    <h1 class="color-accent-red">ABOUT ME</h1>
-                    <h2 class="tagline color-accent-blue">OLIVIA KNESTAUT</h2>
-                </header>
-                
-                <p>
-                    As a UX/UI Designer and Full Stack Developer I am passionate about creativity, problem-solving, and inclusive design. One of my main goals is to get involved with accessibility in media. I want to promote the consideration of a range of disabilities throughout every step of media creation.
-                </p>
-                <p>
-                    Currently, I am pursuing a Bachelor of Science in User Experience &amp; Interaction Design (UXID) with a minor in Graphic Design at Drexel University. With this degree I hope to build towards a mastery of full-stack development and design to help add meaningful, accessible media to the world.
-                </p>
-                <p>
-                    Beyond the screen, I find inspiration in the natural world. Whether I'm photographing my way across America's National Parks or nurturing my ever-growing collection of houseplants, I love connecting with nature and capturing its beauty. Engaging with nature in these ways fuels my creativity and reminds me of the importance of sustainable design in all areas of life.
-                </p>
-            </article>
-            <img class="col-12 col-md-4" src="../images/about/ok-about.jpg" alt="Portrait of Olivia Knestaut sitting outside on a rock wall with greenery in the background">
+    <main aria-label="Contact Form Content">
+        <section class="contact" aria-label="Contact Section">
+            <h1 class="color-accent-red justify-content-center">CONTACT</h1>
+            <row class="row col-sm">
+                <img class="col-12 col-md-7" src="../images/about/ok-about-2.jpg" alt="">
+                <article class="col-12 col-md-5 row d-flex justify-content-around align-items-center contact-info" aria-label="Contact Information">
+                    <row class="row align-items-center">
+                        <img class="icon" src="../images/about/location_icon_pink.svg" alt="location pin icon">
+                        <h4 class="color-accent-purple">Philadelphia, PA</h4>
+                    </row>
+                    <p>
+                        I am always looking for collaborations and project ideas. If you want to chat about design, books, plants, or anything else, don't hesitate to reach out.
+                    </p>
+                    <figure aria-label="Contact Links">
+                        <a href="#footer" class="skip-link contact-skip-link color-accent-blue-hover" aria-label="Skip Contact Links">
+                            Skip Contact Links
+                        </a> 
+                        <a href="https://www.instagram.com/ollywhelmed/" target="_blank" aria-label="Instagram — opens in a new tab"><img class="contact-icon" src="../images/about/instagram_icon_blue.svg" alt="instagram icon"></a>
+                        <a href="mailto:olivia.knestaut@gmail.com" aria-label="Email Olivia Knestaut"><img class="contact-icon" src="../images/about/mail_icon_blue.svg" alt="email icon"></a>
+                        <a href="https://github.com/OliviaKnestaut" target="_blank" aria-label="GitHub — opens in a new tab"><img class="contact-icon" src="../images/about/github_icon_blue.svg" alt="github icon"></a>
+                        <a href="https://www.linkedin.com/in/oliviaknestaut/" target="_blank" aria-label="LinkedIn — opens in a new tab"><img class="contact-icon" src="../images/about/linkedin_icon_blue.svg" alt="linkedin icon"></a>
+                    </figure>
+                </article>
+            </row>
         </section>
+        <section class="case-studies column container-fluid justify-content-center align-items-center" aria-label="Contact Form Section">
+            <h2 class="color-accent-red contact-title" aria-label="Contact Form">CONTACT OLIVIA!</h2>
+            <form id="contactForm" class="contact-form" action="#" method="post" novalidate>
+                <fieldset class="name-row">
+                    <legend class="sr-only" aria-label="Name Information">Name Information</legend>
+                    <label class="form-field" for="firstname" aria-label="First Name Input Field">
+                        First Name <span class="required-indicator" aria-label="required">*</span>
+                        <input id="firstname" name="firstname" type="text" required aria-required="true" aria-describedby="firstname-error" />
+                        <div id="firstname-error" class="error-message" role="alert" aria-live="assertive"></div>
+                    </label>
 
-        <section class="container-fluid col skills" aria-label="Skills Section">
-            <h2 class="color-accent-red justify-content-center">SKILLS</h2>
-            <row class=" d-flex justify-content-center align-items-center">
-                <img src="../images/about/Figma-Icon.png" alt="Figma Logo">
-                <img src="../images/about/Illustrator-Icon.png" alt="Adobe Illustrator Logo">
-                <img src="../images/about/Photoshop-Icon.png" alt="Adobe Photoshop Logo">
-                <img src="../images/about/InDesign-Icon.png" alt="Adobe InDesign Logo">
-                <img src="../images/about/AfterEffects-Icon.png" alt="Adobe After Effects Logo">
-                <img src="../images/about/Premiere-Icon.png" alt="Adobe Premiere Pro Logo">
-                <img src="../images/about/Audition-Icon.png" alt="Adobe Audition Logo">
-                <img src="../images/about/Bridge-Logo.png" alt="Adobe Bridge Logo">
-                <img src="../images/about/Wordpress-Logo.png" alt="WordPress Logo">
-            </row>
-            <row class=" d-flex justify-content-center align-items-center">
-                <img src="../images/about/HTML-Icon.png" alt="HTML Logo">
-                <img src="../images/about/CSS-Icon.png" alt="CSS Logo">
-                <img src="../images/about/JS-Icon.png" alt="JavaScript Logo">
-                <img src="../images/about/Typescript-Icon.png" alt="TypeScript Logo">
-                <img src="../images/about/React-Icon.png" alt="React Logo">
-                <img src="../images/about/NodeJS-Icon.png" alt="Node.js Logo">
-                <img src="../images/about/PHP-Icon.png" alt="PHP Logo">
-                <img src="../images/about/Python-Icon.png" alt="Python Logo">
-                <img src="../images/about/Java-Icon.png" alt="Java Logo">
-                <img src="../images/about/GraphQL-Icon.png" alt="GraphQL Logo">
-            </row>
+                    <label class="form-field" for="lastname" aria-label="Last Name Input Field">
+                        Last Name <span class="required-indicator" aria-label="required">*</span>
+                        <input id="lastname" name="lastname" type="text" required aria-required="true" aria-describedby="lastname-error" />
+                        <div id="lastname-error" class="error-message" role="alert" aria-live="assertive"></div>
+                    </label>
+                </fieldset>
+
+                <label class="form-field" for="email" aria-label="Email Address Input Field">
+                    Email Address <span class="required-indicator" aria-label="required">*</span>
+                    <input id="email" name="email" type="email" required aria-required="true" aria-describedby="email-error" />
+                    <div id="email-error" class="error-message" role="alert" aria-live="assertive"></div>
+                </label>
+
+                <label class="form-field" for="message" aria-label="Message / Comments Input Field">
+                    Message / Comments <span class="required-indicator" aria-label="required">*</span>
+                    <textarea id="message" name="message" rows="6" required aria-required="true" minlength="10" aria-describedby="message-error"></textarea>
+                    <div id="message-error" class="error-message" role="alert" aria-live="assertive"></div>
+                </label>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn color-accent-red-hover submit-btn">
+                        <span class="submit-text color-accent-red">Send Message</span>
+                    </button>
+                    <div id="formStatus" role="status" aria-live="polite" class="form-status" aria-atomic="true"></div>
+                </div>
+            </form>
         </section>
 
         <footer id="footer" class="container-fluid justify-content-center" aria-label="Footer">       
@@ -143,6 +158,8 @@
             </row>
         </footer>
     </main>
+
+    <script src="js/contact-form.js"></script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery, Popper.js, Bootstrap JS -->
