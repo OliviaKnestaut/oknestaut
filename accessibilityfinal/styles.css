@@ -467,7 +467,7 @@ label{
 input[type="text"],input[type="email"],textarea{
     width:100%;
     padding:.6rem .75rem;
-    border:1px solid var(--accent-red-light); border-radius:6px;
+    border:1px solid var(--accent-red); border-radius:6px;
     font-size:1rem;
     color: var(--text);
     background:#fff
