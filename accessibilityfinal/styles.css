@@ -171,7 +171,7 @@ h3{
     color: var(--background);
 }
 
-h4, .nav-link, .dropdown-item, .btn span{
+h4, .nav-link, .dropdown-item, .btn span, .case-study-snippit{
     font-family: var(--Jost);
     font-size: clamp(1.25rem, 1.5vw, 1.75rem);
     font-style: normal;
@@ -363,7 +363,7 @@ picture, .abstract-img{
     padding-bottom: 7rem;
     margin-bottom: -6.25rem;
 }
-.card-body > h4, .snippit{
+.card-body > h4, .snippit, .case-study-snippit{
     letter-spacing: 0.25rem;
     font-weight: 400;
 }
