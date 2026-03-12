@@ -262,6 +262,17 @@ picture, .abstract-img{
 .about-skip-link:focus {
     left: 100px;
 }
+.contents-skip-link {
+    background: var(--accent-green);
+    color: var(--background) !important;
+    text-decoration: none !important;
+    margin-top: 0.5rem;
+    left: -6000px;
+}
+.contents-skip-link:focus {
+    left: 100px;
+}
+
 
 /*HEADER*/
 
@@ -598,10 +609,10 @@ textarea{
     padding: 20vw;
 }
 
-.case-study-title div {
+.case-study-title figcaption {
     padding: 1.5vw 2.5vw;
 }
-.case-study-title div h1{
+.case-study-title figcaption h1{
     font-size: 8.5vw;
     line-height: 9vw;
 }
@@ -614,8 +625,8 @@ textarea{
     margin: 10px;
 }
 
-#accessibility-img div{
-    background-color: rgba(118 , 172, 182, 0.9);
+#accessibility-img figcaption{
+    background-color: rgba(73 , 106, 37, 0.9);
 }
 
 iframe{
@@ -628,7 +639,16 @@ iframe{
 
 /*Contents*/
 
-div.contents{
+.contents-flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3vw;
+    gap: 10px;
+}
+
+nav.contents{
     color: var(--text);
     display: flex;
     font-style: normal;
@@ -640,31 +660,10 @@ div.contents{
     text-align: left;
 }
 
-.contents-flex{
+.contents-flex article{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-top: 3vw;
-    gap: 10px;
-}
-
-.vert-video {
-    width: 300px;
-    height: 520px;
-    margin: 0;
-    background-color: var(--text);
-    padding: 10px;
-}
-.vert-frame{
-    width: 430px;
-    height: 932px;
-    border-style: inset;
-    border-width: 5px;
-}
-
-#database-frame{
-    height: 500px;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .contents a{
@@ -721,6 +720,11 @@ div.contents{
 }
 .case-study-sect img{
     margin: 10px 0;
+    width: 100%;
+}
+.case-study-btn h4{
+    font-size: clamp(1.25rem, 1.5vw, 1.75rem);
+    margin-top: 0;
 }
 
 .current-central{
@@ -854,6 +858,30 @@ div.contents{
     .contact-title{
         margin-top: 0;
     }
+
+    /*CASE STUDIES*/
+
+    .contents-flex{
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    div.contents {
+        font-size: 3vw;
+        margin: 20px 0;
+    }
+
+    .persona-flex{
+        flex-direction: column;
+    }
+    .persona-flex div{
+        width: 100%;
+    }
+    .persona-flex picture {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /*Small Screens*/
@@ -954,6 +982,24 @@ div.contents{
     .about h5 {
         font-size: 8vw;
         line-height: 9vw;
+    }
+
+        /*CASE STUDY*/    
+
+    .case-study-title{
+        height: 56vw;
+    }
+
+    .case-study-title h1{
+        font-size: 11vw;
+        line-height: 14vw;
+    }
+
+    .wireframes img{
+        width: 100%;
+    }
+    .wireframes{
+        flex-wrap: wrap;
     }
 
     /*FOOTER*/

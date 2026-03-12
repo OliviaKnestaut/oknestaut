@@ -28,13 +28,8 @@
         <section class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="mr-auto"></div>
             <ul class="navbar-nav my-2 my-lg-0" aria-label="Primary Navigation Items">
-                <li class="nav-item dropdown" aria-label="Toggle Portfolio Navigation Dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO<span class="sr-only">(current)</span></a>
-                    <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="index.html" aria-label="Case Studies Navigation Link">CASE STUDIES</a>
-                        <a class="dropdown-item" href="" aria-label="Photography Navigation Link">PHOTOGRAPHY</a>
-                        <a class="dropdown-item" href="" aria-label="Design and Media Navigation Link">DESIGN &amp; MEDIA</a>
-                    </div>
+                <li class="nav-item active" aria-label="Portfolio Navigation Link">
+                    <a class="nav-link" href="index.html">PORTFOLIO</a>
                 </li>
                 <li class="nav-item active" aria-label="About Navigation Link">
                     <a class="nav-link" href="about.html">ABOUT</a>
@@ -46,137 +41,136 @@
         </section>
     </nav>
     
-    <header id="main-content">
-        <div class="container-fluid case-study-header">
-            <div id="accessibility-img" class="case-study-title">
-                <div>
-                    <h1 class="text-color-light">PERSONAL PORTFOLIO</h1>
+    <header id="main-content" class="container-fluid case-study-header" aria-label="Header Site Banner">
+        <figure id="accessibility-img" class="case-study-title" aria-label="Case Study Header">
+            <figcaption aria-label="Case Study Title">
+                <h1 class="text-color-light">PERSONAL PORTFOLIO</h1>
                 <h4 class="snippit">ACCESSIBILITY DESIGN & SCRIPTING</h4>
-                </div>
-            </div>
-            <div class="contents-flex">
-                <div>
-                    <button type="button" class="btn btn-primary mx-auto d-block color-accent-red bg-accent-red color-accent-red-hover" onclick="window.open('https://oknestaut.com/accessibilityfinal/', '_blank')">
-                        <h4 class="btn-text color-tan">Final Site</h4>
-                    </button>
-                    <button type="button" class="btn btn-primary mx-auto d-block color-accent-red bg-accent-red color-accent-red-hover" onclick="window.open('https://github.com/OliviaKnestaut/oknestaut', '_blank')">
-                        <h4 class="btn-text color-tan">Project Github</h4>
-                    </button>
-                </div>
-                <div class="contents">
-                    <a href="#overview" class="color-accent-red"><span class="tiny-circle bg-accent-red">→</span> OVERVIEW</a>
-                    <a href="#context-challenge" class="color-accent-red"><span class="tiny-circle bg-accent-red">→</span> CONTEXT &amp; CHALLENGE</a>
-                    <a href="#process" class="color-accent-red"><span class="tiny-circle bg-accent-red">→</span> PROCESS &amp; INSIGHT</a>
-                    <a href="#solution" class="color-accent-red"><span class="tiny-circle bg-accent-red">→</span> SOLUTION</a>
-                    <a href="#results" class="color-accent-red"><span class="tiny-circle bg-accent-red">→</span> RESULTS</a>
-                </div>
-            </div>
-        </div>
+            </figcaption>
+        </figure>
+
+        <section class="contents-flex" aria-label="Case Study Contents and Buttons">
+            <article aria-label="Final Result Buttons">
+                <button type="button" class="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover" onclick="window.open('https://oknestaut.com/accessibilityfinal/', '_blank')">
+                    <h4 class="btn-text color-tan">Final Site</h4>
+                </button>
+                <button type="button" class="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover" onclick="window.open('https://github.com/OliviaKnestaut/oknestaut', '_blank')">
+                    <h4 class="btn-text color-tan">Project Github</h4>
+                </button>
+            </article>
+            <a href="#accessibility-content" class="skip-link contents-skip-link color-accent-green-hover" aria-label="Skip Table of Contents">
+                Skip Table of Contents
+            </a> 
+            <nav class="contents" aria-label="Case Study Contents Navigation">
+                <a href="#overview" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> OVERVIEW</a>
+                <a href="#context-challenge" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> CONTEXT &amp; CHALLENGE</a>
+                <a href="#process" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> PROCESS &amp; INSIGHT</a>
+                <a href="#solution" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> SOLUTION</a>
+                <a href="#results" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> RESULTS</a>
+            </nav>
+        </section>
     </header>
 
 
-    <main class="case-study-page">
-        <section id="overview" class="container-fluid study-section">
-            <div class="page-title">
-                <h2 class="color-accent-red" >OVERVIEW</h2>
-            </div>
-            <div class="case-study-sect">
-                <p>
-                    This project is an interaction design and development project to create a mobile ordering web application for a local food truck on the Drexel University campus. It was created for the class IDM 216, Interaction Design II, under the direction of Professor Jervis Thompson. Working on a team of 5 UXID students, we were tasked with delegating roles in project management, design, development, and data architecture to complete our web app for Kim’s Dragon. Over 10 a week period we transformed early-stage designs into a fully functional web application. Through multiple iterations informed by usability testing, we refined the user interface and backend functionality to create a seamless and efficient ordering system. My role as primary developer and secondary data architect involved front-end implementation, database structuring, and PHP integration to support dynamic menu browsing and order processing.
-                </p>
-            </div>
+    <main id="accessibility-content" class="case-study-page" aria-label="Case Study Main Content">
+        <section id="overview" class="container-fluid study-section" aria-label="Case Study Overview">
+            <h2 class="color-accent-green" >OVERVIEW</h2>
+            <p class="text-color-dark">
+                This project is an accessibility design and development project to optimize my personal portfolio site in alignment with inclusive design principles. It was created for the class IDM T380 , Scripting for Accessibility Design, under the direction of Professor Jervis Thompson. Working individually, but with class and instructor support, we were tasked with stripping and refining the site structure, labeling, and aria usage. Through each step of the process I balanced the UI design with the new inclusive improvements. The final build includes the site home page, about page, and contact form.
+            </p>
         </section>
 
 
-        <section id="context-challenge" class="container-fluid study-section">
-            <div class="page-title">
-                <h2 class="color-accent-red" >CONTEXT &amp; CHALLENGE</h2>
-            </div>
-            <div class="case-study-sect">
-                <div>
-                    <h4 class="color-accent-blue">PROJECT BACKGROUND</h4>
-
-                    <p>
-                        Kim's Dragon is a beloved Asian cuisine food truck located on Drexel University's campus. A favorite of students and local residents alike, it is found on a section of Ludlow Street referred to as “Food Truck Alley.” Working from designs created in IDM 215, Interaction Design I, the specific focus of this project was to develop a mobile ordering web application for the truck. Over the span of 10 weeks, I served as the primary developer and secondary data architect, working alongside my teammates to bring our application from concept to completion. The project operated within the constraints of academic guidelines, requiring the use of HTML, CSS, JavaScript, and PHP to create and execute a full production pipeline resulting in a fully functioning web app. 
-                    </p>
-
-                </div>
-                <div>
-                    <h4 class="color-accent-blue">THE PROBLEM</h4>
-
-                    <p>
-                        Currently, Kim's Dragon operates solely on in-person, walk-up ordering. On a street with nearly a dozen other food truck options, it is essential that the truck offer something to help it stand out among its competitors. The absence of a digital ordering system means lost revenue from customers who don't have time to wait at the truck and an overall less efficient workflow for both customers and the food truck staff.
-                    </p>
-
-                </div>
-                <div>
-                    <h4 class="color-accent-blue">GOALS &amp; OBJECTIVES</h4>
-                    <p>The success of this project was defined by achieving the following tangible goals:</p>
-                    <ol>
-                        <li><b>Iterative Design Improvements:</b> Incorporate feedback from usability tests and instructor evaluations to refine the design across three iterative builds, ensuring a user-friendly and efficient experience</li>
-                        <li><b>Full-Stack Development:</b> Build a fully functioning prototype using HTML, CSS, and JavaScript on the frontend, with PHP and MySQL for backend operations, enabling real-time order management and data storage</li>
-                        <li><b>Seamless User Experience:</b> Design an intuitive interface that simplifies the ordering process, reduces cognitive load, and ensures accessibility across different devices</li>
-                    </ol>
-                    <p>
-                        With these objectives in mind, our team followed a structured development process to deliver a functional, accessible, and efficient mobile ordering platform.
-                    </p>
-                </div>
-            </div>
+        <section id="context-challenge" class="container-fluid study-section" aria-label="Case Study Context and Challenge">
+            <h2 class="color-accent-green" >CONTEXT &amp; CHALLENGE</h2>
+            <article class="case-study-sect" aria-label="Project Background Subsection">
+                <h4 class="color-accent-blue">PROJECT BACKGROUND</h4>
+                <p class="text-color-dark">
+                    My personal portfolio website is consolidates my work and accomplishments into one location to present to future employers and collaborators. It is important that my site be accessible to as many users as possible improve my career prospects and ensure all users have equal access to media. Over the span of 10 weeks, I worked individually to design, and develop my improved accessible website.
+                </p>
+                <p class="text-color-dark">
+                    The project operated within the constraints of academic guidelines, requiring the use of HTML, CSS, and JavaScript to produce a functional prototype. The improvements were designed to fit within the existing established branding. My process included multiple design and development phases, culminating in a final build that will soon be generally incorporated into the main site infrastructure.
+                </p>
+            </article>
+            <article class="case-study-sect" aria-label="The Problem Subsection">
+                <h4 class="color-accent-blue">THE PROBLEM</h4>
+                <p class="text-color-dark">
+                    Currently, my personal site is in need of improvements to better meet the needs of all users. Structurally, it uses many div and span classes that are not user friendly for those with screen readers. The color contrast can be improved to meet a higher level of Accessibility Standards and the fonts can be updated to better adapt to users at higher levels of zoom. WebAIM's Web Accessibility Evaluation Tool gave the current site a 5.3 out of 10.
+                </p>
+                <img class="img-fluid" src="../images/accessibility/Inital-Score.png" alt="Inital score recieved from WebAIM's WAVE showing 5.3/10">
+            </article>
+            <article class="case-study-sect" aria-label="Goals and Objectives Subsection">
+                <h4 class="color-accent-blue">GOALS &amp; OBJECTIVES</h4>
+                <p class="text-color-dark">The success of this project was defined by achieving the following tangible goals:</p>
+                <ol>
+                    <li class="text-color-dark"><b>Higher Color Contrast Standards:</b> Meet WCAG AAA Standards for all text across site pages.</li>
+                    <li class="text-color-dark"><b>Screen Reader Accessibility:</b> Utilize ARIA labels, semantic HTML, heading hierarchies, and alt text across site for users navigating with screen readers.</li>
+                    <li class="text-color-dark"><b>Improved Keyboard Navigation:</b> Incorporate skip buttons for navigation sections with 3+ links.</li>
+                    <li class="text-color-dark"> <b>Text Legibility and Zoom:</b> Ensure text resizes on zoom without breaking the website design and improve text spacing for improved legibility</li>
+                </ol>
+                <p class="text-color-dark">
+                    With these objectives in mind, I can holistically improve the user experience of my site for a more diverse range of users ensuring my work is visible to all.
+                </p>
+            </article>
         </section>
 
-        <section id="process" class="container-fluid study-section">
-            <div class="page-title">
-                <h2 class="color-accent-red">PROCESS &amp; INSIGHT</h2>
-            </div>
-            <div class="case-study-sect">
-                <h4 class="color-accent-blue">STYLE GUIDE</h4>
-                <p>
-                    Pulling from the original designs created in IDM 216, Interaction Design I, we developed a style guide to explore the site color scheme, fonts, and branding. As a developer I used this guide to style the color schemes, typography, and reusable components in the CSS. Having a consistent branding plan and all my assets in one place helped streamline the front-end development process.
+        <section id="process" class="container-fluid study-section" aria-label="Case Study Process and Insight">
+            <h2 class="color-accent-green">PROCESS &amp; INSIGHT</h2>
+            <article class="case-study-sect" aria-label="Color Contrast Subsection">
+                <h4 class="color-accent-blue">COLOR CONTRAST</h4>
+                <p class="text-color-dark">
+                    Pulling from the original site color scheme I tested and improved the color contrast for all color pairings. I tested the color pairings using
+                    <a href="https://vispero.com/lp/color-contrast-checker/" target="_blank" aria-label="Vispero's Color Contrast Checker — opens in a new tab">Vispero's Colour Contrast Analyser (CCA)</a> and the
+                    <a href="https://wave.webaim.org/" target="_blank" aria-label="WebAIM WAVE Tool — opens in a new tab">WebAIM WAVE Tool</a> to ensure compliance with
+                    <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank" aria-label="WCAG 2 Guidelines — opens in a new tab">WCAG Level AAA</a> for all text in use. Text is also aligned with
+                    <a href="https://github.com/Myndex/SAPC-APCA/" target="_blank" aria-label="Accessible Perceptual Contrast Algorithm — opens in a new tab">APCA (Accessible Perceptual Contrast Algorithm)</a> which is a Candidate Contrast Method for WCAG 3.
+                    Contrast ratios are a minimum of 7:1 for body/small text, 4.5:1 for large text, and 3:1 for non-text and UI elements. Additionally, color is not used as the only means of communication instead it is used in combination with the text content and iconography.
                 </p>
-                
-                <img class="img-fluid" src="../images/kims/StyleGuide.png" alt="">
-            </div>
-            <div class="case-study-sect">
-                <h4 class="color-accent-blue">ALPHA</h4>
-                <p>
-                    The alpha build references the high-fidelity Figma designs that had undergone one round of usability testing. To begin the development process we first coded all the critical path pages in HTML and CSS. We used one menu item as a template to help plan the structure and ensure my media queries for responsive designs worked as intended. The only database integration in the alpha was used to populate the menu items on main.php. This version of the project was considered our Alpha, which included final images, CSS stylized Buttons, Menus, Forms, and Navigation between all pages.
-                </p>
-                
-                <img class="img-fluid" src="../images/kims/alpha.png" alt="">
-            </div>
-            <div class="case-study-sect">
-                <h4 class="color-accent-blue">BETA</h4>
-                <p>After the designers had conducted another round of usability testing with the Alpha build we began to work on the Beta build. We made changes to many of the static pages based on the testing results, but overall we received positive feedback and felt confident proceeding to develop more features. For the Beta, we began to incorporate PHP into the HTML and CSS template pages to allow for database integration. This allows users to select items from the menu, see the item details, and add items to the cart. In the cart, the subtotal, taxes, and total are dynamically calculated. After checking out the user receives a receipt with a prominent order number. Finally, we integrated microinteractions created by our secondary developer across the PHP pages.
-                </p>
-                <img class="img-fluid" src="../images/kims/beta.png" alt="">
-    
-            </div>
-        </section>
-
-        <section id="solution" class="container-fluid study-section">
-            <div class="page-title">
-                <h2 class="color-accent-red">SOLUTION</h2>
-            </div>
-            <div class="case-study-sect">
-                <p>
-                    The designers conducted a final round of testing using the beta build. We incorporated some minor suggestions from this testing into the final build, but overall the functionality worked as intended and only needed minor improvements. We incorporated additional features like diet filters in the menu and customization options on each menu item. We also went in and fixed minor PHP oversights like the ability to checkout without any items in the cart and the ability to checkout without selecting a payment method.
-                    <br><br>
-                    The final completed site allows dynamic menu browsing, displaying recipes with their accompanying images and information from the database. A user can add items to their cart and checkout. The application as a whole adapts to mobile screen sizes, and is best viewed on a mobile device or desktop phone simulator.
-                </p>
-            </div>
+                <img class="img-fluid" src="../images/accessibility/Accessible-Options2.png" alt="Accessible color pairings in the system sorted by standard body, large text, and ui elements">
+                <img class="img-fluid" src="../images/accessibility/Robust-Palette2.png" alt="Robust Color Scheme showing all colorson the site sorted into accents, neutral, and ui elements">
             
-        </section>
-        <section id="results" class="container-fluid study-section">
-            <div class="page-title">
-                <h2 class="color-accent-red">RESULTS</h2>
-            </div>
-            <div class="case-study-sect">
-                <p>
-                    The final iteration of the Kim’s Dragon mobile ordering web app successfully met its objectives, providing a fully functional prototype that allowed users to browse menu items, apply dietary filters, customize orders, and complete transactions with a streamlined checkout process. Usability testing validated the effectiveness of our design, leading to minor refinements such as error handling for empty carts and required payment selections. The project not only improved the food truck’s potential customer engagement but also demonstrated the viability of a scalable, real-world solution for small food businesses. The application adapts across mobile devices, ensuring accessibility for a wide range of users.
+            </article>
+            <article class="case-study-sect" aria-label="Improved Keyboard Navigation Subsection">
+                <h4 class="color-accent-blue">IMPROVED KEYBOARD NAVIGATION</h4>
+                <p class="text-color-dark">
+                    By changing the content order to be more meaningful I improved the keyboard navigation experience. All site functionality is operable through a keyboard alone. Additionally, on focus additional content remains visible until the focus trigger is removed and focus highlights are visible against system colors. Finally, several hidden buttons can be used to bypass repetitive content or links in groups of more than three.
+                </p>    
+            </article>
+            <article class="case-study-sect" aria-label="Screen Reader Optimization Subsection">
+                <h4 class="color-accent-blue">SCREEN READER OPTIMIZATION</h4>
+                <p class="text-color-dark">
+                    To optimize the site for a screen reader the content was restructured using semantic HTML to better identify the regions of the page. Values like H1 through H6 were ordered properly across the pages. ARIA labels were also incorporated to aid in identification of elements. All important image content contains alt text to describe image content. On several pages non-text content that is pure decoration is implemented in a way that it can be ignored by assistive technology.
                 </p>
-            </div>
-            
-            
+                <img class="img-fluid" src="../images/accessibility/Screen-Reader-Test.png" alt="Screenshot showing screenreader testing with the accessible elements visible in dev tools">
+            </article>
+            <article class="case-study-sect" aria-label="Text and Zoom Subsection">
+                <h4 class="color-accent-blue">TEXT AND ZOOM</h4>
+                <p class="text-color-dark">
+                    By improving general text readability with relative text measurements like rem and vw text content can be resized up to 200% without affecting content presentation or functionality. Adjustments to text size, letter spacing, and line spacing ensures the visual presentation of the text is legible for all users.
+                </p>    
+            </article>
+        </section>
+
+        <section id="solution" class="container-fluid study-section" aria-label="Case Study Solution">
+            <h2 class="color-accent-green">SOLUTION</h2>
+            <p class="text-color-dark">
+                The culmination of these accessibility improvements is this final portfolio website. While developing these updates I wanted to ensure I was able to maintain the brand identity I had already established even if changing colors to better comply with WCAG standards. Try running the
+                <a href="https://wave.webaim.org/" target="_blank" aria-label="WebAIM WAVE Tool — opens in a new tab">WebAIM WAVE Assessment</a> to see the improved 10/10 score.
+            </p>
+            <article class="contents-flex">
+                <button type="button" class="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover case-study-btn" onclick="window.open('https://oknestaut.com/accessibilityfinal/', '_blank')">
+                    <h4 class="btn-text color-tan">Final Site</h4>
+                </button>
+                <button type="button" class="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover case-study-btn" onclick="window.open('https://github.com/OliviaKnestaut/oknestaut', '_blank')">
+                    <h4 class="btn-text color-tan">Project Github</h4>
+                </button>
+            </article>
+        </section>
+        <section id="results" class="container-fluid study-section" aria-label="Case Study Results">
+            <h2 class="color-accent-green">RESULTS</h2>
+            <p class="text-color-dark">
+                This final iteration of my personal portfolio website successfully met its objectives, providing higher contrast colors, improved keyboard navigation, screen reader optimization, and text legibility on zoom. This project improves the my portfolios reach by ensuring accessibility for a wide range of users. I have plans to expand this functionality to all site pages and content.
+            </p>
         </section>
 
         <footer id="footer" class="container-fluid justify-content-center" aria-label="Footer">       
@@ -186,6 +180,7 @@
                 srcset="../images/general/lower-absract-full-row.svg">
                 <img class="img-fluid abstract-img"
                 src="../images/general/lower-absract-mobile-row.svg"
+                aria-hidden="true"
                 alt="Random colorful abstract shapes inspired by riograph prints">
             </picture>
             <row class="row align-items-center justify-content-center footer bg-accent-purple">
