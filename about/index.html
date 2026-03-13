@@ -30,42 +30,48 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/photography.css">
+    <link rel="stylesheet" href="../css/dimbox.min.css">
 </head>
-<body>
+
+<body id="page-content">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQ2ZTLKN"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="navbar navbar-expand-sm navbar-light">
-        <a class="navbar-brand" href="..">
-            <img src="../images/general/oknestaut_logo.svg" class="d-inline-block align-top nav-logo" alt="">
+    <a href="#main-content" class="skip-link header-link color-accent-red-hover" aria-label="Skip to Main Content Link">
+        Skip to Main Content
+    </a>
+    <nav class="navbar navbar-expand-sm navbar-light" aria-label="Site Navigation Bar">
+        <a class="navbar-brand" href=".." aria-label="OKnestaut Home Page">
+            <img src="../images/general/oknestaut_logo-2.svg" class="nav-logo d-inline-block align-top" alt="Logo with a ladybug as the letter O in  OKnestaut">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Mobile Navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <section class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="mr-auto"></div>
-            <ul class="navbar-nav my-2 my-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href=".." id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO<span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav my-2 my-lg-0" aria-label="Primary Navigation Items">
+                <li class="nav-item dropdown" aria-label="Toggle Portfolio Navigation Dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
                     <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="..">CASE STUDIES</a>
-                        <a class="dropdown-item" href="../photography/">PHOTOGRAPHY</a>
-                        <a class="dropdown-item" href="../design">DESIGN & MEDIA</a>
+                        <a class="dropdown-item" href=".." aria-label="Case Studies Navigation Link">CASE STUDIES</a>
+                        <a class="dropdown-item" href="../photography" aria-label="Photography Navigation Link">PHOTOGRAPHY</a>
+                        <a class="dropdown-item" href="../design" aria-label="Design and Media Navigation Link">DESIGN &amp; MEDIA</a>
                     </div>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active" aria-label="About Navigation Link">
                     <a class="nav-link" href="../about">ABOUT</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active" aria-label="Contact Navigation Link">
                     <a class="nav-link" href="../resume">RESUME</a>
                 </li>
             </ul>
-        </div>
+        </section>
     </nav>
 
-    <header class="container-fluid justify-content-center">
+    <header id="main-content" class="container-fluid justify-content-center" aria-label="Header Site Banner">
         <picture>
             <source
             media="(min-width: 576px)"
@@ -73,111 +79,170 @@
 
             <img class="img-fluid abstract-img"
             src="../images/general/upper-abstract-2-rows.svg"
-            alt="random colorful absract shapes">
+            aria-hidden="true"
+            alt="Random colorful abstract shapes inspired by riograph prints">
         </picture>
     </header>
-    <section class="row col-sm about">
-        <div class="col-12 col-md-8 about row justify-content-center">
-            <div>
-                <h1 class="color-primary-accent">ABOUT ME</h1>
-                <h5 class="color-secondary-accent">OLIVIA KNESTAUT</h5>
-            </div>
-            
-            <p>
-                As a UX/UI Designer and Full Stack Developer I am passionate about creativity, problem-solving, and inclusive design. One of my main goals is to get involved with accessibility in media. I want to promote the consideration of a range of disabilities throughout every step of media creation.
-            </p>
-            <p>
-                Currently, I am pursuing a Bachelor of Science in User Experience &amp; Interaction Design (UXID) with a minor in Graphic Design at Drexel University. With this degree I hope to build towards a mastery of full-stack development and design to help add meaningful, accessible media to the world.
-            </p>
-            <p>
-                Beyond the screen, I find inspiration in the natural world. Whether I'm photographing my way across America's National Parks or nurturing my ever-growing collection of houseplants, I love connecting with nature and capturing its beauty. Engaging with nature in these ways fuels my creativity and reminds me of the importance of sustainable design in all areas of life.
-            </p>
-        </div>
-        <img class="col-12 col-md-4" src="../images/about/ok-about.jpg" alt="">
-    </section>
-    <section class="container-fluid col skills">
-        <h2 class="color-primary-accent justify-content-center">SKILLS</h2>
-        <div class=" d-flex justify-content-center align-items-center">
-            <img src="../images/about/Figma-Icon.png" alt="">
-            <img src="../images/about/Illustrator-Icon.png" alt="">
-            <img src="../images/about/Photoshop-Icon.png" alt="">
-            <img src="../images/about/InDesign-Icon.png" alt="">
-            <img src="../images/about/AfterEffects-Icon.png" alt="">
-            <img src="../images/about/Premiere-Icon.png" alt="">
-            <img src="../images/about/Audition-Icon.png" alt="">
-            <img src="../images/about/Bridge-Logo.png" alt="">
-            <img src="../images/about/Wordpress-Logo.png" alt="">
-        </div>
-        <div class=" d-flex justify-content-center align-items-center">
-            <img src="../images/about/HTML-Icon.png" alt="">
-            <img src="../images/about/CSS-Icon.png" alt="">
-            <img src="../images/about/JS-Icon.png" alt="">
-            <img src="../images/about/Typescript-Icon.png" alt="">
-            <img src="../images/about/React-Icon.png" alt="">
-            <img src="../images/about/NodeJS-Icon.png" alt="">
-            <img src="../images/about/PHP-Icon.png" alt="">
-            <img src="../images/about/Python-Icon.png" alt="">
-            <img src="../images/about/Java-Icon.png" alt="">
-            <img src="../images/about/GraphQL-Icon.png" alt="">
-        </div>
-    </section>
-    <section class="contact">
-        <h2 class="color-primary-accent justify-content-center">CONTACT</h2>
-        <div class="row col-sm">
-            <img class="col-12 col-md-7" src="../images/about/ok-about-2.jpg" alt="">
-            <div class="col-12 col-md-5 row d-flex justify-content-around align-items-center contact-info">
-                <div class="row align-items-center">
-                    <img class="icon" src="../images/about/location_icon_pink.svg" alt="location pin icon">
-                    <h4 class="color-decorative-pink">Philadelphia, PA</h4>
-                </div>
-                <p>
-                    I am always looking for collaborations and project ideas. If you want to chat about design, books, plants, or anything else, don’t hesitate to reach out.
+
+    <main aria-label="Site Main Content">
+        <section class="row col-sm about" aria-label="About Me Section">
+            <article class="col-12 col-md-8 about row justify-content-center" aria-label="About Text Content">
+                <header aria-label="About Header and Name">
+                    <h1 class="color-accent-red">ABOUT ME</h1>
+                    <h2 class="tagline color-accent-blue">OLIVIA KNESTAUT</h2>
+                </header>
+                
+                <p class="text-color-dark">
+                    As a UX/UI Designer and Full Stack Developer I am passionate about creativity, problem-solving, and inclusive design. One of my main goals is to get involved with accessibility in media. I want to promote the consideration of a range of disabilities throughout every step of media creation.
                 </p>
-                <div>
-                    <a href="https://www.instagram.com/ollywhelmed/" target="_blank"><img class="contact-icon" src="../images/about/instagram_icon_blue.svg" alt="instagram icon"></a>
-                    <a href="mailto:olivia.knestaut@gmail.com"><img class="contact-icon" src="../images/about/mail_icon_blue.svg" alt="email icon"></a>
-                    <a href="https://github.com/OliviaKnestaut" target="_blank"><img class="contact-icon" src="../images/about/github_icon_blue.svg" alt="github icon"></a>
-                    <a href="https://www.linkedin.com/in/oliviaknestaut/" target="_blank"><img class="contact-icon" src="../images/about/linkedin_icon_blue.svg" alt="linkedin icon"></a>
-                </div>
-            </div>
-        </div>
-    </section>
+                <p class="text-color-dark">
+                    Currently, I am pursuing a Bachelor of Science in User Experience &amp; Interaction Design (UXID) with a minor in Graphic Design at Drexel University. With this degree I hope to build towards a mastery of full-stack development and design to help add meaningful, accessible media to the world.
+                </p>
+                <p class="text-color-dark">
+                    Beyond the screen, I find inspiration in the natural world. Whether I'm photographing my way across America's National Parks or nurturing my ever-growing collection of houseplants, I love connecting with nature and capturing its beauty. Engaging with nature in these ways fuels my creativity and reminds me of the importance of sustainable design in all areas of life.
+                </p>
+            </article>
+            <img class="col-12 col-md-4" src="../images/about/ok-about.jpg" alt="Portrait of Olivia Knestaut sitting outside on a rock wall with greenery in the background">
+        </section>
 
+        <section class="container-fluid col skills" aria-label="Involvement Section">
+            <h2 class="color-accent-red justify-content-center">CURRENTLY INVOLVED WITH...</h2>
+            <a href="#recent-activities" class="skip-link about-skip-link color-accent-blue-hover" aria-label="Skip Involvement Links">
+                Skip Involvement Links
+            </a> 
+            <row class=" d-flex justify-content-center align-items-center bigger-icons">
+                <a href="https://www.drexelcab.com/" target="_blank" aria-label="Drexel Campus Activities Board Website — opens in a new tab"><img src="../images/about/CAB_FullColor.png" alt="Drexel Campus Activities Board Logo"></a>
+                <a href="https://www.instagram.com/drexelchi/?hl=en" target="_blank" aria-label="@drexelchi on Instagram — opens in a new tab"><img src="../images/about/drexel-chi-ux.png" alt="Drexel Chi UX Club Logo"></a>
+                <a href="https://www.instagram.com/drexeldragonfly/" target="_blank" aria-label="@drexeldragonfly on Instagram — opens in a new tab"><img src="../images/about/dragonfly-logo.png" alt="Dragonfly Concert 2025 Logo"></a>
+            </row>
+            <row class=" d-flex justify-content-center align-items-center">
+                <a href="https://rewritingthecode.org/" target="_blank" aria-label="Rewriting the Code Website — opens in a new tab"><img src="../images/about/RTC__Logo_Orange_Logo.png" alt="Rewriting the Code Logo"></a>
+                <a href="https://ncwit.org/" target="_blank" aria-label="National Center for Women and Information Technology Website — opens in a new tab"><img src="../images/about/ncwit.png" alt="National Center for Women and Information Technology Logo"></a>
+                <a href="https://girlswhocode.com/" target="_blank" aria-label="Girls Who Code Website — opens in a new tab"><img src="../images/about/Girls_Who_Code_Logo.png" alt="Girls Who Code Logo"></a>
+            </row>
+        </section>
+        <section id="recent-activities" class="container-fluid col" aria-label="Recent Activities Section"> 
+            <h2 class="color-accent-red justify-content-center">LATELY I'VE BEEN...</h2>  
+            <a href="#previous-jobs" class="skip-link about-skip-link color-accent-blue-hover" aria-label="Skip Recent Activities Photo Gallery">
+                Skip Recent Activities Photo Gallery
+            </a> 
+            <figure class="photo-grid-right" aria-label="Photo Gallery Pt.1">
+                <a class="vert-img-1" href="../images/about/Olivia-Leader-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Leading Activities on Campus, Philadelphia, PA, May 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Leading activities on campus Image — click to view larger">
+                    <img srcset="../images/about/Olivia-Leader-Small.jpg 1x,
+                                        ../images/about/Olivia-Leader-Large.jpg 2x"
+                                    src="../images/about/Olivia-Leader-Small.jpg"
+                                    alt="Olivia with her undergraduate student leader of the year award">
+                </a>  
+                <a class="vert-img-2" href="../images/about/Olivia-Ski-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Skiing at Blue Mountain, Palmerton, PA,  December 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Skiing at Blue Mountain Image — click to view larger">
+                    <img srcset="../images/about/Olivia-Ski-Small.jpg 1x,
+                                        ../images/about/Olivia-Ski-Large.jpg 2x"
+                                    src="../images/about/Olivia-Ski-Small.jpg"
+                                    alt="Olivia skiing at Blue Mountain">
+                </a>
+                <a class="horiz-img" href="../images/about/Olivia-Museum-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Visiting Art Museums, Wadsworth Atheneum Museum of Art, Hartford, CT, October 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Visiting the Wadsworth Atheneum Museum of Art Image — click to view larger">
+                    <img srcset="../images/about/Olivia-Museum-Small.jpg 1x,
+                                        ../images/about/Olivia-Museum-Large.jpg 2x"
+                                    src="../images/about/Olivia-Museum-Small.jpg"
+                                    alt="Olivia looking at art in the Wadsworth Atheneum Museum of Art">
+                </a>
+            </figure>
+            <figure class="photo-grid-left" aria-label="Photo Gallery Pt. 2">
+                <a class="horiz-img" href="../images/about/Olivia-PHS-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Taking Award Winning Photography, PHS Flower Show, Philadelphia, PA, March 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Taking Award Winning Photography Image — click to view larger">
+                    <img srcset="../images/about/Olivia-PHS-Small.jpg 1x,
+                                        ../images/about/Olivia-PHS-Large.jpg 2x"
+                                    src="../images/about/Olivia-PHS-Small.jpg"
+                                    alt="Olivia pointing at her ribbon winning photography at the PHS Flower Show 2025"> 
+                </a>
+                <a class="vert-img-1" href="../images/about/Olivia-WagWatch-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Playing with Dogs, Wag Watch Philadelphia, PA, September 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Playing with dogs at Wag Watch Image — click to view larger">
+                    <img srcset="../images/about/Olivia-WagWatch-Small.jpg 1x,
+                                        ../images/about/Olivia-WagWatch-Large.jpg 2x"
+                                    src="../images/about/Olivia-WagWatch-Small.jpg"
+                                    alt="Olivia sitting in a pile of dogs ar Wag Watch the doggie daycare">
+                </a>
+                <a class="vert-img-2" href="../images/about/Olivia-Shenandoah-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Hiking in Shenandoah, Shenandoah National Park, VA,  October 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Hiking in Shenandoah National Park Image — click to view larger">
+                    <img srcset="../images/about/Olivia-Shenandoah-Small.jpg 1x,
+                                        ../images/about/Olivia-Shenandoah-Large.jpg 2x"
+                                    src="../images/about/Olivia-Shenandoah-Small.jpg"
+                                    alt="Olivia hiking in the woods at Shenandoah National Park">
+                </a>             
+            </figure>
+        </section>
 
-    
-    <div class="container-fluid justify-content-center">
+        <section id="previous-jobs" class="container-fluid col skills" aria-label="Previous Jobs Section">
+            <h2 class="color-accent-red justify-content-center">MAYBE YOU SAW ME AT...</h2>
+            <a href="#footer" class="skip-link about-skip-link color-accent-blue-hover" aria-label="Skip Previous Jobs Links">
+                Skip Previous Jobs Links
+            </a> 
+            <row class=" d-flex justify-content-center align-items-center bigger-icons">
+                <a href="https://www.intealth.org/" target="_blank" aria-label="Intealth Website — opens in a new tab"><img class="invert-img2" src="../images/about/logo-intealth.png" alt="Intealth Logo"></a>
+                <a href="https://www.newcastlede.gov/2423/Libraries" target="_blank" aria-label="New Castle County Libraries Website — opens in a new tab"><img class="invert-img" src="../images/about/NCC_Libraries.png" alt="New Castle County Libraries Logo"></a>
+                <a href="https://www.rightoneducation.com/" target="_blank" aria-label="RightOn! Education Website — opens in a new tab"><img src="../images/about/RightOn-Circle-512x512.png" alt="RightOn! Education Logo"></a>
+                <a href="https://www.amazon.com/" target="_blank" aria-label="Amazon Website — opens in a new tab"><img class="invert-img" src="../images/about/Amazon_logo.png" alt="Amazon Logo"></a>
+            </row>
+        </section>
+
+        <section class="contact" aria-label="Contact Section">
+            <h2 class="color-accent-red justify-content-center">CONTACT</h2>
+            <row class="row col-sm">
+                <img class="col-12 col-md-7" src="../images/about/ok-about-2.jpg" alt="Olivia looking up at a huge tree while hiking in Mount Rainier National Park, WA">
+                <article class="col-12 col-md-5 row d-flex justify-content-around align-items-center contact-info" aria-label="Contact Information">
+                    <row class="row align-items-center">
+                        <img class="icon" src="../images/about/location_icon_pink.svg" alt="location pin icon">
+                        <h4 class="color-accent-purple">Philadelphia, PA</h4>
+                    </row>
+                    <p class="text-color-dark">
+                        I am always looking for collaborations and project ideas. If you want to chat about design, books, plants, or anything else, don't hesitate to reach out.
+                    </p>
+                    <figure aria-label="Contact Links">
+                        <a href="#footer" class="skip-link contact-skip-link color-accent-blue-hover" aria-label="Skip Contact Links">
+                            Skip Contact Links
+                        </a> 
+                        <a href="https://www.instagram.com/ollywhelmed/" target="_blank" aria-label="@ollywhelmed on Instagram — opens in a new tab"><img class="contact-icon" src="../images/about/instagram_icon_blue.svg" alt="instagram icon"></a>
+                        <a href="mailto:olivia.knestaut@gmail.com" aria-label="Email olivia.knestaut@gmail.com"><img class="contact-icon" src="../images/about/mail_icon_blue.svg" alt="email icon"></a>
+                        <a href="https://github.com/OliviaKnestaut" target="_blank" aria-label="OliviaKnestaut on GitHub — opens in a new tab"><img class="contact-icon" src="../images/about/github_icon_blue.svg" alt="github icon"></a>
+                        <a href="https://www.linkedin.com/in/oliviaknestaut/" target="_blank" aria-label="Olivia Knestaut on LinkedIn — opens in a new tab"><img class="contact-icon" src="../images/about/linkedin_icon_blue.svg" alt="linkedin icon"></a>
+                    </figure>
+                </article>
+            </row>
+        </section>
+    </main>
+
+    <footer id="footer" class="container-fluid justify-content-center" aria-label="Footer">       
         <picture>
             <source
             media="(min-width: 576px)"
             srcset="../images/general/lower-absract-full-row.svg">
-
             <img class="img-fluid abstract-img"
             src="../images/general/lower-absract-mobile-row.svg"
-            alt="random colorful absract shapes">
+            aria-hidden="true"
+            alt="Random colorful abstract shapes inspired by riograph prints">
         </picture>
-        <div class="row align-items-center justify-content-center footer bg-decorative-pink">
-            <div class="row align-items-center text-color-light">
+        <row class="row align-items-center justify-content-center footer bg-accent-purple">
+            <a href="#page-content" class="skip-link footer-skip-link color-tan-hover" aria-label="Skip Footer Links">
+                Skip Footer Links
+            </a> 
+            <row class="row align-items-center text-color-light">
                 <img class="icon" src="../images/icons/location_icon.svg" alt="location pin icon">
                 <p>Philadelphia, PA</p>
-            </div>
-            <a class="row align-items-center text-color-light footer-link" href="mailto:olivia.knestaut@gmail.com">
+            </row>
+            <a class="row align-items-center text-color-light footer-link" aria-label="Email olivia.knestaut@gmail.com" href="mailto:olivia.knestaut@gmail.com">
                 <img class="icon" src="../images/icons/mail_icon.svg" alt="email icon">
-                <p>olivia.knestaut@gmail.com</p>
+                <span>olivia.knestaut@gmail.com</span>
             </a>
-            <a href="https://www.instagram.com/ollywhelmed/" target="_blank" class="row align-items-center text-color-light footer-link">
+            <a href="https://www.instagram.com/ollywhelmed/" target="_blank" aria-label="@ollywhelmed on Instagram — opens in a new tab" class="row align-items-center text-color-light footer-link">
                 <img class="icon" src="../images/icons/instagram_icon.svg" alt="instagram icon">
-                <p>@ollywhelmed</p>
+                <span>@ollywhelmed</span>
             </a>
-            <a href="https://www.linkedin.com/in/oliviaknestaut/" target="_blank" class="row align-items-center text-color-light footer-link">
+            <a href="https://www.linkedin.com/in/oliviaknestaut/" target="_blank" aria-label="oliviaknestaut on LinkedIn — opens in a new tab" class="row align-items-center text-color-light footer-link">
                 <img class="icon" src="../images/icons/linkedin_icon.svg" alt="linkedin icon">
-                <p>oliviaknestaut</p>
+                <span>oliviaknestaut</span>
             </a>
-            <a href="https://github.com/OliviaKnestaut" target="_blank" class="row align-items-center text-color-light footer-link">
+            <a href="https://github.com/OliviaKnestaut" target="_blank" aria-label="OliviaKnestaut on GitHub — opens in a new tab" class="row align-items-center text-color-light footer-link">
                 <img class="icon" src="../images/icons/github_icon.svg" alt="github icon">
-                <p>OliviaKnestaut</p>
+                <span>OliviaKnestaut</span>
             </a>
-        </div>
-    </div>
+        </row>
+    </footer>
 
     <a href="#" class="go-top">
         <img src="../images/icons/back-to-top.svg" alt="">
@@ -188,6 +253,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="../js/dimbox.min.js"></script>
     <script src="../js/back-to-top.js"></script>
 </body>
 </html>
