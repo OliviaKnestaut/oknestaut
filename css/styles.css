@@ -313,6 +313,20 @@ button span{
 .contents-skip-link:focus {
     left: 100px;
 }
+.photography-skip-link {
+    background: var(--accent-blue);
+    color: var(--background) !important;
+    text-decoration: none !important;
+    left: -6000px;
+}
+.photography-skip-link:focus {
+    left: 100px;
+    margin-top: -4rem;
+    width: fit-content;
+}
+.photo-button-grid .photography-skip-link:focus{
+    margin-top: -8rem;
+}
 
 
 
@@ -665,6 +679,33 @@ nav.contents{
 
 
 
+/* ============== RESUME ============== */
+
+.resume-section{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.resume-section skills-parent, .skills-section{
+    max-width: 900px;
+}
+.resume-section p, .resume-section ul, .resume-section h6{
+    margin: 0.25rem 2rem !important;
+}
+.resume-section article{
+    margin: 0.5rem !important;
+    max-width: 800px;
+}
+.resume-skills{
+    width: 250px;
+    margin: 0 !important;
+}
+.skills-parent{
+    justify-content: center;
+}
+
+
+
 
 
 
@@ -674,30 +715,7 @@ nav.contents{
 UPDATES NEEDED
 
 */
-/*RESUME*/
-.resume-section{
-    max-width: 800px;
-    margin: 0 auto;
-}
-.resume-section div{
-    max-width: 800px;
-}
-.resume-section skills-parent, .skills-section{
-    max-width: 900px;
-}
-.resume-section p, .resume-section ul, .resume-section h6{
-    margin: 0.25rem 2rem !important;
-}
-.resume-section div{
-    margin: 0.5rem !important;
-}
-.resume-skills{
-    width: 250px;
-    margin: 0 !important;
-}
-.skills-parent{
-    justify-content: center;
-}
+
 
 
 
