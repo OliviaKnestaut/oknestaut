@@ -219,6 +219,11 @@ picture, .abstract-img{
     width: 100%;
     height: auto;
 }
+picture{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /* BUTTONS */
 
@@ -518,15 +523,59 @@ section.about{
 
 /* ============== CASE STUDIES ============== */
 
+#kims-img{
+    background-image: url(../images/home/Kim-Dragon-Cover.png);
+    height: 58vw;
+}
+#righton-img{
+    background-image: url(../images/home/RightOn-Cover.png);
+    height: 42vw;
+}
+#letterboxd-img{
+    background-image: url(../images/home/Letterboxd-Cover2.png);
+    height: 58vw;
+}
+#accessibility-img{
+    background-image: url(../images/home/Portfolio-Cover.png);
+    height: 45vw;
+}
+#kims-img figcaption{
+    background-color: rgba(181, 81, 42, 0.9);
+}
+#righton-img figcaption{
+    background-color: rgba(113 , 87, 144, 0.9);
+}
+#letterboxd-img figcaption{
+    background-color: rgba(118 , 172, 182, 0.9);
+}
+#accessibility-img figcaption{
+    background-color: rgba(73 , 106, 37, 0.9);
+}
+
+/* Archived */
+
+#tessera-img{
+    background-image: url(../images/home/Tessera-Cover.png);
+    height: 58vw;
+}
+#riverfront-img{
+    background-image: url(../images/home/RiverfrontWilm-Cover.png);
+    height: 46vw;
+}
+#tessera-img figcaption{
+    background-color: rgba(211, 89, 44, 0.9);
+}
+#riverfront-img figcaption{
+    background-color: rgba(124 , 168, 53, 0.9);
+}
+
+/* Formatting */
+
 .case-study-header{
     width: 95%;
     margin: 10px auto;
 }
 
-#accessibility-img{
-    background-image: url(../images/home/Portfolio-Cover.png);
-    height: 45vw;
-}
 .case-study-title{
     background-position: center;
     background-repeat: no-repeat;
@@ -551,10 +600,6 @@ section.about{
 .micro-int-img{
     width: 300px;
     margin: 10px;
-}
-
-#accessibility-img figcaption{
-    background-color: rgba(73 , 106, 37, 0.9);
 }
 
 iframe{
@@ -677,6 +722,20 @@ nav.contents{
     padding: 5px 8px 4px 7px;
 }
 
+/* Letterboxd */
+.interaction-img{
+    width: 100%;
+}
+.interaction-img >img{
+    width: 100%;
+}
+.smaller > img{
+    width: 80%;
+}
+.info1 > img{
+    width: 75%;
+}
+
 
 
 /* ============== RESUME ============== */
@@ -706,80 +765,12 @@ nav.contents{
 
 
 
+/* ============== DESIGN & MEDIA ============== */
 
-
-
-
-/* 
-
-UPDATES NEEDED
-
-*/
-
-
-
-
-/* ============== CASE STUDIES ============== */
-
-#tessera-img{
-    background-image: url(../images/home/Tessera-Cover.png);
-    height: 58vw;
-}
-#kims-img{
-    background-image: url(../images/home/Kim-Dragon-Cover.png);
-    height: 58vw;
-}
-#riverfront-img{
-    background-image: url(../images/home/RiverfrontWilm-Cover.png);
-    height: 46vw;
-}
-
-#righton-img{
-    background-image: url(../images/home/RightOn-Cover.png);
-    height: 42vw;
-}
-
-#letterboxd-img{
-    background-image: url(../images/home/Letterboxd-Cover2.png);
-    height: 58vw;
-}
-
-.case-study-title div {
-    padding: 1.5vw 2.5vw;
-}
-.case-study-title div h1{
-    font-size: 8.5vw;
-    line-height: 9vw;
-}
-.microint-smaller{
-    font-size: 7vw !important;
-    line-height: 7.5vw !important;
-}
-.micro-int-img{
-    width: 300px;
-    margin: 10px;
-}
-#tessera-img div, #kims-img div{
-    background-color: rgba(211, 89, 44, 0.9);
-}
-#riverfront-img div{
-    background-color: rgba(124 , 168, 53, 0.9);
-}
-#righton-img div{
-    background-color: rgba(113 , 90, 149, 0.9);
-}
-#letterboxd-img div{
-    background-color: rgba(118 , 172, 182, 0.9);
-}
-
-/*Design & Media*/
 .art-section{
     margin: 1rem 0;
     width: 100%;
     justify-content: center;
-}
-.beetle{
-    width: 51%;
 }
 .collection, .object-text{
     width: 33%;
@@ -799,19 +790,11 @@ UPDATES NEEDED
 .poster-text{
     width: 65%;
 }
-.poly-head{
-    width: 44.5%;
-}
-
-.paul-rand{
-    width: 55%;
-}
-
-.beetle img, .stamp img, .poly-head img, .pin img, .collection img, .paul-rand img, .process img, .object-imgs img, .poster1 img, .poster2 img{
+.stamp img, .pin img, .collection img, .object-imgs img, .poster1 img, .poster2 img{
     width: 100%;
 }
 
-div.object-text, div.poster-text{
+figcaption.object-text, figcaption.poster-text{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -820,13 +803,7 @@ div.object-text, div.poster-text{
     padding-left: 12px;
 }
 
-@media screen and (max-width: 768px) {
-    
-    div.object-text, div.object-imgs, div.poster-text{
-        width: 100%;
-    }
-
-}
+/* Video Section*/
 
 .video-section{
     width: 100%;
@@ -837,9 +814,8 @@ div.object-text, div.poster-text{
 .video-section img{
     width: 100%;
     padding: 0 2rem;
-
 }
-.video-section > div > div {
+.video-section figcaption {
     width: 100%;
     padding: 2vw;
     padding-top: 1vw;
@@ -852,38 +828,6 @@ div.object-text, div.poster-text{
 .video-section h3{
     font-size: 6vw;
     line-height: 8vw;
-}
-.trans-secondary-accent{
-    background-color: rgba(118, 172, 182, 0.9);
-}
-.trans-decorative-pink{
-    background-color: rgba(206, 108, 158, 0.9);
-}
-.trans-decorative-green{
-    background-color: rgba(124, 168, 53, 0.9);
-}
-.trans-decorative-purple{
-    background-color: rgba(113, 90, 149, 0.9);
-}
-
-
-picture{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.interaction-img{
-    width: 100%;
-}
-.interaction-img >img{
-    width: 100%;
-}
-.smaller > img{
-    width: 80%;
-}
-.info1 > img{
-    width: 75%;
 }
 
 
@@ -1035,6 +979,11 @@ picture{
         width: 100%;
         height: 400px;
     }
+
+    figcaption.object-text, figcaption.poster-text{
+        width: 100%;
+    }
+
 }
 
 
