@@ -33,41 +33,44 @@
     <link rel="stylesheet" href="../css/photography.css">
     <link rel="stylesheet" href="../css/dimbox.min.css">
 </head>
-<body>
+<body id="page-content">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQ2ZTLKN"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="navbar navbar-expand-sm navbar-light">
-        <a class="navbar-brand" href="..">
-            <img src="../images/general/oknestaut_logo.svg" class="d-inline-block align-top nav-logo" alt="">
+    <a href="#main-content" class="skip-link header-link color-accent-red-hover" aria-label="Skip to Main Content Link">
+        Skip to Main Content
+    </a>
+    <nav class="navbar navbar-expand-sm navbar-light" aria-label="Site Navigation Bar">
+        <a class="navbar-brand" href=".." aria-label="OKnestaut Home Page">
+            <img src="../images/general/oknestaut_logo-2.svg" class="nav-logo d-inline-block align-top" alt="Logo with a ladybug as the letter O in  OKnestaut">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Mobile Navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <section class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="mr-auto"></div>
-            <ul class="navbar-nav my-2 my-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href=".." id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO<span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav my-2 my-lg-0" aria-label="Primary Navigation Items">
+                <li class="nav-item dropdown" aria-label="Toggle Portfolio Navigation Dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
                     <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="..">CASE STUDIES</a>
-                        <a class="dropdown-item" href="../photography/">PHOTOGRAPHY</a>
-                        <a class="dropdown-item" href="../design">DESIGN &amp; MEDIA</a>
+                        <a class="dropdown-item" href=".." aria-label="Case Studies Navigation Link">CASE STUDIES</a>
+                        <a class="dropdown-item" href="../photography" aria-label="Photography Navigation Link">PHOTOGRAPHY</a>
+                        <a class="dropdown-item" href="../design" aria-label="Design and Media Navigation Link">DESIGN &amp; MEDIA</a>
                     </div>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active" aria-label="About Navigation Link">
                     <a class="nav-link" href="../about">ABOUT</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active" aria-label="Contact Navigation Link">
                     <a class="nav-link" href="../resume">RESUME</a>
                 </li>
             </ul>
-        </div>
+        </section>
     </nav>
 
-    <header class="container-fluid justify-content-center">
+    <header id="main-content" class="container-fluid justify-content-center" aria-label="Header Site Banner">
         <picture>
             <source
             media="(min-width: 576px)"
@@ -75,448 +78,447 @@
 
             <img class="img-fluid abstract-img"
             src="../images/general/upper-abstract-2-rows.svg"
-            alt="random colorful absract shapes">
+            aria-hidden="true"
+            alt="Random colorful abstract shapes inspired by riograph prints">
         </picture>
-        <h1 class="color-primary-accent photog-title">PHOTOGRAPHY</h1>
+        <h1 class="color-accent-red photog-title">PHOTOGRAPHY</h1>
     </header>
 
-    <div class="photo-button-grid">
-        <a class="portrait-btn" href="#portraiture">
-            <p>PORTRAITURE</p>
-        </a>
-        <a class="nature-btn" href="#nature">
-            <p>NATURE</p>
-        </a>
-        <a class="arch-btn" href="#architecture">
-            <p>ARCHITECHTURE</p>
-        </a>
-        
-    </div>
+    <main aria-label="Photography Main Content">
+        <section class="photo-button-grid" aria-label="Photography Category Navigation Buttons">
+            <a href="#portraiture" class="skip-link photography-skip-link color-accent-blue-hover" aria-label="Skip Category Navigation Buttons">
+                Skip Category Navigation Buttons
+            </a> 
+            <a class="portrait-btn" href="#portraiture" aria-label="Jump to Portraiture Section Button">
+                <p>PORTRAITURE</p>
+            </a>
+            <a class="nature-btn" href="#nature" aria-label="Jump to Nature Section Button">
+                <p>NATURE</p>
+            </a>
+            <a class="arch-btn" href="#architecture" aria-label="Jump to Architecture Section Button">
+                <p>ARCHITECHTURE</p>
+            </a>
+        </section>
 
-    <section id="portraiture">
-        <div class="page-title">
-            <h2 class="color-primary-accent">PORTRAITURE</h2>
-        </div>
-        <div>
-            <div class="photo-grid-right">
-                <a class="vert-img-1" href="../images/photography/portraiture/Lake_Washington_2-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Lake Washington, Seattle, WA,  September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+        <section id="portraiture">
+            <h2 class="color-accent-red">PORTRAITURE</h2>
+            <a href="#nature" class="skip-link photography-skip-link color-accent-blue-hover" aria-label="Skip Portraiture Photo Gallery">
+                Skip Portraiture Photo Gallery
+            </a>
+            <figure class="photo-grid-right" aria-label="Portraiture Photo Gallery Pt.1">
+                <a class="vert-img-1" href="../images/photography/portraiture/Lake_Washington_2-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Lake Washington, Seattle, WA,  September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Lake Washington Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Lake_Washington_2-Small.jpg 1x,
                                         ../images/photography/portraiture/Lake_Washington_2-Large.jpg 2x"
                                     src="../images/photography/portraiture/Lake_Washington_2-Small.jpg"
                                     alt="Black and white, three boys playing on floating platform in the water at Lake Wahington">
                 </a> 
-                <a class="vert-img-2" href="../images/photography/portraiture/Medha+Will_3-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Medha and Will, Philadelphia, PA, September 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/portraiture/Medha+Will_3-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Medha and Will, Philadelphia, PA, September 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Medha and Will Sitting Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Medha+Will_3-Small.jpg 1x,
                                         ../images/photography/portraiture/Medha+Will_3-Large.jpg 2x"
                                     src="../images/photography/portraiture/Medha+Will_3-Small.jpg"
                                     alt="Medha and Will sitting together among plants">
                 </a>
-                <a class="horiz-img" href="../images/photography/portraiture/Tinashe_1-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Tinashe at Dragonfly 2024, Philadelphia, PA, October 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="horiz-img" href="../images/photography/portraiture/Tinashe_1-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Tinashe at Dragonfly 2024, Philadelphia, PA, October 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Tinashe at Dragonfly 2024 Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Tinashe_1-Small.jpg 1x,
                                         ../images/photography/portraiture/Tinashe_1-Large.jpg 2x"
                                     src="../images/photography/portraiture/Tinashe_1-Small.jpg"
                                     alt="Back lit profile image of Tinashe at Dragonfly 2024">
                 </a>
-            </div>
-            <div class="photo-grid-left">
-                <a class="horiz-img" href="../images/photography/portraiture/DU_Trebs_9-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel University Treblemakers ICCAs 2025 Performance, Philadelphia, PA, February 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-left" aria-label="Portraiture Photo Gallery Pt.2">
+                <a class="horiz-img" href="../images/photography/portraiture/DU_Trebs_9-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel University Treblemakers ICCAs 2025 Performance, Philadelphia, PA, February 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Drexel University Treblemakers ICCAs 2025 Image — click to view larger">
                     <img srcset="../images/photography/portraiture/DU_Trebs_9-Small.jpg 1x,
                                         ../images/photography/portraiture/DU_Trebs_9-Large.jpg 2x"
                                     src="../images/photography/portraiture/DU_Trebs_9-Small.jpg"
                                     alt="Shot down theater with Drexel University Treblemakers acapella group girls performing together on stage"> 
                 </a>
-                <a class="vert-img-1" href="../images/photography/portraiture/No_Kings_Flags-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="No Kings Day Protest, Philadelphia, PA, June 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-1" href="../images/photography/portraiture/No_Kings_Flags-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="No Kings Day Protest, Philadelphia, PA, June 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="No Kings Day Protest Image — click to view larger">
                     <img srcset="../images/photography/portraiture/No_Kings_Flags-Small.jpg 1x,
                                         ../images/photography/portraiture/No_Kings_Flags-Large.jpg 2x"
                                     src="../images/photography/portraiture/No_Kings_Flags-Small.jpg"
                                     alt="Two protesters wear American flags as capes as they listen to speakers at the No Kings Day Protest in front of the Philadelphia Art Museum">
                 </a>
-                <a class="vert-img-2" href="../images/photography/portraiture/Slayyyter_1-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Slayyyter at Dragonfly 2024, Philadelphia, PA, October 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/portraiture/Slayyyter_1-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Slayyyter at Dragonfly 2024, Philadelphia, PA, October 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Slayyyter at Dragonfly 2024 Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Slayyyter_1-Small.jpg 1x,
                                         ../images/photography/portraiture/Slayyyter_1-Large.jpg 2x"
                                     src="../images/photography/portraiture/Slayyyter_1-Small.jpg"
                                     alt="Slayyyter belting into the microphone at Dragonfly 2024">
                 </a>             
-            </div>
-            <div class="photo-grid-right">
-                <a class="vert-img-1" href="../images/photography/portraiture/Medha+Will_1-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Medha and Will, Philadelphia, PA, September 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-right" aria-label="Portraiture Photo Gallery Pt.3">
+                <a class="vert-img-1" href="../images/photography/portraiture/Medha+Will_1-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Medha and Will, Philadelphia, PA, September 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Medha and Will Sitting at Museum Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Medha+Will_1-Small.jpg 1x,
                                         ../images/photography/portraiture/Medha+Will_1-Large.jpg 2x"
                                     src="../images/photography/portraiture/Medha+Will_1-Small.jpg"
                                     alt="Medha and Will sitting together on the steps of the Philadelphia Art Museum">
                 </a>
-                <a class="vert-img-2" href="../images/photography/portraiture/Tinashe_3-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Tinashe at Dragonfly 2024, Philadelphia, PA, October 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/portraiture/Tinashe_3-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Tinashe at Dragonfly 2024, Philadelphia, PA, October 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Tinashe at Dragonfly 2024 Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Tinashe_3-Small.jpg 1x,
                                         ../images/photography/portraiture/Tinashe_3-Large.jpg 2x"
                                     src="../images/photography/portraiture/Tinashe_3-Small.jpg"
                                     alt="Tinashe performing at Dragonfly 2024 lit by golden stage lights">
                 </a>
-                <a class="horiz-img" href="../images/photography/portraiture/Olive_Graffiti_2-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Olive, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="horiz-img" href="../images/photography/portraiture/Olive_Graffiti_2-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Olive, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Olive in a graffitied brick room Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Olive_Graffiti_2-Small.jpg 1x,
                                         ../images/photography/portraiture/Olive_Graffiti_2-Large.jpg 2x"
                                     src="../images/photography/portraiture/Olive_Graffiti_2-Small.jpg"
                                     alt="Black and white photo of a girl sitting on a still in a graffitied brick room">
                 </a>
-            </div>
-            <div class="photo-grid-left">
-                <a class="horiz-img" href="../images/photography/portraiture/Slayyyter_2-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Slayyyter at Dragonfly 2024, Philadelphia, PA, October 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-left" aria-label="Portraiture Photo Gallery Pt.4">
+                <a class="horiz-img" href="../images/photography/portraiture/Slayyyter_2-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Slayyyter at Dragonfly 2024, Philadelphia, PA, October 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Slayyyter at Dragonfly 2024 Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Slayyyter_2-Small.jpg 1x,
                                 ../images/photography/portraiture/Slayyyter_2-Large.jpg 2x"
                                     src="../images/photography/portraiture/Slayyyter_2-Small.jpg"
                                     alt="Slayyyter kneeling on the stage at Dragonfly 2024">
                 </a>
-                <a class="vert-img-1" href="../images/photography/portraiture/Medha+Will_2-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Medha and Will, Philadelphia, PA, September 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-1" href="../images/photography/portraiture/Medha+Will_2-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Medha and Will, Philadelphia, PA, September 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Medha and Will Walking at Museum Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Medha+Will_2-Small.jpg 1x,
                                         ../images/photography/portraiture/Medha+Will_2-Large.jpg 2x"
                                     src="../images/photography/portraiture/Medha+Will_2-Small.jpg"
                                     alt="Medha and Will walking towards the camera with the Philadelphia Art Museum in the background"> 
                 </a>
-                <a class="vert-img-2" href="../images/photography/portraiture/DU-Trebs-4-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel University Treblemakers ICCAs 2024 Performance, Philadelphia, PA, February 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/portraiture/DU-Trebs-4-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel University Treblemakers ICCAs 2024 Performance, Philadelphia, PA, February 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Drexel University Treblemakers ICCAs 2024 Image — click to view larger">
                     <img srcset="../images/photography/portraiture/DU-Trebs-4-Small.jpg 1x,
                                         ../images/photography/portraiture/DU-Trebs-4-Large.jpg 2x"
                                     src="../images/photography/portraiture/DU-Trebs-4-Small.jpg"
                                     alt="Shot down theater with Drexel University Treblemakers acapella group girls performing together in a group">
                 </a> 
-            </div>
-            <div class="photo-grid-right">
-                <a class="vert-img-1" href="../images/photography/portraiture/Trebs_Y2k-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel Treblemakers Senior Concert: Laney Powers, Philadelphia, PA, June 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-right" aria-label="Portraiture Photo Gallery Pt.5">
+                <a class="vert-img-1" href="../images/photography/portraiture/Trebs_Y2k-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel Treblemakers Senior Concert: Laney Powers, Philadelphia, PA, June 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Drexel Treblemakers Senior Concert Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Trebs_Y2k-Small.jpg 1x,
                                         ../images/photography/portraiture/Trebs_Y2k-Large.jpg 2x"
                                     src="../images/photography/portraiture/Trebs_Y2k-Small.jpg"
                                     alt="Drexel Treblemaker smiling during a pause in her senior solo performance">
                 </a>
-                <a class="vert-img-2" href="../images/photography/portraiture/Cam_Grad-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Cameryn Graduation, Philadelphia, PA, June 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/portraiture/Cam_Grad-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Cameryn Graduation, Philadelphia, PA, June 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Cameryn Graduation Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Cam_Grad-Small.jpg 1x,
                                         ../images/photography/portraiture/Cam_Grad-Large.jpg 2x"
                                     src="../images/photography/portraiture/Cam_Grad-Small.jpg"
                                     alt="Cameryn in her cap and gown in the Drexel Main Building"> 
                 </a>
-                <a class="horiz-img" href="../images/photography/portraiture/Trebs_Y2k_Hug-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel Treblemakers Senior Concert, Philadelphia, PA, June 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="horiz-img" href="../images/photography/portraiture/Trebs_Y2k_Hug-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel Treblemakers Senior Concert, Philadelphia, PA, June 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Drexel Treblemakers Senior Concert Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Trebs_Y2k_Hug-Small.jpg 1x,
                                         ../images/photography/portraiture/Trebs_Y2k_Hug-Large.jpg 2x"
                                     src="../images/photography/portraiture/Trebs_Y2k_Hug-Small.jpg"
                                     alt="Drexel Treblemakers group hug after their senior concert">
                 </a>
-            </div>
-            <div class="photo-grid-left">
-                <a class="horiz-img" href="../images/photography/portraiture/DU_Trebs_6-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel University Treblemakers Senior Concert, Philadelphia, PA, June 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-left" aria-label="Portraiture Photo Gallery Pt.6">
+                <a class="horiz-img" href="../images/photography/portraiture/DU_Trebs_6-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel University Treblemakers Senior Concert, Philadelphia, PA, June 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Drexel University Treblemakers Senior Concert Image — click to view larger">
                     <img srcset="../images/photography/portraiture/DU_Trebs_6-Small.jpg 1x,
                                         ../images/photography/portraiture/DU_Trebs_6-Large.jpg 2x"
                                     src="../images/photography/portraiture/DU_Trebs_6-Small.jpg"
                                     alt="Drexel treblemaker's soloist belting into the microphone">
                 </a>
-                <a class="vert-img-1" href="../images/photography/portraiture/Olive_Window-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Olive, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-1" href="../images/photography/portraiture/Olive_Window-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Olive, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Olive Sitting Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Olive_Window-Small.jpg 1x,
                                         ../images/photography/portraiture/Olive_Window-Large.jpg 2x"
                                     src="../images/photography/portraiture/Olive_Window-Small.jpg"
                                     alt="Black and white, girl sitting, leaning on knees on window ledge corner">
                 </a>
-                <a class="vert-img-2" href="../images/photography/portraiture/DU_Trebs_8-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel Treblemakers, Philadelphia, PA, February 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/portraiture/DU_Trebs_8-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Drexel Treblemakers, Philadelphia, PA, February 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Drexel Treblemakers Standing Group Image — click to view larger">
                     <img srcset="../images/photography/portraiture/DU_Trebs_8-Small.jpg 1x,
                                         ../images/photography/portraiture/DU_Trebs_8-Large.jpg 2x"
                                     src="../images/photography/portraiture/DU_Trebs_8-Small.jpg"
                                     alt="Drexel University Treblemakers acapella group girls standing on marble stairs looking serious">
                 </a>
-            </div>
-            <div class="photo-grid-right">
-                <a class="vert-img-1" href="../images/photography/portraiture/Tinashe_2-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Tinashe at Dragonfly 2024, Philadelphia, PA, October 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-right" aria-label="Portraiture Photo Gallery Pt.7">
+                <a class="vert-img-1" href="../images/photography/portraiture/Tinashe_2-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Tinashe at Dragonfly 2024, Philadelphia, PA, October 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Tinashe Performing at Dragonfly 2024 Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Tinashe_2-Small.jpg 1x,
                                         ../images/photography/portraiture/Tinashe_2-Large.jpg 2x"
                                     src="../images/photography/portraiture/Tinashe_2-Small.jpg"
                                     alt="Tinashe performing at Dragonfly 2024"> 
                 </a>
-                <a class="vert-img-2" href="../images/photography/portraiture/Protest_City_Hall-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="No Kings Day Protest, Philadelphia, PA, June 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/portraiture/Protest_City_Hall-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="No Kings Day Protest, Philadelphia, PA, June 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="No Kings Day Protest Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Protest_City_Hall-Small.jpg 1x,
                                         ../images/photography/portraiture/Protest_City_Hall-Large.jpg 2x"
                                     src="../images/photography/portraiture/Protest_City_Hall-Small.jpg"
                                     alt="Crowd of protesters in front of Philadelphia City Hall holding signs at the No Kings Day Protest">
                 </a>
-                <a class="horiz-img" href="../images/photography/portraiture/Olive_Plants_1-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Olive, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="horiz-img" href="../images/photography/portraiture/Olive_Plants_1-Large.jpg" data-dimbox="portrait-gallery" data-dimbox-caption="Olive, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Girl in Greenhouse Image — click to view larger">
                     <img srcset="../images/photography/portraiture/Olive_Plants_1-Small.jpg 1x,
                                         ../images/photography/portraiture/Olive_Plants_1-Large.jpg 2x"
                                     src="../images/photography/portraiture/Olive_Plants_1-Small.jpg"
                                     alt="Girl in greenhouse looking between rows of plants">
                 </a>
-            </div>
-        </div>
-    </section>
+            </figure>
+        </section>
 
-    <section id="nature">
-        <div class="page-title">
-            <h2 class="color-primary-accent">NATURE</h2>
-        </div>
-
-        <div>
-            <div class="photo-grid-left">
-                <a class="horiz-img" href="../images/photography/nature/Yellowstone_Bison_2-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Lamar Valley Bison, Yellowstone National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+        <section id="nature">
+            <h2 class="color-accent-red">NATURE</h2>
+            <a href="#architecture" class="skip-link photography-skip-link color-accent-blue-hover" aria-label="Skip Nature Photo Gallery">
+                Skip Nature Photo Gallery
+            </a>
+            <figure class="photo-grid-left" aria-label="Nature Photo Gallery Pt.1">
+                <a class="horiz-img" href="../images/photography/nature/Yellowstone_Bison_2-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Lamar Valley Bison, Yellowstone National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Bison in Lamar Valley Image — click to view larger">
                     <img srcset="../images/photography/nature/Yellowstone_Bison_2-Small.jpg 1x,
                                         ../images/photography/nature/Yellowstone_Bison_2-Large.jpg 2x"
                                     src="../images/photography/nature/Yellowstone_Bison_2-Small.jpg"
                                     alt="Herd of bison grazing in Lamar Valley, Yellowstone National Park">
                 </a>
-                <a class="vert-img-1" href="../images/photography/nature/Mammoth_Springs_Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Mammoth Hot Springs, Yellowstone National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-1" href="../images/photography/nature/Mammoth_Springs_Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Mammoth Hot Springs, Yellowstone National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Mammoth Hot Springs Image — click to view larger">
                     <img srcset="../images/photography/nature/Mammoth_Springs_Small.jpg 1x,
                                         ../images/photography/nature/Mammoth_Springs_Large.jpg 2x"
                                     src="../images/photography/nature/Mammoth_Springs_Small.jpg"
                                     alt="Black and white, levels of the mammoth hot springs">
                 </a>
-                <a class="vert-img-2" href="../images/photography/nature/St_John_Boat-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Floating in Trunk Bay, St. John, USVI, March 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/nature/St_John_Boat-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Floating in Trunk Bay, St. John, USVI, March 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="St. John Boat Image — click to view larger">
                     <img srcset="../images/photography/nature/St_John_Boat-Small.jpg 1x,
                                         ../images/photography/nature/St_John_Boat-Large.jpg 2x"
                                     src="../images/photography/nature/St_John_Boat-Small.jpg"
                                     alt="Small boat floating in the rich secondary-accent waters of Trunk Bay off of St. John in the US Virgin Islands">
                 </a>
-            </div>
-            <div class="photo-grid-right">
-                <a class="vert-img-1" href="../images/photography/nature/Yellowstone_Blacktail_Plateau-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Blacktail Plateau, Yellowstone National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-right" aria-label="Nature Photo Gallery Pt.2">
+                <a class="vert-img-1" href="../images/photography/nature/Yellowstone_Blacktail_Plateau-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Blacktail Plateau, Yellowstone National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Blacktail Plateau Image — click to view larger">
                     <img srcset="../images/photography/nature/Yellowstone_Blacktail_Plateau-Small.jpg 1x,
                                         ../images/photography/nature/Yellowstone_Blacktail_Plateau-Large.jpg 2x"
                                     src="../images/photography/nature/Yellowstone_Blacktail_Plateau-Small.jpg"
                                     alt="Wildflowers in Blacktail Plateau Drive">
                 </a>
-                <a class="vert-img-2" href="../images/photography/nature/Oxbox_Bend-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Oxbow Bend, Grand Teton National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/nature/Oxbox_Bend-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Oxbow Bend, Grand Teton National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Oxbow Bend Image — click to view larger">
                     <img srcset="../images/photography/nature/Oxbox_Bend-Small.jpg 1x,
                                         ../images/photography/nature/Oxbox_Bend-Large.jpg 2x"
                                     src="../images/photography/nature/Oxbox_Bend-Small.jpg"
                                     alt="River bend with the Teton mountains in the back">
                 </a>
-                <a class="horiz-img" href="../images/photography/nature/Grand_Teton_Barn-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Mormon Row, Grand Teton National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="horiz-img" href="../images/photography/nature/Grand_Teton_Barn-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Mormon Row, Grand Teton National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Grand Teton Barn Image — click to view larger">
                     <img  srcset="../images/photography/nature/Grand_Teton_Barn-Small.jpg 1x,
                                         ../images/photography/nature/Grand_Teton_Barn-Large.jpg 2x"
                                     src="../images/photography/nature/Grand_Teton_Barn-Small.jpg"
                                     alt="Old barn in front of the Teton mountains">
                 </a>
-            </div>
-            <div class="photo-grid-left">
-                <a class="horiz-img" href="../images/photography/nature/Lake_Washington_Dogs_1-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Lake Washington Dogs, Seattle, WA, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-left" aria-label="Nature Photo Gallery Pt.3">
+                <a class="horiz-img" href="../images/photography/nature/Lake_Washington_Dogs_1-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Lake Washington Dogs, Seattle, WA, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Lake Washington Dogs Image — click to view larger">
                     <img srcset="../images/photography/nature/Lake_Washington_Dogs_1-Small.jpg 1x,
                                         ../images/photography/nature/Lake_Washington_Dogs_1-Large.jpg 2x"
                                     src="../images/photography/nature/Lake_Washington_Dogs_1-Small.jpg"
                                     alt="Black and White image of dogs playing at a beach on Lake Washington">
                 </a>
-                <a class="vert-img-1" href="../images/photography/nature/Mt_Rainier_Ascent-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Ascent, Mount Rainier National Park, WA, August 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-1" href="../images/photography/nature/Mt_Rainier_Ascent-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Ascent, Mount Rainier National Park, WA, August 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Mt. Rainier Ascent Image — click to view larger">
                     <img srcset="../images/photography/nature/Mt_Rainier_Ascent-Small.jpg 1x,
                                         ../images/photography/nature/Mt_Rainier_Ascent-Large.jpg 2x"
                                     src="../images/photography/nature/Mt_Rainier_Ascent-Small.jpg"
                                     alt="View up Mount Rainier along the trail to the summit">
                 </a>
-                <a class="vert-img-2" href="../images/photography/nature/Yellowstone_Bison_1-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Lamar Valley Bison, Yellowstone National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/nature/Yellowstone_Bison_1-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Lamar Valley Bison, Yellowstone National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Yellowstone Bison Image — click to view larger">
                     <img srcset="../images/photography/nature/Yellowstone_Bison_1-Small.jpg 1x,
                                         ../images/photography/nature/Yellowstone_Bison_1-Large.jpg 2x"
                                     src="../images/photography/nature/Yellowstone_Bison_1-Small.jpg"
                                     alt="Lone bison grazing in Lamar Valley, Yellowstone National Park">
                 </a>
-            </div>
-            <div class="photo-grid-right">
-                <a class="vert-img-1" href="../images/photography/nature/Olympic_Hurricane_Ridge-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Hurricane Ridge, Olympic National Park, WA, August 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-right" aria-label="Nature Photo Gallery Pt.4">
+                <a class="vert-img-1" href="../images/photography/nature/Olympic_Hurricane_Ridge-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Hurricane Ridge, Olympic National Park, WA, August 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Olympic Hurricane Ridge Image — click to view larger">
                     <img srcset="../images/photography/nature/Olympic_Hurricane_Ridge-Small.jpg 1x,
                                         ../images/photography/nature/Olympic_Hurricane_Ridge-Large.jpg 2x"
                                     src="../images/photography/nature/Olympic_Hurricane_Ridge-Small.jpg"
                                     alt="View from the top of Hurricane Ridge in Olympic National Park">
                 </a>
-                <a class="vert-img-2" href="../images/photography/nature/Damajaqua_Waterfalls-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Damajaqua Waterfalls, Puerto Plata, Dominican Republic, March 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/nature/Damajaqua_Waterfalls-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Damajaqua Waterfalls, Puerto Plata, Dominican Republic, March 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Damajaqua Waterfalls Image — click to view larger">
                     <img srcset="../images/photography/nature/Damajaqua_Waterfalls-Small.jpg 1x,
                                         ../images/photography/nature/Damajaqua_Waterfalls-Large.jpg 2x"
                                     src="../images/photography/nature/Damajaqua_Waterfalls-Small.jpg"
                                     alt="Light filtering through the trees onto the Damajaqua Waterfalls in the Dominican Republic">
                 </a>
-                <a class="horiz-img" href="../images/photography/nature/Grand_Teton_Horses-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Grazing Horses, Grand Teton National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="horiz-img" href="../images/photography/nature/Grand_Teton_Horses-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Grazing Horses, Grand Teton National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Grand Teton Horses Image — click to view larger">
                     <img srcset="../images/photography/nature/Grand_Teton_Horses-Small.jpg 1x,
                                         ../images/photography/nature/Grand_Teton_Horses-Large.jpg 2x"
                                     src="../images/photography/nature/Grand_Teton_Horses-Small.jpg"
                                     alt="Horses grazing in front of the Teton mountains">
                 </a>
-            </div>
-            <div class="photo-grid-left">
-                <a class="horiz-img" href="../images/photography/nature/Cape_May_Bee-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Bee in Cape May Point State Park, Cape May, NJ, July 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-left" aria-label="Nature Photo Gallery Pt.5">
+                <a class="horiz-img" href="../images/photography/nature/Cape_May_Bee-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Bee in Cape May Point State Park, Cape May, NJ, July 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Cape May Bee Image — click to view larger">
                     <img srcset="../images/photography/nature/Cape_May_Bee-Small.jpg 1x,
                                         ../images/photography/nature/Cape_May_Bee-Large.jpg 2x"
                                     src="../images/photography/nature/Cape_May_Bee-Small.jpg"
                                     alt="A bee on a flower in Cape May Point State Park">
                 </a>
-                <a class="vert-img-1" href="../images/photography/nature/Lake_Washington_Dogs_2-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Lake Washington Dogs, Seattle, WA, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-1" href="../images/photography/nature/Lake_Washington_Dogs_2-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Lake Washington Dogs, Seattle, WA, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Lake Washington Dogs Image — click to view larger">
                     <img srcset="../images/photography/nature/Lake_Washington_Dogs_2-Small.jpg 1x,
                                         ../images/photography/nature/Lake_Washington_Dogs_2-Large.jpg 2x"
                                     src="../images/photography/nature/Lake_Washington_Dogs_2-Small.jpg"
                                     alt="Black and White image of dogs playing at a beach on Lake Washington">
                 </a>
-                <a class="vert-img-2" href="../images/photography/nature/Tortola_Hills-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Hillside Homes, Tortola, BVI, March 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/nature/Tortola_Hills-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Hillside Homes, Tortola, BVI, March 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Tortola Hills Image — click to view larger">
                     <img srcset="../images/photography/nature/Tortola_Hills-Small.jpg 1x,
                                         ../images/photography/nature/Tortola_Hills-Large.jpg 2x"
                                     src="../images/photography/nature/Tortola_Hills-Small.jpg"
                                     alt="Colorful homes on the hillside of Tortola in the British Virgin Islands">
                 </a>
-            </div>
-
-            <div class="photo-grid-right">
-                <a class="vert-img-1" href="../images/photography/nature/Dark_Hollow_Falls-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Dark Hollow Falls, Shenandoah National Park, VA, October 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-right" aria-label="Nature Photo Gallery Pt.6">
+                <a class="vert-img-1" href="../images/photography/nature/Dark_Hollow_Falls-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Dark Hollow Falls, Shenandoah National Park, VA, October 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Dark Hollow Falls Image — click to view larger">
                     <img srcset="../images/photography/nature/Dark_Hollow_Falls-Small.jpg 1x,
                                         ../images/photography/nature/Dark_Hollow_Falls-Large.jpg 2x"
                                     src="../images/photography/nature/Dark_Hollow_Falls-Small.jpg"
                                     alt="Dark Hollow Falls waterfall in Shenandoah National Park">
                 </a>
-                <a class="vert-img-2" href="../images/photography/nature/Luray_Wishing_Well-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Luray Wishing Well, Luray Caverns, Luray, VA, October 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/nature/Luray_Wishing_Well-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Luray Wishing Well, Luray Caverns, Luray, VA, October 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Luray Wishing Well Image — click to view larger">
                     <img srcset="../images/photography/nature/Luray_Wishing_Well-Small.jpg 1x,
                                         ../images/photography/nature/Luray_Wishing_Well-Large.jpg 2x"
                                     src="../images/photography/nature/Luray_Wishing_Well-Small.jpg"
                                     alt="Money floating in the wishing well at Luray Caverns in Luray, Virginia">
                 </a>
-                <a class="horiz-img" href="../images/photography/nature/Shenandoah_Road-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Road through Shenandoah National Park, Shenandoah National Park, VA, October 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="horiz-img" href="../images/photography/nature/Shenandoah_Road-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Road through Shenandoah National Park, Shenandoah National Park, VA, October 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Shenandoah Road Image — click to view larger">
                     <img srcset="../images/photography/nature/Shenandoah_Road-Small.jpg 1x,
                                         ../images/photography/nature/Shenandoah_Road-Large.jpg 2x"
                                     src="../images/photography/nature/Shenandoah_Road-Small.jpg"
                                     alt="Road through Shenandoah National Park with fall foliage">
                 </a>
-            </div>
-            <div class="photo-grid-left">
-                <a class="horiz-img" href="../images/photography/nature/Snake_River-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Snake River mirroring the Teton Mountains, Grand Teton National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
+            </figure>
+            <figure class="photo-grid-left" aria-label="Nature Photo Gallery Pt.7">
+                <a class="horiz-img" href="../images/photography/nature/Snake_River-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Snake River mirroring the Teton Mountains, Grand Teton National Park, WY, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Snake River Image — click to view larger">
                     <img srcset="../images/photography/nature/Snake_River-Small.jpg 1x,
                                         ../images/photography/nature/Snake_River-Large.jpg 2x"
                                     src="../images/photography/nature/Snake_River-Small.jpg"
                                     alt="Water of the Snake River mirroring the teton mountains in early fall">
                 </a>
-                <a class="vert-img-1" href="../images/photography/nature/Cape_May_Dragonfly-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Dragonfly in Cape May Point State Park, Cape May, NJ, July 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-1" href="../images/photography/nature/Cape_May_Dragonfly-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Dragonfly in Cape May Point State Park, Cape May, NJ, July 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Cape May Dragonfly Image — click to view larger">
                     <img srcset="../images/photography/nature/Cape_May_Dragonfly-Small.jpg 1x,
                                         ../images/photography/nature/Cape_May_Dragonfly-Large.jpg 2x"
                                     src="../images/photography/nature/Cape_May_Dragonfly-Small.jpg"
                                     alt="Dragonfly resting on a leaf at Cape May Point State Park">
                 </a>
-                <a class="vert-img-2" href="../images/photography/nature/Luray_Dream_Lake-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Dream Lake, Luray Caverns, Luray, VA, October 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
+                <a class="vert-img-2" href="../images/photography/nature/Luray_Dream_Lake-Large.jpg" data-dimbox="nature-gallery" data-dimbox-caption="Dream Lake, Luray Caverns, Luray, VA, October 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Luray Dream Lake Image — click to view larger">
                     <img srcset="../images/photography/nature/Luray_Dream_Lake-Small.jpg 1x,
                                         ../images/photography/nature/Luray_Dream_Lake-Large.jpg 2x"
                                     src="../images/photography/nature/Luray_Dream_Lake-Small.jpg"
                                     alt="Dream Lake in Luray Caverns, Luray, Virginia">
                 </a>
-            </div>
-        </div>
-    </section>
+            </figure>
+        </section>
 
-    <section id="architecture">
-        <div class="page-title">
-            <h2 class="color-primary-accent">ARCHITECTURE</h2>
-        </div>
-        <div class="photo-section">
-            <div>
-                <div class="photo-grid-left">
-                    <a class="horiz-img" href="../images/photography/architecture/Wilmington_Church-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Westminster Presbyterian Church, Wilmington, DE, January 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Wilmington_Church-Small.jpg 1x,
-                                        ../images/photography/architecture/Wilmington_Church-Large.jpg 2x"
-                                    src="../images/photography/architecture/Wilmington_Church-Small.jpg"
-                                    alt="Black and white Stonework church hallway in Wilmington, Delaware">
-                    </a>
-                    <a class="vert-img-1" href="../images/photography/architecture/Fremont_Gasworks-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Gasworks, Seattle, WA, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Fremont_Gasworks-Small.jpg 1x,
-                                            ../images/photography/architecture/Fremont_Gasworks-Large.jpg 2x"
-                                    src="../images/photography/architecture/Fremont_Gasworks-Small.jpg"
-                                    alt="Black and white Asymetrical piping at Gasworks Park in Fremont, Seattle, Washington">
-                    </a>
-                    <a class="vert-img-2" href="../images/photography/architecture/Protest_City_Hall-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="No Kings Day Protest, Philadelphia, PA, June 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Protest_City_Hall-Small.jpg 1x,
-                                        ../images/photography/architecture/Protest_City_Hall-Large.jpg 2x"
-                                    src="../images/photography/architecture/Protest_City_Hall-Small.jpg"
-                                    alt="Cardboard sign with City Hall in the background at the Philadelphia No Kings Day Protest stating: Protect Due Process, Save Democracy.">
-                    </a>
-                </div>
-                <div class="photo-grid-right">
-                    <a class="vert-img-1" href="../images/photography/architecture/Fremont_Aurora_Bridge-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Aurora Bridge, Seattle, WA, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Fremont_Aurora_Bridge-Small.jpg 1x,
-                                        ../images/photography/architecture/Fremont_Aurora_Bridge-Large.jpg 2x"
-                                    src="../images/photography/architecture/Fremont_Aurora_Bridge-Small.jpg"
-                                    alt="Black and white Aurora Bridge high in the sky over Fremont, Seattle, Washington">
-                    </a>
-                    <a class="vert-img-2" href="../images/photography/architecture/Reading_Terminal_Market-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Reading Terminal Market, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Reading_Terminal_Market-Small.jpg 1x,
-                                        ../images/photography/architecture/Reading_Terminal_Market-Large.jpg 2x"
-                                    src="../images/photography/architecture/Reading_Terminal_Market-Small.jpg"
-                                    alt="Busy Reading Terminal Market lit up with neon signs, Philadelphia, Pennsylvania">
-                    </a>
-                    <a class="horiz-img" href="../images/photography/architecture/Main_Building_Fire_Escape-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Fire Escape, Philadelphia, PA, January 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Main_Building_Fire_Escape-Small.jpg 1x,
-                                        ../images/photography/architecture/Main_Building_Fire_Escape-Large.jpg 2x"
-                                    src="../images/photography/architecture/Main_Building_Fire_Escape-Small.jpg"
-                                    alt="Black and white zig zag fire escape on the back of the Drexel Main Building, Philadelphia, Pennsylvania">
-                    </a>
-                </div>
-                <div class="photo-grid-left">
-                    <a class="horiz-img" href="../images/photography/architecture/Maya_Greenshouse-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Drexel Greenhouse, Philadelphia, PA, March 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Maya_Greenhouse-Small.jpg 1x,
-                                        ../images/photography/architecture/Maya_Greenshouse-Large.jpg 2x"
-                                    src="../images/photography/architecture/Maya_Greenhouse-Small.jpg"
-                                    alt="Black and white, View looking up at greenhouse from exterior, girl visible in window solemnly looking out">
-                    </a>
-                    <a class="vert-img-1" href="../images/photography/architecture/Riverfront_Train_Bridge-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Riverfront, Wilmington, DE, January 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Riverfront_Train_Bridge-Small.jpg 1x,
-                                        ../images/photography/architecture/Riverfront_Train_Bridge-Large.jpg 2x"
-                                    src="../images/photography/architecture/Riverfront_Train_Bridge-Small.jpg"
-                                    alt="Black and white, train bridge in Wilmington, DE">
-                    </a>
-                    <a class="vert-img-2" href="../images/photography/architecture/Philadelphia_City_Hall-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="City Hall, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Philadelphia_City_Hall-Small.jpg 1x,
-                                    ../images/photography/architecture/Philadelphia_City_Hall-Large.jpg 2x"
-                                    src="../images/photography/architecture/Philadelphia_City_Hall-Small.jpg"
-                                    alt="Black and white view up Philadelphia City Hall, Center City, Philadelphia, Pennsylvania">
-                    </a>
-                </div>
-                <div class="photo-grid-right">
-                    <a class="vert-img-1" href="../images/photography/architecture/Drexel_Main Building_Chandelier-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Drexel Main Building, Philadelphia, PA, February 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Drexel_Main Building_Chandelier-Small.jpg 1x,
-                                        ../images/photography/architecture/Drexel_Main Building_Chandelier-Large.jpg 2x"
-                                    src="../images/photography/architecture/Drexel_Main Building_Chandelier-Small.jpg"
-                                    alt="Black and white Chandelier and Ceilings in the Drexel Main Building, Philadelphia, Pennsylvania">
-                    </a>
-                    <a class="vert-img-2" href="../images/photography/architecture/Drexel_Main_Building_Theatre-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Drexel Main Building Theatre, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Drexel_Main_Building_Theatre-Small.jpg 1x,
-                                        ../images/photography/architecture/Drexel_Main_Building_Theatre-Large.jpg 2x"
-                                    src="../images/photography/architecture/Drexel_Main_Building_Theatre-Small.jpg"
-                                    alt="Black and white Theatre in the Drexel Main Building, Philadelphia, Pennsylvania">
-                    </a>
-                    <a class="horiz-img" href="../images/photography/architecture/Fortaleza_San_Felipe-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Fortaleza San Felipe overlooking the seaport, Puerto Plata, Dominican Republic, March 2024" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                        <img srcset="../images/photography/architecture/Fortaleza_San_Felipe-Small.jpg 1x,
-                                            ../images/photography/architecture/Fortaleza_San_Felipe-Large.jpg 2x"
-                                    src="../images/photography/architecture/Fortaleza_San_Felipe-Small.jpg"
-                                    alt="Fortaleza San Felipe overlooking the seaport, Puerto Plata, Dominican Republic">
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-    </section>
+        <section id="architecture">
+            <h2 class="color-accent-red">ARCHITECTURE</h2>
+            <a href="#footer" class="skip-link photography-skip-link color-accent-blue-hover" aria-label="Skip Architecture Photo Gallery">
+                Skip Architecture Photo Gallery
+            </a>
+            <figure class="photo-grid-left" aria-label="Architecture Photo Gallery Pt.1">
+                <a class="horiz-img" href="../images/photography/architecture/Wilmington_Church-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Westminster Presbyterian Church, Wilmington, DE, January 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Wilmington Church Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Wilmington_Church-Small.jpg 1x,
+                                    ../images/photography/architecture/Wilmington_Church-Large.jpg 2x"
+                                src="../images/photography/architecture/Wilmington_Church-Small.jpg"
+                                alt="Black and white Stonework church hallway in Wilmington, Delaware">
+                </a>
+                <a class="vert-img-1" href="../images/photography/architecture/Fremont_Gasworks-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Gasworks, Seattle, WA, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Fremont Gasworks Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Fremont_Gasworks-Small.jpg 1x,
+                                        ../images/photography/architecture/Fremont_Gasworks-Large.jpg 2x"
+                                src="../images/photography/architecture/Fremont_Gasworks-Small.jpg"
+                                alt="Black and white Asymetrical piping at Gasworks Park in Fremont, Seattle, Washington">
+                </a>
+                <a class="vert-img-2" href="../images/photography/architecture/Protest_City_Hall-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="No Kings Day Protest, Philadelphia, PA, June 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Protest City Hall Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Protest_City_Hall-Small.jpg 1x,
+                                    ../images/photography/architecture/Protest_City_Hall-Large.jpg 2x"
+                                src="../images/photography/architecture/Protest_City_Hall-Small.jpg"
+                                alt="Cardboard sign with City Hall in the background at the Philadelphia No Kings Day Protest stating: Protect Due Process, Save Democracy.">
+                </a>
+            </figure>
+            <figure class="photo-grid-right" aria-label="Architecture Photo Gallery Pt.2">
+                <a class="vert-img-1" href="../images/photography/architecture/Fremont_Aurora_Bridge-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Aurora Bridge, Seattle, WA, September 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Aurora Bridge Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Fremont_Aurora_Bridge-Small.jpg 1x,
+                                    ../images/photography/architecture/Fremont_Aurora_Bridge-Large.jpg 2x"
+                                src="../images/photography/architecture/Fremont_Aurora_Bridge-Small.jpg"
+                                alt="Black and white Aurora Bridge high in the sky over Fremont, Seattle, Washington">
+                </a>
+                <a class="vert-img-2" href="../images/photography/architecture/Reading_Terminal_Market-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Reading Terminal Market, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Reading Terminal Market Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Reading_Terminal_Market-Small.jpg 1x,
+                                    ../images/photography/architecture/Reading_Terminal_Market-Large.jpg 2x"
+                                src="../images/photography/architecture/Reading_Terminal_Market-Small.jpg"
+                                alt="Busy Reading Terminal Market lit up with neon signs, Philadelphia, Pennsylvania">
+                </a>
+                <a class="horiz-img" href="../images/photography/architecture/Main_Building_Fire_Escape-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Fire Escape, Philadelphia, PA, January 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Main Building Fire Escape Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Main_Building_Fire_Escape-Small.jpg 1x,
+                                    ../images/photography/architecture/Main_Building_Fire_Escape-Large.jpg 2x"
+                                src="../images/photography/architecture/Main_Building_Fire_Escape-Small.jpg"
+                                alt="Black and white zig zag fire escape on the back of the Drexel Main Building, Philadelphia, Pennsylvania">
+                </a>
+            </figure>
+            <figure class="photo-grid-right" aria-label="Architecture Photo Gallery Pt.3">
+                <a class="horiz-img" href="../images/photography/architecture/Maya_Greenshouse-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Drexel Greenhouse, Philadelphia, PA, March 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Drexel Greenhouse Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Maya_Greenhouse-Small.jpg 1x,
+                                    ../images/photography/architecture/Maya_Greenshouse-Large.jpg 2x"
+                                src="../images/photography/architecture/Maya_Greenhouse-Small.jpg"
+                                alt="Black and white, View looking up at greenhouse from exterior, girl visible in window solemnly looking out">
+                </a>
+                <a class="vert-img-1" href="../images/photography/architecture/Riverfront_Train_Bridge-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Riverfront, Wilmington, DE, January 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Riverfront Train Bridge Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Riverfront_Train_Bridge-Small.jpg 1x,
+                                    ../images/photography/architecture/Riverfront_Train_Bridge-Large.jpg 2x"
+                                src="../images/photography/architecture/Riverfront_Train_Bridge-Small.jpg"
+                                alt="Black and white, train bridge in Wilmington, DE">
+                </a>
+                <a class="vert-img-2" href="../images/photography/architecture/Philadelphia_City_Hall-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="City Hall, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Philadelphia City Hall Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Philadelphia_City_Hall-Small.jpg 1x,
+                                ../images/photography/architecture/Philadelphia_City_Hall-Large.jpg 2x"
+                                src="../images/photography/architecture/Philadelphia_City_Hall-Small.jpg"
+                                alt="Black and white view up Philadelphia City Hall, Center City, Philadelphia, Pennsylvania">
+                </a>
+            </figure>
+            <figure class="photo-grid-right" aria-label="Architecture Photo Gallery Pt.4">
+                <a class="vert-img-1" href="../images/photography/architecture/Drexel_Main Building_Chandelier-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Drexel Main Building, Philadelphia, PA, February 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Drexel Main Building Chandelier Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Drexel_Main Building_Chandelier-Small.jpg 1x,
+                                    ../images/photography/architecture/Drexel_Main Building_Chandelier-Large.jpg 2x"
+                                src="../images/photography/architecture/Drexel_Main Building_Chandelier-Small.jpg"
+                                alt="Black and white Chandelier and Ceilings in the Drexel Main Building, Philadelphia, Pennsylvania">
+                </a>
+                <a class="vert-img-2" href="../images/photography/architecture/Drexel_Main_Building_Theatre-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Drexel Main Building Theatre, Philadelphia, PA, February 2023" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Drexel Main Building Theatre Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Drexel_Main_Building_Theatre-Small.jpg 1x,
+                                    ../images/photography/architecture/Drexel_Main_Building_Theatre-Large.jpg 2x"
+                                src="../images/photography/architecture/Drexel_Main_Building_Theatre-Small.jpg"
+                                alt="Black and white Theatre in the Drexel Main Building, Philadelphia, Pennsylvania">
+                </a>
+                <a class="horiz-img" href="../images/photography/architecture/Fortaleza_San_Felipe-Large.jpg" data-dimbox="architecture-gallery" data-dimbox-caption="Fortaleza San Felipe overlooking the seaport, Puerto Plata, Dominican Republic, March 2024" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Fortaleza San Felipe Image — click to view larger">
+                    <img srcset="../images/photography/architecture/Fortaleza_San_Felipe-Small.jpg 1x,
+                                        ../images/photography/architecture/Fortaleza_San_Felipe-Large.jpg 2x"
+                                src="../images/photography/architecture/Fortaleza_San_Felipe-Small.jpg"
+                                alt="Fortaleza San Felipe overlooking the seaport, Puerto Plata, Dominican Republic">
+                </a>
+            </figure>
+        </section>
+    </main>
     
-
-
-    <div class="container-fluid justify-content-center">
+    <footer id="footer" class="container-fluid justify-content-center" aria-label="Footer">       
         <picture>
             <source
             media="(min-width: 576px)"
             srcset="../images/general/lower-absract-full-row.svg">
-
             <img class="img-fluid abstract-img"
             src="../images/general/lower-absract-mobile-row.svg"
-            alt="random colorful absract shapes">
+            aria-hidden="true"
+            alt="Random colorful abstract shapes inspired by riograph prints">
         </picture>
-        <div class="row align-items-center justify-content-center footer bg-decorative-pink">
-            <div class="row align-items-center text-color-light">
+        <row class="row align-items-center justify-content-center footer bg-accent-purple">
+            <a href="#page-content" class="skip-link footer-skip-link color-tan-hover" aria-label="Skip Footer Links">
+                Skip Footer Links
+            </a> 
+            <row class="row align-items-center text-color-light">
                 <img class="icon" src="../images/icons/location_icon.svg" alt="location pin icon">
                 <p>Philadelphia, PA</p>
-            </div>
-            <a class="row align-items-center text-color-light footer-link" href="mailto:olivia.knestaut@gmail.com">
+            </row>
+            <a class="row align-items-center text-color-light footer-link" aria-label="Email olivia.knestaut@gmail.com" href="mailto:olivia.knestaut@gmail.com">
                 <img class="icon" src="../images/icons/mail_icon.svg" alt="email icon">
-                <p>olivia.knestaut@gmail.com</p>
+                <span>olivia.knestaut@gmail.com</span>
             </a>
-            <a href="https://www.instagram.com/ollywhelmed/" target="_blank" class="row align-items-center text-color-light footer-link">
+            <a href="https://www.instagram.com/ollywhelmed/" target="_blank" aria-label="@ollywhelmed on Instagram — opens in a new tab" class="row align-items-center text-color-light footer-link">
                 <img class="icon" src="../images/icons/instagram_icon.svg" alt="instagram icon">
-                <p>@ollywhelmed</p>
+                <span>@ollywhelmed</span>
             </a>
-            <a href="https://www.linkedin.com/in/oliviaknestaut/" target="_blank" class="row align-items-center text-color-light footer-link">
+            <a href="https://www.linkedin.com/in/oliviaknestaut/" target="_blank" aria-label="oliviaknestaut on LinkedIn — opens in a new tab" class="row align-items-center text-color-light footer-link">
                 <img class="icon" src="../images/icons/linkedin_icon.svg" alt="linkedin icon">
-                <p>oliviaknestaut</p>
+                <span>oliviaknestaut</span>
             </a>
-            <a href="https://github.com/OliviaKnestaut" target="_blank" class="row align-items-center text-color-light footer-link">
+            <a href="https://github.com/OliviaKnestaut" target="_blank" aria-label="OliviaKnestaut on GitHub — opens in a new tab" class="row align-items-center text-color-light footer-link">
                 <img class="icon" src="../images/icons/github_icon.svg" alt="github icon">
-                <p>OliviaKnestaut</p>
+                <span>OliviaKnestaut</span>
             </a>
-        </div>
-    </div>
+        </row>
+    </footer>
+
     <a href="#" class="go-top">
         <img src="../images/icons/back-to-top.svg" alt="">
     </a>

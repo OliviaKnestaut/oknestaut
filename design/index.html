@@ -32,41 +32,44 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/dimbox.min.css">
 </head>
-<body>
+<body id="page-content">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQ2ZTLKN"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!-- End Google Tag Manager (noscript) -->
 
-    <nav class="navbar navbar-expand-sm navbar-light">
-        <a class="navbar-brand" href="..">
-            <img src="../images/general/oknestaut_logo.svg" class="d-inline-block align-top nav-logo" alt="">
+    <a href="#main-content" class="skip-link header-link color-accent-red-hover" aria-label="Skip to Main Content Link">
+        Skip to Main Content
+    </a>
+    <nav class="navbar navbar-expand-sm navbar-light" aria-label="Site Navigation Bar">
+        <a class="navbar-brand" href=".." aria-label="OKnestaut Home Page">
+            <img src="../images/general/oknestaut_logo-2.svg" class="nav-logo d-inline-block align-top" alt="Logo with a ladybug as the letter O in  OKnestaut">
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle Mobile Navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <section class="collapse navbar-collapse" id="navbarSupportedContent">
             <div class="mr-auto"></div>
-            <ul class="navbar-nav my-2 my-lg-0">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href=".." id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO<span class="sr-only">(current)</span></a>
+            <ul class="navbar-nav my-2 my-lg-0" aria-label="Primary Navigation Items">
+                <li class="nav-item dropdown" aria-label="Toggle Portfolio Navigation Dropdown">
+                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
                     <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="..">CASE STUDIES</a>
-                        <a class="dropdown-item" href="../photography/">PHOTOGRAPHY</a>
-                        <a class="dropdown-item" href="../design">DESIGN & MEDIA</a>
+                        <a class="dropdown-item" href=".." aria-label="Case Studies Navigation Link">CASE STUDIES</a>
+                        <a class="dropdown-item" href="../photography" aria-label="Photography Navigation Link">PHOTOGRAPHY</a>
+                        <a class="dropdown-item" href="../design" aria-label="Design and Media Navigation Link">DESIGN &amp; MEDIA</a>
                     </div>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active" aria-label="About Navigation Link">
                     <a class="nav-link" href="../about">ABOUT</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item active" aria-label="Contact Navigation Link">
                     <a class="nav-link" href="../resume">RESUME</a>
                 </li>
             </ul>
-        </div>
+        </section>
     </nav>
 
-    <header class="container-fluid justify-content-center">
+    <header id="main-content" class="container-fluid justify-content-center" aria-label="Header Site Banner">
         <picture>
             <source
             media="(min-width: 576px)"
@@ -74,136 +77,147 @@
 
             <img class="img-fluid abstract-img"
             src="../images/general/upper-abstract-2-rows.svg"
-            alt="random colorful absract shapes">
+            aria-hidden="true"
+            alt="Random colorful abstract shapes inspired by riograph prints">
         </picture>
-        <h1 class="color-primary-accent">DESIGN & MEDIA</h1>
+        <h1 class="color-accent-red photog-title">DESIGN & MEDIA</h1>
     </header>
 
-    <h2 class="color-primary-accent">GRAPHIC DESIGN</h2>
-    <section class="container-fluid d-flex art-section">
-        <a class="collection" href="../images/design/Critter.jpg" data-dimbox="design-gallery" data-dimbox-caption="Collections: Calico Critter, Adobe Photoshop, 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
-            <img src="../images/design/Critter.jpg" alt="">
-        </a>
-        <a class="collection" href="../images/design/Cecile.jpg" data-dimbox="design-gallery" data-dimbox-caption="Collections: Jellycat Cecile Chicken, Adobe Photoshop, 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
-            <img src="../images/design/Cecile.jpg" alt="">
-        </a>
-        <a class="collection" href="../images/design/Smiski.jpg" data-dimbox="design-gallery" data-dimbox-caption="Collections: Smiski, Adobe Photoshop, 2025" data-dimbox-ratio="16x9" data-dimbox-type="image">
-            <img src="../images/design/Smiski.jpg" alt="">
-        </a>
-    </section>
-    <section class="container-fluid d-flex art-section">
-        <div class="object-imgs">
-            <a href="../images/design/VSCMObject_Poster1.jpg" data-dimbox="design-gallery" data-dimbox-caption="Object Poster Design: Abstract, Adobe Illustrator, VSCM 230" data-dimbox-ratio="16x9" data-dimbox-type="image">
-            <img src="../images/design/VSCMObject_Poster1.jpg" alt="">
+    <main aria-label="Photography Main Content">
+        <section class="container-fluid" aria-label="Graphic Design Section">
+            <h2 class="color-accent-red">GRAPHIC DESIGN</h2>
+            <a href="#animation" class="skip-link photography-skip-link color-accent-blue-hover" aria-label="Skip Graphic Design Gallery">
+                Skip Graphic Design Gallery
             </a>
-            <a href="../images/design/VSCMObject_Poster2.jpg" data-dimbox="design-gallery" data-dimbox-caption="Object Poster Design: Dynamic, Adobe Illustrator, VSCM 230" data-dimbox-ratio="16x9" data-dimbox-type="image">
-                <img src="../images/design/VSCMObject_Poster2.jpg" alt="">
+            <figure class="container-fluid d-flex art-section" aria-label="Collections Artworks">
+                <a class="collection" href="../images/design/Critter.jpg" data-dimbox="design-gallery" data-dimbox-caption="Collections: Calico Critter, Adobe Photoshop, 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Collections: Calico Critter — click to view larger">
+                    <img src="../images/design/Critter.jpg" alt="Digital Art of a persian cat calico critter against a red background">
+                </a>
+                <a class="collection" href="../images/design/Cecile.jpg" data-dimbox="design-gallery" data-dimbox-caption="Collections: Jellycat Cecile Chicken, Adobe Photoshop, 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Collections: Jellycat Cecile Chicken — click to view larger">
+                    <img src="../images/design/Cecile.jpg" alt="Digital Art of a Jellycat chicken against a purple background">
+                </a>
+                <a class="collection" href="../images/design/Smiski.jpg" data-dimbox="design-gallery" data-dimbox-caption="Collections: Smiski, Adobe Photoshop, 2025" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Collections: Smiski — click to view larger">
+                    <img src="../images/design/Smiski.jpg" alt="Digital Art of a smiski in a crochet raspberry hat against a blue background">
+                </a>
+            </figure>
+            <article class="container-fluid d-flex art-section" aria-label="Object Posters" aria-label="Object Poster Artworks">
+                <a class="poster2" href="../images/design/VSCMObject_Poster1.jpg" data-dimbox="design-gallery" data-dimbox-caption="Object Poster Design: Abstract, Adobe Illustrator, VSCM 230" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Object Poster Design: Abstract — click to view larger">
+                    <img src="../images/design/VSCMObject_Poster1.jpg" alt="Black and White poster of plant shears focused on abstract design and forms">
+                </a>
+                <a class="poster2" href="../images/design/VSCMObject_Poster2.jpg" data-dimbox="design-gallery" data-dimbox-caption="Object Poster Design: Dynamic, Adobe Illustrator, VSCM 230" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Object Poster Design: Dynamic — click to view larger">
+                    <img src="../images/design/VSCMObject_Poster2.jpg" alt="Black and White poster of plant shears focused on a dynamic presentation and motion">
+                </a>
+                <figcaption class="object-text">
+                    <h4 class="color-accent-red">OBJECT POSTER CONCEPTS</h4>
+                    <p>My two posters explore contrasting perceptions of my plant shears. The first emphasizes the object's structural qualities, highlighting abstract forms and geometric precision through a linear, repetitive composition. In contrast, the second poster captures the shears dynamically, using fluid, organic lines that mimic the act of cutting stems. Together, the two pieces demonstrate the mechanical and expressive nature of the object, creating a dialogue between function and form.</p>
+                </figcaption>
+            </article>
+            <article class="container-fluid d-flex art-section" aria-label="Contract Artworks">
+                <a class="pin" href="../images/design/DETSA-Pin-Large.png" data-dimbox="design-gallery" data-dimbox-caption="DETSA Pin Design, Adobe Illustrator, 2021 DETSA State Competition 2nd Place" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="DETSA Pin Design — click to view larger">
+                    <img src="../images/design/DETSA-Pin-Large.png" alt="Pin Design for DETSA 2021 State Competition with the theme 'Envision Your Future, Better than 2020'">
+                </a>
+                <a class="stamp" href="../images/design/WestPHAL-BRIDGE-Large.jpg" data-dimbox="design-gallery" data-dimbox-caption="Westphal BRIDGE Shirt Design, Adobe Illustrator, 2023 WestPHAL Pop-Up Shop" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Westphal BRIDGE Shirt Design — click to view larger">
+                    <img src="../images/design/WestPHAL-BRIDGE-Large.jpg" alt="Shirt Design for the Westphal BRIDGE program themed around postage stamps of campus ideas and locations">
+                </a>
+            </article>
+            <article class="container-fluid d-flex art-section" aria-label="Artist Poster Artworks">
+                <a class="poster2" href="../images/design/VSCM240FinalPoster.jpg" data-dimbox="design-gallery" data-dimbox-caption="Typography Artist Exhibit Poster: Barbara Kruger, Adobe Illustrator, VSCM 240" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Typography Artist Exhibit Poster: Barbara Kruger — click to view larger">
+                    <img src="../images/design/VSCM240FinalPoster.jpg" alt="Poster design for a mock Barbara Kruger exhibtion using black and white text only">
+                </a>
+                <a class="poster1" href="../images/design/VSCM230FinalPoster.jpg" data-dimbox="design-gallery" data-dimbox-caption="Architect Poster Design: Maya Lin, Adobe Illustrator, VSCM 230" data-dimbox-ratio="16x9" data-dimbox-type="image" aria-label="Architect Poster Design: Maya Lin — click to view larger">
+                    <img src="../images/design/VSCM230FinalPoster.jpg" alt="Poster design for an mock architecture event featuring Maya Lin, based specifically on her Earthworks">
+                </a>
+                <figcaption class="poster-text">
+                    <h4 class="color-accent-red">ARCHITECT POSTER CONCEPT</h4>
+                    <p>Maya Lin is known for her simple, mathematical structures and landscape formations. This poster aims to capture some of her iconic installations, the Wave Fields. She has several different in-ground wave sculptures across the globe, so I thought this design could represent her style well. She also often works with water, rivers, and flowing shapes so the teardrop in the Wave Field hints at this design trend, as well. The typography is simple and structured to match the modern, minimalist style she presents in her monuments and architecture.</p>
+                </figcaption>
+            </article>
+        </section>
+
+        <section id="animation" class="container-fluid" aria-label="Animation Section">  
+            <h2 class="color-accent-red">ANIMATION</h2>
+            <a href="#footer" class="skip-link photography-skip-link color-accent-blue-hover" aria-label="Skip Animation Gallery">
+                Skip Animation Gallery
             </a>
-        </div>
-        <div class="object-text">
-            <h4 class="color-primary-accent">OBJECT POSTER CONCEPTS</h4>
-            <p>My two posters explore contrasting perceptions of my plant shears. The first emphasizes the object's structural qualities, highlighting abstract forms and geometric precision through a linear, repetitive composition. In contrast, the second poster captures the shears dynamically, using fluid, organic lines that mimic the act of cutting stems. Together, the two pieces demonstrate the mechanical and expressive nature of the object, creating a dialogue between function and form.</p>
-        </div>
-    </section>
-    <section class="container-fluid d-flex art-section">
-        <a class="pin" href="../images/design/DETSA-Pin-Large.png" data-dimbox="design-gallery" data-dimbox-caption="DETSA Pin Design, Adobe Illustrator, 2021 DETSA State Competition 2nd Place" data-dimbox-ratio="16x9" data-dimbox-type="image">
-            <img src="../images/design/DETSA-Pin-Large.png" alt="">
-        </a>
-        <a class="stamp" href="../images/design/WestPHAL-BRIDGE-Large.jpg" data-dimbox="design-gallery" data-dimbox-caption="Westphal BRIDGE Shirt Design, Adobe Illustrator, 2023 WestPHAL Pop-Up Shop" data-dimbox-ratio="16x9" data-dimbox-type="image">
-            <img src="../images/design/WestPHAL-BRIDGE-Large.jpg" alt="">
-        </a>
-    </section>
-    <section class="container-fluid d-flex art-section">
-        <a class="poster2" href="../images/design/VSCM240FinalPoster.jpg" data-dimbox="design-gallery" data-dimbox-caption="Typography Artist Exhibit Poster: Barbara Kruger, Adobe Illustrator, VSCM 240" data-dimbox-ratio="16x9" data-dimbox-type="image">
-            <img src="../images/design/VSCM240FinalPoster.jpg" alt="">
-        </a>
-        <a class="poster1" href="../images/design/VSCM230FinalPoster.jpg" data-dimbox="design-gallery" data-dimbox-caption="Architect Poster Design: Maya Lin, Adobe Illustrator, VSCM 230" data-dimbox-ratio="16x9" data-dimbox-type="image">
-            <img src="../images/design/VSCM230FinalPoster.jpg" alt="">
-        </a>
-        <div class="poster-text">
-            <h4 class="color-primary-accent">ARCHITECT POSTER CONCEPT</h4>
-            <p>Maya Lin is known for her simple, mathematical structures and landscape formations. This poster aims to capture some of her iconic installations, the Wave Fields. She has several different in-ground wave sculptures across the globe, so I thought this design could represent her style well. She also often works with water, rivers, and flowing shapes so the teardrop in the Wave Field hints at this design trend, as well. The typography is simple and structured to match the modern, minimalist style she presents in her monuments and architecture.</p>
-        </div>
-    </section>
+            <article class="video-section d-flex" aria-label="Video Gallery Pt. 1">
+                <article aria-label="Regional Rail Video">
+                    <a href="https://youtu.be/W3vYk-JKJJE?si=PIOxhoT7pSbROIog" target="_blank">
+                        <img src="../images/design/rail-video.jpg" alt="">
+                    </a>
+                    <figcaption class="bg-accent-green d-flex flex-column align-items-center">
+                        <h3>Regional Rail</h3>
+                        <h4>ANIM 115: Introduction to Production</h4>
+                    </figcaption>
+                </article>
+                <article aria-label="Join CAB Video">
+                    <a href="https://youtu.be/b_stAW4JqEM?si=4oOz8QPhgzVOsETa" target="_blank">
+                        <img src="../images/design/cab-video.jpg" alt="">
+                    </a>
+                    <figcaption class="bg-accent-purple d-flex flex-column align-items-center">
+                        <h3>Join CAB</h3>
+                        <h4>ANIM 115: Introduction to Production</h4>
+                    </figcaption>
+                </article>
+            </article>
+            <article class="video-section d-flex" aria-label="Video Gallery Pt. 2">
+                <article aria-label="Unwind Video">
+                    <a href="https://youtu.be/vOovQfqQrDk?si=1UnIKiTqsZkO-3JZ" target="_blank">
+                        <img src="../images/design/unwind-video.jpg" alt="">
+                    </a>
+                    <figcaption class="bg-accent-blue d-flex flex-column align-items-center">
+                        <h3>UNWIND</h3>
+                        <h4>VSST 108: Design I for Media</h4>
+                    </figcaption>
+                </article>
+                <article aria-label="VIVID Video">
+                    <a href="https://youtu.be/lkO8ePWTa7I?si=DeHrjKO40Rq7HO20" target="_blank">
+                        <img src="../images/design/vivid-video.jpg" alt="">
+                    </a>
+                    <figcaption class="bg-accent-red d-flex flex-column align-items-center">
+                        <h3>VIVID</h3>
+                        <h4>VSST 109: Design II for Media</h4>
+                    </figcaption>
+                </article>
+            </article>
+        </section>
+    </main>
 
-    <h2 class="color-primary-accent">ANIMATION</h2>
-    <section class="container-fluid">
-        <div class="video-section d-flex">
-            <div>
-                <a href="https://youtu.be/W3vYk-JKJJE?si=PIOxhoT7pSbROIog" target="_blank">
-                    <img src="../images/design/rail-video.jpg" alt="">
-                </a>
-                <div class="trans-decorative-green d-flex flex-column align-items-center">
-                    <h3>Regional Rail</h3>
-                    <h4>ANIM 115: Introduction to Production</h4>
-                </div>
-            </div>
-            <div>
-                <a href="https://youtu.be/b_stAW4JqEM?si=4oOz8QPhgzVOsETa" target="_blank">
-                    <img src="../images/design/cab-video.jpg" alt="">
-                </a>
-                <div class="trans-decorative-purple d-flex flex-column align-items-center">
-                    <h3>Join CAB</h3>
-                    <h4>ANIM 115: Introduction to Production</h4>
-                </div>
-            </div>
-        </div>
-        <div class="video-section d-flex">
-            <div>
-                <a href="https://youtu.be/vOovQfqQrDk?si=1UnIKiTqsZkO-3JZ" target="_blank">
-                    <img src="../images/design/unwind-video.jpg" alt="">
-                </a>
-                <div class="trans-secondary-accent d-flex flex-column align-items-center">
-                    <h3>UNWIND</h3>
-                    <h4>VSST 108: Design I for Media</h4>
-                </div>
-            </div>
-            <div>
-                <a href="https://youtu.be/lkO8ePWTa7I?si=DeHrjKO40Rq7HO20" target="_blank">
-                    <img src="../images/design/vivid-video.jpg" alt="">
-                </a>
-                <div class="trans-decorative-pink d-flex flex-column align-items-center">
-                    <h3>VIVID</h3>
-                    <h4>VSST 109: Design II for Media</h4>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-
-    <div class="container-fluid justify-content-center">
+    <footer id="footer" class="container-fluid justify-content-center" aria-label="Footer">       
         <picture>
             <source
             media="(min-width: 576px)"
             srcset="../images/general/lower-absract-full-row.svg">
-
             <img class="img-fluid abstract-img"
             src="../images/general/lower-absract-mobile-row.svg"
-            alt="random colorful absract shapes">
+            aria-hidden="true"
+            alt="Random colorful abstract shapes inspired by riograph prints">
         </picture>
-        <div class="row align-items-center justify-content-center footer bg-decorative-pink">
-            <div class="row align-items-center text-color-light">
+        <row class="row align-items-center justify-content-center footer bg-accent-purple">
+            <a href="#page-content" class="skip-link footer-skip-link color-tan-hover" aria-label="Skip Footer Links">
+                Skip Footer Links
+            </a> 
+            <row class="row align-items-center text-color-light">
                 <img class="icon" src="../images/icons/location_icon.svg" alt="location pin icon">
                 <p>Philadelphia, PA</p>
-            </div>
-            <a class="row align-items-center text-color-light footer-link" href="mailto:olivia.knestaut@gmail.com">
+            </row>
+            <a class="row align-items-center text-color-light footer-link" aria-label="Email olivia.knestaut@gmail.com" href="mailto:olivia.knestaut@gmail.com">
                 <img class="icon" src="../images/icons/mail_icon.svg" alt="email icon">
-                <p>olivia.knestaut@gmail.com</p>
+                <span>olivia.knestaut@gmail.com</span>
             </a>
-            <a href="https://www.instagram.com/ollywhelmed/" target="_blank" class="row align-items-center text-color-light footer-link">
+            <a href="https://www.instagram.com/ollywhelmed/" target="_blank" aria-label="@ollywhelmed on Instagram — opens in a new tab" class="row align-items-center text-color-light footer-link">
                 <img class="icon" src="../images/icons/instagram_icon.svg" alt="instagram icon">
-                <p>@ollywhelmed</p>
+                <span>@ollywhelmed</span>
             </a>
-            <a href="https://www.linkedin.com/in/oliviaknestaut/" target="_blank" class="row align-items-center text-color-light footer-link">
+            <a href="https://www.linkedin.com/in/oliviaknestaut/" target="_blank" aria-label="oliviaknestaut on LinkedIn — opens in a new tab" class="row align-items-center text-color-light footer-link">
                 <img class="icon" src="../images/icons/linkedin_icon.svg" alt="linkedin icon">
-                <p>oliviaknestaut</p>
+                <span>oliviaknestaut</span>
             </a>
-            <a href="https://github.com/OliviaKnestaut" target="_blank" class="row align-items-center text-color-light footer-link">
+            <a href="https://github.com/OliviaKnestaut" target="_blank" aria-label="OliviaKnestaut on GitHub — opens in a new tab" class="row align-items-center text-color-light footer-link">
                 <img class="icon" src="../images/icons/github_icon.svg" alt="github icon">
-                <p>OliviaKnestaut</p>
+                <span>OliviaKnestaut</span>
             </a>
-        </div>
-    </div>
+        </row>
+    </footer>
 
     <a href="#" class="go-top">
         <img src="../images/icons/back-to-top.svg" alt="">

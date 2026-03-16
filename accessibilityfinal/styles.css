@@ -691,6 +691,7 @@ nav.contents{
     padding: 0 2rem;
     max-width: 1000px;
 }
+
 .case-study-page{
     display: flex;
     align-items: center;
@@ -747,12 +748,6 @@ nav.contents{
 .wireframes img{
     width: 48%;
 }
-
-.righton-btn{
-    margin-top: 0 !important;
-    margin-bottom: 10px;
-}
-
 
 /*Large Screens*/
 @media screen and (min-width: 1200px){
