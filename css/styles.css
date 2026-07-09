@@ -581,6 +581,9 @@ section.about{
 .poster1{
     width: 70%;
 }
+.poster2{
+    width: 58%;
+}
 .poster-text{
     width: 65%;
 }
@@ -668,7 +671,21 @@ figcaption.object-text, figcaption.poster-text{
     }
 }
 
+@media screen and (max-width: 1000px) {
 
+    /*DESIGN & MEDIA*/
+    .art-section{
+        flex-direction: column;
+    }
+
+    .art-section a{
+        width: 100%;
+    }
+
+    figcaption.object-text, figcaption.poster-text{
+        width: 100%;
+    }
+}
 
 /* ============== Medium Screens ============== */
 
@@ -758,19 +775,6 @@ figcaption.object-text, figcaption.poster-text{
         width: 100%;
         display: flex;
         justify-content: center;
-    }
-
-    /*DESIGN & MEDIA*/
-    .art-section{
-        flex-direction: column;
-    }
-
-    .art-section a{
-        width: 100%;
-    }
-
-    figcaption.object-text, figcaption.poster-text{
-        width: 100%;
     }
 
 }

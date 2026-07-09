@@ -253,12 +253,14 @@ iframe{
     padding: 1rem 1.25rem;
     font-size: 1rem;
     font-weight: 700;
+    font-family: var(--Jost);
 }
 
 .case-study-table td {
     padding: 1rem 1.25rem;
     vertical-align: top;
     line-height: 1.6;
+    font-family: var(--Jost);
 }
 
 .case-study-table tbody tr:nth-child(even), .case-study-table tbody tr:nth-child(even):hover  {
