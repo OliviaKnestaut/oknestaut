@@ -31,6 +31,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/case-study.css">
 </head>
 <body>
     <!-- Google Tag Manager (noscript) -->
@@ -52,7 +53,7 @@
             <div class="mr-auto"></div>
             <ul class="navbar-nav my-2 my-lg-0" aria-label="Primary Navigation Items">
                 <li class="nav-item dropdown" aria-label="Toggle Portfolio Navigation Dropdown">
-                    <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
+                    <a class="nav-link dropdown-toggle color-accent-red" href="" id="navbarDropdown" role="button" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PORTFOLIO</a>
                     <div class="dropdown-menu dropdown-menu-lg" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href=".." aria-label="Case Studies Navigation Link">CASE STUDIES</a>
                         <a class="dropdown-item" href="../photography" aria-label="Photography Navigation Link">PHOTOGRAPHY</a>
@@ -60,61 +61,70 @@
                     </div>
                 </li>
                 <li class="nav-item active" aria-label="About Navigation Link">
-                    <a class="nav-link" href="../about">ABOUT</a>
+                    <a class="nav-link color-accent-red" href="../about">ABOUT</a>
                 </li>
                 <li class="nav-item active" aria-label="Contact Navigation Link">
-                    <a class="nav-link" href="../resume">RESUME</a>
+                    <a class="nav-link color-accent-red" href="../resume">RESUME</a>
                 </li>
             </ul>
         </section>
     </nav>
 
-    <header id="main-content" class="container-fluid case-study-header" aria-label="Header Site Banner">
+    <header id="main-content" class="container-fluid case-study-header bg-accent-purple" aria-label="Header Site Banner">
         <article id="righton-img" class="case-study-title" aria-label="Case Study Header">
-            <figcaption aria-label="Case Study Title">
+            <figcaption aria-label="Case Study Title" class="case-study-figcaption">
                 <h1 class="text-color-light">RIGHT ON EDUCATION</h1>
                 <h2 class="case-study-snippit">CENTRAL REDESIGN</h2>
             </figcaption>
+            <img class="img-fluid header-image" src="../images/home/RightOn-Cover.png" alt="Laptop, tablet, and mobile screens showing pages from the RightOn Central Redesign Project">
         </article>
-
-        <section class="contents-flex" aria-label="Case Study Contents and Buttons">
-            <article aria-label="Final Result Buttons">
-                <button type="button" class="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover" onclick="window.open('https://www.figma.com/design/ICAQP1cDQS9MEnCjlwhKFo/RightOn-Central?node-id=22-67438&t=iLRkIwQlbRt8lS1M-4', '_blank')">
-                    <h4 class="btn-text color-tan">Wireframes</h4>
-                </button>
-                <button type="button" class="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover" onclick="window.open('https://www.figma.com/design/ICAQP1cDQS9MEnCjlwhKFo/RightOn-Central?node-id=0-1&t=xPC0xpj36H08ZDGr-1', '_blank')">
-                    <h4 class="btn-text color-tan">Hi-fi Designs</h4>
-                </button>
-            </article>
-            <a href="#righton-content" class="skip-link contents-skip-link color-accent-blue-hover" aria-label="Skip Table of Contents">
-                Skip Table of Contents
-            </a> 
-            <nav class="contents" aria-label="Case Study Contents Navigation">
-                <a href="#overview" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> OVERVIEW</a>
-                <a href="#problem" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> PROBLEM STATEMENT</a>
-                <a href="#users" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> USERS &amp; AUDIENCE</a>
-                <a href="#research" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> RESEARCH</a>
-                <a href="#design-process" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> DESIGN PROCESS</a>
-                <a href="#results" class="color-accent-blue"><span class="tiny-circle bg-accent-blue">→</span> RESULTS</a>
-            </nav>
-        </section>
     </header>
+
+    <section class="contents-flex" aria-label="Case Study Contents and Buttons">
+        <a href="#righton-content" class="skip-link contents-skip-link color-accent-blue-hover" aria-label="Skip Table of Contents">
+            Skip Table of Contents
+        </a>
+
+        <nav class="contents" aria-label="Case Study Contents Navigation">
+            <a href="#overview" class="contents-link color-accent-blue" aria-label="Overview Link"> OVERVIEW</a>
+            <a href="#problem" class="contents-link color-accent-blue" aria-label="Problem Statement Link"> PROBLEM STATEMENT</a>
+            <a href="#users" class="contents-link color-accent-blue" aria-label="Users and Audience Link"> USERS &amp; AUDIENCE</a>
+            <a href="#research" class="contents-link color-accent-blue" aria-label="Research Link"> RESEARCH</a>
+            <a href="#design-process" class="contents-link color-accent-blue" aria-label="Design Process Link"> DESIGN PROCESS</a>
+            <a href="#results" class="contents-link color-accent-blue" aria-label="Results Link"> RESULTS</a>
+        </nav>
+    </section>
 
     <main id="righton-content" class="case-study-page" aria-label="Case Study Main Content">
 
         <section id="overview" class="container-fluid study-section" aria-label="Case Study Overview">
             <h2 class="color-accent-purple" >OVERVIEW</h2>
-            <p>
-                RightOn!™ is a web-based platform that engages students in thinking about and learning from mistakes and misconceptions in K-12 math. By shifting focus from quick recall to understanding why wrong answers are wrong, students see errors as learning opportunities, gain confidence in their ability to improve, and develop deeper conceptual understanding of core math concepts.
-                The RightOn! platform consists of three parts: a learner-facing web app, a database of games and questions, and a teacher facing dashboard.
-            </p>
-            <p>
-                Over the course of six months from April to September 2024 I completed a Co-Op Experience as a User Experience Designer and Researcher at RightOn! education. Under the direction of CEO <a href="https://www.linkedin.com/in/sinclairwu/" target="_blank">Sinclair Wu</a>, Development Head <a href="https://www.linkedin.com/in/drewjhart/" target="_blank">Drew Hart</a>, and Design Head <a href="https://www.linkedin.com/in/rodhinn/" target="_blank">Rod Hinn</a> I spearheaded the comprehensive redesign of RightOn! Central, the teacher facing database of games and questions.
-            </p>
-            <p>
-                Fellow UX intern <a href="https://www.linkedin.com/in/zachary-spindel-192307231/" target="_blank">Zach Spindel</a> assisted in the development of microinteraction design on this project, and Development Intern <a href="https://www.linkedin.com/in/kelly-couvrette/">Kelly Couvrette</a> assisted in early implementation.
-            </p>
+
+            <article class="container-fluid study-section overview" aria-label="Case Study Overview Content">
+                <dl>
+                    <dt><b>Project Type</b></dt>
+                    <dd>Web App Platform Redesign</dd>
+                    <dt><b>My Role</b></dt>
+                    <dd>User Experience Designer &amp; Researcher</dd>
+                    <dt><b>Project Timeline</b></dt>
+                    <dd>April — September 2024</dd>
+                    <dt><b>Project Resources</b></dt>
+                    <dd>Figma, Illustrator, Photoshop, User Testing</dd>
+                </dl>
+                <article>
+                    <p>
+                        RightOn!™ is a web-based platform that engages students in thinking about and learning from mistakes and misconceptions in K-12 math. By shifting focus from quick recall to understanding why wrong answers are wrong, students see errors as learning opportunities, gain confidence in their ability to improve, and develop deeper conceptual understanding of core math concepts.
+                        The RightOn! platform consists of three parts: a learner-facing web app, a database of games and questions, and a teacher facing dashboard.
+                    </p>
+                    <p>
+                        Over the course of six months from April to September 2024 I completed a Co-Op Experience as a User Experience Designer and Researcher at RightOn! education. Under the direction of CEO <a href="https://www.linkedin.com/in/sinclairwu/" target="_blank">Sinclair Wu</a>, Development Head <a href="https://www.linkedin.com/in/drewjhart/" target="_blank">Drew Hart</a>, and Design Head <a href="https://www.linkedin.com/in/rodhinn/" target="_blank">Rod Hinn</a> I spearheaded the comprehensive redesign of RightOn! Central, the teacher facing database of games and questions.
+                        Fellow UX intern <a href="https://www.linkedin.com/in/zachary-spindel-192307231/" target="_blank">Zach Spindel</a> assisted in the development of microinteraction design on this project, and Development Intern <a href="https://www.linkedin.com/in/kelly-couvrette/">Kelly Couvrette</a> assisted in early implementation.
+                    </p>
+                </article>
+            </article>
         </section>
+
+
 
         <section id="problem" class="container-fluid study-section" aria-label="Case Study Problem Statement">
             <h2 class="color-accent-purple">PROBLEM STATEMENT</h2>
@@ -125,29 +135,18 @@
                 With RightOn Play and RightOn Host now sufficently developed and deployed in beta, the next focus was to redesign and restructure RightOn Central for an improved instructor experience choosing and creating games.
             </p>
             <h6 class="color-accent-blue"><b>Explore Games</b></h6>
-            <figure class="current-central" aria-label="Explore Games Old Screens">
-                <img class="pc-img" src="../images/righton/Central-Current-PC.png" alt="Explore Games Old Screen on PC">
-                <img class="mobile-img" src="../images/righton/Central-Current-Mobile.png" alt="Explore Games Old Screen on Mobile">
-            </figure>
+            <img class="pc-img" src="../images/righton/Current-Central-Home-Combo.png" alt="Explore Games Old Screen on PC and Mobile">
             <h6 class="color-accent-blue"><b>View Game</b></h6>
-            <figure class="current-central" aria-label="View Game Old Screens">
-                <img class="pc-img" src="../images/righton/Central-Game-Current-PC.png" alt="View Game Old Screen on PC">
-                <img class="mobile-img" src="../images/righton/Central-Game-Current-Mobile.png" alt="View Game Old Screen on Mobile">
-            </figure>
+            <img class="pc-img" src="../images/righton/Current-Game-View-Combo.png" alt="View Game Old Screen on PC and Mobile">
             <h6 class="color-accent-blue"><b>Create Question</b></h6>
-            <figure class="current-central" aria-label="Create Question Old Screens">
-                <img class="pc-img" src="../images/righton/Create-Question-PC.png" alt="Create Question Old Screen on PC">
-                <img class="mobile-img" src="../images/righton/Create-Question-Mobile.png" alt="Create Question Old Screen on Mobile">
-            </figure>            
+            <img class="pc-img" src="../images/righton/Current-Create-Question-Combo.png" alt="Create Question Old Screen on PC and Mobile">          
         </section>
 
         <section id="users" class="container-fluid study-section" aria-label="Case Study Users and Audience">
             <h2 class="color-accent-purple">USERS &amp; AUDIENCE</h2>
             <p>
                 The RightOn platform is acquired by teachers and school administrators for use in their classrooms and school districts. RightOn prioritizes educational equity, offering the platform to all users for free, without requiring any software downloads or student logins.
-            </p>
-            <p>
-                RightOn aims to be optimized for young and new-to-subject teachers to help familiarize them with common core standards and reduce teacher turnover rates in math. Young and new-to subject teachers, while often tech savvy, predominantly come from non-STEM majors and are more likely to need pedagogical support. These teachers are also less traditional in their teaching methods and more open to teaching social-emotional learning (SEL) and self-reflection.
+                <b>RightOn aims to be optimized for young and new-to-subject teachers to help familiarize them with common core standards and reduce teacher turnover rates in math. Young and new-to subject teachers, while often tech savvy, predominantly come from non-STEM majors and are more likely to need pedagogical support. These teachers are also less traditional in their teaching methods and more open to teaching social-emotional learning (SEL) and self-reflection.</b>
             </p>
             <p>
                 Currently the RightOn Beta is deployed within several schools, after school programs, and summer camps across the Philadelphia area. The current beta focuses on math for students in grades 6-9. Once fully launched the system will cater to K-12 math, HigherEd corequesite math and GED math.
@@ -155,19 +154,41 @@
             <img class="img-fluid" src="../images/righton/IMG_1936_1_1.jpg" alt="Olivia in a Philadelphia classroom doing in person user testing with students">
         </section>
 
-        <section id="research" class="container-fluid study-section" aria-label="Case Study Research">
-            <h2 class="color-accent-purple">RESEARCH</h2>
-            <p>During my time at RightOn, I had the opportunity to work with our expert advisors to help develop the base of research surrounding the company's core tenants.</p>
-            <h4 class="color-accent-blue">POSITIVE CLASSROOM CULTURE OF ERROR</h4>
-            <p>When student make mistakes in math the responses of their teachers and peers impact the development of their attitudes and performance in the subject. A positive error climate correlates with greater motivation, engagement, and performance among students, while a negative error climate can lead to anxiety, avoidance behaviors, and diminished learning outcomes	.Offering teachers a channel to offer constructive feedback and encouragement rather than criticism is one way to develop a positive classroom culture of error (Steuer et al., 2013).</p>
-            <h4 class="color-accent-blue">SENSE OF BELONGING IN MATH SPACES</h4>
-            <p>Students who perceive a greater sense of belonging to mathematics demonstrate higher levels of motivation, confidence, and persistence compared to students who feel disconnected or alienated from the subject (Barbieri &amp; Miller-Cotto, 2021).</p>
-            <h4 class="color-accent-blue">POWER OF LEARNING FROM MISTAKES</h4>
-            <p>Research has found that reflecting on errors is beneficial for students with all levels of knowledge. However, for students with little knowledge of a math topic, studying errors is even more effective than correct worked examples or problem-solving alone (Barbieri &amp; Booth, 2016). A 2014 paper by Adams et al. identified what they defined as the Erroneous Examples Principle:"People learn more deeply when they are asked to critique the incorrect solution procedures of others" (Adams etc al., 2014).</p>
-            <h4 class="color-accent-blue">PLAY TESTING</h4>
-            <p>My fellow UX intern, Zach, and I led play-testing sessions with teachers and students in academic settings across the Philadelphia area. These sessions included working with students at Carver Engineering and Science High School, Congreso de Latinos Unidos, and Math Corps Philly Summer Camp. Survey results, group discussions, and observations from these classes aided our team in identifing bugs and potential enhancements for the platform.</p>
-            <h4 class="color-accent-blue">COMPETITIVE ANALYSIS</h4>
-            <p>We performed several competitive analyses on other EdTech platforms, with a focus on systems that address misconceptions and incorporate artificial intelligence. Some of these competitors include Gimkit, Eedi, Quizziz, Kyron Learning, and Magic School AI. We used this data to continue to develop the RightOn Competitor &amp; Collaborator Landscape and compare AI and misconception capabilities.</p>
+        <section id="research" class="container-fluid study-section bg-accent-purple inverted" aria-label="Case Study Research">
+            <h2 class="color-tan">RESEARCH</h2>
+
+            <p class="research-intro color-tan">
+                During my time at RightOn, I had the opportunity to work with our expert advisors and UX team members to help develop the base of research surrounding the company's core tenants These tenants include a positive classroom culture of error, a sense of belonging in math spaces,the power of learning from mistakes. Research was conducted though literature reviews, play testing, and competitive analysis. The following research findings were used to inform the design of RightOn Central.
+            </p>
+
+            <section class="research-grid">
+
+                <article class="research-card color-tan" aria-label="Positive Classroom Culture of Error Research Card">
+                    <h4>POSITIVE CLASSROOM CULTURE OF ERROR</h4>
+                    <p>When student make mistakes in math the responses of their teachers and peers impact the development of their attitudes and performance in the subject. A positive error climate correlates with greater motivation, engagement, and performance among students, while a negative error climate can lead to anxiety, avoidance behaviors, and diminished learning outcomes .Offering teachers a channel to offer constructive feedback and encouragement rather than criticism is one way to develop a positive classroom culture of error (Steuer et al., 2013).</p>
+                </article>
+
+                <article class="research-card color-tan" aria-label="Sense of Belonging in Math Spaces Research Card">
+                    <h4>SENSE OF BELONGING IN MATH SPACES</h4>
+                    <p>All students should feel that they belong in math class, are welcome, smart, and can succeed. Students who perceive a greater sense of belonging to mathematics demonstrate higher levels of motivation, confidence, and persistence compared to students who feel disconnected or alienated from the subject. This increase in motivation, confidence, and persistence directly translates to improved academic performance (Barbieri &amp; Miller-Cotto, 2021).</p>
+                </article>
+
+                <article class="research-card color-tan" aria-label="Power of Learning from Mistakes Research Card">
+                    <h4>POWER OF LEARNING FROM MISTAKES</h4>
+                    <p>Research has found that reflecting on errors is beneficial for students with all levels of knowledge. However, for students with little knowledge of a math topic, studying errors is even more effective than correct worked examples or problem-solving alone (Barbieri &amp; Booth, 2016). A 2014 paper by Adams et al. identified what they defined as the Erroneous Examples Principle:"People learn more deeply when they are asked to critique the incorrect solution procedures of others" (Adams etc al., 2014).</p>
+                </article>
+
+                <article class="research-card color-tan" aria-label="Play Testing Research Card">
+                    <h4>PLAY TESTING</h4>
+                    <p>My fellow UX intern, Zach, and I led play-testing sessions with teachers and students in academic settings across the Philadelphia area. These sessions included working with students at Carver Engineering and Science High School, Congreso de Latinos Unidos, and Math Corps Philly Summer Camp. Survey results, group discussions, and observations from these classes aided our team in identifing bugs and potential enhancements for the platform.</p>
+                </article>
+
+                <article class="research-card color-tan" aria-label="Competitive Analysis Research Card">
+                    <h4>COMPETITIVE ANALYSIS</h4>
+                    <p>We performed several competitive analyses on other EdTech platforms, with a focus on systems that address misconceptions and incorporate artificial intelligence. Some of these competitors include Gimkit, Eedi, Quizziz, Kyron Learning, and Magic School AI. We used this data to continue to develop the RightOn Competitor &amp; Collaborator Landscape and compare AI and misconception capabilities.</p>
+                </article>
+
+            </section>
         </section>
 
         <section id="design-process" class="container-fluid study-section" aria-label="Case Study Design Process">
@@ -179,7 +200,7 @@
                     All color combinations were tested for compliance with AA and AAA accessibility standards.</p>
                 <img class="img-fluid" src="../images/righton/style-guide.png" alt="RightOn Education Style Guide">
             </article>
-            <article class="case-study-sect" aria-label="Responside Design Section">
+            <article class="case-study-sect" aria-label="Responsive Design Section">
                 <h4 class="color-accent-blue">RESPONSIVE DESIGN</h4>
                 <p>It is essential that all systems in the RightOn platform are responsive and accessible on all devices to align with the principle of Educational Equity. Not every school, district, or program has access to laptops and technology funding so a mobile-friendly system can support a greater range of classrooms. Design changes on different device sizes must allow all content to remain accessible, allowing seamless performance without a detriment to user experience.</p>
                 <img class="img-fluid" src="../images/home/RightOn-Cover.png" alt="Screens from the RightOn Central System across different devices">
@@ -191,7 +212,7 @@
                     <h4 class="btn-text color-tan">Figma Wireframes</h4>
                 </button>
                 <img class="img-fluid" src="../images/righton/sketches.png" alt="Early sketched wireframes">
-                <figure class="d-flex wireframes">
+                <figure class="d-flex wireframes" aria-label="Early Wireframes of Home and Create Question Screens">
                     <img src="../images/righton/home-wireframe.png" alt="Home page wireframe">
                     <img src="../images/righton/create-question-wireframe.png" alt="Create question wireframe">
                 </figure>                
@@ -213,17 +234,17 @@
             </article>
         </section>
 
-        <section id="results" class="container-fluid study-section" aria-label="Case Study Results">
-            <h2 class="color-accent-purple">RESULTS</h2>
-            <article class="case-study-sect" aria-label="Navigation Results Section">
-                <h4 class="color-accent-blue">NAVIGATION</h4>
+        <section id="results" class="container-fluid study-section inverted bg-accent-purple" aria-label="Case Study Results">
+            <h2 class="color-tan">RESULTS</h2>
+            <article class="case-study-sect color-tan" aria-label="Navigation Results Section">
+                <h4>NAVIGATION</h4>
                 <p>The RightOn Central navigation has six main buttons. On the left, the RightOn logo used to return to Explore Games, in the center the three main explore pages: Explore Games, Explore Questions, and My Library, and finally, on the right Create Game/Question and Profile.
                     An important element in the development of the navigation design was choosing the iconography. These are the most present icons in the system, appearing on every page so they need to be clear and engaging.</p>
-                <h6 class="color-accent-purple"><b>Responsive Navigation</b></h6>
+                <h6><b>Responsive Navigation</b></h6>
                 <img class="img-fluid" src="../images/righton/navigation.png" alt="Final Navigation Designs">
             </article>
-            <article class="case-study-sect" aria-label="Search and Filter Results Section">
-                <h4 class="color-accent-blue">SEARCH AND FILTER</h4>
+            <article class="case-study-sect color-tan" aria-label="Search and Filter Results Section">
+                <h4>SEARCH AND FILTER</h4>
                 <p>The search and filter functionality witin RightOn Central is designed to aid teachers in finding relevant games.
                     There is no search button, results begin lazy loading after a user begins typing. The debounce for this lazy load is 800ms.
                     The search bar parses the title, description, and CCSS fields of all public games in the database.
@@ -231,21 +252,21 @@
                     On the right side, users can sort results after a search. Only one sort option can be selected at a time. Attempting to select another overrides the prior selection.
                     The default sort on load is date updated, descending (most recent at top). Other sort options are:
                     </p>
-                    <ul>
+                    <ul aria-label="Search and Filter Sort Options">
                         <li>Date Updated: Descending or Ascending</li>
                         <li>Most Popular: Descending or Ascending</li>
                         <li>Grade Level: Descending or Ascending</li>
                         <li>Question Count: Descending or Ascending</li>
                     </ul>
-                <h6 class="color-accent-purple"><b>Search Bar</b></h6>
+                <h6><b>Search Bar</b></h6>
                 <img class="img-fluid" src="../images/righton/Search-1.png" alt="Final Search Design">
                 <img class="img-fluid" src="../images/righton/Search-2.png" alt="Final Post Search Designs">
             </article>
-            <article class="case-study-sect" aria-label="Explore Games, Explore Questions, and My Library Results Section">
-                <h4 class="color-accent-blue">EXPLORE GAMES, EXPLORE QUESTIONS, &amp; MY LIBRARY </h4>
+            <article class="case-study-sect color-tan" aria-label="Explore Games, Explore Questions, and My Library Results Section">
+                <h4>EXPLORE GAMES, EXPLORE QUESTIONS, &amp; MY LIBRARY </h4>
                 <p>Explore Games, Explore Questions, and My Library are the three main tabs across RightOn Central's navigation. If a user is logged in the system will recommend games based on their history, if a user is not logged in they will instead see featured games.
                     All games in Explore Games and Explore Questions are public games created by other members of the platform. Users can access games they have created in My Library. User-owned games are sorted into public, private, and drafts. Users can also find public games they have favorited here.</p>
-                <h6 class="color-accent-purple"><b>Explore Games</b></h6>
+                <h6><b>Explore Games</b></h6>
                 <picture>
                     <source
                     media="(min-width: 1000px)"
@@ -256,7 +277,7 @@
                     alt="Explore Games Final Desktop, Tablet, and Mobile Designs">
                 </picture>
         
-                <h6 class="color-accent-purple"><b>Explore Questions</b></h6>
+                <h6><b>Explore Questions</b></h6>
                 <picture>
                     <source
                     media="(min-width: 1000px)"
@@ -266,7 +287,7 @@
                     src="../images/righton/Explore-Questions-mobile.png"
                     alt="Explore Questions Final Desktop, Tablet, and Mobile Designs">
                 </picture>
-                <h6 class="color-accent-purple"><b>My Library</b></h6>
+                <h6><b>My Library</b></h6>
                 <picture>
                     <source
                     media="(min-width: 1000px)"
@@ -277,12 +298,12 @@
                     alt="My Library Final Desktop, Tablet, and Mobile Designs">
                 </picture>
             </article>
-            <article class="case-study-sect" aria-label="View Game and View Questions Results Section">
-                <h4 class="color-accent-blue">VIEW GAME &amp; VIEW QUESTION</h4>
+            <article class="case-study-sect color-tan" aria-label="View Game and View Questions Results Section">
+                <h4>VIEW GAME &amp; VIEW QUESTION</h4>
                 <p>From any of these explore pages, instructors can click into a game or question to see it's details. Viewing a game or question allows you to see the questions, correct answer, incorrect answers, and incorrect answer explanations.
                     This is also where users can launch a game to play with their class.
                 </p>
-                <h6 class="color-accent-purple"><b>View Game</b></h6>
+                <h6><b>View Game</b></h6>
                 <picture>
                     <source
                     media="(min-width: 1000px)"
@@ -293,8 +314,8 @@
                     alt="View Game Final Desktop, Tablet, and Mobile Designs">
                 </picture>
             </article>
-            <article class="case-study-sect" aria-label="Create Question Results Section">
-                <h4 class="color-accent-blue">CREATE QUESTION</h4>
+            <article class="case-study-sect color-tan" aria-label="Create Question Results Section">
+                <h4>CREATE QUESTION</h4>
                 <p>One of the most important flows within RightOn Central is the question creation flow. This flow is used to create questions within a game and within the question bank. The user is guided through the flow by secondary-accent highlights around the card next in the process.</p>
                 <picture>
                     <source
@@ -305,7 +326,7 @@
                     src="../images/righton/Create-question-flow-mobile.png"
                     alt="Create Question Flow Final Designs">
                 </picture>
-                <h6 class="color-accent-purple"><b>Wrong Answer Explanations Integration</b></h6>
+                <h6><b>Wrong Answer Explanations Integration</b></h6>
                 <p>One feature of the RightOn system is the Wrong Answer Explanations Prototype. This program takes in a math question and its multiple-choice options and uses AI to provide possible explanations for the incorrect options. I integrated this functionality directly into the question-creation flow to improve the ease of use.</p>
                 <picture>
                     <source
@@ -317,10 +338,10 @@
                     alt="Wrong Answer Explanations Final Designs">
                 </picture>
             </article>
-            <article class="case-study-sect" aria-label="Create Game Results Section">
-                <h4 class="color-accent-blue">CREATE GAME</h4>
+            <article class="case-study-sect color-tan" aria-label="Create Game Results Section">
+                <h4>CREATE GAME</h4>
                 <p>Another important flow is the create game flow. Through this users can create games made of pre-existing questions or pull from the question bank. Users can make both public a private games, but each can only be made of questions of the same type.</p>
-                <h6 class="color-accent-purple"><b>Question Bank</b></h6>
+                <h6><b>Question Bank</b></h6>
                 <picture>
                     <source
                     media="(min-width: 1000px)"
@@ -382,5 +403,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="../js/back-to-top.js"></script>
+    <script src="../js/contents.js"></script>
+
 </body>
 </html>
