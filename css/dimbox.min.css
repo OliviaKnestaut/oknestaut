@@ -1,10 +1,3 @@
-:root {
-    color-scheme: dark;
-    --background: #FFF9EE !important;
-    --text: #222222 !important;
-}
-
-
 .dimbox-container{
     position:fixed;
     inset:0 0 0 0;
@@ -254,14 +247,3 @@
             transform:rotate(360deg)
         }
     }/*# sourceMappingURL=dimbox.min.css.map */
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --background: #222222 !important;
-        --text: #ECECEC !important;
-    }
-
-    .dimbox-caption, .dimbox-btn-prev, .dimbox-btn-next, .dimbox-btn-close, .dimbox-btn-download, .dimbox-btn-fullscreen {
-        color: var(--text) !important;
-    }
-}

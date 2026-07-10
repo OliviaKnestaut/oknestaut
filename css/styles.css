@@ -48,7 +48,6 @@ html{
 }
 
 
-
 /* ============== COLOR CLASSES ============== */
 
 .color-accent-red{
@@ -118,17 +117,9 @@ html{
 .color-accent-purple-hover:active{
     background-color: var(--accent-purple-light) !important;
 }
-
-.text-color-dark{
-    color: var(--text) !important;
-    font-family: var(--Jost);
-}
 .text-color-light{
     color: var(--background) !important;
 }
-
-
-
 
 
 /* ============== GENERAL STYLES ============== */
@@ -157,7 +148,7 @@ p, li, dd {
 
 h1{
     font-family: var(--Jost);
-    font-size: clamp(2.5rem, 10vw, 9rem);
+    font-size: 10vw;
     text-align: center;
     font-style: normal;
     font-weight: 800;
@@ -188,7 +179,7 @@ h3{
     color: var(--background);
 }
 
-h4, .nav-link, .dropdown-item, .btn span, .case-study-snippit{
+h4, .nav-link, .dropdown-item, .btn span, .case-study-snippit, button h3, .study-section h3, .contact h3{
     font-family: var(--Jost);
     font-size: clamp(1.25rem, 1.5vw, 1.75rem);
     font-style: normal;
@@ -210,7 +201,7 @@ h5, .tagline {
     margin: 0;
 }
 
-h6, dt{
+h6, dt, .study-section figcaption{
     font-family: var(--Jost);
     font-size: clamp(0.95rem, 1.2vw, 1.5rem);
     text-align: left;
@@ -527,11 +518,6 @@ section.about{
 }
 
 
-
-/* Case study specific styles moved to css/case-study.css */
-
-
-
 /* ============== RESUME ============== */
 
 .resume-section{
@@ -753,30 +739,6 @@ figcaption.object-text, figcaption.poster-text{
         margin: 0 2rem;
     }
 
-    /*CASE STUDIES*/
-
-    .contents-flex{
-        justify-content: space-around;
-        flex-direction: column;
-    }
-
-    div.contents {
-        font-size: 3vw;
-        margin: 20px 0;
-    }
-
-    .persona-flex{
-        flex-direction: column;
-    }
-    .persona-flex div{
-        width: 100%;
-    }
-    .persona-flex picture {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
 }
 
 
@@ -928,15 +890,7 @@ figcaption.object-text, figcaption.poster-text{
     }
 }
 
-
-
-/* 
-
-NEEDS UPDATING 
-
-*/
-
-
+/* ============== EXTRA SMALL SCREENS ============== */
 
 @media screen and (max-width: 386px){
 
@@ -969,11 +923,6 @@ NEEDS UPDATING
 
     .contact-icon {
         width: 45px
-    }
-
-    .vert-video {
-        width: 275px;
-        height: 480px;
     }
 
     .case-study-sect h4 {

@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/case-study.css">
 </head>
-<body>
+<body id="page-content">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NQ2ZTLKN"
         height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -134,12 +134,18 @@
                 In addition to being utilitarian the current designs are not responsive on small screen sizes.
                 With RightOn Play and RightOn Host now sufficently developed and deployed in beta, the next focus was to redesign and restructure RightOn Central for an improved instructor experience choosing and creating games.
             </p>
-            <h6 class="color-accent-blue"><b>Explore Games</b></h6>
-            <img class="pc-img" src="../images/righton/Current-Central-Home-Combo.png" alt="Explore Games Old Screen on PC and Mobile">
-            <h6 class="color-accent-blue"><b>View Game</b></h6>
-            <img class="pc-img" src="../images/righton/Current-Game-View-Combo.png" alt="View Game Old Screen on PC and Mobile">
-            <h6 class="color-accent-blue"><b>Create Question</b></h6>
-            <img class="pc-img" src="../images/righton/Current-Create-Question-Combo.png" alt="Create Question Old Screen on PC and Mobile">          
+            <figure aria-label="Explore Games Figure">
+                <figcaption class="color-accent-blue"><b>Explore Games</b></figcaption>
+                <img class="pc-img" src="../images/righton/Current-Central-Home-Combo.png" alt="Explore Games Old Screen on PC and Mobile">
+            </figure>
+            <figure aria-label="View Game Figure">
+                <figcaption class="color-accent-blue"><b>View Game</b></figcaption>
+                <img class="pc-img" src="../images/righton/Current-Game-View-Combo.png" alt="View Game Old Screen on PC and Mobile">
+            </figure>
+            <figure aria-label="Create Question Figure">
+                <figcaption class="color-accent-blue"><b>Create Question</b></figcaption>
+                <img class="pc-img" src="../images/righton/Current-Create-Question-Combo.png" alt="Create Question Old Screen on PC and Mobile">
+            </figure>
         </section>
 
         <section id="users" class="container-fluid study-section" aria-label="Case Study Users and Audience">
@@ -164,27 +170,27 @@
             <section class="research-grid">
 
                 <article class="research-card color-tan" aria-label="Positive Classroom Culture of Error Research Card">
-                    <h4>POSITIVE CLASSROOM CULTURE OF ERROR</h4>
+                    <h3>POSITIVE CLASSROOM CULTURE OF ERROR</h3>
                     <p>When student make mistakes in math the responses of their teachers and peers impact the development of their attitudes and performance in the subject. A positive error climate correlates with greater motivation, engagement, and performance among students, while a negative error climate can lead to anxiety, avoidance behaviors, and diminished learning outcomes .Offering teachers a channel to offer constructive feedback and encouragement rather than criticism is one way to develop a positive classroom culture of error (Steuer et al., 2013).</p>
                 </article>
 
                 <article class="research-card color-tan" aria-label="Sense of Belonging in Math Spaces Research Card">
-                    <h4>SENSE OF BELONGING IN MATH SPACES</h4>
+                    <h3>SENSE OF BELONGING IN MATH SPACES</h3>
                     <p>All students should feel that they belong in math class, are welcome, smart, and can succeed. Students who perceive a greater sense of belonging to mathematics demonstrate higher levels of motivation, confidence, and persistence compared to students who feel disconnected or alienated from the subject. This increase in motivation, confidence, and persistence directly translates to improved academic performance (Barbieri &amp; Miller-Cotto, 2021).</p>
                 </article>
 
                 <article class="research-card color-tan" aria-label="Power of Learning from Mistakes Research Card">
-                    <h4>POWER OF LEARNING FROM MISTAKES</h4>
+                    <h3>POWER OF LEARNING FROM MISTAKES</h3>
                     <p>Research has found that reflecting on errors is beneficial for students with all levels of knowledge. However, for students with little knowledge of a math topic, studying errors is even more effective than correct worked examples or problem-solving alone (Barbieri &amp; Booth, 2016). A 2014 paper by Adams et al. identified what they defined as the Erroneous Examples Principle:"People learn more deeply when they are asked to critique the incorrect solution procedures of others" (Adams etc al., 2014).</p>
                 </article>
 
                 <article class="research-card color-tan" aria-label="Play Testing Research Card">
-                    <h4>PLAY TESTING</h4>
+                    <h3>PLAY TESTING</h3>
                     <p>My fellow UX intern, Zach, and I led play-testing sessions with teachers and students in academic settings across the Philadelphia area. These sessions included working with students at Carver Engineering and Science High School, Congreso de Latinos Unidos, and Math Corps Philly Summer Camp. Survey results, group discussions, and observations from these classes aided our team in identifing bugs and potential enhancements for the platform.</p>
                 </article>
 
                 <article class="research-card color-tan" aria-label="Competitive Analysis Research Card">
-                    <h4>COMPETITIVE ANALYSIS</h4>
+                    <h3>COMPETITIVE ANALYSIS</h3>
                     <p>We performed several competitive analyses on other EdTech platforms, with a focus on systems that address misconceptions and incorporate artificial intelligence. Some of these competitors include Gimkit, Eedi, Quizziz, Kyron Learning, and Magic School AI. We used this data to continue to develop the RightOn Competitor &amp; Collaborator Landscape and compare AI and misconception capabilities.</p>
                 </article>
 
@@ -194,22 +200,22 @@
         <section id="design-process" class="container-fluid study-section" aria-label="Case Study Design Process">
             <h2 class="color-accent-purple">DESIGN PROCESS</h2>
             <article class="case-study-sect" aria-label="Style Guide Section">
-                <h4 class="color-accent-blue">STYLE GUIDE</h4>
+                <h3 class="color-accent-blue">STYLE GUIDE</h3>
                 <p>At the beginning of this project the RightOn style guide was outdated, still aligning with a past app design that had been scrapped. In order to begin the comprehensive overhaul of Right On Central we needed to ensure there would be a cohesive brand style across all three platforms in the RightOn system.
                     RightOn Play, the student facing game, was predominantly decorative-purple and RightOn Host, the teacher dashboard, was predominantly secondary-accent. We decided to incorporate both of these color schemes into RightOn Central as it is the database that bring together Host and Play.
                     All color combinations were tested for compliance with AA and AAA accessibility standards.</p>
                 <img class="img-fluid" src="../images/righton/style-guide.png" alt="RightOn Education Style Guide">
             </article>
             <article class="case-study-sect" aria-label="Responsive Design Section">
-                <h4 class="color-accent-blue">RESPONSIVE DESIGN</h4>
+                <h3 class="color-accent-blue">RESPONSIVE DESIGN</h3>
                 <p>It is essential that all systems in the RightOn platform are responsive and accessible on all devices to align with the principle of Educational Equity. Not every school, district, or program has access to laptops and technology funding so a mobile-friendly system can support a greater range of classrooms. Design changes on different device sizes must allow all content to remain accessible, allowing seamless performance without a detriment to user experience.</p>
                 <img class="img-fluid" src="../images/home/RightOn-Cover.png" alt="Screens from the RightOn Central System across different devices">
             </article>
             <article class="case-study-sect" aria-label="Wireframes Section">
-                <h4 class="color-accent-blue">WIREFRAMES</h4>
+                <h3 class="color-accent-blue">WIREFRAMES</h3>
                 <p>The first design step was to wireframe out preliminary concepts. There was a small base of ideation from a previous UX team member to be used as a starting point. Beginning with digital sketches, then moving to Figma wireframes I developed designs for the current and intended functionality of RightOn Central, incorporating the system's card structure. These wireframes were arranged into a wireflow to visualize possible use cases.</p>
                 <button type="button" class="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover case-study-btn" onclick="window.open('https://www.figma.com/design/ICAQP1cDQS9MEnCjlwhKFo/RightOn-Central?node-id=22-67438&t=iLRkIwQlbRt8lS1M-4', '_blank')">
-                    <h4 class="btn-text color-tan">Figma Wireframes</h4>
+                    <h3 class="btn-text color-tan">Figma Wireframes</h3>
                 </button>
                 <img class="img-fluid" src="../images/righton/sketches.png" alt="Early sketched wireframes">
                 <figure class="d-flex wireframes" aria-label="Early Wireframes of Home and Create Question Screens">
@@ -219,15 +225,15 @@
                 <img class="img-fluid" src="../images/righton/wireflow.png" alt="Large wireflow of main system screens">
             </article>
             <article class="case-study-sect" aria-label="High Fidelity Mockups Section">
-                <h4 class="color-accent-blue">HIGH FIDELITY MOCKUPS</h4>
+                <h3 class="color-accent-blue">HIGH FIDELITY MOCKUPS</h3>
                 <p>Once our ideas were solidified in wireframes, we began the process of transitioning them into higher-fidelity mockups. These mockups included a wider scope of screens and interactions. These designs were annotated in depth to ensure a clear understanding for future designers and developers on the RightOn team. Specific designs and rationale will be elaborated below in the results section.</p>
                 <button type="button" class="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover case-study-btn" onclick="window.open('https://www.figma.com/design/ICAQP1cDQS9MEnCjlwhKFo/RightOn-Central?node-id=0-1&t=xPC0xpj36H08ZDGr-1', '_blank')">
-                    <h4 class="btn-text color-tan">Figma Hi-fi Designs</h4>
+                    <h3 class="btn-text color-tan">Figma Hi-fi Designs</h3>
                 </button>
                 <img class="img-fluid" src="../images/righton/hi-fi-flow.png" alt="Large high fidelity flow of all system screens">
             </article>
             <article class="case-study-sect" aria-label="Design-Dev Handoff Section">
-                <h4 class="color-accent-blue">DESIGN-DEV HANDOFF</h4>
+                <h3 class="color-accent-blue">DESIGN-DEV HANDOFF</h3>
                 <p>As designs for screens, interactions, and components were completed the UX team periodically met with the Dev team to discuss feasibility, make adjustments, and discuss rationale. These handoff meetings often dove deep into pixel-perfect details, lasting for hours.
                     Some designs, like choosing common core standards or logging in/signing up, needed to be broken out into more complex user flows. These flows were intended to provide more clarity to the dev team in the implementation of processes with many steps.
                 </p>
@@ -237,14 +243,16 @@
         <section id="results" class="container-fluid study-section inverted bg-accent-purple" aria-label="Case Study Results">
             <h2 class="color-tan">RESULTS</h2>
             <article class="case-study-sect color-tan" aria-label="Navigation Results Section">
-                <h4>NAVIGATION</h4>
+                <h3>NAVIGATION</h3>
                 <p>The RightOn Central navigation has six main buttons. On the left, the RightOn logo used to return to Explore Games, in the center the three main explore pages: Explore Games, Explore Questions, and My Library, and finally, on the right Create Game/Question and Profile.
                     An important element in the development of the navigation design was choosing the iconography. These are the most present icons in the system, appearing on every page so they need to be clear and engaging.</p>
-                <h6><b>Responsive Navigation</b></h6>
-                <img class="img-fluid" src="../images/righton/navigation.png" alt="Final Navigation Designs">
+                <figure aria-label="Final Navigation Designs">
+                    <figcaption><b>Responsive Navigation</b></figcaption>
+                    <img class="img-fluid" src="../images/righton/navigation.png" alt="Final Navigation Designs">
+                </figure>
             </article>
             <article class="case-study-sect color-tan" aria-label="Search and Filter Results Section">
-                <h4>SEARCH AND FILTER</h4>
+                <h3>SEARCH AND FILTER</h3>
                 <p>The search and filter functionality witin RightOn Central is designed to aid teachers in finding relevant games.
                     There is no search button, results begin lazy loading after a user begins typing. The debounce for this lazy load is 800ms.
                     The search bar parses the title, description, and CCSS fields of all public games in the database.
@@ -258,64 +266,73 @@
                         <li>Grade Level: Descending or Ascending</li>
                         <li>Question Count: Descending or Ascending</li>
                     </ul>
-                <h6><b>Search Bar</b></h6>
-                <img class="img-fluid" src="../images/righton/Search-1.png" alt="Final Search Design">
-                <img class="img-fluid" src="../images/righton/Search-2.png" alt="Final Post Search Designs">
+                <figure aria-label="Search Bar Figure">
+                    <figcaption><b>Search Bar</b></figcaption>
+                    <img class="img-fluid" src="../images/righton/Search-1.png" alt="Final Search Design">
+                    <img class="img-fluid" src="../images/righton/Search-2.png" alt="Final Post Search Designs">
+                </figure>
             </article>
             <article class="case-study-sect color-tan" aria-label="Explore Games, Explore Questions, and My Library Results Section">
-                <h4>EXPLORE GAMES, EXPLORE QUESTIONS, &amp; MY LIBRARY </h4>
+                <h3>EXPLORE GAMES, EXPLORE QUESTIONS, &amp; MY LIBRARY </h3>
                 <p>Explore Games, Explore Questions, and My Library are the three main tabs across RightOn Central's navigation. If a user is logged in the system will recommend games based on their history, if a user is not logged in they will instead see featured games.
                     All games in Explore Games and Explore Questions are public games created by other members of the platform. Users can access games they have created in My Library. User-owned games are sorted into public, private, and drafts. Users can also find public games they have favorited here.</p>
-                <h6><b>Explore Games</b></h6>
-                <picture>
-                    <source
-                    media="(min-width: 1000px)"
-                    srcset="../images/righton/Explore-Games.png">
-    
-                    <img class="img-fluid"
-                    src="../images/righton/View-Game-mobile.png"
-                    alt="Explore Games Final Desktop, Tablet, and Mobile Designs">
-                </picture>
+                <figure aria-label="Explore Games Figure">
+                    <figcaption><b>Explore Games</b></figcaption>
+                    <picture>
+                        <source
+                        media="(min-width: 1000px)"
+                        srcset="../images/righton/Explore-Games.png">
         
-                <h6><b>Explore Questions</b></h6>
-                <picture>
-                    <source
-                    media="(min-width: 1000px)"
-                    srcset="../images/righton/Explore-Questions.png">
-    
-                    <img class="img-fluid"
-                    src="../images/righton/Explore-Questions-mobile.png"
-                    alt="Explore Questions Final Desktop, Tablet, and Mobile Designs">
-                </picture>
-                <h6><b>My Library</b></h6>
-                <picture>
-                    <source
-                    media="(min-width: 1000px)"
-                    srcset="../images/righton/My-Library.png">
-    
-                    <img class="img-fluid"
-                    src="../images/righton/My-Library-mobile.png"
-                    alt="My Library Final Desktop, Tablet, and Mobile Designs">
-                </picture>
+                        <img class="img-fluid"
+                        src="../images/righton/View-Game-mobile.png"
+                        alt="Explore Games Final Desktop, Tablet, and Mobile Designs">
+                    </picture>
+                </figure>
+                <figure aria-label="Explore Questions Figure">
+                    <figcaption><b>Explore Questions</b></figcaption>
+                    <picture>
+                        <source
+                        media="(min-width: 1000px)"
+                        srcset="../images/righton/Explore-Questions.png">
+        
+                        <img class="img-fluid"
+                        src="../images/righton/Explore-Questions-mobile.png"
+                        alt="Explore Questions Final Desktop, Tablet, and Mobile Designs">
+                    </picture>
+                </figure>
+                <figure aria-label="My Library Figure">
+                    <figcaption><b>My Library</b></figcaption>
+                    <picture>
+                        <source
+                        media="(min-width: 1000px)"
+                        srcset="../images/righton/My-Library.png">
+        
+                        <img class="img-fluid"
+                        src="../images/righton/My-Library-mobile.png"
+                        alt="My Library Final Desktop, Tablet, and Mobile Designs">
+                    </picture>
+                </figure>
             </article>
             <article class="case-study-sect color-tan" aria-label="View Game and View Questions Results Section">
-                <h4>VIEW GAME &amp; VIEW QUESTION</h4>
+                <h3>VIEW GAME &amp; VIEW QUESTION</h3>
                 <p>From any of these explore pages, instructors can click into a game or question to see it's details. Viewing a game or question allows you to see the questions, correct answer, incorrect answers, and incorrect answer explanations.
                     This is also where users can launch a game to play with their class.
                 </p>
-                <h6><b>View Game</b></h6>
-                <picture>
-                    <source
-                    media="(min-width: 1000px)"
-                    srcset="../images/righton/View-Game.png">
-    
-                    <img class="img-fluid"
-                    src="../images/righton/View-Game-mobile.png"
-                    alt="View Game Final Desktop, Tablet, and Mobile Designs">
-                </picture>
+                <figure aria-label="View Game Figure">
+                    <figcaption><b>View Game</b></figcaption>
+                    <picture>
+                        <source
+                        media="(min-width: 1000px)"
+                        srcset="../images/righton/View-Game.png">
+        
+                        <img class="img-fluid"
+                        src="../images/righton/View-Game-mobile.png"
+                        alt="View Game Final Desktop, Tablet, and Mobile Designs">
+                    </picture>
+                </figure>
             </article>
             <article class="case-study-sect color-tan" aria-label="Create Question Results Section">
-                <h4>CREATE QUESTION</h4>
+                <h3>CREATE QUESTION</h3>
                 <p>One of the most important flows within RightOn Central is the question creation flow. This flow is used to create questions within a game and within the question bank. The user is guided through the flow by secondary-accent highlights around the card next in the process.</p>
                 <picture>
                     <source
@@ -326,31 +343,35 @@
                     src="../images/righton/Create-question-flow-mobile.png"
                     alt="Create Question Flow Final Designs">
                 </picture>
-                <h6><b>Wrong Answer Explanations Integration</b></h6>
                 <p>One feature of the RightOn system is the Wrong Answer Explanations Prototype. This program takes in a math question and its multiple-choice options and uses AI to provide possible explanations for the incorrect options. I integrated this functionality directly into the question-creation flow to improve the ease of use.</p>
-                <picture>
-                    <source
-                    media="(min-width: 1000px)"
-                    srcset="../images/righton/WAE-PC.png">
-    
-                    <img class="img-fluid"
-                    src="../images/righton/WAE-mobile.png"
-                    alt="Wrong Answer Explanations Final Designs">
-                </picture>
+                <figure aria-label="Wrong Answer Explanations Integration Figure">
+                    <figcaption><b>Wrong Answer Explanations Integration</b></figcaption>
+                    <picture>
+                        <source
+                        media="(min-width: 1000px)"
+                        srcset="../images/righton/WAE-PC.png">
+        
+                        <img class="img-fluid"
+                        src="../images/righton/WAE-mobile.png"
+                        alt="Wrong Answer Explanations Final Designs">
+                    </picture>
+                </figure>
             </article>
             <article class="case-study-sect color-tan" aria-label="Create Game Results Section">
-                <h4>CREATE GAME</h4>
+                <h3>CREATE GAME</h3>
                 <p>Another important flow is the create game flow. Through this users can create games made of pre-existing questions or pull from the question bank. Users can make both public a private games, but each can only be made of questions of the same type.</p>
-                <h6><b>Question Bank</b></h6>
-                <picture>
-                    <source
-                    media="(min-width: 1000px)"
-                    srcset="../images/righton/Question-Bank-PC.png">
-    
-                    <img class="img-fluid"
-                    src="../images/righton/Question-Bank-mobile.png"
-                    alt="Question Bank Final Desktop, Tablet, and Mobile Designs">
-                </picture>
+                <figure aria-label="Question Bank Figure">
+                    <figcaption><b>Question Bank</b></figcaption>
+                    <picture>
+                        <source
+                        media="(min-width: 1000px)"
+                        srcset="../images/righton/Question-Bank-PC.png">
+        
+                        <img class="img-fluid"
+                        src="../images/righton/Question-Bank-mobile.png"
+                        alt="Question Bank Final Desktop, Tablet, and Mobile Designs">
+                    </picture>
+                </figure>
             </article>
             
         </section>
