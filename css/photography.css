@@ -103,6 +103,7 @@ h1.photog-title{
     justify-items: center;
     align-items: center;
     justify-content: center;
+    margin: 0.5rem 0;
 }
 
 .horiz-img {
@@ -117,6 +118,73 @@ h1.photog-title{
     grid-area: vert-2;
 }
 
+/* CONTENTS */
+
+.contents-flex {
+    position: sticky;
+    top: var(--navbar-height, 0px);
+    z-index: 900;
+    background: var(--background);
+}
+
+nav.contents{
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    gap: 1rem;
+    padding: .5rem 1rem;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+
+    white-space: nowrap;
+    flex-wrap: nowrap;
+}
+
+.contents-link {
+
+    font-weight:600;
+    font-size:1.25rem;
+    font-family: var(--Jost);
+    white-space: nowrap;
+    flex: 0 0 auto;
+
+    text-decoration: none;
+
+    border-radius: 999px;
+    padding: 0.5rem;
+
+    transition:
+        background .25s,
+        color .25s,
+        transform .25s;
+}
+
+.contents-link:hover {
+    color: var(--accent-blue-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contents-link.active {
+    background: var(--accent-blue);
+    color: var(--background) !important;
+    font-weight: 600;
+    text-decoration: none;
+}
+.photography-section{
+    scroll-margin-top: var(--sticky-offset);
+
+}
+    
+@media (min-width: 480px) {
+    nav.contents{
+        justify-content:center;
+    }
+}
+
 @media (min-width: 670px) {
     .photo-button-grid{
         margin: 0 15vw;
@@ -129,6 +197,7 @@ h1.photog-title{
     .photo-button-grid a p{
         font-size: 2.05vw;
     }
+    
 }
 
 @media (min-width: 768px) {
