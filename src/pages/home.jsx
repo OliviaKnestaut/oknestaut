@@ -1,61 +1,127 @@
 import React from 'react';
 import { caseStudyCovers } from '../components/images';
+import portfolioCover from '../images/home/Portfolio-Cover.png';
+import figmaLogo from '../images/about/Figma-logo-white.png';
+import html5Logo from '../images/about/html5-logo-white.png';
+import css3Logo from '../images/about/css3-logo-white.png';
+import javascriptLogo from '../images/about/javascript_logo_white.png';
+import illustratorLogo from '../images/about/Illustrator-Icon-white.png';
+import photoshopLogo from '../images/about/Photoshop-Icon-white.png';
+import userTestingIcon from '../images/about/user-testing.png';
+import phpLogo from '../images/about/PHP-Icon-white.png';
+import mysqlLogo from '../images/about/mysql-logo-white.png';
 
 function Home() {
     return (
-        <div className="case-studies container-fluid">
-            <h2 className="color-orange">CASE STUDIES</h2>
-            <div className="card-container">
-                <div className="card">
-                    <div className="layer-1 card-body bg-purple">
-                        <h3 className="card-title">RIGHT ON EDUCATION</h3>
-                        <h4 className="card-text text-center">CENTRAL REDESIGN</h4>
-                        <button type="button" className="btn btn-primary mx-auto d-block magenta-hover righton-btn" onClick={() => window.location.href='righton'}>
-                            <h4 className="btn-text color-purple">See Project</h4>
-                        </button>
-                    </div>
-                    <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.rightOn} alt="Right On Education project cover" />
-                </div>                <div className="card">
-                    <div className="layer-1 card-body bg-orange">
-                        <h3 className="card-title">KIM'S DRAGON FOOD TRUCK</h3>
-                        <h4 className="card-text text-center">MOBILE ORDERING WEBAPP</h4>
-                        <button type="button" className="btn btn-primary mx-auto d-block pink-hover" onClick={() => window.location.href='kims-dragon'}>
-                            <h4 className="btn-text color-orange">See Project</h4>
-                        </button>
-                    </div>
-                    <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.kimsDragon} alt="Kim's Dragon Food Truck project cover" />
-                </div>
-                <div className="card">
-                    <div className="layer-2 card-body bg-green">
-                        <h3 className="card-title">RIVERFRONT WILMINGTON</h3>
-                        <h4 className="card-text text-center">INTERACTIVE WEBSITE DESIGN</h4>
-                        <button type="button" className="btn btn-primary mx-auto d-block blue-hover" onClick={() => window.location.href='riverfront'}>
-                            <h4 className="btn-text color-green">See Project</h4>
-                        </button>
-                    </div>
-                    <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.riverfront} alt="Riverfront Wilmington project cover" />
-                </div>                <div className="card">
-                    <div className="layer-2 card-body bg-blue">
-                        <h3 className="card-title">LETTERBOXD MOVIE TILE</h3>
-                        <h4 className="card-text text-center">MICROINTERACTION DESIGN</h4>
-                        <button type="button" className="btn btn-primary mx-auto d-block purple-hover" onClick={() => window.location.href='letterboxd'}>
-                            <h4 className="btn-text color-blue">See Project</h4>
-                        </button>
-                    </div>
-                    <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.letterboxd} alt="Letterboxd movie tile project cover" />
-                </div>
-                <div className="card">
-                    <div className="layer-3 card-body bg-orange">
-                        <h3 className="card-title">TESSERA</h3>
-                        <h4 className="card-text text-center">ANIMATED INTERACTION DESIGN</h4>
-                        <button type="button" className="btn btn-primary mx-auto d-block pink-hover" onClick={() => window.location.href='tessera'}>
-                            <h4 className="btn-text color-orange">See Project</h4>
-                        </button>
-                    </div>
-                    <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.tessera} alt="Tessera project cover" />
-                </div>
-            </div>
-        </div>
+        <main aria-label="Site Main Content">
+            <section className="case-studies column container-fluid justify-content-center">
+                <h2 className="color-accent-red">CASE STUDIES</h2>
+                <section className="card-container">
+                    <article className="card" aria-label="Personal Portfolio Site Accessibility Design Project Card">
+                        <figure className="layer-1 card-body bg-accent-green" aria-label="Project Details">
+                            <h3 className="card-title">ACCESSIBLE PORTFOLIO</h3>
+                            <h4 className="card-text text-center">PERSONAL PORTFOLIO DESIGN</h4>
+                            <ul className="tools d-flex justify-content-center align-items-center flex-wrap list-unstyled" aria-label="Technologies used">
+                                <li className="tool-item">
+                                    <img src={figmaLogo} alt="Figma Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={html5Logo} alt="HTML5 Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={css3Logo} alt="CSS3 Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={javascriptLogo} alt="JavaScript Logo" />
+                                </li>
+                            </ul>
+                            <button type="button" className="btn btn-primary mx-auto d-block color-accent-green-hover" onClick={() => window.location.href = 'accessibility'}>
+                                <span className="btn-text color-accent-green">See Project</span>
+                            </button>
+                        </figure>
+                        <img className="mx-auto d-block card-img-bottom" src={portfolioCover} alt="Desktop and mobile screens showing Olivia's portfolio site" />
+                    </article>
+
+                    <article className="card" aria-label="RightOn Education Central Redesign Project Card">
+                        <figure className="layer-1 card-body bg-accent-purple" aria-label="Project Details">
+                            <h3 className="card-title">RIGHT ON EDUCATION</h3>
+                            <h4 className="card-text text-center">CENTRAL REDESIGN</h4>
+                            <ul className="tools d-flex justify-content-center align-items-center flex-wrap list-unstyled" aria-label="Technologies used">
+                                <li className="tool-item">
+                                    <img src={figmaLogo} alt="Figma Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={illustratorLogo} alt="Adobe Illustrator Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={photoshopLogo} alt="Adobe Photoshop Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={userTestingIcon} alt="User Testing and Interview Symbol" />
+                                </li>
+                            </ul>
+                            <button type="button" className="btn btn-primary mx-auto d-block color-accent-purple-hover" onClick={() => window.location.href = 'righton'}>
+                                <span className="btn-text color-accent-purple">See Project</span>
+                            </button>
+                        </figure>
+                        <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.rightOn} alt="Laptop, tablet, and mobile screens showing pages from the RightOn Central Redesign Project" />
+                    </article>
+
+                    <article className="card" aria-label="Kim's Dragon Food Truck Mobile Ordering Webapp Project Card">
+                        <figure className="layer-1 card-body bg-accent-red" aria-label="Project Details">
+                            <h3 className="card-title">KIM'S DRAGON</h3>
+                            <h4 className="card-text text-center">MOBILE ORDERING WEBAPP</h4>
+                            <ul className="tools d-flex justify-content-center align-items-center flex-wrap list-unstyled" aria-label="Technologies used">
+                                <li className="tool-item">
+                                    <img src={phpLogo} alt="PHP Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={mysqlLogo} alt="MySQL Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={html5Logo} alt="HTML5 Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={css3Logo} alt="CSS3 Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={javascriptLogo} alt="JavaScript Logo" />
+                                </li>
+                            </ul>
+                            <button type="button" className="btn btn-primary mx-auto d-block color-accent-red-hover" onClick={() => window.location.href = 'kims-dragon'}>
+                                <span className="btn-text color-accent-red">See Project</span>
+                            </button>
+                        </figure>
+                        <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.kimsDragon} alt="Three mobile screens showing pages from the Kim's Dragon Mobile Ordering Webapp" />
+                    </article>
+
+                    <article className="card" aria-label="Letterboxd Movie Tile Microinteraction Design Project Card">
+                        <figure className="layer-2 card-body bg-accent-blue" aria-label="Project Details">
+                            <h3 className="card-title">LETTERBOXD MOVIE TILE</h3>
+                            <h4 className="card-text text-center">MICROINTERACTION DESIGN</h4>
+                            <ul className="tools d-flex justify-content-center align-items-center flex-wrap list-unstyled" aria-label="Technologies used">
+                                <li className="tool-item">
+                                    <img src={figmaLogo} alt="Figma Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={html5Logo} alt="HTML5 Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={css3Logo} alt="CSS3 Logo" />
+                                </li>
+                                <li className="tool-item">
+                                    <img src={javascriptLogo} alt="JavaScript Logo" />
+                                </li>
+                            </ul>
+                            <button type="button" className="btn btn-primary mx-auto d-block color-accent-blue-hover" onClick={() => window.location.href = 'letterboxd'}>
+                                <span className="btn-text color-accent-blue">See Project</span>
+                            </button>
+                        </figure>
+                        <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.letterboxd} alt="Hand cursor shown interacting with a specific movie card on Letterboxd" />
+                    </article>
+                </section>
+            </section>
+        </main>
     );
 }
 

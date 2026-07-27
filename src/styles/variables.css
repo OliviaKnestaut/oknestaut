@@ -1,116 +1,158 @@
-/* CSS Custom Properties and Utility Classes */
+/* CSS custom properties and utility classes */
 
-/* Root Variables */
 html {
+    --accent-red: #B5512A !important;
+    --accent-red-dark: #76351B !important;
+    --accent-red-light: #DAA894 !important;
+
+    --accent-blue: #277785 !important;
+    --accent-blue-dark: #194D56 !important;
+    --accent-blue-light: #93BBC2 !important;
+
+    --accent-purple: #715790 !important;
+    --accent-purple-dark: #493B61 !important;
+    --accent-purple-light: #B8ACCA !important;
+
+    --accent-green: #55792C !important;
+    --accent-green-dark: #374F1D !important;
+    --accent-green-light: #AABC95 !important;
+
+    --accent-yellow: #DDD347 !important;
+
     --background: #FFF9EE !important;
-    --orange: #D3592C !important;
-    --blue: #76ACB6 !important;
-    --purple: #715A95 !important;
-    --magenta: #AD6095 !important;
-    --pink: #CE6C9E !important;
-    --green: #7CA835 !important;
-    --yellow: #DDD347 !important;
+    --background-medium: #FBF0DC !important;
+    --background-dark: #E6DCCA !important;
     --text: #222222 !important;
+    --focus-link: #007bff !important;
+
     --Jost: 'Jost', Arial, sans-serif;
     --rhythm: 24px;
 }
 
-/* Color Utility Classes */
+.color-accent-red,
 .color-orange {
-    color: var(--orange) !important;
+    color: var(--accent-red) !important;
 }
 
+.color-accent-blue,
 .color-blue {
-    color: var(--blue) !important;
+    color: var(--accent-blue) !important;
 }
 
+.color-accent-purple,
 .color-purple {
-    color: var(--purple) !important;
+    color: var(--accent-purple) !important;
 }
 
-.color-pink {
-    color: var(--pink) !important;
-}
-
-.color-magenta {
-    color: var(--magenta) !important;
-}
-
+.color-accent-green,
 .color-green {
-    color: var(--green) !important;
+    color: var(--accent-green) !important;
+}
+
+.color-accent-red-hover:focus,
+.color-accent-blue-hover:focus,
+.color-accent-green-hover:focus,
+.color-accent-purple-hover:focus,
+.color-tan-hover,
+.magenta-hover:focus,
+.pink-hover:focus,
+.blue-hover:focus,
+.purple-hover:focus {
+    box-shadow: 0 0 0 0.2rem var(--background) !important;
+    border: solid 0.2rem var(--focus-link) !important;
+}
+
+.color-accent-red-hover:hover,
+.magenta-hover:hover,
+.pink-hover:hover {
+    background-color: var(--accent-red-dark) !important;
+}
+
+.color-accent-red-hover:active,
+.magenta-hover:active,
+.pink-hover:active {
+    background-color: var(--accent-red-light) !important;
+}
+
+.color-accent-blue-hover:hover,
+.blue-hover:hover {
+    background-color: var(--accent-blue-dark) !important;
+}
+
+.color-accent-blue-hover:active,
+.blue-hover:active {
+    background-color: var(--accent-blue-light) !important;
+}
+
+.color-accent-green-hover:hover {
+    background-color: var(--accent-green-dark) !important;
+}
+
+.color-accent-green-hover:active {
+    background-color: var(--accent-green-light) !important;
+}
+
+.color-accent-purple-hover:hover,
+.purple-hover:hover {
+    background-color: var(--accent-purple-dark) !important;
+}
+
+.color-accent-purple-hover:active,
+.purple-hover:active {
+    background-color: var(--accent-purple-light) !important;
 }
 
 .color-tan {
     color: var(--background) !important;
 }
 
-/* Background Color Utility Classes */
-.bg-blue {
-    background-color: var(--blue) !important;
-}
-
-.bg-green {
-    background-color: var(--green) !important;
-}
-
-.bg-orange {
-    background-color: var(--orange) !important;
-}
-
-.bg-pink {
-    background-color: var(--pink) !important;
-}
-
-.bg-purple {
-    background-color: var(--purple) !important;
-}
-
-.bg-magenta {
-    background-color: var(--magenta) !important;
-}
-
-.bg-tan {
-    background-color: var(--background);
-}
-
-/* Text Color Utility Classes */
+.color-text,
 .text-color-dark {
-    color: var(--text);
+    color: var(--text) !important;
 }
 
 .text-color-light {
-    color: var(--background);
+    color: var(--background) !important;
 }
 
-/* Button Hover Colors */
-.magenta-hover:focus {
-    box-shadow: 0 0 0 .2rem var(--magenta) !important;
+.bg-accent-blue,
+.bg-blue {
+    background-color: var(--accent-blue) !important;
 }
 
-.magenta-hover:hover {
-    background-color: var(--magenta) !important;
+.bg-accent-green,
+.bg-green {
+    background-color: var(--accent-green) !important;
 }
 
-.pink-hover:focus {
-    box-shadow: 0 0 0 .2rem var(--pink) !important;
+.bg-accent-red,
+.bg-orange,
+.bg-pink,
+.bg-magenta {
+    background-color: var(--accent-red) !important;
 }
 
-.pink-hover:hover {
-    background-color: var(--pink) !important;
+.bg-accent-purple,
+.bg-purple {
+    background-color: var(--accent-purple) !important;
 }
 
-.blue-hover:focus {
-    box-shadow: 0 0 0 .2rem var(--blue) !important;
+.bg-tan {
+    background-color: var(--background) !important;
 }
 
-.blue-hover:hover {
-    background-color: var(--blue) !important;
+.bg-accent-red-dark {
+    background-color: var(--accent-red-dark) !important;
 }
 
-.purple-hover:focus {
-    box-shadow: 0 0 0 .2rem var(--purple) !important;
+.bg-accent-blue-dark {
+    background-color: var(--accent-blue-dark) !important;
 }
 
-.purple-hover:hover {
-    background-color: var(--purple) !important;
+.bg-accent-green-dark {
+    background-color: var(--accent-green-dark) !important;
+}
+
+.bg-accent-purple-dark {
+    background-color: var(--accent-purple-dark) !important;
 }

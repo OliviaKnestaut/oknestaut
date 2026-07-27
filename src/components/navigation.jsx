@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../images/icons/oknestaut_logo.svg';
+import logo from '../images/general/oknestaut_logo.svg';
 
 function Navigation() {
     const [isNavOpen, setIsNavOpen] = useState(false);

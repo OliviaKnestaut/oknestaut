@@ -1,131 +1,107 @@
-/* Typography Styles */
-
 @font-face {
     font-family: 'Jost';
-    src: url(../fonts/Jost-VariableFont_wght.ttf) format(TrueType);
-    font-weight: 400;
+    src: url(../fonts/Jost-VariableFont_wght.ttf) format('truetype');
+    font-weight: 400 800;
     font-style: normal;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Jost';
-    src: url(../fonts/Jost-VariableFont_wght.ttf) format(TrueType);
-    font-weight: 600;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Jost';
-    src: url(../fonts/Jost-VariableFont_wght.ttf) format(TrueType);
-    font-weight: 700;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Jost';
-    src: url(../fonts/Jost-VariableFont_wght.ttf) format(TrueType);
-    font-weight: 800;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Jost';
-    src: url(../fonts/Jost-Italic-VariableFont_wght.ttf) format(TrueType);
-    font-weight: 400;
+    src: url(../fonts/Jost-Italic-VariableFont_wght.ttf) format('truetype');
+    font-weight: 400 800;
     font-style: italic;
+    font-display: swap;
 }
 
-@font-face {
-    font-family: 'Jost';
-    src: url(../fonts/Jost-Italic-VariableFont_wght.ttf) format(TrueType);
-    font-weight: 700;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'Jost';
-    src: url(../fonts/Jost-Italic-VariableFont_wght.ttf) format(TrueType);
-    font-weight: 800;
-    font-style: italic;
-}
-
-/* Base Typography */
 body {
     background-color: var(--background);
-    padding-top: 50px;
+    padding-top: 5.75rem;
 }
 
-p {
+p,
+li,
+dd {
     font-family: var(--Jost);
-    font-size: 16px;
+    font-size: clamp(0.95rem, 1rem + 0.2vw, 1.125rem);
+    line-height: clamp(1.5rem, 1.5vw, 2.5rem);
     margin: 1rem 0;
 }
 
-a {
-    color: var(--orange) !important;
-}
-
-/* Headings */
 h1 {
     font-family: var(--Jost);
     font-size: 10vw;
     text-align: center;
     font-style: normal;
     font-weight: 800;
-    line-height: 10vw;
-    margin: 0px;
+    line-height: clamp(2.5rem, 12vw, 12rem);
+    margin: 0;
 }
 
 h2 {
     font-family: var(--Jost);
-    font-size: 50px;
+    font-size: clamp(1.75rem, 3.5vw, 3.5rem);
     text-align: center;
     font-style: normal;
     font-weight: 700;
-    line-height: 50px;
-    letter-spacing: 15px;
-    margin: 20px auto;
+    line-height: clamp(2.4rem, 6.6vw, 6.6rem);
+    letter-spacing: clamp(0.25rem, 1vw, 1rem);
+    margin: 1rem auto 0;
 }
 
 h3 {
     font-family: var(--Jost);
-    font-size: 70px;
+    font-size: clamp(1.5rem, 4vw, 4.5rem);
     text-align: center;
     font-style: normal;
     font-weight: 800;
-    line-height: 70px;
-    margin: 0px;
-    color: var(--background) !important;
+    line-height: clamp(2.25rem, 6vw, 6.5rem);
+    margin: 0;
+    color: var(--background);
 }
 
-h4 {
+h4,
+.nav-link,
+.dropdown-item,
+.btn span,
+.case-study-snippit,
+button h3,
+.study-section h3,
+.contact h3 {
     font-family: var(--Jost);
-    font-size: 25px;
+    font-size: clamp(1.25rem, 1.5vw, 1.75rem);
     font-style: normal;
     font-weight: 600;
-    line-height: 30px;
-    margin: 0px;
+    line-height: clamp(1.5rem, 2.25vw, 2.25rem);
+    margin: 0;
     color: var(--background);
     text-align: center;
 }
 
-h5 {
+h5,
+.tagline {
     font-family: var(--Jost);
-    font-size: 3.75vw;
+    font-size: clamp(1.5rem, 2.75vw, 2.5rem);
     text-align: center;
     font-style: normal;
     font-weight: 400;
-    line-height: 3.75vw;
-    letter-spacing: 1vw;
-    margin: 0px;
+    line-height: clamp(1.8rem, 6vw, 6rem);
+    letter-spacing: clamp(0.05rem, 1vw, 1rem);
+    margin: 0;
 }
 
-h6 {
+h6,
+dt,
+.study-section figcaption {
     font-family: var(--Jost);
-    font-size: 22px;
+    font-size: clamp(0.95rem, 1.2vw, 1.5rem);
     text-align: left;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
-    margin: 0px;
+    line-height: clamp(1.8rem, 2.2vw, 3.3rem);
+    margin: 0;
+}
+
+a {
+    color: var(--accent-red);
 }
