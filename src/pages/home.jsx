@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { caseStudyCovers } from '../components/images';
 import portfolioCover from '../images/home/Portfolio-Cover.png';
 import figmaLogo from '../images/about/Figma-logo-white.png';
@@ -21,23 +22,15 @@ function Home() {
                         <figure className="layer-1 card-body bg-accent-green" aria-label="Project Details">
                             <h3 className="card-title">ACCESSIBLE PORTFOLIO</h3>
                             <h4 className="card-text text-center">PERSONAL PORTFOLIO DESIGN</h4>
-                            <ul className="tools d-flex justify-content-center align-items-center flex-wrap list-unstyled" aria-label="Technologies used">
-                                <li className="tool-item">
-                                    <img src={figmaLogo} alt="Figma Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={html5Logo} alt="HTML5 Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={css3Logo} alt="CSS3 Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={javascriptLogo} alt="JavaScript Logo" />
-                                </li>
-                            </ul>
-                            <button type="button" className="btn btn-primary mx-auto d-block color-accent-green-hover" onClick={() => window.location.href = 'accessibility'}>
+                            <div className="d-flex justify-content-center align-items-center tools" aria-label="Technologies used">
+                                <img src={figmaLogo} alt="Figma Logo" />
+                                <img src={html5Logo} alt="HTML5 Logo" />
+                                <img src={css3Logo} alt="CSS3 Logo" />
+                                <img src={javascriptLogo} alt="JavaScript Logo" />
+                            </div>
+                            <Link className="btn btn-primary mx-auto d-block color-accent-green-hover" to="/accessibility">
                                 <span className="btn-text color-accent-green">See Project</span>
-                            </button>
+                            </Link>
                         </figure>
                         <img className="mx-auto d-block card-img-bottom" src={portfolioCover} alt="Desktop and mobile screens showing Olivia's portfolio site" />
                     </article>
@@ -46,23 +39,15 @@ function Home() {
                         <figure className="layer-1 card-body bg-accent-purple" aria-label="Project Details">
                             <h3 className="card-title">RIGHT ON EDUCATION</h3>
                             <h4 className="card-text text-center">CENTRAL REDESIGN</h4>
-                            <ul className="tools d-flex justify-content-center align-items-center flex-wrap list-unstyled" aria-label="Technologies used">
-                                <li className="tool-item">
-                                    <img src={figmaLogo} alt="Figma Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={illustratorLogo} alt="Adobe Illustrator Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={photoshopLogo} alt="Adobe Photoshop Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={userTestingIcon} alt="User Testing and Interview Symbol" />
-                                </li>
-                            </ul>
-                            <button type="button" className="btn btn-primary mx-auto d-block color-accent-purple-hover" onClick={() => window.location.href = 'righton'}>
+                            <div className="d-flex justify-content-center align-items-center tools" aria-label="Technologies used">
+                                <img src={figmaLogo} alt="Figma Logo" />
+                                <img src={illustratorLogo} alt="Adobe Illustrator Logo" />
+                                <img src={photoshopLogo} alt="Adobe Photoshop Logo" />
+                                <img src={userTestingIcon} alt="User Testing and Interview Symbol" />
+                            </div>
+                            <Link className="btn btn-primary mx-auto d-block color-accent-purple-hover" to="/righton">
                                 <span className="btn-text color-accent-purple">See Project</span>
-                            </button>
+                            </Link>
                         </figure>
                         <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.rightOn} alt="Laptop, tablet, and mobile screens showing pages from the RightOn Central Redesign Project" />
                     </article>
@@ -71,26 +56,16 @@ function Home() {
                         <figure className="layer-1 card-body bg-accent-red" aria-label="Project Details">
                             <h3 className="card-title">KIM'S DRAGON</h3>
                             <h4 className="card-text text-center">MOBILE ORDERING WEBAPP</h4>
-                            <ul className="tools d-flex justify-content-center align-items-center flex-wrap list-unstyled" aria-label="Technologies used">
-                                <li className="tool-item">
-                                    <img src={phpLogo} alt="PHP Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={mysqlLogo} alt="MySQL Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={html5Logo} alt="HTML5 Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={css3Logo} alt="CSS3 Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={javascriptLogo} alt="JavaScript Logo" />
-                                </li>
-                            </ul>
-                            <button type="button" className="btn btn-primary mx-auto d-block color-accent-red-hover" onClick={() => window.location.href = 'kims-dragon'}>
+                            <div className="d-flex justify-content-center align-items-center tools" aria-label="Technologies used">
+                                <img src={phpLogo} alt="PHP Logo" />
+                                <img src={mysqlLogo} alt="MySQL Logo" />
+                                <img src={html5Logo} alt="HTML5 Logo" />
+                                <img src={css3Logo} alt="CSS3 Logo" />
+                                <img src={javascriptLogo} alt="JavaScript Logo" />
+                            </div>
+                            <Link className="btn btn-primary mx-auto d-block color-accent-red-hover" to="/kims-dragon">
                                 <span className="btn-text color-accent-red">See Project</span>
-                            </button>
+                            </Link>
                         </figure>
                         <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.kimsDragon} alt="Three mobile screens showing pages from the Kim's Dragon Mobile Ordering Webapp" />
                     </article>
@@ -99,23 +74,15 @@ function Home() {
                         <figure className="layer-2 card-body bg-accent-blue" aria-label="Project Details">
                             <h3 className="card-title">LETTERBOXD MOVIE TILE</h3>
                             <h4 className="card-text text-center">MICROINTERACTION DESIGN</h4>
-                            <ul className="tools d-flex justify-content-center align-items-center flex-wrap list-unstyled" aria-label="Technologies used">
-                                <li className="tool-item">
-                                    <img src={figmaLogo} alt="Figma Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={html5Logo} alt="HTML5 Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={css3Logo} alt="CSS3 Logo" />
-                                </li>
-                                <li className="tool-item">
-                                    <img src={javascriptLogo} alt="JavaScript Logo" />
-                                </li>
-                            </ul>
-                            <button type="button" className="btn btn-primary mx-auto d-block color-accent-blue-hover" onClick={() => window.location.href = 'letterboxd'}>
+                            <div className="d-flex justify-content-center align-items-center tools" aria-label="Technologies used">
+                                <img src={figmaLogo} alt="Figma Logo" />
+                                <img src={html5Logo} alt="HTML5 Logo" />
+                                <img src={css3Logo} alt="CSS3 Logo" />
+                                <img src={javascriptLogo} alt="JavaScript Logo" />
+                            </div>
+                            <Link className="btn btn-primary mx-auto d-block color-accent-blue-hover" to="/letterboxd">
                                 <span className="btn-text color-accent-blue">See Project</span>
-                            </button>
+                            </Link>
                         </figure>
                         <img className="mx-auto d-block card-img-bottom" src={caseStudyCovers.letterboxd} alt="Hand cursor shown interacting with a specific movie card on Letterboxd" />
                     </article>

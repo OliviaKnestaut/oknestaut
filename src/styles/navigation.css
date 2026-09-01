@@ -70,6 +70,32 @@
     margin-left: 6px !important;
 }
 
+.nav-link.dropdown-toggle {
+    background: transparent;
+    border: none;
+    appearance: none;
+    cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+    .navbar-collapse.show .navbar-nav {
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+        text-align: center;
+        left: auto;
+        right: auto;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .dropdown-item {
+        text-align: center;
+    }
+}
+
 .form-control {
     border-radius: 4.25rem;
 }

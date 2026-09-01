@@ -240,8 +240,9 @@
         width: 100%;
     }
 
-    .video-section {
-        flex-direction: column;
+    .video-section > article {
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .video-section h3 {
@@ -249,7 +250,7 @@
         line-height: 15vw;
     }
 
-    .video-section > div > div {
+    .video-section figcaption {
         padding: 4vw;
         margin-top: -10vw;
     }
@@ -262,8 +263,14 @@
         gap: 0;
     }
 
+    .case-study-header {
+        padding-bottom: 1rem;
+    }
+
     .button-flex {
         flex-direction: column;
+        margin-top: 0.5rem;
+        gap: 0.5rem;
     }
 }
 
