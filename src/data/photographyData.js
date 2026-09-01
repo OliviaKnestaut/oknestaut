@@ -265,7 +265,163 @@ export const portraitureGroups = [
 
 export const natureGroups = [
     {
+        layout: 'right',
+        photos: [
+            {
+                large: require('../images/photography/nature/Canyonlands_Shafer_Trail-Large.jpg'),
+                small: require('../images/photography/nature/Canyonlands_Shafer_Trail-Small.jpg'),
+                caption: 'Shafer Trail, Canyonlands National Park, UT, August 2026',
+                alt: 'Shafer Trail at Canyonlands National Park',
+                ariaLabel: 'Canyonlands Shafer Trail Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Cliffs-of-Moher-Large.jpg'),
+                small: require('../images/photography/nature/Cliffs-of-Moher-Small.jpg'),
+                caption: 'Cliffs of Moher, County Clare, Ireland October 2025',
+                alt: 'Cliffs of Moher overlooking the Atlantic Ocean',
+                ariaLabel: 'Cliffs of Moher Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Arches_Double_Arch-Large.jpg'),
+                small: require('../images/photography/nature/Arches_Double_Arch-Small.jpg'),
+                caption: 'Double Arch, Arches National Park, UT, August 2026',
+                alt: 'View of the Double Arch at Arches National Park',
+                ariaLabel: 'Arches Double Arch Image — click to view larger'
+            },
+        ]
+    },
+    {
         layout: 'left',
+        photos: [
+            {
+                large: require('../images/photography/nature/Arches_Night-Large.jpg'),
+                small: require('../images/photography/nature/Arches_Night-Small.jpg'),
+                caption: 'Turret Arch at Night, Arches National Park, UT, August 2026',
+                alt: 'Night sky over Turret Arch in Arches National Park',
+                ariaLabel: 'Arches National Park Night Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Yellowstone_Blacktail_Plateau-Large.jpg'),
+                small: require('../images/photography/nature/Yellowstone_Blacktail_Plateau-Small.jpg'),
+                caption: 'Blacktail Plateau, Yellowstone National Park, WY, September 2023',
+                alt: 'Wildflowers in Blacktail Plateau Drive',
+                ariaLabel: 'Blacktail Plateau Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Damajaqua_Waterfalls-Large.jpg'),
+                small: require('../images/photography/nature/Damajaqua_Waterfalls-Small.jpg'),
+                caption: 'Damajaqua Waterfalls, Puerto Plata, Dominican Republic, March 2024',
+                alt: 'Light filtering through the trees onto the Damajaqua Waterfalls in the Dominican Republic',
+                ariaLabel: 'Damajaqua Waterfalls Image — click to view larger'
+            }
+        ]
+    },
+    {
+        layout: 'right',
+        photos: [
+            {
+                large: require('../images/photography/nature/Cape_May_Bee-Large.jpg'),
+                small: require('../images/photography/nature/Cape_May_Bee-Small.jpg'),
+                caption: 'Bee in Cape May Point State Park, Cape May, NJ, July 2025',
+                alt: 'A bee on a flower in Cape May Point State Park',
+                ariaLabel: 'Cape May Bee Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Yellowstone_Bison_1-Large.jpg'),
+                small: require('../images/photography/nature/Yellowstone_Bison_1-Small.jpg'),
+                caption: 'Lamar Valley Bison, Yellowstone National Park, WY, September 2023',
+                alt: 'Lone bison grazing in Lamar Valley, Yellowstone National Park',
+                ariaLabel: 'Yellowstone Bison Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Mt_Rainier_Ascent-Large.jpg'),
+                small: require('../images/photography/nature/Mt_Rainier_Ascent-Small.jpg'),
+                caption: 'Ascent, Mount Rainier National Park, WA, August 2023',
+                alt: 'View up Mount Rainier along the trail to the summit',
+                ariaLabel: 'Mt. Rainier Ascent Image — click to view larger'
+            },
+        ]
+    },
+    {
+        layout: 'left',
+        photos: [
+            {
+                large: require('../images/photography/nature/Bridal-Veil-Large-2.jpg'),
+                small: require('../images/photography/nature/Bridal-Veil-Small-2.jpg'),
+                caption: 'Bridal Veil Falls, Delaware Water Gap, PA, July 2026',
+                alt: 'Close up of Bridal Veil Falls in the Delaware Water Gap National Recreation Area',
+                ariaLabel: 'Bridal Veil Falls Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Oxbox_Bend-Large.jpg'),
+                small: require('../images/photography/nature/Oxbox_Bend-Small.jpg'),
+                caption: 'Oxbow Bend, Grand Teton National Park, WY, September 2023',
+                alt: 'River bend with the Teton mountains in the back',
+                ariaLabel: 'Oxbow Bend Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Canyonlands_Plane-Large.jpg'),
+                small: require('../images/photography/nature/Canyonlands_Plane-Small.jpg'),
+                caption: 'Plane flying over Canyonlands National Park, UT, August 2026',
+                alt: 'Plane over Canyonlands National Park',
+                ariaLabel: 'Canyonlands Plane Image — click to view larger'
+            }
+        ]
+    },
+    {
+        layout: 'right',
+        photos: [
+            {
+                large: require('../images/photography/nature/Ireland-Cows-Large.jpg'),
+                small: require('../images/photography/nature/Ireland-Cows-Small.jpg'),
+                caption: 'Cows near Galway, March 2026',
+                alt: 'Cows grazing in fields near Galway in Ireland',
+                ariaLabel: 'Ireland Cows Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Bryce_Night-Large.jpg'),
+                small: require('../images/photography/nature/Bryce_Night-Small.jpg'),
+                caption: 'Night Sky at Bryce Canyon National Park, UT, August 2026',
+                alt: 'Night sky over Bryce Canyon National Park',
+                ariaLabel: 'Bryce Canyon Night Sky Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Peekaboo_Moqui_Steps-Large.jpg'),
+                small: require('../images/photography/nature/Peekaboo_Moqui_Steps-Small.jpg'),
+                caption: 'Moqui Steps, Peekaboo Canyon, Kanab UT, August 2026',
+                alt: 'Moqui Steps in Peekaboo Canyon, Kanab UT',
+                ariaLabel: 'Peekaboo Canyon Moqui Steps Image — click to view larger'
+            }
+        ]
+    },
+    {
+        layout: 'left',
+        photos: [
+            {
+                large: require('../images/photography/nature/Zion_Valley-Large.jpg'),
+                small: require('../images/photography/nature/Zion_Valley-Small.jpg'),
+                caption: 'Zion Valley, Zion National Park, UT, August 2026',
+                alt: 'Sun over Zion Valley, Zion National Park',
+                ariaLabel: 'Zion Valley Sun Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Lake_Washington_Dogs_2-Large.jpg'),
+                small: require('../images/photography/nature/Lake_Washington_Dogs_2-Small.jpg'),
+                caption: 'Lake Washington Dogs, Seattle, WA, September 2023',
+                alt: 'Black and White image of dogs playing at a beach on Lake Washington',
+                ariaLabel: 'Lake Washington Dogs Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Capitol_Reef_Deer-Large.jpg'),
+                small: require('../images/photography/nature/Capitol_Reef_Deer-Small.jpg'),
+                caption: 'Deer eating Apples at Capitol Reef National Park, UT, August 2026',
+                alt: 'Deer eating Apples at Capitol Reef National Park',
+                ariaLabel: 'Capitol Reef Deer Image — click to view larger'
+            }
+        ]
+    },
+    {
+        layout: 'right',
         photos: [
             {
                 large: require('../images/photography/nature/Yellowstone_Bison_2-Large.jpg'),
@@ -282,37 +438,11 @@ export const natureGroups = [
                 ariaLabel: 'Mammoth Hot Springs Image — click to view larger'
             },
             {
-                large: require('../images/photography/nature/St_John_Boat-Large.jpg'),
-                small: require('../images/photography/nature/St_John_Boat-Small.jpg'),
-                caption: 'Floating in Trunk Bay, St. John, USVI, March 2024',
-                alt: 'Small boat floating in the rich secondary-accent waters of Trunk Bay off of St. John in the US Virgin Islands',
-                ariaLabel: 'St. John Boat Image — click to view larger'
-            },
-        ]
-    },
-    {
-        layout: 'right',
-        photos: [
-            {
-                large: require('../images/photography/nature/Ireland-Cows-Large.jpg'),
-                small: require('../images/photography/nature/Ireland-Cows-Small.jpg'),
-                caption: 'Cows near Galway, March 2026',
-                alt: 'Cows grazing in fields near Galway in Ireland',
-                ariaLabel: 'Ireland Cows Image — click to view larger'
-            },
-            {
-                large: require('../images/photography/nature/Yellowstone_Blacktail_Plateau-Large.jpg'),
-                small: require('../images/photography/nature/Yellowstone_Blacktail_Plateau-Small.jpg'),
-                caption: 'Blacktail Plateau, Yellowstone National Park, WY, September 2023',
-                alt: 'Wildflowers in Blacktail Plateau Drive',
-                ariaLabel: 'Blacktail Plateau Image — click to view larger'
-            },
-            {
-                large: require('../images/photography/nature/Bridal-Veil-Large.jpg'),
-                small: require('../images/photography/nature/Bridal-Veil-Small.jpg'),
-                caption: 'Bridal Veil Falls, Delaware Water Gap, PA, July 2026',
-                alt: 'Bridal Veil Falls waterfall in the Delaware Water Gap National Recreation Area',
-                ariaLabel: 'Bridal Veil Falls Image — click to view larger'
+                large: require('../images/photography/nature/Zion_Bird-Large.jpg'),
+                small: require('../images/photography/nature/Zion_Bird-Small.jpg'),
+                caption: 'Zion National Park, UT, August 2026',
+                alt: 'Bird flying high in Zion National Park',
+                ariaLabel: 'Zion Bird Image — click to view larger'
             }
         ]
     },
@@ -320,26 +450,78 @@ export const natureGroups = [
         layout: 'left',
         photos: [
             {
-                large: require('../images/photography/nature/Lake_Washington_Dogs_1-Large.jpg'),
-                small: require('../images/photography/nature/Lake_Washington_Dogs_1-Small.jpg'),
-                caption: 'Lake Washington Dogs, Seattle, WA, September 2023',
-                alt: 'Black and White image of dogs playing at a beach on Lake Washington',
-                ariaLabel: 'Lake Washington Dogs Image — click to view larger'
+                large: require('../images/photography/nature/Bryce_Sunset-Large.jpg'),
+                small: require('../images/photography/nature/Bryce_Sunset-Small.jpg'),
+                caption: 'Sunset over Bryce Canyon National Park, UT, August 2026',
+                alt: 'Sunset over Bryce Canyon National Park',
+                ariaLabel: 'Bryce Canyon Sunset Image — click to view larger'
             },
             {
-                large: require('../images/photography/nature/Mt_Rainier_Ascent-Large.jpg'),
-                small: require('../images/photography/nature/Mt_Rainier_Ascent-Small.jpg'),
-                caption: 'Ascent, Mount Rainier National Park, WA, August 2023',
-                alt: 'View up Mount Rainier along the trail to the summit',
-                ariaLabel: 'Mt. Rainier Ascent Image — click to view larger'
+                large: require('../images/photography/nature/Tortola_Hills-Large.jpg'),
+                small: require('../images/photography/nature/Tortola_Hills-Small.jpg'),
+                caption: 'Hillside Homes, Tortola, BVI, March 2024',
+                alt: 'Colorful homes on the hillside of Tortola in the British Virgin Islands',
+                ariaLabel: 'Tortola Hills Image — click to view larger'
             },
             {
-                large: require('../images/photography/nature/Cliffs-of-Moher-Large.jpg'),
-                small: require('../images/photography/nature/Cliffs-of-Moher-Small.jpg'),
-                caption: 'Cliffs of Moher, County Clare, Ireland October 2025',
-                alt: 'Cliffs of Moher overlooking the Atlantic Ocean',
-                ariaLabel: 'Cliffs of Moher Image — click to view larger'
+                large: require('../images/photography/nature/Dark_Hollow_Falls-Large.jpg'),
+                small: require('../images/photography/nature/Dark_Hollow_Falls-Small.jpg'),
+                caption: 'Dark Hollow Falls, Shenandoah National Park, VA, October 2025',
+                alt: 'Dark Hollow Falls waterfall in Shenandoah National Park',
+                ariaLabel: 'Dark Hollow Falls Image — click to view larger'
             },
+        ]
+    },
+    {
+        layout: 'right',
+        photos: [
+            {
+                large: require('../images/photography/nature/Capitol_Reef_Peaches-Large.jpg'),
+                small: require('../images/photography/nature/Capitol_Reef_Peaches-Small.jpg'),
+                caption: 'Peach Orchards, Capitol Reef National Park, UT, August 2026',
+                alt: 'Peache Orchards at Capitol Reef National Park',
+                ariaLabel: 'Capitol Reef Peaches Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Arches_North_WIndow-Large.jpg'),
+                small: require('../images/photography/nature/Arches_North_WIndow-Small.jpg'),
+                caption: 'North Window, Arches National Park, UT, August 2026',
+                alt: 'View through the North Window arch at Arches National Park',
+                ariaLabel: 'Arches North Window Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Ireland-Gardens-Large.jpg'),
+                small: require('../images/photography/nature/Ireland-Gardens-Small.jpg'),
+                caption: 'National Botanic Gardens, Dublin, Ireland March 2026',
+                alt: 'Inside a greenhouse at the National Botanic Gardens in Dublin, Ireland',
+                ariaLabel: 'Ireland Gardens Image — click to view larger'
+            }
+        ]
+    },
+    {
+        layout: 'left',
+        photos: [
+            {
+                large: require('../images/photography/nature/Peekaboo_Sky-Large.jpg'),
+                small: require('../images/photography/nature/Peekaboo_Sky-Small.jpg'),
+                caption: 'Sky over Peekaboo Canyon, Kanab UT, August 2026',
+                alt: 'Sky over Peekaboo Canyon in Kanab UT',
+                ariaLabel: 'Peekaboo Canyon Sky Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/St_John_Boat-Large.jpg'),
+                small: require('../images/photography/nature/St_John_Boat-Small.jpg'),
+                caption: 'Floating in Trunk Bay, St. John, USVI, March 2024',
+                alt: 'Small boat floating in the rich secondary-accent waters of Trunk Bay off of St. John in the US Virgin Islands',
+                ariaLabel: 'St. John Boat Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Olympic_Hurricane_Ridge-Large.jpg'),
+                small: require('../images/photography/nature/Olympic_Hurricane_Ridge-Small.jpg'),
+                caption: 'Hurricane Ridge, Olympic National Park, WA, August 2023',
+                alt: 'View from the top of Hurricane Ridge in Olympic National Park',
+                ariaLabel: 'Olympic Hurricane Ridge Image — click to view larger'
+            }
         ]
     },
     {
@@ -353,49 +535,24 @@ export const natureGroups = [
                 ariaLabel: 'Grand Teton Horses Image — click to view larger'
             },
             {
-                large: require('../images/photography/nature/Olympic_Hurricane_Ridge-Large.jpg'),
-                small: require('../images/photography/nature/Olympic_Hurricane_Ridge-Small.jpg'),
-                caption: 'Hurricane Ridge, Olympic National Park, WA, August 2023',
-                alt: 'View from the top of Hurricane Ridge in Olympic National Park',
-                ariaLabel: 'Olympic Hurricane Ridge Image — click to view larger'
+                large: require('../images/photography/nature/Zion_Chipmunk-Large.jpg'),
+                small: require('../images/photography/nature/Zion_Chipmunk-Small.jpg'),
+                caption: 'Chipmunk Lunchtime, Zion National Park, UT, August 2026',
+                alt: 'Chipmunk eating Cactus Fruit in Zion National Park',
+                ariaLabel: 'Zion Chipmunk Image — click to view larger'
             },
             {
-                large: require('../images/photography/nature/Damajaqua_Waterfalls-Large.jpg'),
-                small: require('../images/photography/nature/Damajaqua_Waterfalls-Small.jpg'),
-                caption: 'Damajaqua Waterfalls, Puerto Plata, Dominican Republic, March 2024',
-                alt: 'Light filtering through the trees onto the Damajaqua Waterfalls in the Dominican Republic',
-                ariaLabel: 'Damajaqua Waterfalls Image — click to view larger'
-            }
+                large: require('../images/photography/nature/Bryce_Hoodoos-Large.jpg'),
+                small: require('../images/photography/nature/Bryce_Hoodoos-Small.jpg'),
+                caption: 'Bryce Canyon National Park, UT, August 2026',
+                alt: 'View of the Hoodoos at Bryce Canyon National Park',
+                ariaLabel: 'Bryce Canyon Hoodoos Image — click to view larger'
+            },
+            
         ]
     },
     {
         layout: 'left',
-        photos: [
-            {
-                large: require('../images/photography/nature/Cape_May_Bee-Large.jpg'),
-                small: require('../images/photography/nature/Cape_May_Bee-Small.jpg'),
-                caption: 'Bee in Cape May Point State Park, Cape May, NJ, July 2025',
-                alt: 'A bee on a flower in Cape May Point State Park',
-                ariaLabel: 'Cape May Bee Image — click to view larger'
-            },
-            {
-                large: require('../images/photography/nature/Lake_Washington_Dogs_2-Large.jpg'),
-                small: require('../images/photography/nature/Lake_Washington_Dogs_2-Small.jpg'),
-                caption: 'Lake Washington Dogs, Seattle, WA, September 2023',
-                alt: 'Black and White image of dogs playing at a beach on Lake Washington',
-                ariaLabel: 'Lake Washington Dogs Image — click to view larger'
-            },
-            {
-                large: require('../images/photography/nature/Tortola_Hills-Large.jpg'),
-                small: require('../images/photography/nature/Tortola_Hills-Small.jpg'),
-                caption: 'Hillside Homes, Tortola, BVI, March 2024',
-                alt: 'Colorful homes on the hillside of Tortola in the British Virgin Islands',
-                ariaLabel: 'Tortola Hills Image — click to view larger'
-            },
-        ]
-    },
-    {
-        layout: 'right',
         photos: [
             {
                 large: require('../images/photography/nature/Shenandoah_Road-Large.jpg'),
@@ -403,32 +560,6 @@ export const natureGroups = [
                 caption: 'Road through Shenandoah National Park, Shenandoah National Park, VA, October 2025',
                 alt: 'Road through Shenandoah National Park with fall foliage',
                 ariaLabel: 'Shenandoah Road Image — click to view larger'
-            },
-            {
-                large: require('../images/photography/nature/Dark_Hollow_Falls-Large.jpg'),
-                small: require('../images/photography/nature/Dark_Hollow_Falls-Small.jpg'),
-                caption: 'Dark Hollow Falls, Shenandoah National Park, VA, October 2025',
-                alt: 'Dark Hollow Falls waterfall in Shenandoah National Park',
-                ariaLabel: 'Dark Hollow Falls Image — click to view larger'
-            },
-            {
-                large: require('../images/photography/nature/Oxbox_Bend-Large.jpg'),
-                small: require('../images/photography/nature/Oxbox_Bend-Small.jpg'),
-                caption: 'Oxbow Bend, Grand Teton National Park, WY, September 2023',
-                alt: 'River bend with the Teton mountains in the back',
-                ariaLabel: 'Oxbow Bend Image — click to view larger'
-            }
-        ]
-    },
-    {
-        layout: 'left',
-        photos: [
-            {
-                large: require('../images/photography/nature/Snake_River-Large.jpg'),
-                small: require('../images/photography/nature/Snake_River-Small.jpg'),
-                caption: 'Snake River mirroring the Teton Mountains, Grand Teton National Park, WY, September 2023',
-                alt: 'Water of the Snake River mirroring the teton mountains in early fall',
-                ariaLabel: 'Snake River Image — click to view larger'
             },
             {
                 large: require('../images/photography/nature/Cape_May_Dragonfly-Large.jpg'),
@@ -443,35 +574,35 @@ export const natureGroups = [
                 caption: 'Dream Lake, Luray Caverns, Luray, VA, October 2025',
                 alt: 'Dream Lake in Luray Caverns, Luray, Virginia',
                 ariaLabel: 'Luray Dream Lake Image — click to view larger'
-            },
+            }
         ]
     },
     {
         layout: 'right',
         photos: [
             {
-                large: require('../images/photography/nature/Bridal-Veil-Large-2.jpg'),
-                small: require('../images/photography/nature/Bridal-Veil-Small-2.jpg'),
+                large: require('../images/photography/nature/Snake_River-Large.jpg'),
+                small: require('../images/photography/nature/Snake_River-Small.jpg'),
+                caption: 'Snake River mirroring the Teton Mountains, Grand Teton National Park, WY, September 2023',
+                alt: 'Water of the Snake River mirroring the teton mountains in early fall',
+                ariaLabel: 'Snake River Image — click to view larger'
+            },
+            {
+                large: require('../images/photography/nature/Bridal-Veil-Large.jpg'),
+                small: require('../images/photography/nature/Bridal-Veil-Small.jpg'),
                 caption: 'Bridal Veil Falls, Delaware Water Gap, PA, July 2026',
-                alt: 'Close up of Bridal Veil Falls in the Delaware Water Gap National Recreation Area',
+                alt: 'Bridal Veil Falls waterfall in the Delaware Water Gap National Recreation Area',
                 ariaLabel: 'Bridal Veil Falls Image — click to view larger'
             },
             {
-                large: require('../images/photography/nature/Yellowstone_Bison_1-Large.jpg'),
-                small: require('../images/photography/nature/Yellowstone_Bison_1-Small.jpg'),
-                caption: 'Lamar Valley Bison, Yellowstone National Park, WY, September 2023',
-                alt: 'Lone bison grazing in Lamar Valley, Yellowstone National Park',
-                ariaLabel: 'Yellowstone Bison Image — click to view larger'
-            },
-            {
-                large: require('../images/photography/nature/Ireland-Gardens-Large.jpg'),
-                small: require('../images/photography/nature/Ireland-Gardens-Small.jpg'),
-                caption: 'National Botanic Gardens, Dublin, Ireland March 2026',
-                alt: 'Inside a greenhouse at the National Botanic Gardens in Dublin, Ireland',
-                ariaLabel: 'Ireland Gardens Image — click to view larger'
+                large: require('../images/photography/nature/Bryce_Navajo_Loop-Large.jpg'),
+                small: require('../images/photography/nature/Bryce_Navajo_Loop-Small.jpg'),
+                caption: 'Navajo Loop Trail, Bryce Canyon National Park, UT, August 2026',
+                alt: 'View of the Navajo Loop Trail at Bryce Canyon National Park',
+                ariaLabel: 'Bryce Canyon Navajo Loop Image — click to view larger'
             }
         ]
-    },
+    }
 ];
 
 export const architectureGroups = [

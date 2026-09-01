@@ -1,5 +1,6 @@
 import React from 'react';
 import PhotoGrid from '../components/PhotoGrid';
+import useDimbox from '../hooks/useDimbox';
 import aboutPortrait from '../images/about/ok-about.jpg';
 import aboutContact from '../images/about/ok-about-2.jpg';
 import locationIcon from '../images/about/location_icon_purple.svg';
@@ -80,6 +81,8 @@ const recentActivities = [
 ];
 
 function About() {
+    useDimbox();
+
     return (
         <main aria-label="About Main Content">
             <section className="row col-sm about" aria-label="About Me Section">
