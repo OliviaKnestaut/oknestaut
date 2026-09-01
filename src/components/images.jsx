@@ -1,8 +1,3 @@
-import upperAbstractFull from '../images/general/upper-absract-full-row.svg';
-import upperAbstractMobile from '../images/general/upper-abstract-2-rows.svg';
-import lowerAbstractFull from '../images/general/lower-absract-full-row.svg';
-import lowerAbstractMobile from '../images/general/lower-absract-mobile-row.svg';
-
 import kimsDragonCover from '../images/home/Kim-Dragon-Cover.png';
 import rightOnCover from '../images/home/RightOn-Cover.png';
 import riverfrontCover from '../images/home/RiverfrontWilm-Cover.png';
@@ -11,12 +6,12 @@ import tesseraCover from '../images/home/Tessera-Cover.png';
 
 export const abstractGraphics = {
     upper: {
-        full: upperAbstractFull,
-        mobile: upperAbstractMobile
+        full: `${process.env.PUBLIC_URL}/images/general/upper-absract-full-row.svg`,
+        mobile: `${process.env.PUBLIC_URL}/images/general/upper-abstract-2-rows.svg`
     },
     lower: {
-        full: lowerAbstractFull,
-        mobile: lowerAbstractMobile
+        full: `${process.env.PUBLIC_URL}/images/general/lower-absract-full-row.svg`,
+        mobile: `${process.env.PUBLIC_URL}/images/general/lower-absract-mobile-row.svg`
     }
 };
 

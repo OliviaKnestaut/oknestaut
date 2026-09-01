@@ -2,18 +2,37 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="icon" href="%PUBLIC_URL%/ok-logo.svg" type="image/svg+xml" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#FFF9EE" />
     <meta
       name="description"
       content="Olivia Knestaut is a Philadelphia-based UX/UI designer and full-stack developer. Explore case studies, photography, and design work."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/ok-logo.svg" type="image/svg+xml" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="%PUBLIC_URL%/css/dimbox.min.css">
-    <title>Olivia Knestaut | UX/UI Design &amp; Full Stack Development</title>
+
+    <!-- Preconnect to third-party origins -->
+    <link rel="preconnect" href="https://stackpath.bootstrapcdn.com" crossorigin />
+    <link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com" />
+
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="%PUBLIC_URL%/fonts/Jost-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin />
+
+    <!-- Preload above-the-fold LCP images -->
+    <link rel="preload" href="%PUBLIC_URL%/images/general/upper-absract-full-row.svg" as="image" media="(min-width: 576px)" />
+    <link rel="preload" href="%PUBLIC_URL%/images/general/upper-abstract-2-rows.svg" as="image" media="(max-width: 575px)" />
+    <link rel="preload" href="%PUBLIC_URL%/images/general/lower-absract-full-row.svg" as="image" media="(min-width: 576px)" />
+    <link rel="preload" href="%PUBLIC_URL%/images/general/lower-absract-mobile-row.svg" as="image" media="(max-width: 575px)" />
+
+    <!-- Non-critical CSS loaded asynchronously -->
+    <link rel="preload" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" as="style" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /></noscript>
+
+    <link rel="preload" href="%PUBLIC_URL%/css/dimbox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="%PUBLIC_URL%/css/dimbox.min.css" /></noscript>
+
+    <title>Olivia Knestaut | Portfolio</title>
   </head>
   <body>
     <div id="root"></div>

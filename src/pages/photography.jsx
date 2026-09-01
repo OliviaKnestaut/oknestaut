@@ -1,6 +1,8 @@
 import React from 'react';
+import '../styles/photography.css';
 import ContentsNav from '../components/ContentsNav';
 import PhotoGrid from '../components/PhotoGrid';
+import useDimbox from '../hooks/useDimbox';
 import { portraitureGroups, natureGroups, architectureGroups } from '../data/photographyData';
 
 const sections = [
@@ -16,6 +18,8 @@ const contentsLinks = sections.map((section) => ({
 }));
 
 function Photography() {
+    useDimbox();
+
     return (
         <>
             <ContentsNav links={contentsLinks} skipTargetId="photography-content" />

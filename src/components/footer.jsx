@@ -19,7 +19,7 @@ function Footer() {
                 />
             </picture>
             <div className="row align-items-center justify-content-center footer bg-accent-purple">
-                <a href="#page-content" className="skip-link footer-skip-link color-tan-hover" aria-label="Skip Footer Links">
+                <a href="#footer-end" className="skip-link footer-skip-link color-tan-hover" aria-label="Skip Footer Links">
                     Skip Footer Links
                 </a>
                 <div className="row align-items-center text-color-light">
@@ -42,6 +42,7 @@ function Footer() {
                     <img className="icon" src={githubIcon} alt="github icon" />
                     <span>OliviaKnestaut</span>
                 </a>
+                <span id="footer-end" className="sr-only" tabIndex="-1" aria-hidden="true">End of footer</span>
             </div>
         </footer>
     );

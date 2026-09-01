@@ -11,6 +11,7 @@ import photoshopLogo from '../images/about/Photoshop-Icon-white.png';
 import userTestingIcon from '../images/about/user-testing.png';
 import phpLogo from '../images/about/PHP-Icon-white.png';
 import mysqlLogo from '../images/about/mysql-logo-white.png';
+import reactLogo from '../images/about/react-logo-white.png';
 
 function Home() {
     return (
@@ -24,8 +25,7 @@ function Home() {
                             <h4 className="card-text text-center">PERSONAL PORTFOLIO DESIGN</h4>
                             <div className="d-flex justify-content-center align-items-center tools" aria-label="Technologies used">
                                 <img src={figmaLogo} alt="Figma Logo" />
-                                <img src={html5Logo} alt="HTML5 Logo" />
-                                <img src={css3Logo} alt="CSS3 Logo" />
+                                <img src={reactLogo} alt="React Logo" />
                                 <img src={javascriptLogo} alt="JavaScript Logo" />
                             </div>
                             <Link className="btn btn-primary mx-auto d-block color-accent-green-hover" to="/accessibility">

@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/case-study.css';
 import CaseStudyHeader from '../components/CaseStudyHeader';
 import ContentsNav from '../components/ContentsNav';
 import rightOnCover from '../images/home/RightOn-Cover.png';

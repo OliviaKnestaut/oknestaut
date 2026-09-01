@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/case-study.css';
 import CaseStudyHeader from '../components/CaseStudyHeader';
 import ContentsNav from '../components/ContentsNav';
 import portfolioCover from '../images/home/Portfolio-Cover.png';
@@ -55,7 +56,7 @@ function Accessibility() {
                         </dl>
                         <article>
                             <p>
-                                This project is an accessibility design and development project to optimize my personal portfolio site in alignment with inclusive design principles. It was originally created for the class IDM T380, Scripting for Accessibility Design, under the direction of Professor Jervis Thompson then expanded to incorporate my full website and all associated pages.
+                                This project is an accessibility design and development project to optimize my personal portfolio site in alignment with inclusive design principles. It was originally created for the class IDM T380, Scripting for Accessibility Design, under the direction of Professor Jervis Thompson with limited constraints. Following the conclusion of the course I incorporated the principles into my full website and all associated pages. Finally, all accessibility changes were reevaluated while migrating the original HTML site to React.
                             </p>
                             <p>
                                 In IDM T380, we were tasked with stripping and refining the site structure, labeling, and aria usage. Through each step of the process I balanced the UI design with the new inclusive improvements. The final build from the course included the site home page, about page, and contact form. This has now been expanded so inclusive design principles are applied across all portfolio site pages.
@@ -70,7 +71,7 @@ function Accessibility() {
                         <h3 className="color-accent-blue">PROJECT BACKGROUND</h3>
                         <p>
                             My personal portfolio website consolidates my work and accomplishments into one location to present to future employers and collaborators. It is important that my site be accessible to as many users as possible to improve my career prospects and ensure all users have equal access to media. Over the span of 10 weeks, I worked individually to design and develop my improved accessible website.
-                            <b>The project operated within the constraints of academic guidelines, requiring the use of HTML, CSS, and JavaScript to produce a functional prototype.</b> The improvements were designed to fit within the existing established branding. My process included multiple design and development phases, culminating in a final build that will soon be generally incorporated into the main site infrastructure.
+                            <b>This project operated within the constraints of academic guidelines, requiring the use of HTML, CSS, and JavaScript to produce a functional prototype which has not been migrated to React.</b> The improvements were designed to fit within the existing established branding. My process included multiple design and development phases, culminating in a final build that will soon be generally incorporated into the main site infrastructure.
                         </p>
                     </article>
                     <article className="case-study-sect" aria-label="The Problem Subsection">

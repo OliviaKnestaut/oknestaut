@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '../images/general/oknestaut_logo.svg';
+
+const logo = `${process.env.PUBLIC_URL}/images/general/oknestaut_logo.svg`;
 
 function Navigation() {
     const location = useLocation();

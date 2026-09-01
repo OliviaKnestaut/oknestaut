@@ -1,4 +1,5 @@
 import React from 'react';
+import useDimbox from '../hooks/useDimbox';
 
 const collections = [
     { src: require('../images/design/Critter.jpg'), caption: 'Collections: Calico Critter, Adobe Photoshop, 2025', alt: 'Digital Art of a persian cat calico critter against a red background', label: 'Collections: Calico Critter' },
@@ -29,6 +30,8 @@ const videos = [
 ];
 
 function Design() {
+    useDimbox();
+
     return (
         <main aria-label="Design and Media Main Content">
             <section className="container-fluid" aria-label="Graphic Design Section">
