@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/case-study.css';
 import CaseStudyHeader from '../components/CaseStudyHeader';
+import { openTrackedLink } from '../utils/analytics';
 import ContentsNav from '../components/ContentsNav';
 import kimsCover from '../images/home/Kim-Dragon-Cover.png';
 import journeyMap from '../images/kims/JourneyMap.png';
@@ -149,7 +150,12 @@ function KimsDragon() {
                     <button
                         type="button"
                         className="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                        onClick={() => window.open('https://digmstudents.westphal.drexel.edu/~ojk25/idm216/', '_blank')}
+                        onClick={() =>
+                            openTrackedLink(
+                                'https://digmstudents.westphal.drexel.edu/~ojk25/idm216/',
+                                "Kim's Dragon Team Page",
+                            )
+                        }
                     >
                         <h3 className="btn-text color-tan">Team Page</h3>
                     </button>
@@ -171,9 +177,9 @@ function KimsDragon() {
                         type="button"
                         className="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
                         onClick={() =>
-                            window.open(
+                            openTrackedLink(
                                 'https://digmstudents.westphal.drexel.edu/~ojk25/idm216/project-page.php',
-                                '_blank',
+                                "Kim's Dragon Project Page",
                             )
                         }
                     >
@@ -233,9 +239,9 @@ function KimsDragon() {
                             type="button"
                             className="btn btn-primary mx-auto d-block color-accent-blue bg-tan color-accent-blue-hover"
                             onClick={() =>
-                                window.open(
+                                openTrackedLink(
                                     'https://digmstudents.westphal.drexel.edu/~ojk25/idm216/database-dump.php',
-                                    '_blank',
+                                    "Kim's Dragon Database Dump",
                                 )
                             }
                         >
@@ -292,7 +298,10 @@ function KimsDragon() {
                             type="button"
                             className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
                             onClick={() =>
-                                window.open('https://digmstudents.westphal.drexel.edu/~ojk25/idm216/final/', '_blank')
+                                openTrackedLink(
+                                    'https://digmstudents.westphal.drexel.edu/~ojk25/idm216/final/',
+                                    "Kim's Dragon Final Build",
+                                )
                             }
                         >
                             <h3 className="btn-text color-tan">Final Build</h3>
@@ -301,7 +310,10 @@ function KimsDragon() {
                             type="button"
                             className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
                             onClick={() =>
-                                window.open('https://github.com/OliviaKnestaut/2501-idm216-blueprints', '_blank')
+                                openTrackedLink(
+                                    'https://github.com/OliviaKnestaut/2501-idm216-blueprints',
+                                    "Kim's Dragon Project Github",
+                                )
                             }
                         >
                             <h3 className="btn-text color-tan">Project Github</h3>

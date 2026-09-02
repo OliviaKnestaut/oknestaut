@@ -11,6 +11,11 @@ import './styles/responsive.css';
 
 import Home from './pages/home';
 
+import ReactGA from 'react-ga4';
+
+// Initialize with your actual Measurement ID
+ReactGA.initialize('G-TD8B7D7VZZ');
+
 const About = React.lazy(() => import('./pages/about'));
 const Resume = React.lazy(() => import('./pages/resume'));
 const Photography = React.lazy(() => import('./pages/photography'));
@@ -29,6 +34,18 @@ function ScrollToTop() {
         window.scrollTo(0, 0);
     }, [pathname]);
     return null;
+}
+
+function usePageViews() {
+    const location = useLocation();
+
+    useEffect(() => {
+        ReactGA.send({
+            hitType: 'pageview',
+            page: location.pathname + location.search,
+            title: document.title,
+        });
+    }, [location]);
 }
 
 const pageTitles = {
@@ -60,6 +77,7 @@ function AppContent() {
     const headerTitle = headerTitles[location.pathname];
 
     usePageTitle();
+    usePageViews();
 
     // biome-ignore lint/correctness/useExhaustiveDependencies: scroll on route change
     useEffect(() => {

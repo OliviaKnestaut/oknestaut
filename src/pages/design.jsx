@@ -1,6 +1,7 @@
 import React from 'react';
 import DimboxAnchor from '../components/DimboxAnchor';
 import FadeImage from '../components/FadeImage';
+import { openTrackedLink } from '../utils/analytics';
 import useDimbox from '../hooks/useDimbox';
 
 const collections = [
@@ -223,7 +224,12 @@ function Design() {
                 <div className="video-section d-flex" aria-label="Video Gallery">
                     {videos.map((video) => (
                         <article key={video.title} aria-label={`${video.title} Video`}>
-                            <a href={video.url} target="_blank" rel="noopener noreferrer">
+                            <a
+                                href={video.url}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={() => openTrackedLink(video.url, video.title)}
+                            >
                                 <img src={video.thumb} alt="" />
                             </a>
                             <figcaption className={`${video.color} d-flex flex-column align-items-center`}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { openTrackedLink } from '../utils/analytics';
 
 function CaseStudyHeader({ title, subtitle, coverImage, coverAlt, bgColor, buttons = [] }) {
     return (
@@ -21,7 +22,7 @@ function CaseStudyHeader({ title, subtitle, coverImage, coverAlt, bgColor, butto
                             key={button.label}
                             type="button"
                             className="btn btn-primary mx-auto d-block color-accent-blue bg-tan color-accent-blue-hover"
-                            onClick={() => window.open(button.url, '_blank')}
+                            onClick={() => openTrackedLink(button.url, button.label)}
                         >
                             <h3 className="btn-text color-accent-blue">{button.label}</h3>
                         </button>

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { trackEvent } from '../utils/analytics';
 import backToTopIcon from '../images/icons/back-to-top.svg';
 
 function BackToTop() {
@@ -15,6 +16,7 @@ function BackToTop() {
 
     const scrollToTop = (e) => {
         e.preventDefault();
+        trackEvent('Navigation', 'Clicked Back to Top', document.title);
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 

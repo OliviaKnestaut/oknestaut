@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { trackEvent } from '../utils/analytics';
 import { caseStudyCovers } from '../components/images';
 import figmaLogo from '../images/about/Figma-logo-white.png';
 import illustratorLogo from '../images/about/Illustrator-Icon-white.png';
@@ -34,6 +35,7 @@ function Home() {
                             <Link
                                 className="btn btn-primary mx-auto d-block color-accent-green-hover"
                                 to="/accessibility"
+                                onClick={() => trackEvent('Home', 'Clicked See Project', 'Accessible Portfolio')}
                             >
                                 <span className="btn-text color-accent-green">See Project</span>
                             </Link>
@@ -60,7 +62,11 @@ function Home() {
                                 <img src={photoshopLogo} alt="Adobe Photoshop Logo" />
                                 <img src={userTestingIcon} alt="User Testing and Interview Symbol" />
                             </div>
-                            <Link className="btn btn-primary mx-auto d-block color-accent-purple-hover" to="/righton">
+                            <Link
+                                className="btn btn-primary mx-auto d-block color-accent-purple-hover"
+                                to="/righton"
+                                onClick={() => trackEvent('Home', 'Clicked See Project', 'RightOn Education')}
+                            >
                                 <span className="btn-text color-accent-purple">See Project</span>
                             </Link>
                         </figure>
@@ -87,7 +93,11 @@ function Home() {
                                 <img src={css3Logo} alt="CSS3 Logo" />
                                 <img src={javascriptLogo} alt="JavaScript Logo" />
                             </div>
-                            <Link className="btn btn-primary mx-auto d-block color-accent-red-hover" to="/kims-dragon">
+                            <Link
+                                className="btn btn-primary mx-auto d-block color-accent-red-hover"
+                                to="/kims-dragon"
+                                onClick={() => trackEvent('Home', 'Clicked See Project', "Kim's Dragon")}
+                            >
                                 <span className="btn-text color-accent-red">See Project</span>
                             </Link>
                         </figure>
@@ -113,7 +123,11 @@ function Home() {
                                 <img src={css3Logo} alt="CSS3 Logo" />
                                 <img src={javascriptLogo} alt="JavaScript Logo" />
                             </div>
-                            <Link className="btn btn-primary mx-auto d-block color-accent-blue-hover" to="/letterboxd">
+                            <Link
+                                className="btn btn-primary mx-auto d-block color-accent-blue-hover"
+                                to="/letterboxd"
+                                onClick={() => trackEvent('Home', 'Clicked See Project', 'Letterboxd Movie Tile')}
+                            >
                                 <span className="btn-text color-accent-blue">See Project</span>
                             </Link>
                         </figure>

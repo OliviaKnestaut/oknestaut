@@ -1,4 +1,5 @@
 import React from 'react';
+import { openTrackedLink, trackEvent } from '../utils/analytics';
 import githubIcon from '../images/icons/github_icon.svg';
 import instagramIcon from '../images/icons/instagram_icon.svg';
 import linkedinIcon from '../images/icons/linkedin_icon.svg';
@@ -34,6 +35,7 @@ function Footer() {
                     className="row align-items-center text-color-light footer-link"
                     href="mailto:olivia.knestaut@gmail.com"
                     aria-label="Email olivia.knestaut@gmail.com"
+                    onClick={() => trackEvent('Contact', 'Clicked Email', 'Footer')}
                 >
                     <img className="icon" src={mailIcon} alt="email icon" />
                     <span>olivia.knestaut@gmail.com</span>
@@ -44,6 +46,7 @@ function Footer() {
                     rel="noopener noreferrer"
                     aria-label="@ollywhelmed on Instagram — opens in a new tab"
                     className="row align-items-center text-color-light footer-link"
+                    onClick={() => openTrackedLink('https://www.instagram.com/ollywhelmed/', 'Instagram Footer')}
                 >
                     <img className="icon" src={instagramIcon} alt="instagram icon" />
                     <span>@ollywhelmed</span>
@@ -54,6 +57,7 @@ function Footer() {
                     rel="noopener noreferrer"
                     aria-label="oliviaknestaut on LinkedIn — opens in a new tab"
                     className="row align-items-center text-color-light footer-link"
+                    onClick={() => openTrackedLink('https://www.linkedin.com/in/oliviaknestaut/', 'LinkedIn Footer')}
                 >
                     <img className="icon" src={linkedinIcon} alt="linkedin icon" />
                     <span>oliviaknestaut</span>
@@ -64,6 +68,7 @@ function Footer() {
                     rel="noopener noreferrer"
                     aria-label="OliviaKnestaut on GitHub — opens in a new tab"
                     className="row align-items-center text-color-light footer-link"
+                    onClick={() => openTrackedLink('https://github.com/OliviaKnestaut', 'GitHub Footer')}
                 >
                     <img className="icon" src={githubIcon} alt="github icon" />
                     <span>OliviaKnestaut</span>

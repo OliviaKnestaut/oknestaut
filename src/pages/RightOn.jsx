@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/case-study.css';
 import CaseStudyHeader from '../components/CaseStudyHeader';
+import { openTrackedLink } from '../utils/analytics';
 import ContentsNav from '../components/ContentsNav';
 import rightOnCover from '../images/home/RightOn-Cover.png';
 import rightOnCoverDevices from '../images/home/RightOn-Cover.png';
@@ -129,6 +130,12 @@ function RightOn() {
                                     href="https://www.linkedin.com/in/sinclairwu/"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() =>
+                                        openTrackedLink(
+                                            'https://www.linkedin.com/in/sinclairwu/',
+                                            'Sinclair Wu LinkedIn',
+                                        )
+                                    }
                                 >
                                     Sinclair Wu
                                 </a>
@@ -137,6 +144,9 @@ function RightOn() {
                                     href="https://www.linkedin.com/in/drewjhart/"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() =>
+                                        openTrackedLink('https://www.linkedin.com/in/drewjhart/', 'Drew Hart LinkedIn')
+                                    }
                                 >
                                     Drew Hart
                                 </a>
@@ -145,6 +155,9 @@ function RightOn() {
                                     href="https://www.linkedin.com/in/rodhinn/"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() =>
+                                        openTrackedLink('https://www.linkedin.com/in/rodhinn/', 'Rod Hinn LinkedIn')
+                                    }
                                 >
                                     Rod Hinn
                                 </a>{' '}
@@ -154,6 +167,12 @@ function RightOn() {
                                     href="https://www.linkedin.com/in/zachary-spindel-192307231/"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() =>
+                                        openTrackedLink(
+                                            'https://www.linkedin.com/in/zachary-spindel-192307231/',
+                                            'Zach Spindel LinkedIn',
+                                        )
+                                    }
                                 >
                                     Zach Spindel
                                 </a>{' '}
@@ -163,6 +182,12 @@ function RightOn() {
                                     href="https://www.linkedin.com/in/kelly-couvrette/"
                                     target="_blank"
                                     rel="noopener noreferrer"
+                                    onClick={() =>
+                                        openTrackedLink(
+                                            'https://www.linkedin.com/in/kelly-couvrette/',
+                                            'Kelly Couvrette LinkedIn',
+                                        )
+                                    }
                                 >
                                     Kelly Couvrette
                                 </a>{' '}
@@ -182,8 +207,15 @@ function RightOn() {
                         The RightOn Education platform is still in beta and most design and development efforts have
                         focused on student gameplay (RightOn Play) and the in-game teacher dashboard (RightOn Host). The
                         RightOn Central website,{' '}
-                        <a href="https://central.rightoneducation.com/">https://central.rightoneducation.com/</a>, in
-                        its present state was created to get the platform up and running, rather than focus on user
+                        <a
+                            href="https://central.rightoneducation.com/"
+                            onClick={() =>
+                                openTrackedLink('https://central.rightoneducation.com/', 'RightOn Central Current Site')
+                            }
+                        >
+                            https://central.rightoneducation.com/
+                        </a>
+                        , in its present state was created to get the platform up and running, rather than focus on user
                         experience or design. In addition to being utilitarian the current designs are not responsive on
                         small screen sizes. With RightOn Play and RightOn Host now sufficently developed and deployed in
                         beta, the next focus was to redesign and restructure RightOn Central for an improved instructor
@@ -325,9 +357,9 @@ function RightOn() {
                             type="button"
                             className="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover case-study-btn"
                             onClick={() =>
-                                window.open(
+                                openTrackedLink(
                                     'https://www.figma.com/design/ICAQP1cDQS9MEnCjlwhKFo/RightOn-Central?node-id=22-67438&t=iLRkIwQlbRt8lS1M-4',
-                                    '_blank',
+                                    'RightOn Figma Wireframes',
                                 )
                             }
                         >
@@ -356,9 +388,9 @@ function RightOn() {
                             type="button"
                             className="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover case-study-btn"
                             onClick={() =>
-                                window.open(
+                                openTrackedLink(
                                     'https://www.figma.com/design/ICAQP1cDQS9MEnCjlwhKFo/RightOn-Central?node-id=0-1&t=xPC0xpj36H08ZDGr-1',
-                                    '_blank',
+                                    'RightOn Figma Hi-fi Designs',
                                 )
                             }
                         >

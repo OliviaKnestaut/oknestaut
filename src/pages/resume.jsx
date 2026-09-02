@@ -1,4 +1,5 @@
 import React from 'react';
+import { openTrackedLink } from '../utils/analytics';
 
 const resumePdfUrl = `${process.env.PUBLIC_URL}/files/OK-Resume-July-2026.pdf`;
 
@@ -75,7 +76,7 @@ function Resume() {
                 <button
                     type="button"
                     className="btn btn-primary mx-auto d-block accent-blue-hover bg-accent-blue"
-                    onClick={() => window.open(resumePdfUrl, '_blank')}
+                    onClick={() => openTrackedLink(resumePdfUrl, 'Download Resume')}
                 >
                     <h4 className="btn-text color-tan">Download Resume</h4>
                 </button>

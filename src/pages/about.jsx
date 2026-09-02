@@ -1,5 +1,6 @@
 import React from 'react';
 import PhotoGrid from '../components/PhotoGrid';
+import { openTrackedLink, trackEvent } from '../utils/analytics';
 import useDimbox from '../hooks/useDimbox';
 import githubIcon from '../images/about/github_icon_blue.svg';
 import instagramIcon from '../images/about/instagram_icon_blue.svg';
@@ -188,6 +189,7 @@ function About() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`${logo.label} — opens in a new tab`}
+                            onClick={() => openTrackedLink(logo.href, logo.label)}
                         >
                             <img src={logo.src} alt={logo.alt} />
                         </a>
@@ -201,6 +203,7 @@ function About() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`${logo.label} — opens in a new tab`}
+                            onClick={() => openTrackedLink(logo.href, logo.label)}
                         >
                             <img src={logo.src} alt={logo.alt} />
                         </a>
@@ -244,6 +247,7 @@ function About() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`${job.label} — opens in a new tab`}
+                            onClick={() => openTrackedLink(job.href, job.label)}
                         >
                             <img className={job.className} src={job.src} alt={job.alt} />
                         </a>
@@ -284,10 +288,17 @@ function About() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="@ollywhelmed on Instagram — opens in a new tab"
+                                onClick={() =>
+                                    openTrackedLink('https://www.instagram.com/ollywhelmed/', 'Instagram Contact')
+                                }
                             >
                                 <img className="contact-icon" src={instagramIcon} alt="instagram icon" />
                             </a>
-                            <a href="mailto:olivia.knestaut@gmail.com" aria-label="Email olivia.knestaut@gmail.com">
+                            <a
+                                href="mailto:olivia.knestaut@gmail.com"
+                                aria-label="Email olivia.knestaut@gmail.com"
+                                onClick={() => trackEvent('Contact', 'Clicked Email', 'About')}
+                            >
                                 <img className="contact-icon" src={mailIcon} alt="email icon" />
                             </a>
                             <a
@@ -295,6 +306,7 @@ function About() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="OliviaKnestaut on GitHub — opens in a new tab"
+                                onClick={() => openTrackedLink('https://github.com/OliviaKnestaut', 'GitHub Contact')}
                             >
                                 <img className="contact-icon" src={githubIcon} alt="github icon" />
                             </a>
@@ -303,6 +315,9 @@ function About() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Olivia Knestaut on LinkedIn — opens in a new tab"
+                                onClick={() =>
+                                    openTrackedLink('https://www.linkedin.com/in/oliviaknestaut/', 'LinkedIn Contact')
+                                }
                             >
                                 <img className="contact-icon" src={linkedinIcon} alt="linkedin icon" />
                             </a>
