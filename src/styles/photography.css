@@ -178,6 +178,13 @@ nav.contents {
     scroll-margin-top: var(--sticky-offset);
 }
 
+@media screen and (max-width: 576px) {
+    #architecture h2 {
+        font-size: clamp(1.25rem, 5vw, 1.75rem);
+        letter-spacing: clamp(0.05rem, 0.5vw, 0.5rem);
+    }
+}
+
 @media (min-width: 480px) {
     nav.contents {
         justify-content: center;

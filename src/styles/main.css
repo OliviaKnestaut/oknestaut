@@ -1084,3 +1084,23 @@ figcaption.poster-text {
     height: 100%;
     overflow: hidden;
 }
+
+/* Global image fade-in and loading placeholders */
+img {
+    background-color: var(--background-medium);
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+img.loaded {
+    opacity: 1;
+    background-color: transparent;
+}
+
+/* Keep small inline icons from showing a placeholder behind transparent parts */
+img.icon,
+img.contact-icon,
+img.nav-logo,
+.tools img {
+    background-color: transparent;
+}

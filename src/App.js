@@ -5,6 +5,7 @@ import PageLoader from './components/PageLoader';
 import Footer from './components/footer';
 import Header from './components/header';
 import Navigation from './components/navigation';
+import useImageFade from './hooks/useImageFade';
 
 import './styles/main.css';
 import './styles/responsive.css';
@@ -78,6 +79,7 @@ function AppContent() {
 
     usePageTitle();
     usePageViews();
+    useImageFade();
 
     // biome-ignore lint/correctness/useExhaustiveDependencies: scroll on route change
     useEffect(() => {
