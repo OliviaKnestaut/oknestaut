@@ -36,7 +36,11 @@ function Navigation() {
 
     return (
         <>
-            <a href="#main-content" className="skip-link header-link color-accent-red-hover" aria-label="Skip to Main Content Link">
+            <a
+                href="#main-content"
+                className="skip-link header-link color-accent-red-hover"
+                aria-label="Skip to Main Content Link"
+            >
                 Skip to Main Content
             </a>
             <nav className="navbar navbar-expand-sm navbar-light" aria-label="Site Navigation Bar">
@@ -55,12 +59,16 @@ function Navigation() {
                     aria-expanded={isNavOpen}
                     aria-label="Toggle Mobile Navigation"
                 >
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon" />
                 </button>
                 <section className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarSupportedContent">
-                    <div className="mr-auto"></div>
+                    <div className="mr-auto" />
                     <ul className="navbar-nav my-2 my-lg-0" aria-label="Primary Navigation Items">
-                        <li className="nav-item dropdown" ref={dropdownRef} aria-label="Toggle Portfolio Navigation Dropdown">
+                        <li
+                            className="nav-item dropdown"
+                            ref={dropdownRef}
+                            aria-label="Toggle Portfolio Navigation Dropdown"
+                        >
                             <button
                                 type="button"
                                 className="nav-link dropdown-toggle color-accent-red"
@@ -71,17 +79,51 @@ function Navigation() {
                             >
                                 PORTFOLIO
                             </button>
-                            <div className={`dropdown-menu dropdown-menu-lg ${isDropdownOpen ? 'show' : ''}`} aria-labelledby="navbarDropdown">
-                                <Link className="dropdown-item" to="/" onClick={handleNavLinkClick} aria-label="Case Studies Navigation Link">CASE STUDIES</Link>
-                                <Link className="dropdown-item" to="/photography" onClick={handleNavLinkClick} aria-label="Photography Navigation Link">PHOTOGRAPHY</Link>
-                                <Link className="dropdown-item" to="/design" onClick={handleNavLinkClick} aria-label="Design and Media Navigation Link">DESIGN &amp; MEDIA</Link>
+                            <div
+                                className={`dropdown-menu dropdown-menu-lg ${isDropdownOpen ? 'show' : ''}`}
+                                aria-labelledby="navbarDropdown"
+                            >
+                                <Link
+                                    className="dropdown-item"
+                                    to="/"
+                                    onClick={handleNavLinkClick}
+                                    aria-label="Case Studies Navigation Link"
+                                >
+                                    CASE STUDIES
+                                </Link>
+                                <Link
+                                    className="dropdown-item"
+                                    to="/photography"
+                                    onClick={handleNavLinkClick}
+                                    aria-label="Photography Navigation Link"
+                                >
+                                    PHOTOGRAPHY
+                                </Link>
+                                <Link
+                                    className="dropdown-item"
+                                    to="/design"
+                                    onClick={handleNavLinkClick}
+                                    aria-label="Design and Media Navigation Link"
+                                >
+                                    DESIGN &amp; MEDIA
+                                </Link>
                             </div>
                         </li>
-                        <li className={`nav-item ${isActive('/about') ? 'active' : ''}`} aria-label="About Navigation Link">
-                            <Link className="nav-link color-accent-red" to="/about" onClick={handleNavLinkClick}>ABOUT</Link>
+                        <li
+                            className={`nav-item ${isActive('/about') ? 'active' : ''}`}
+                            aria-label="About Navigation Link"
+                        >
+                            <Link className="nav-link color-accent-red" to="/about" onClick={handleNavLinkClick}>
+                                ABOUT
+                            </Link>
                         </li>
-                        <li className={`nav-item ${isActive('/resume') ? 'active' : ''}`} aria-label="Contact Navigation Link">
-                            <Link className="nav-link color-accent-red" to="/resume" onClick={handleNavLinkClick}>RESUME</Link>
+                        <li
+                            className={`nav-item ${isActive('/resume') ? 'active' : ''}`}
+                            aria-label="Contact Navigation Link"
+                        >
+                            <Link className="nav-link color-accent-red" to="/resume" onClick={handleNavLinkClick}>
+                                RESUME
+                            </Link>
                         </li>
                     </ul>
                 </section>

@@ -26,7 +26,7 @@ function BackToTop() {
             style={{
                 opacity: isVisible ? '1' : '0',
                 transition: 'opacity 0.3s ease',
-                pointerEvents: isVisible ? 'auto' : 'none'
+                pointerEvents: isVisible ? 'auto' : 'none',
             }}
             aria-label="Back to top"
         >

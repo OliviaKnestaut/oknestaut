@@ -2,19 +2,19 @@ import React from 'react';
 import '../styles/photography.css';
 import ContentsNav from '../components/ContentsNav';
 import PhotoGrid from '../components/PhotoGrid';
+import { architectureGroups, natureGroups, portraitureGroups } from '../data/photographyData';
 import useDimbox from '../hooks/useDimbox';
-import { portraitureGroups, natureGroups, architectureGroups } from '../data/photographyData';
 
 const sections = [
     { id: 'portraiture', title: 'PORTRAITURE', groups: portraitureGroups, next: 'nature' },
     { id: 'nature', title: 'NATURE', groups: natureGroups, next: 'architecture' },
-    { id: 'architecture', title: 'ARCHITECHTURE', groups: architectureGroups, next: 'footer' }
+    { id: 'architecture', title: 'ARCHITECHTURE', groups: architectureGroups, next: 'footer' },
 ];
 
 const contentsLinks = sections.map((section) => ({
     href: `#${section.id}`,
     text: section.title,
-    label: `Jump to ${section.title} Section Button`
+    label: `Jump to ${section.title} Section Button`,
 }));
 
 function Photography() {
@@ -42,9 +42,11 @@ function Photography() {
                         </a>
                         {section.groups.map((group, index) => (
                             <PhotoGrid
-                                key={index}
+                                key={group.photos[0]?.src ?? index}
                                 photos={group.photos}
-                                galleryName={section.id === 'portraiture' ? 'portrait-gallery' : `${section.id}-gallery`}
+                                galleryName={
+                                    section.id === 'portraiture' ? 'portrait-gallery' : `${section.id}-gallery`
+                                }
                                 layout={group.layout}
                                 aria-label={`${section.title} Photo Gallery Pt. ${index + 1}`}
                             />

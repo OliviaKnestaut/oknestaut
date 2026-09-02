@@ -1,6 +1,5 @@
 /* Redesigned Case Study styles */
 
-
 /*----------------- Header and Contents -------------------*/
 
 .case-study-header {
@@ -154,7 +153,6 @@ nav.contents {
 }
 
 /*----------------- Accessibility Specific -------------------*/
-
 
 .split-content {
     display: flex;
@@ -342,7 +340,6 @@ iframe {
     }
 }
 
-
 /*--------------- RESPONSIVE DESIGN -------------*/
 
 @media (max-width: 1400px) {
@@ -454,5 +451,3 @@ video {
     max-width: 100%;
     height: auto;
 }
-
-

@@ -4,6 +4,7 @@ function ContentsNav({ links, skipTargetId, accentColor = 'color-accent-blue' })
     const navRef = useRef(null);
     const linksRef = useRef([]);
 
+    // biome-ignore lint/correctness/useExhaustiveDependencies: effect depends on links via refs
     useEffect(() => {
         const navbar = document.querySelector('.navbar');
         const contentsNav = navRef.current;
@@ -27,21 +28,23 @@ function ContentsNav({ links, skipTargetId, accentColor = 'color-accent-blue' })
 
         const sectionObserver = new IntersectionObserver(
             (entries) => {
-                entries.forEach((entry) => {
-                    if (!entry.isIntersecting) return;
+                for (const entry of entries) {
+                    if (!entry.isIntersecting) continue;
                     const activeLink = document.querySelector(`.contents-link[href="#${entry.target.id}"]`);
-                    if (!activeLink) return;
-                    linksRef.current.forEach((link) => {
+                    if (!activeLink) continue;
+                    for (const link of linksRef.current) {
                         if (link) link.classList.remove('active');
-                    });
+                    }
                     activeLink.classList.add('active');
                     activeLink.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
-                });
+                }
             },
-            { rootMargin: '-45% 0px -45% 0px', threshold: 0 }
+            { rootMargin: '-45% 0px -45% 0px', threshold: 0 },
         );
 
-        sections.forEach((section) => sectionObserver.observe(section));
+        for (const section of sections) {
+            sectionObserver.observe(section);
+        }
 
         return () => {
             resizeObserver.disconnect();
@@ -67,7 +70,9 @@ function ContentsNav({ links, skipTargetId, accentColor = 'color-accent-blue' })
                         href={link.href}
                         className={`contents-link ${accentColor}`}
                         aria-label={link.label}
-                        ref={(el) => { linksRef.current[index] = el; }}
+                        ref={(el) => {
+                            linksRef.current[index] = el;
+                        }}
                     >
                         {link.text}
                     </a>

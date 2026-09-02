@@ -1,4 +1,7 @@
 import React from 'react';
+import '../styles/photography.css';
+import DimboxAnchor from './DimboxAnchor';
+import FadeImage from './FadeImage';
 
 function PhotoGrid({ photos, galleryName, layout = 'right', className = '' }) {
     const gridClass = layout === 'left' ? 'photo-grid-left' : 'photo-grid-right';
@@ -15,7 +18,7 @@ function PhotoGrid({ photos, galleryName, layout = 'right', className = '' }) {
                 if (!photo) return null;
                 const positionClass = positionClasses[photoIndex];
                 return (
-                    <a
+                    <DimboxAnchor
                         key={photo.src}
                         className={positionClass}
                         href={photo.large}
@@ -25,12 +28,8 @@ function PhotoGrid({ photos, galleryName, layout = 'right', className = '' }) {
                         data-dimbox-type="image"
                         aria-label={photo.ariaLabel}
                     >
-                        <img
-                            srcSet={`${photo.small} 1x, ${photo.large} 2x`}
-                            src={photo.small}
-                            alt={photo.alt}
-                        />
-                    </a>
+                        <FadeImage fill src={photo.small} alt={photo.alt} loading="lazy" decoding="async" />
+                    </DimboxAnchor>
                 );
             })}
         </figure>

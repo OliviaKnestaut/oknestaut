@@ -2,7 +2,11 @@ import React from 'react';
 
 function CaseStudyHeader({ title, subtitle, coverImage, coverAlt, bgColor, buttons = [] }) {
     return (
-        <header id="main-content" className={`container-fluid case-study-header ${bgColor}`} aria-label="Case Study Header Banner">
+        <header
+            id="main-content"
+            className={`container-fluid case-study-header ${bgColor}`}
+            aria-label="Case Study Header Banner"
+        >
             <article className="case-study-title" aria-label="Case Study Header">
                 <figcaption className="case-study-figcaption" aria-label="Case Study Title">
                     <h1 className="text-color-light">{title}</h1>

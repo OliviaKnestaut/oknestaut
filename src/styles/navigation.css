@@ -82,6 +82,16 @@
         text-align: center;
     }
 
+    .navbar-collapse.show .navbar-nav .nav-item {
+        text-align: center;
+    }
+
+    .navbar-collapse.show .navbar-nav .nav-link.dropdown-toggle {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
     .dropdown-menu {
         position: static;
         width: 100%;

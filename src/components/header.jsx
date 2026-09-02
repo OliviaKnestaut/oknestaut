@@ -32,7 +32,11 @@ function Header({ title, titleClassName }) {
 
     if (route === '/') {
         return (
-            <header id="main-content" className="container-fluid justify-content-center" aria-label="Header Site Banner">
+            <header
+                id="main-content"
+                className="container-fluid justify-content-center"
+                aria-label="Header Site Banner"
+            >
                 {upperAbstract}
                 <section aria-label="Name and Title">
                     <h1 className="color-accent-red name name-header">

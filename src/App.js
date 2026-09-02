@@ -1,9 +1,10 @@
 import React, { useEffect, Suspense } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
-import Navigation from './components/navigation';
-import Header from './components/header';
-import Footer from './components/footer';
+import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import BackToTop from './components/BackToTop';
+import PageLoader from './components/PageLoader';
+import Footer from './components/footer';
+import Header from './components/header';
+import Navigation from './components/navigation';
 
 import './styles/main.css';
 import './styles/responsive.css';
@@ -23,6 +24,7 @@ const caseStudyRoutes = ['/accessibility', '/righton', '/kims-dragon', '/letterb
 
 function ScrollToTop() {
     const { pathname } = useLocation();
+    // biome-ignore lint/correctness/useExhaustiveDependencies: scroll on route change
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [pathname]);
@@ -59,6 +61,7 @@ function AppContent() {
 
     usePageTitle();
 
+    // biome-ignore lint/correctness/useExhaustiveDependencies: scroll on route change
     useEffect(() => {
         window.scrollTo(0, 0);
     }, [location.pathname]);
@@ -67,7 +70,7 @@ function AppContent() {
         <>
             <Navigation />
             {!isCaseStudy && <Header title={headerTitle?.title} titleClassName={headerTitle?.className} />}
-            <Suspense fallback={null}>
+            <Suspense fallback={<PageLoader />}>
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
