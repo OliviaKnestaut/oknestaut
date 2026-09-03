@@ -2,8 +2,9 @@ import React from 'react';
 import '../styles/photography.css';
 import DimboxAnchor from './DimboxAnchor';
 import FadeImage from './FadeImage';
+import ScrollReveal from './ScrollReveal';
 
-function PhotoGrid({ photos, galleryName, layout = 'right', className = '' }) {
+function PhotoGrid({ photos, galleryName, layout = 'right', className = '', delay = 0 }) {
     const gridClass = layout === 'left' ? 'photo-grid-left' : 'photo-grid-right';
 
     // Render right-layout grids in visual tab order (verticals first, then horizontal)
@@ -12,14 +13,20 @@ function PhotoGrid({ photos, galleryName, layout = 'right', className = '' }) {
     const renderOrder = layout === 'right' ? [1, 2, 0] : [0, 1, 2];
 
     return (
-        <figure className={`${gridClass} ${className}`.trim()} aria-label={`${galleryName} Photo Gallery`}>
+        <ScrollReveal
+            as="figure"
+            className={`${gridClass} ${className}`.trim()}
+            delay={delay}
+            aria-label={`${galleryName} Photo Gallery`}
+        >
             {renderOrder.map((photoIndex) => {
                 const photo = photos[photoIndex];
                 if (!photo) return null;
                 const positionClass = positionClasses[photoIndex];
+                const key = `${galleryName}-${photo.small}`;
                 return (
                     <DimboxAnchor
-                        key={photo.src}
+                        key={key}
                         className={positionClass}
                         href={photo.large}
                         data-dimbox={galleryName}
@@ -32,7 +39,7 @@ function PhotoGrid({ photos, galleryName, layout = 'right', className = '' }) {
                     </DimboxAnchor>
                 );
             })}
-        </figure>
+        </ScrollReveal>
     );
 }
 

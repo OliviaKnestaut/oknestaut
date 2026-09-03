@@ -1,6 +1,7 @@
 import React from 'react';
 import DimboxAnchor from '../components/DimboxAnchor';
 import FadeImage from '../components/FadeImage';
+import ScrollReveal from '../components/ScrollReveal';
 import { openTrackedLink } from '../utils/analytics';
 import useDimbox from '../hooks/useDimbox';
 
@@ -110,7 +111,7 @@ function Design() {
 
     return (
         <main aria-label="Design and Media Main Content">
-            <section className="container-fluid" aria-label="Graphic Design Section">
+            <ScrollReveal as="section" className="container-fluid" aria-label="Graphic Design Section">
                 <h2 className="color-accent-red">GRAPHIC DESIGN</h2>
                 <a
                     href="#animation"
@@ -210,9 +211,15 @@ function Design() {
                         </p>
                     </figcaption>
                 </article>
-            </section>
+            </ScrollReveal>
 
-            <section id="animation" className="container-fluid" aria-label="Animation Section">
+            <ScrollReveal
+                as="section"
+                id="animation"
+                className="container-fluid"
+                delay={0.1}
+                aria-label="Animation Section"
+            >
                 <h2 className="color-accent-red">ANIMATION</h2>
                 <a
                     href="#footer"
@@ -228,7 +235,7 @@ function Design() {
                                 href={video.url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                onClick={() => openTrackedLink(video.url, video.title)}
+                                onClick={(event) => openTrackedLink(event, video.url, video.title)}
                             >
                                 <img src={video.thumb} alt="" />
                             </a>
@@ -239,7 +246,7 @@ function Design() {
                         </article>
                     ))}
                 </div>
-            </section>
+            </ScrollReveal>
         </main>
     );
 }

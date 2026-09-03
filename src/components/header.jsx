@@ -7,7 +7,7 @@ function Header({ title, titleClassName }) {
     const route = location.pathname;
 
     const upperAbstract = (
-        <picture>
+        <picture className="abstract-float abstract-float--upper">
             <source media="(min-width: 576px)" srcSet={abstractGraphics.upper.full} />
             <img
                 className="img-fluid abstract-img"
@@ -19,7 +19,7 @@ function Header({ title, titleClassName }) {
     );
 
     const lowerAbstract = (
-        <picture>
+        <picture className="abstract-float abstract-float--lower">
             <source media="(min-width: 576px)" srcSet={abstractGraphics.lower.full} />
             <img
                 className="img-fluid abstract-img"

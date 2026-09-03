@@ -40,17 +40,21 @@ function Photography() {
                         >
                             Skip {section.title} Photo Gallery
                         </a>
-                        {section.groups.map((group, index) => (
-                            <PhotoGrid
-                                key={group.photos[0]?.src ?? index}
-                                photos={group.photos}
-                                galleryName={
-                                    section.id === 'portraiture' ? 'portrait-gallery' : `${section.id}-gallery`
-                                }
-                                layout={group.layout}
-                                aria-label={`${section.title} Photo Gallery Pt. ${index + 1}`}
-                            />
-                        ))}
+                        {section.groups.map((group, index) => {
+                            const key = group.id ?? `group-${section.id}-${index}`;
+                            return (
+                                <PhotoGrid
+                                    key={key}
+                                    photos={group.photos}
+                                    galleryName={
+                                        section.id === 'portraiture' ? 'portrait-gallery' : `${section.id}-gallery`
+                                    }
+                                    layout={group.layout}
+                                    delay={index * 0.08}
+                                    aria-label={`${section.title} Photo Gallery Pt. ${index + 1}`}
+                                />
+                            );
+                        })}
                     </section>
                 ))}
             </main>

@@ -12,8 +12,12 @@ export function trackOutboundLink(url, label = url) {
     });
 }
 
-export function openTrackedLink(url, label = url) {
+export function openTrackedLink(event, url, label = url) {
     trackOutboundLink(url, label);
+    if (event) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
     window.open(url, '_blank');
 }
 

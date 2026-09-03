@@ -1,6 +1,7 @@
 import React, { useEffect, Suspense } from 'react';
 import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import BackToTop from './components/BackToTop';
+import CursorCompanion from './components/CursorCompanion';
 import PageLoader from './components/PageLoader';
 import Footer from './components/footer';
 import Header from './components/header';
@@ -88,20 +89,23 @@ function AppContent() {
 
     return (
         <>
+            <CursorCompanion />
             <Navigation />
             {!isCaseStudy && <Header title={headerTitle?.title} titleClassName={headerTitle?.className} />}
             <Suspense fallback={<PageLoader />}>
-                <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                    <Route path="/resume" element={<Resume />} />
-                    <Route path="/photography" element={<Photography />} />
-                    <Route path="/design" element={<Design />} />
-                    <Route path="/accessibility" element={<Accessibility />} />
-                    <Route path="/righton" element={<RightOn />} />
-                    <Route path="/kims-dragon" element={<KimsDragon />} />
-                    <Route path="/letterboxd" element={<Letterboxd />} />
-                </Routes>
+                <div key={location.pathname} className="page-transition">
+                    <Routes location={location}>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/resume" element={<Resume />} />
+                        <Route path="/photography" element={<Photography />} />
+                        <Route path="/design" element={<Design />} />
+                        <Route path="/accessibility" element={<Accessibility />} />
+                        <Route path="/righton" element={<RightOn />} />
+                        <Route path="/kims-dragon" element={<KimsDragon />} />
+                        <Route path="/letterboxd" element={<Letterboxd />} />
+                    </Routes>
+                </div>
             </Suspense>
             <Footer />
             <BackToTop />

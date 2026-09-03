@@ -1,5 +1,6 @@
 import React from 'react';
 import PhotoGrid from '../components/PhotoGrid';
+import ScrollReveal from '../components/ScrollReveal';
 import { openTrackedLink, trackEvent } from '../utils/analytics';
 import useDimbox from '../hooks/useDimbox';
 import githubIcon from '../images/about/github_icon_blue.svg';
@@ -140,7 +141,7 @@ function About() {
 
     return (
         <main aria-label="About Main Content">
-            <section className="row col-sm about" aria-label="About Me Section">
+            <ScrollReveal as="section" className="row col-sm about" aria-label="About Me Section">
                 <article className="col-12 col-md-8 about row justify-content-center" aria-label="About Text Content">
                     <header aria-label="About Header and Name">
                         <h1 className="color-accent-red">ABOUT ME</h1>
@@ -170,9 +171,14 @@ function About() {
                     src={aboutPortrait}
                     alt="Portrait of Olivia Knestaut sitting outside on a rock wall with greenery in the background"
                 />
-            </section>
+            </ScrollReveal>
 
-            <section className="container-fluid col skills" aria-label="Involvement Section">
+            <ScrollReveal
+                as="section"
+                className="container-fluid col skills"
+                delay={0.1}
+                aria-label="Involvement Section"
+            >
                 <h2 className="color-accent-red justify-content-center">CURRENTLY INVOLVED WITH...</h2>
                 <a
                     href="#recent-activities"
@@ -189,7 +195,7 @@ function About() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`${logo.label} — opens in a new tab`}
-                            onClick={() => openTrackedLink(logo.href, logo.label)}
+                            onClick={(event) => openTrackedLink(event, logo.href, logo.label)}
                         >
                             <img src={logo.src} alt={logo.alt} />
                         </a>
@@ -203,13 +209,13 @@ function About() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`${logo.label} — opens in a new tab`}
-                            onClick={() => openTrackedLink(logo.href, logo.label)}
+                            onClick={(event) => openTrackedLink(event, logo.href, logo.label)}
                         >
                             <img src={logo.src} alt={logo.alt} />
                         </a>
                     ))}
                 </div>
-            </section>
+            </ScrollReveal>
 
             <section id="recent-activities" className="container-fluid col" aria-label="Recent Activities Section">
                 <h2 className="color-accent-red justify-content-center">LATELY I&apos;VE BEEN...</h2>
@@ -230,7 +236,13 @@ function About() {
                 ))}
             </section>
 
-            <section id="previous-jobs" className="container-fluid col skills" aria-label="Previous Jobs Section">
+            <ScrollReveal
+                as="section"
+                id="previous-jobs"
+                className="container-fluid col skills"
+                delay={0.1}
+                aria-label="Previous Jobs Section"
+            >
                 <h2 className="color-accent-red justify-content-center">MAYBE YOU SAW ME AT...</h2>
                 <a
                     href="#contact"
@@ -247,15 +259,15 @@ function About() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label={`${job.label} — opens in a new tab`}
-                            onClick={() => openTrackedLink(job.href, job.label)}
+                            onClick={(event) => openTrackedLink(event, job.href, job.label)}
                         >
                             <img className={job.className} src={job.src} alt={job.alt} />
                         </a>
                     ))}
                 </div>
-            </section>
+            </ScrollReveal>
 
-            <section id="contact" className="contact" aria-label="Contact Section">
+            <ScrollReveal as="section" id="contact" className="contact" delay={0.1} aria-label="Contact Section">
                 <h2 className="color-accent-red justify-content-center">CONTACT</h2>
                 <div className="row col-sm">
                     <img
@@ -288,8 +300,12 @@ function About() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="@ollywhelmed on Instagram — opens in a new tab"
-                                onClick={() =>
-                                    openTrackedLink('https://www.instagram.com/ollywhelmed/', 'Instagram Contact')
+                                onClick={(event) =>
+                                    openTrackedLink(
+                                        event,
+                                        'https://www.instagram.com/ollywhelmed/',
+                                        'Instagram Contact',
+                                    )
                                 }
                             >
                                 <img className="contact-icon" src={instagramIcon} alt="instagram icon" />
@@ -306,7 +322,9 @@ function About() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="OliviaKnestaut on GitHub — opens in a new tab"
-                                onClick={() => openTrackedLink('https://github.com/OliviaKnestaut', 'GitHub Contact')}
+                                onClick={(event) =>
+                                    openTrackedLink(event, 'https://github.com/OliviaKnestaut', 'GitHub Contact')
+                                }
                             >
                                 <img className="contact-icon" src={githubIcon} alt="github icon" />
                             </a>
@@ -315,8 +333,12 @@ function About() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Olivia Knestaut on LinkedIn — opens in a new tab"
-                                onClick={() =>
-                                    openTrackedLink('https://www.linkedin.com/in/oliviaknestaut/', 'LinkedIn Contact')
+                                onClick={(event) =>
+                                    openTrackedLink(
+                                        event,
+                                        'https://www.linkedin.com/in/oliviaknestaut/',
+                                        'LinkedIn Contact',
+                                    )
                                 }
                             >
                                 <img className="contact-icon" src={linkedinIcon} alt="linkedin icon" />
@@ -324,7 +346,7 @@ function About() {
                         </figure>
                     </article>
                 </div>
-            </section>
+            </ScrollReveal>
         </main>
     );
 }

@@ -181,8 +181,9 @@ function Letterboxd() {
                             <button
                                 type="button"
                                 className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                                onClick={() =>
+                                onClick={(event) =>
                                     openTrackedLink(
+                                        event,
                                         'https://oknestaut.netlify.app/idm241/alpha',
                                         'Letterboxd Alpha Description',
                                     )
@@ -193,8 +194,9 @@ function Letterboxd() {
                             <button
                                 type="button"
                                 className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                                onClick={() =>
+                                onClick={(event) =>
                                     openTrackedLink(
+                                        event,
                                         'https://oknestaut.netlify.app/idm241/alpha/build',
                                         'Letterboxd Alpha Build',
                                     )
@@ -227,8 +229,9 @@ function Letterboxd() {
                             <button
                                 type="button"
                                 className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                                onClick={() =>
+                                onClick={(event) =>
                                     openTrackedLink(
+                                        event,
                                         'https://oknestaut.netlify.app/idm241/beta',
                                         'Letterboxd Beta Description',
                                     )
@@ -239,8 +242,9 @@ function Letterboxd() {
                             <button
                                 type="button"
                                 className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                                onClick={() =>
+                                onClick={(event) =>
                                     openTrackedLink(
+                                        event,
                                         'https://oknestaut.netlify.app/idm241/beta/build',
                                         'Letterboxd Beta Build',
                                     )
@@ -303,8 +307,9 @@ function Letterboxd() {
                             <button
                                 type="button"
                                 className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                                onClick={() =>
+                                onClick={(event) =>
                                     openTrackedLink(
+                                        event,
                                         'https://oknestaut.netlify.app/idm241/final',
                                         'Letterboxd Final Description',
                                     )
@@ -315,8 +320,9 @@ function Letterboxd() {
                             <button
                                 type="button"
                                 className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                                onClick={() =>
+                                onClick={(event) =>
                                     openTrackedLink(
+                                        event,
                                         'https://oknestaut.netlify.app/idm241/final/build',
                                         'Letterboxd Final Build',
                                     )

@@ -130,8 +130,9 @@ function RightOn() {
                                     href="https://www.linkedin.com/in/sinclairwu/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    onClick={() =>
+                                    onClick={(event) =>
                                         openTrackedLink(
+                                            event,
                                             'https://www.linkedin.com/in/sinclairwu/',
                                             'Sinclair Wu LinkedIn',
                                         )
@@ -144,8 +145,12 @@ function RightOn() {
                                     href="https://www.linkedin.com/in/drewjhart/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    onClick={() =>
-                                        openTrackedLink('https://www.linkedin.com/in/drewjhart/', 'Drew Hart LinkedIn')
+                                    onClick={(event) =>
+                                        openTrackedLink(
+                                            event,
+                                            'https://www.linkedin.com/in/drewjhart/',
+                                            'Drew Hart LinkedIn',
+                                        )
                                     }
                                 >
                                     Drew Hart
@@ -155,8 +160,12 @@ function RightOn() {
                                     href="https://www.linkedin.com/in/rodhinn/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    onClick={() =>
-                                        openTrackedLink('https://www.linkedin.com/in/rodhinn/', 'Rod Hinn LinkedIn')
+                                    onClick={(event) =>
+                                        openTrackedLink(
+                                            event,
+                                            'https://www.linkedin.com/in/rodhinn/',
+                                            'Rod Hinn LinkedIn',
+                                        )
                                     }
                                 >
                                     Rod Hinn
@@ -167,8 +176,9 @@ function RightOn() {
                                     href="https://www.linkedin.com/in/zachary-spindel-192307231/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    onClick={() =>
+                                    onClick={(event) =>
                                         openTrackedLink(
+                                            event,
                                             'https://www.linkedin.com/in/zachary-spindel-192307231/',
                                             'Zach Spindel LinkedIn',
                                         )
@@ -182,8 +192,9 @@ function RightOn() {
                                     href="https://www.linkedin.com/in/kelly-couvrette/"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    onClick={() =>
+                                    onClick={(event) =>
                                         openTrackedLink(
+                                            event,
                                             'https://www.linkedin.com/in/kelly-couvrette/',
                                             'Kelly Couvrette LinkedIn',
                                         )
@@ -209,8 +220,12 @@ function RightOn() {
                         RightOn Central website,{' '}
                         <a
                             href="https://central.rightoneducation.com/"
-                            onClick={() =>
-                                openTrackedLink('https://central.rightoneducation.com/', 'RightOn Central Current Site')
+                            onClick={(event) =>
+                                openTrackedLink(
+                                    event,
+                                    'https://central.rightoneducation.com/',
+                                    'RightOn Central Current Site',
+                                )
                             }
                         >
                             https://central.rightoneducation.com/
@@ -356,8 +371,9 @@ function RightOn() {
                         <button
                             type="button"
                             className="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover case-study-btn"
-                            onClick={() =>
+                            onClick={(event) =>
                                 openTrackedLink(
+                                    event,
                                     'https://www.figma.com/design/ICAQP1cDQS9MEnCjlwhKFo/RightOn-Central?node-id=22-67438&t=iLRkIwQlbRt8lS1M-4',
                                     'RightOn Figma Wireframes',
                                 )
@@ -387,8 +403,9 @@ function RightOn() {
                         <button
                             type="button"
                             className="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover case-study-btn"
-                            onClick={() =>
+                            onClick={(event) =>
                                 openTrackedLink(
+                                    event,
                                     'https://www.figma.com/design/ICAQP1cDQS9MEnCjlwhKFo/RightOn-Central?node-id=0-1&t=xPC0xpj36H08ZDGr-1',
                                     'RightOn Figma Hi-fi Designs',
                                 )

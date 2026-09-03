@@ -5,6 +5,11 @@
     padding: 0 1rem;
     background-color: var(--background) !important;
     z-index: 4000 !important;
+    transition: box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.navbar--scrolled {
+    box-shadow: 0 4px 20px rgba(34, 34, 34, 0.08);
 }
 
 .navbar-expand-sm .navbar-collapse {
@@ -35,6 +40,8 @@
     margin: 0 0.5rem;
     padding: 0.25rem 0.4rem;
     border-radius: 50vw;
+    position: relative;
+    text-decoration: none;
 }
 
 .dropdown-menu {
@@ -44,9 +51,43 @@
     left: -8px;
 }
 
-.dropdown-item:hover {
-    background-color: var(--accent-blue);
-    color: var(--background) !important;
+.dropdown-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0.1rem;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0.7;
+}
+
+.dropdown-item:hover::after,
+.dropdown-item:focus-visible::after {
+    width: calc(100% - 0.8rem);
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus-visible,
+.dropdown-item:active,
+.dropdown-item.active,
+.dropdown-item:hover:focus,
+.dropdown-item:hover:not(.active):not(:active) {
+    background-color: transparent !important;
+    color: var(--accent-red) !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:focus-visible {
+    outline: none;
+    box-shadow: none;
+}
+
+.dropdown-item:not(:hover):not(:focus) {
+    color: var(--accent-red) !important;
 }
 
 .navbar-toggler {
@@ -54,20 +95,63 @@
 }
 
 .navbar-toggler-icon {
-    background-image: url(../images/general/hamburger-menu.svg) !important;
+    background-image: none !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.dropdown-toggle::after {
-    border: none !important;
-    content: "" !important;
-    display: inline-block;
-    background: url(../images/general/dropdown-icon.svg);
-    background-size: cover;
-    width: 20.5px;
-    height: 12px;
-    vertical-align: 0;
-    margin: 2px 0;
-    margin-left: 6px !important;
+.menu-toggle {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-toggle .hamburger-lines,
+.menu-toggle .hamburger-lines::before,
+.menu-toggle .hamburger-lines::after {
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: var(--accent-red);
+    border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.2s ease;
+}
+
+.menu-toggle .hamburger-lines {
+    position: relative;
+}
+
+.menu-toggle .hamburger-lines::before,
+.menu-toggle .hamburger-lines::after {
+    content: "";
+    position: absolute;
+    left: 0;
+}
+
+.menu-toggle .hamburger-lines::before {
+    top: -8px;
+}
+
+.menu-toggle .hamburger-lines::after {
+    top: 8px;
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger-lines {
+    transform: rotate(45deg);
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger-lines::before {
+    transform: translateY(8px) rotate(90deg);
+    opacity: 0;
+}
+
+.menu-toggle[aria-expanded="true"] .hamburger-lines::after {
+    transform: translateY(-8px) rotate(90deg);
 }
 
 .nav-link.dropdown-toggle {
@@ -75,6 +159,78 @@
     border: none;
     appearance: none;
     cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+}
+
+.nav-link {
+    position: relative;
+    transition: color 0.2s ease;
+}
+
+/* Underline uses ::before so ::after can remain the dropdown arrow */
+.nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0.25rem;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    border-radius: 2px;
+    transform: translateX(-50%);
+    transition: width 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    opacity: 0.7;
+}
+
+.nav-link:hover::before,
+.nav-link:focus-visible::before,
+.nav-item.active .nav-link::before {
+    width: calc(100% - 1rem);
+}
+
+/* Dropdown arrow indicator */
+.dropdown-toggle::after {
+    border: 0 !important;
+    content: "" !important;
+    display: inline-block;
+    background-image: url(../images/general/dropdown-icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 11px;
+    margin-left: 0.4rem;
+    flex-shrink: 0;
+    transition: transform 0.25s ease;
+    vertical-align: middle;
+}
+
+.nav-item.dropdown .dropdown-toggle[aria-expanded="true"]::after {
+    transform: rotate(180deg);
+}
+
+.nav-link.dropdown-toggle:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar--scrolled {
+    box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .navbar,
+    .nav-link,
+    .nav-link::after,
+    .dropdown-toggle::after,
+    .menu-toggle .hamburger-lines,
+    .menu-toggle .hamburger-lines::before,
+    .menu-toggle .hamburger-lines::after {
+        transition: none;
+    }
 }
 
 @media (max-width: 575.98px) {

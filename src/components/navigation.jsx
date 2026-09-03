@@ -8,7 +8,9 @@ function Navigation() {
     const location = useLocation();
     const [isNavOpen, setIsNavOpen] = useState(false);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isScrolled, setIsScrolled] = useState(false);
     const dropdownRef = useRef(null);
+    const navRef = useRef(null);
 
     const handleMenuToggle = () => {
         setIsNavOpen((open) => {
@@ -42,6 +44,15 @@ function Navigation() {
         return () => document.removeEventListener('mousedown', handleClickOutside);
     }, []);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            setIsScrolled(window.scrollY > 8);
+        };
+        handleScroll();
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     const isActive = (path) => location.pathname === path;
 
     return (
@@ -53,7 +64,11 @@ function Navigation() {
             >
                 Skip to Main Content
             </a>
-            <nav className="navbar navbar-expand-sm navbar-light" aria-label="Site Navigation Bar">
+            <nav
+                ref={navRef}
+                className={`navbar navbar-expand-sm navbar-light ${isScrolled ? 'navbar--scrolled' : ''}`}
+                aria-label="Site Navigation Bar"
+            >
                 <Link
                     className="navbar-brand"
                     to="/"
@@ -74,7 +89,9 @@ function Navigation() {
                     aria-expanded={isNavOpen}
                     aria-label="Toggle Mobile Navigation"
                 >
-                    <span className="navbar-toggler-icon" />
+                    <span className="navbar-toggler-icon" aria-hidden="true">
+                        <span className="hamburger-lines" />
+                    </span>
                 </button>
                 <section className={`collapse navbar-collapse ${isNavOpen ? 'show' : ''}`} id="navbarSupportedContent">
                     <div className="mr-auto" />

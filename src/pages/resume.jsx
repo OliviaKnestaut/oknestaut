@@ -1,4 +1,6 @@
 import React from 'react';
+import RippleButton from '../components/RippleButton';
+import ScrollReveal from '../components/ScrollReveal';
 import { openTrackedLink } from '../utils/analytics';
 
 const resumePdfUrl = `${process.env.PUBLIC_URL}/files/OK-Resume-July-2026.pdf`;
@@ -73,25 +75,34 @@ function Resume() {
         <main aria-label="Resume Main Content">
             <header className="container-fluid justify-content-center" aria-label="Resume Header">
                 <h1 className="color-accent-red">RESUME</h1>
-                <button
+                <RippleButton
                     type="button"
                     className="btn btn-primary mx-auto d-block accent-blue-hover bg-accent-blue"
-                    onClick={() => openTrackedLink(resumePdfUrl, 'Download Resume')}
+                    onClick={(event) => openTrackedLink(event, resumePdfUrl, 'Download Resume')}
                 >
                     <h4 className="btn-text color-tan">Download Resume</h4>
-                </button>
+                </RippleButton>
             </header>
 
-            <section className="resume-section d-flex row justify-content-center" aria-label="Resume Objective Section">
+            <ScrollReveal
+                as="section"
+                className="resume-section d-flex row justify-content-center"
+                aria-label="Resume Objective Section"
+            >
                 <h2 className="color-accent-red">OBJECTIVE</h2>
                 <p>
                     Detail-oriented developer and designer committed to creating meaningful and accessible digital
                     experiences. Seeking to combine hands-on design experience, research skills, and technical expertise
                     to deliver impactful technology solutions.
                 </p>
-            </section>
+            </ScrollReveal>
 
-            <section className="resume-section d-flex row" aria-label="Education Section">
+            <ScrollReveal
+                as="section"
+                className="resume-section d-flex row"
+                delay={0.05}
+                aria-label="Education Section"
+            >
                 <h2 className="color-accent-red">EDUCATION</h2>
                 <article aria-label="Drexel Education Information">
                     <h6>
@@ -106,9 +117,14 @@ function Resume() {
                         <li>3.99 Cumulative GPA, Dean&apos;s List</li>
                     </ul>
                 </article>
-            </section>
+            </ScrollReveal>
 
-            <section className="resume-section d-flex row" aria-label="Work Experience Section">
+            <ScrollReveal
+                as="section"
+                className="resume-section d-flex row"
+                delay={0.05}
+                aria-label="Work Experience Section"
+            >
                 <h2 className="color-accent-red">WORK EXPERIENCE</h2>
                 {workExperience.map((job) => (
                     <article key={job.company} aria-label={`${job.company} Work Experience Information`}>
@@ -127,9 +143,14 @@ function Resume() {
                         </ul>
                     </article>
                 ))}
-            </section>
+            </ScrollReveal>
 
-            <section className="resume-section d-flex row" aria-label="Leadership Section">
+            <ScrollReveal
+                as="section"
+                className="resume-section d-flex row"
+                delay={0.05}
+                aria-label="Leadership Section"
+            >
                 <h2 className="color-accent-red">LEADERSHIP</h2>
                 <article aria-label="Campus Activities Board Leadership Information">
                     <h6>
@@ -151,10 +172,12 @@ function Resume() {
                         </li>
                     </ul>
                 </article>
-            </section>
+            </ScrollReveal>
 
-            <section
+            <ScrollReveal
+                as="section"
                 className="resume-section skills-section d-flex row justify-content-center"
+                delay={0.05}
                 aria-label="Skills Section"
             >
                 <h2 className="color-accent-red">SKILLS</h2>
@@ -168,9 +191,9 @@ function Resume() {
                         </div>
                     ))}
                 </article>
-            </section>
+            </ScrollReveal>
 
-            <section className="resume-section" aria-label="Affiliations Section">
+            <ScrollReveal as="section" className="resume-section" delay={0.05} aria-label="Affiliations Section">
                 <h2 className="color-accent-red">AFFILIATIONS</h2>
                 {affiliations.map((affiliation) => (
                     <article key={affiliation.name} aria-label="Affiliation Information">
@@ -180,16 +203,16 @@ function Resume() {
                         <p>{affiliation.date}</p>
                     </article>
                 ))}
-            </section>
+            </ScrollReveal>
 
-            <section className="resume-section" aria-label="Awards Section">
+            <ScrollReveal as="section" className="resume-section" delay={0.05} aria-label="Awards Section">
                 <h2 className="color-accent-red">AWARDS</h2>
                 {awards.map((award) => (
                     <h6 key={award}>
                         <b>{award.split(' | ')[0]} |</b> {award.split(' | ')[1]}
                     </h6>
                 ))}
-            </section>
+            </ScrollReveal>
         </main>
     );
 }

@@ -255,8 +255,12 @@ function Accessibility() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Vispero's Color Contrast Checker — opens in a new tab"
-                                onClick={() =>
-                                    openTrackedLink('https://vispero.com/lp/color-contrast-checker/', "Vispero's CCA")
+                                onClick={(event) =>
+                                    openTrackedLink(
+                                        event,
+                                        'https://vispero.com/lp/color-contrast-checker/',
+                                        "Vispero's CCA",
+                                    )
                                 }
                             >
                                 Vispero&apos;s Colour Contrast Analyser (CCA)
@@ -267,7 +271,7 @@ function Accessibility() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="WebAIM WAVE Tool — opens in a new tab"
-                                onClick={() => openTrackedLink('https://wave.webaim.org/', 'WebAIM WAVE')}
+                                onClick={(event) => openTrackedLink(event, 'https://wave.webaim.org/', 'WebAIM WAVE')}
                             >
                                 WebAIM WAVE Tool
                             </a>{' '}
@@ -277,8 +281,9 @@ function Accessibility() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="WCAG 2 Guidelines — opens in a new tab"
-                                onClick={() =>
+                                onClick={(event) =>
                                     openTrackedLink(
+                                        event,
                                         'https://www.w3.org/WAI/standards-guidelines/wcag/',
                                         'WCAG Guidelines',
                                     )
@@ -292,7 +297,9 @@ function Accessibility() {
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Accessible Perceptual Contrast Algorithm — opens in a new tab"
-                                onClick={() => openTrackedLink('https://github.com/Myndex/SAPC-APCA/', 'APCA')}
+                                onClick={(event) =>
+                                    openTrackedLink(event, 'https://github.com/Myndex/SAPC-APCA/', 'APCA')
+                                }
                             >
                                 APCA (Accessible Perceptual Contrast Algorithm)
                             </a>{' '}
@@ -347,15 +354,18 @@ function Accessibility() {
                         <button
                             type="button"
                             className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                            onClick={() => openTrackedLink('https://oknestaut.com/', 'Accessibility Final Site')}
+                            onClick={(event) =>
+                                openTrackedLink(event, 'https://oknestaut.com/', 'Accessibility Final Site')
+                            }
                         >
                             <h3 className="btn-text color-tan">Final Site</h3>
                         </button>
                         <button
                             type="button"
                             className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                            onClick={() =>
+                            onClick={(event) =>
                                 openTrackedLink(
+                                    event,
                                     'https://github.com/OliviaKnestaut/oknestaut',
                                     'Accessibility Project Github',
                                 )
@@ -374,7 +384,9 @@ function Accessibility() {
                             target="_blank"
                             rel="noopener noreferrer"
                             aria-label="WebAIM WAVE Tool — opens in a new tab"
-                            onClick={() => openTrackedLink('https://wave.webaim.org/', 'WebAIM WAVE Assessment')}
+                            onClick={(event) =>
+                                openTrackedLink(event, 'https://wave.webaim.org/', 'WebAIM WAVE Assessment')
+                            }
                         >
                             WebAIM WAVE Assessment
                         </a>{' '}

@@ -150,8 +150,9 @@ function KimsDragon() {
                     <button
                         type="button"
                         className="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                        onClick={() =>
+                        onClick={(event) =>
                             openTrackedLink(
+                                event,
                                 'https://digmstudents.westphal.drexel.edu/~ojk25/idm216/',
                                 "Kim's Dragon Team Page",
                             )
@@ -176,8 +177,9 @@ function KimsDragon() {
                     <button
                         type="button"
                         className="btn btn-primary mx-auto d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                        onClick={() =>
+                        onClick={(event) =>
                             openTrackedLink(
+                                event,
                                 'https://digmstudents.westphal.drexel.edu/~ojk25/idm216/project-page.php',
                                 "Kim's Dragon Project Page",
                             )
@@ -238,8 +240,9 @@ function KimsDragon() {
                         <button
                             type="button"
                             className="btn btn-primary mx-auto d-block color-accent-blue bg-tan color-accent-blue-hover"
-                            onClick={() =>
+                            onClick={(event) =>
                                 openTrackedLink(
+                                    event,
                                     'https://digmstudents.westphal.drexel.edu/~ojk25/idm216/database-dump.php',
                                     "Kim's Dragon Database Dump",
                                 )
@@ -297,8 +300,9 @@ function KimsDragon() {
                         <button
                             type="button"
                             className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                            onClick={() =>
+                            onClick={(event) =>
                                 openTrackedLink(
+                                    event,
                                     'https://digmstudents.westphal.drexel.edu/~ojk25/idm216/final/',
                                     "Kim's Dragon Final Build",
                                 )
@@ -309,8 +313,9 @@ function KimsDragon() {
                         <button
                             type="button"
                             className="btn btn-primary d-block color-accent-blue bg-accent-blue color-accent-blue-hover"
-                            onClick={() =>
+                            onClick={(event) =>
                                 openTrackedLink(
+                                    event,
                                     'https://github.com/OliviaKnestaut/2501-idm216-blueprints',
                                     "Kim's Dragon Project Github",
                                 )
