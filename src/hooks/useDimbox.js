@@ -35,6 +35,7 @@ function loadDimboxScript() {
 
 function configureDimbox(dimbox) {
     dimbox.setConfig({
+        autoBindClick: false,
         closeOnOverlayClick: true,
         fullscreen: false,
         showFullscreenButton: true,

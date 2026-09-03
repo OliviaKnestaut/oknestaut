@@ -4,13 +4,42 @@ import DimboxAnchor from './DimboxAnchor';
 import FadeImage from './FadeImage';
 import ScrollReveal from './ScrollReveal';
 
-function PhotoGrid({ photos, galleryName, layout = 'right', className = '', delay = 0 }) {
+function PhotoGrid({ photos, galleryName, layout = 'right', className = '', delay = 0, disableReveal = false }) {
     const gridClass = layout === 'left' ? 'photo-grid-left' : 'photo-grid-right';
 
     // Render right-layout grids in visual tab order (verticals first, then horizontal)
     // while keeping each image in its correct grid area.
     const positionClasses = ['horiz-img', 'vert-img-1', 'vert-img-2'];
     const renderOrder = layout === 'right' ? [1, 2, 0] : [0, 1, 2];
+
+    const gridContent = renderOrder.map((photoIndex) => {
+        const photo = photos[photoIndex];
+        if (!photo) return null;
+        const positionClass = positionClasses[photoIndex];
+        const key = `${galleryName}-${photo.small}`;
+        return (
+            <DimboxAnchor
+                key={key}
+                className={positionClass}
+                href={photo.large}
+                data-dimbox={galleryName}
+                data-dimbox-caption={photo.caption}
+                data-dimbox-ratio="16x9"
+                data-dimbox-type="image"
+                aria-label={photo.ariaLabel}
+            >
+                <FadeImage fill src={photo.small} alt={photo.alt} loading="lazy" decoding="async" />
+            </DimboxAnchor>
+        );
+    });
+
+    if (disableReveal) {
+        return (
+            <figure className={`${gridClass} ${className}`.trim()} aria-label={`${galleryName} Photo Gallery`}>
+                {gridContent}
+            </figure>
+        );
+    }
 
     return (
         <ScrollReveal
@@ -19,26 +48,7 @@ function PhotoGrid({ photos, galleryName, layout = 'right', className = '', dela
             delay={delay}
             aria-label={`${galleryName} Photo Gallery`}
         >
-            {renderOrder.map((photoIndex) => {
-                const photo = photos[photoIndex];
-                if (!photo) return null;
-                const positionClass = positionClasses[photoIndex];
-                const key = `${galleryName}-${photo.small}`;
-                return (
-                    <DimboxAnchor
-                        key={key}
-                        className={positionClass}
-                        href={photo.large}
-                        data-dimbox={galleryName}
-                        data-dimbox-caption={photo.caption}
-                        data-dimbox-ratio="16x9"
-                        data-dimbox-type="image"
-                        aria-label={photo.ariaLabel}
-                    >
-                        <FadeImage fill src={photo.small} alt={photo.alt} loading="lazy" decoding="async" />
-                    </DimboxAnchor>
-                );
-            })}
+            {gridContent}
         </ScrollReveal>
     );
 }

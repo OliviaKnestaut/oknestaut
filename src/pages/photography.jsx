@@ -51,6 +51,7 @@ function Photography() {
                                     }
                                     layout={group.layout}
                                     delay={index * 0.08}
+                                    disableReveal
                                     aria-label={`${section.title} Photo Gallery Pt. ${index + 1}`}
                                 />
                             );
