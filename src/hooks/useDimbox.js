@@ -60,6 +60,11 @@ function configureDimbox(dimbox) {
         xhrResponseType: 'json',
     });
 
+    // NOTE: dimbox caches the result of querySelectorAll(config.selector) on init
+    // and uses that cached list for gallery prev/next navigation. In a React Router
+    // SPA this causes stale gallery links after navigating between pages. The vendored
+    // public/js/dimbox.min.js has been patched so createPrevNextButtons queries the
+    // live DOM instead of the cached list.
     dimbox.init();
 }
 

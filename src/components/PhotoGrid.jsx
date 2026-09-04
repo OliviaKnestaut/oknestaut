@@ -1,16 +1,36 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/photography.css';
 import DimboxAnchor from './DimboxAnchor';
 import FadeImage from './FadeImage';
 import ScrollReveal from './ScrollReveal';
 
+const DESKTOP_BREAKPOINT = '(min-width: 768px)';
+
+function useDesktopRenderOrder(layout) {
+    const [isDesktop, setIsDesktop] = useState(
+        () => typeof window !== 'undefined' && window.matchMedia(DESKTOP_BREAKPOINT).matches,
+    );
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia(DESKTOP_BREAKPOINT);
+        const handleChange = (event) => setIsDesktop(event.matches);
+        mediaQuery.addEventListener('change', handleChange);
+        return () => mediaQuery.removeEventListener('change', handleChange);
+    }, []);
+
+    if (!isDesktop) {
+        return [0, 1, 2];
+    }
+    return layout === 'right' ? [1, 2, 0] : [0, 1, 2];
+}
+
 function PhotoGrid({ photos, galleryName, layout = 'right', className = '', delay = 0, disableReveal = false }) {
     const gridClass = layout === 'left' ? 'photo-grid-left' : 'photo-grid-right';
 
-    // Render right-layout grids in visual tab order (verticals first, then horizontal)
-    // while keeping each image in its correct grid area.
+    // On desktop, render in visual reading order so dimbox prev/next matches the layout.
+    // On mobile the grid always stacks, so keep a consistent horizontal-first order.
     const positionClasses = ['horiz-img', 'vert-img-1', 'vert-img-2'];
-    const renderOrder = layout === 'right' ? [1, 2, 0] : [0, 1, 2];
+    const renderOrder = useDesktopRenderOrder(layout);
 
     const gridContent = renderOrder.map((photoIndex) => {
         const photo = photos[photoIndex];
