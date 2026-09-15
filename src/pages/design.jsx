@@ -112,7 +112,7 @@ function Design() {
     return (
         <main aria-label="Design and Media Main Content">
             <ScrollReveal as="section" className="container-fluid" aria-label="Graphic Design Section">
-                <h2 className="color-accent-red">GRAPHIC DESIGN</h2>
+                <h1 className="color-accent-red">GRAPHIC DESIGN</h1>
                 <a
                     href="#animation"
                     className="skip-link photography-skip-link color-accent-blue-hover"
@@ -220,7 +220,7 @@ function Design() {
                 delay={0.1}
                 aria-label="Animation Section"
             >
-                <h2 className="color-accent-red">ANIMATION</h2>
+                <h1 className="color-accent-red">ANIMATION</h1>
                 <a
                     href="#footer"
                     className="skip-link photography-skip-link color-accent-blue-hover"

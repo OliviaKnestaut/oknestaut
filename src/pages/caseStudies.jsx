@@ -1,25 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { trackEvent } from '../utils/analytics';
-import PhotoGrid from '../components/PhotoGrid';
 import { caseStudies } from '../data/caseStudyData';
-import { portraitureGroups, natureGroups } from '../data/photographyData';
 
-function Home() {
-    const featuredStudies = caseStudies.slice(0, 4);
-
+function CaseStudies() {
     return (
-        <main id="main-content" aria-label="Site Main Content">
-
-            <section className="case-studies column container-fluid justify-content-center" aria-label="Featured Case Studies">
-                <h2 className="color-accent-red">RECENT WORK</h2>
+        <main id="main-content" aria-label="Case Studies Main Content">
+            <section className="case-studies column container-fluid justify-content-center">
+                <h1 className="color-accent-red">CASE STUDIES</h1>
                 <section className="card-container">
-                    {featuredStudies.map((study) => (
+                    {caseStudies.map((study) => (
                         <Link
                             key={study.title}
                             className="card"
                             to={study.route}
-                            onClick={() => trackEvent('Home', 'Clicked See Project', study.eventLabel)}
+                            onClick={() => trackEvent('Case Studies', 'Clicked See Project', study.eventLabel)}
                             aria-label={`Open ${study.title} case study`}
                         >
                             <figure
@@ -52,30 +47,8 @@ function Home() {
                     ))}
                 </section>
             </section>
-
-            <section className="home-photography-preview" aria-label="Photography Preview">
-                <div className="container-fluid">
-                    <h2 className="color-accent-red">RECENT PHOTOGRAPHY</h2>
-                </div>
-                <PhotoGrid
-                    photos={natureGroups[0].photos}
-                    galleryName="home-nature-preview"
-                    layout={natureGroups[0].layout}
-                    delay={0.08}
-                    aria-label="Nature preview gallery"
-                />
-                <div className="container-fluid home-photography-cta">
-                    <Link
-                        className="home-link bg-accent-blue color-tan"
-                        to="/photography"
-                        onClick={() => trackEvent('Home', 'Clicked See All Photography')}
-                    >
-                        See all photography →
-                    </Link>
-                </div>
-            </section>
         </main>
     );
 }
 
-export default Home;
+export default CaseStudies;

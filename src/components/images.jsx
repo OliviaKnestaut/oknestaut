@@ -3,6 +3,7 @@ import letterboxdCover from '../images/home/Letterboxd-Cover.png';
 import rightOnCover from '../images/home/RightOn-Cover.png';
 import riverfrontCover from '../images/home/RiverfrontWilm-Cover.png';
 import tesseraCover from '../images/home/Tessera-Cover.png';
+import intealthCover from '../images/intealth/Intealth-Cover.png';
 
 export const abstractGraphics = {
     upper: {
@@ -21,4 +22,5 @@ export const caseStudyCovers = {
     riverfront: riverfrontCover,
     letterboxd: letterboxdCover,
     tessera: tesseraCover,
+    intealth: intealthCover,
 };

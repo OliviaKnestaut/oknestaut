@@ -97,7 +97,7 @@ function Navigation() {
                     <div className="mr-auto" />
                     <ul className="navbar-nav my-2 my-lg-0" aria-label="Primary Navigation Items">
                         <li
-                            className={`nav-item dropdown ${['/photography', '/design'].some((path) => location.pathname === path) || location.pathname === '/' ? 'active' : ''}`}
+                            className={`nav-item dropdown ${['/case-studies', '/photography', '/design'].some((path) => location.pathname === path) ? 'active' : ''}`}
                             ref={dropdownRef}
                             aria-label="Toggle Portfolio Navigation Dropdown"
                         >
@@ -117,7 +117,7 @@ function Navigation() {
                             >
                                 <Link
                                     className="dropdown-item"
-                                    to="/"
+                                    to="/case-studies"
                                     onClick={() => handleNavLinkClick('Case Studies')}
                                     aria-label="Case Studies Navigation Link"
                                 >

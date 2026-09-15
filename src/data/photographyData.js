@@ -5,18 +5,11 @@ export const portraitureGroups = [
         layout: 'right',
         photos: [
             {
-                large: require('../images/photography/portraiture/Tinashe_1-Large.jpg'),
-                small: require('../images/photography/portraiture/Tinashe_1-Small.jpg'),
-                caption: 'Tinashe at Dragonfly 2024, Philadelphia, PA, October 2024',
-                alt: 'Back lit profile image of Tinashe at Dragonfly 2024',
-                ariaLabel: 'Tinashe at Dragonfly 2024 Image — click to view larger',
-            },
-            {
-                large: require('../images/photography/portraiture/Lake_Washington_2-Large.jpg'),
-                small: require('../images/photography/portraiture/Lake_Washington_2-Small.jpg'),
-                caption: 'Lake Washington, Seattle, WA,  September 2023',
-                alt: 'Black and white, three boys playing on floating platform in the water at Lake Wahington',
-                ariaLabel: 'Lake Washington Image — click to view larger',
+                large: require('../images/photography/portraiture/DU_Trebs_9-Large.jpg'),
+                small: require('../images/photography/portraiture/DU_Trebs_9-Small.jpg'),
+                caption: 'Drexel University Treblemakers ICCAs 2025 Performance, Philadelphia, PA, February 2025',
+                alt: 'Shot down theater with Drexel University Treblemakers acapella group girls performing together on stage',
+                ariaLabel: 'Drexel University Treblemakers ICCAs 2025 Image — click to view larger',
             },
             {
                 large: require('../images/photography/portraiture/Medha+Will_3-Large.jpg'),
@@ -25,51 +18,6 @@ export const portraitureGroups = [
                 alt: 'Medha and Will sitting together among plants',
                 ariaLabel: 'Medha and Will Sitting Image — click to view larger',
             },
-        ],
-    },
-    {
-        layout: 'left',
-        photos: [
-            {
-                large: require('../images/photography/portraiture/DU_Trebs_9-Large.jpg'),
-                small: require('../images/photography/portraiture/DU_Trebs_9-Small.jpg'),
-                caption: 'Drexel University Treblemakers ICCAs 2025 Performance, Philadelphia, PA, February 2025',
-                alt: 'Shot down theater with Drexel University Treblemakers acapella group girls performing together on stage',
-                ariaLabel: 'Drexel University Treblemakers ICCAs 2025 Image — click to view larger',
-            },
-            {
-                large: require('../images/photography/portraiture/Xander-Hallway-Large.jpg'),
-                small: require('../images/photography/portraiture/Xander-Hallway-Small.jpg'),
-                caption: 'Xander, Newark, DE, April 2026',
-                alt: 'Xander standing in a brick columned outdoor hall before his recital',
-                ariaLabel: "Xander's Junior Recital Image — click to view larger",
-            },
-            {
-                large: require('../images/photography/portraiture/Slayyyter_1-Large.jpg'),
-                small: require('../images/photography/portraiture/Slayyyter_1-Small.jpg'),
-                caption: 'Slayyyter at Dragonfly 2024, Philadelphia, PA, October 2024',
-                alt: 'Slayyyter belting into the microphone at Dragonfly 2024',
-                ariaLabel: 'Slayyyter at Dragonfly 2024 Image — click to view larger',
-            },
-        ],
-    },
-    {
-        layout: 'right',
-        photos: [
-            {
-                large: require('../images/photography/portraiture/Olive_Graffiti_2-Large.jpg'),
-                small: require('../images/photography/portraiture/Olive_Graffiti_2-Small.jpg'),
-                caption: 'Olive, Philadelphia, PA, February 2023',
-                alt: 'Black and white photo of a girl sitting on a still in a graffitied brick room',
-                ariaLabel: 'Olive in a graffitied brick room Image — click to view larger',
-            },
-            {
-                large: require('../images/photography/portraiture/Medha+Will_1-Large.jpg'),
-                small: require('../images/photography/portraiture/Medha+Will_1-Small.jpg'),
-                caption: 'Medha and Will, Philadelphia, PA, September 2024',
-                alt: 'Medha and Will sitting together on the steps of the Philadelphia Art Museum',
-                ariaLabel: 'Medha and Will Sitting at Museum Image — click to view larger',
-            },
             {
                 large: require('../images/photography/portraiture/Tinashe_3-Large.jpg'),
                 small: require('../images/photography/portraiture/Tinashe_3-Small.jpg'),
@@ -77,31 +25,33 @@ export const portraitureGroups = [
                 alt: 'Tinashe performing at Dragonfly 2024 lit by golden stage lights',
                 ariaLabel: 'Tinashe at Dragonfly 2024 Image — click to view larger',
             },
+            
         ],
     },
     {
         layout: 'left',
         photos: [
+            
             {
-                large: require('../images/photography/portraiture/April-Trebs-Large.jpg'),
-                small: require('../images/photography/portraiture/April-Trebs-Small.jpg'),
-                caption: 'April, Philadelphia, PA, June 2026',
-                alt: 'April singing her senior solo at the Drexel Treblemakers senior sendoff concert',
-                ariaLabel: "April's Senior Solo Image — click to view larger",
+                large: require('../images/photography/portraiture/Slayyyter_2-Large.jpg'),
+                small: require('../images/photography/portraiture/Slayyyter_2-Small.jpg'),
+                caption: 'Slayyyter at Dragonfly 2024, Philadelphia, PA, October 2024',
+                alt: 'Slayyyter kneeling on the stage at Dragonfly 2024',
+                ariaLabel: 'Slayyyter at Dragonfly 2024 Image — click to view larger',
             },
             {
-                large: require('../images/photography/portraiture/Caitlin_Grad_1_Large.jpg'),
-                small: require('../images/photography/portraiture/Caitlin_Grad_1_Small.jpg'),
-                caption: 'Caitlin, Newark, DE, April 2026',
-                alt: 'Caitlin wearing her University of Delaware graduation regalia',
-                ariaLabel: "Caitlin's UD Graduation Image — click to view larger",
+                large: require('../images/photography/portraiture/Maya_Grad-Large.jpg'),
+                small: require('../images/photography/portraiture/Maya_Grad-Small.jpg'),
+                caption: 'Maya, Philadelphia, PA, August 2026',
+                alt: 'Maya crossing a road on campus holding her Drexel graduation gown',
+                ariaLabel: "Maya's Drexel Graduation Image — click to view larger",
             },
             {
-                large: require('../images/photography/portraiture/DU-Trebs-4-Large.jpg'),
-                small: require('../images/photography/portraiture/DU-Trebs-4-Small.jpg'),
-                caption: 'Drexel University Treblemakers ICCAs 2024 Performance, Philadelphia, PA, February 2024',
-                alt: 'Shot down theater with Drexel University Treblemakers acapella group girls performing together in a group',
-                ariaLabel: 'Drexel University Treblemakers ICCAs 2024 Image — click to view larger',
+                large: require('../images/photography/portraiture/Lake_Washington_2-Large.jpg'),
+                small: require('../images/photography/portraiture/Lake_Washington_2-Small.jpg'),
+                caption: 'Lake Washington, Seattle, WA,  September 2023',
+                alt: 'Black and white, three boys playing on floating platform in the water at Lake Wahington',
+                ariaLabel: 'Lake Washington Image — click to view larger',
             },
         ],
     },
@@ -135,6 +85,59 @@ export const portraitureGroups = [
         layout: 'left',
         photos: [
             {
+                large: require('../images/photography/portraiture/April-Trebs-Large.jpg'),
+                small: require('../images/photography/portraiture/April-Trebs-Small.jpg'),
+                caption: 'April, Philadelphia, PA, June 2026',
+                alt: 'April singing her senior solo at the Drexel Treblemakers senior sendoff concert',
+                ariaLabel: "April's Senior Solo Image — click to view larger",
+            },
+            {
+                large: require('../images/photography/portraiture/Caitlin_Grad_1_Large.jpg'),
+                small: require('../images/photography/portraiture/Caitlin_Grad_1_Small.jpg'),
+                caption: 'Caitlin, Newark, DE, April 2026',
+                alt: 'Caitlin wearing her University of Delaware graduation regalia',
+                ariaLabel: "Caitlin's UD Graduation Image — click to view larger",
+            },
+            {
+                large: require('../images/photography/portraiture/DU-Trebs-4-Large.jpg'),
+                small: require('../images/photography/portraiture/DU-Trebs-4-Small.jpg'),
+                caption: 'Drexel University Treblemakers ICCAs 2024 Performance, Philadelphia, PA, February 2024',
+                alt: 'Shot down theater with Drexel University Treblemakers acapella group girls performing together in a group',
+                ariaLabel: 'Drexel University Treblemakers ICCAs 2024 Image — click to view larger',
+            },
+        ],
+    },
+    {
+        layout: 'right',
+        photos: [
+            {
+                large: require('../images/photography/portraiture/Olive_Graffiti_2-Large.jpg'),
+                small: require('../images/photography/portraiture/Olive_Graffiti_2-Small.jpg'),
+                caption: 'Olive, Philadelphia, PA, February 2023',
+                alt: 'Black and white photo of a girl sitting on a still in a graffitied brick room',
+                ariaLabel: 'Olive in a graffitied brick room Image — click to view larger',
+            },
+            
+            {
+                large: require('../images/photography/portraiture/Medha+Will_1-Large.jpg'),
+                small: require('../images/photography/portraiture/Medha+Will_1-Small.jpg'),
+                caption: 'Medha and Will, Philadelphia, PA, September 2024',
+                alt: 'Medha and Will sitting together on the steps of the Philadelphia Art Museum',
+                ariaLabel: 'Medha and Will Sitting at Museum Image — click to view larger',
+            },
+            {
+                large: require('../images/photography/portraiture/Slayyyter_1-Large.jpg'),
+                small: require('../images/photography/portraiture/Slayyyter_1-Small.jpg'),
+                caption: 'Slayyyter at Dragonfly 2024, Philadelphia, PA, October 2024',
+                alt: 'Slayyyter belting into the microphone at Dragonfly 2024',
+                ariaLabel: 'Slayyyter at Dragonfly 2024 Image — click to view larger',
+            },
+        ],
+    },
+    {
+        layout: 'left',
+        photos: [
+            {
                 large: require('../images/photography/portraiture/DU_Trebs_6-Large.jpg'),
                 small: require('../images/photography/portraiture/DU_Trebs_6-Small.jpg'),
                 caption: 'Drexel University Treblemakers Senior Concert, Philadelphia, PA, June 2024',
@@ -142,11 +145,11 @@ export const portraitureGroups = [
                 ariaLabel: 'Drexel University Treblemakers Senior Concert Image — click to view larger',
             },
             {
-                large: require('../images/photography/portraiture/Olive_Window-Large.jpg'),
-                small: require('../images/photography/portraiture/Olive_Window-Small.jpg'),
-                caption: 'Olive, Philadelphia, PA, February 2023',
-                alt: 'Black and white, girl sitting, leaning on knees on window ledge corner',
-                ariaLabel: 'Olive Sitting Image — click to view larger',
+                large: require('../images/photography/portraiture/Xander-Hallway-Large.jpg'),
+                small: require('../images/photography/portraiture/Xander-Hallway-Small.jpg'),
+                caption: 'Xander, Newark, DE, April 2026',
+                alt: 'Xander standing in a brick columned outdoor hall before his recital',
+                ariaLabel: "Xander's Junior Recital Image — click to view larger",
             },
             {
                 large: require('../images/photography/portraiture/DU_Trebs_8-Large.jpg'),
@@ -187,11 +190,11 @@ export const portraitureGroups = [
         layout: 'left',
         photos: [
             {
-                large: require('../images/photography/portraiture/Slayyyter_2-Large.jpg'),
-                small: require('../images/photography/portraiture/Slayyyter_2-Small.jpg'),
-                caption: 'Slayyyter at Dragonfly 2024, Philadelphia, PA, October 2024',
-                alt: 'Slayyyter kneeling on the stage at Dragonfly 2024',
-                ariaLabel: 'Slayyyter at Dragonfly 2024 Image — click to view larger',
+                large: require('../images/photography/portraiture/Tinashe_1-Large.jpg'),
+                small: require('../images/photography/portraiture/Tinashe_1-Small.jpg'),
+                caption: 'Tinashe at Dragonfly 2024, Philadelphia, PA, October 2024',
+                alt: 'Back lit profile image of Tinashe at Dragonfly 2024',
+                ariaLabel: 'Tinashe at Dragonfly 2024 Image — click to view larger',
             },
             {
                 large: require('../images/photography/portraiture/Rose-Grad-Large-2.jpg'),
@@ -277,7 +280,7 @@ export const natureGroups = [
             {
                 large: require('../images/photography/nature/Cliffs-of-Moher-Large.jpg'),
                 small: require('../images/photography/nature/Cliffs-of-Moher-Small.jpg'),
-                caption: 'Cliffs of Moher, County Clare, Ireland October 2025',
+                caption: 'Cliffs of Moher, County Clare, Ireland, March 2025',
                 alt: 'Cliffs of Moher overlooking the Atlantic Ocean',
                 ariaLabel: 'Cliffs of Moher Image — click to view larger',
             },
@@ -492,7 +495,7 @@ export const natureGroups = [
             {
                 large: require('../images/photography/nature/Ireland-Gardens-Large.jpg'),
                 small: require('../images/photography/nature/Ireland-Gardens-Small.jpg'),
-                caption: 'National Botanic Gardens, Dublin, Ireland March 2026',
+                caption: 'National Botanic Gardens, Dublin, Ireland, March 2026',
                 alt: 'Inside a greenhouse at the National Botanic Gardens in Dublin, Ireland',
                 ariaLabel: 'Ireland Gardens Image — click to view larger',
             },

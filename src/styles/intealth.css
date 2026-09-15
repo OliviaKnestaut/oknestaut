@@ -1,0 +1,63 @@
+/* Intealth case study specific styles */
+
+.intealth-mobile-pair,
+.intealth-side-by-side {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+    margin: 0.75rem 0;
+}
+
+.intealth-side-by-side img {
+    flex: 1 1 50%;
+    width: calc(50% - 0.5rem);
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+.intealth-mobile-pair img {
+    flex: 1 1 50%;
+    width: calc(50% - 0.5rem);
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .intealth-mobile-pair,
+    .intealth-side-by-side {
+        flex-direction: column;
+    }
+
+    .intealth-mobile-pair img,
+    .intealth-side-by-side img {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .study-section.bg-accent-blue.inverted {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+}
+
+.overview figure {
+    margin-bottom: 1rem;
+}
+
+.overview figcaption {
+    margin-top: 0.5rem;
+}
+
+#overview > figure {
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem auto 0;
+}
+
+#overview > figure img {
+    max-width: 400px;
+    width: 100%;
+}

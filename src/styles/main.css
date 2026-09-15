@@ -490,6 +490,62 @@ button span {
     justify-content: center;
 }
 
+.home-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 900px;
+    padding: 2rem 1.5rem 4rem;
+}
+
+.home-intro h2 {
+    margin-bottom: 1rem;
+}
+
+.home-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.home-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 50vw;
+    font-family: var(--Jost);
+    font-size: clamp(1rem, 1.2vw, 1.25rem);
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.home-link:hover,
+.home-link:focus {
+    transform: translateY(-3px);
+    filter: brightness(1.08);
+    text-decoration: none;
+}
+
+.home-photography-preview {
+    padding-bottom: 4rem;
+}
+
+.home-photography-preview .container-fluid {
+    text-align: center;
+    max-width: 1000px;
+}
+
+.home-photography-preview h2 {
+    margin-bottom: 0.5rem;
+}
+
+.home-photography-cta {
+    margin-top: 1.5rem;
+}
+
 /* HOME SCREEN CARDS */
 
 .card {
@@ -508,13 +564,14 @@ button span {
 
 .card > img {
     width: 80%;
+    margin-top: 1.5rem;
     transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease;
     will-change: transform;
 }
 
 .card:hover > img,
 .card:focus-within > img {
-    transform: scale(1.04) translateY(-4px);
+    transform: scale(1.08) translateY(-6px);
     filter: brightness(1.04);
 }
 
