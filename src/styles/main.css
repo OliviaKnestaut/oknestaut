@@ -848,6 +848,12 @@ header .tagline {
 
 /* HOME SCREEN CARDS */
 
+.card-reveal {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
 .card {
     position: unset;
     background-color: var(--background);
@@ -1228,6 +1234,12 @@ figcaption.poster-text {
     }
     .card {
         width: 49%;
+    }
+    .card-reveal {
+        width: 49%;
+    }
+    .card-reveal .card {
+        width: 100%;
     }
     .card-body {
         flex: initial;

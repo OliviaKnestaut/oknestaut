@@ -11,6 +11,14 @@
         width: 49%;
     }
 
+    .card-reveal {
+        width: 49%;
+    }
+
+    .card-reveal .card {
+        width: 100%;
+    }
+
     .card-body {
         flex: initial;
         margin-bottom: -12rem !important;
