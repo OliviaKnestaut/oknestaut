@@ -1,4 +1,3 @@
-import React from 'react';
 import { openTrackedLink } from '../utils/analytics';
 
 function CaseStudyHeader({ title, subtitle, coverImage, coverAlt, bgColor, buttons = [] }) {

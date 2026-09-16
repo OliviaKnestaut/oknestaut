@@ -25,13 +25,11 @@ export const portraitureGroups = [
                 alt: 'Tinashe performing at Dragonfly 2024 lit by golden stage lights',
                 ariaLabel: 'Tinashe at Dragonfly 2024 Image — click to view larger',
             },
-            
         ],
     },
     {
         layout: 'left',
         photos: [
-            
             {
                 large: require('../images/photography/portraiture/Slayyyter_2-Large.jpg'),
                 small: require('../images/photography/portraiture/Slayyyter_2-Small.jpg'),
@@ -117,7 +115,7 @@ export const portraitureGroups = [
                 alt: 'Black and white photo of a girl sitting on a still in a graffitied brick room',
                 ariaLabel: 'Olive in a graffitied brick room Image — click to view larger',
             },
-            
+
             {
                 large: require('../images/photography/portraiture/Medha+Will_1-Large.jpg'),
                 small: require('../images/photography/portraiture/Medha+Will_1-Small.jpg'),

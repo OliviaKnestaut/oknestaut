@@ -1,17 +1,20 @@
-import { caseStudyCovers } from '../components/images';
 import figmaLogo from '../images/about/Figma-logo-white.png';
 import illustratorLogo from '../images/about/Illustrator-Icon-white.png';
 import phpLogo from '../images/about/PHP-Icon-white.png';
 import photoshopLogo from '../images/about/Photoshop-Icon-white.png';
 import css3Logo from '../images/about/css3-logo-white.png';
+import graphqlLogo from '../images/about/graphql-logo-white.png';
 import html5Logo from '../images/about/html5-logo-white.png';
 import javascriptLogo from '../images/about/javascript_logo_white.png';
 import mysqlLogo from '../images/about/mysql-logo-white.png';
 import reactLogo from '../images/about/react-logo-white.png';
 import typescriptLogo from '../images/about/typescript_logo_white.png';
-import graphqlLogo from '../images/about/graphql-logo-white.png';
 import userTestingIcon from '../images/about/user-testing.png';
+import kimsDragonCover from '../images/home/Kim-Dragon-Cover.png';
+import letterboxdCover from '../images/home/Letterboxd-Cover.png';
 import portfolioCover from '../images/home/Portfolio-Cover.png';
+import rightOnCover from '../images/home/RightOn-Cover.png';
+import intealthCover from '../images/intealth/Intealth-Cover.png';
 
 export const caseStudies = [
     {
@@ -27,7 +30,7 @@ export const caseStudies = [
             { src: typescriptLogo, alt: 'TypeScript Logo' },
             { src: graphqlLogo, alt: 'GraphQL Logo' },
         ],
-        image: caseStudyCovers.intealth,
+        image: intealthCover,
         imageAlt: 'Intealth Modern Apps case study cover',
         layer: 2,
     },
@@ -60,9 +63,8 @@ export const caseStudies = [
             { src: photoshopLogo, alt: 'Adobe Photoshop Logo' },
             { src: userTestingIcon, alt: 'User Testing and Interview Symbol' },
         ],
-        image: caseStudyCovers.rightOn,
-        imageAlt:
-            'Laptop, tablet, and mobile screens showing pages from the RightOn Central Redesign Project',
+        image: rightOnCover,
+        imageAlt: 'Laptop, tablet, and mobile screens showing pages from the RightOn Central Redesign Project',
         layer: 1,
     },
     {
@@ -79,7 +81,7 @@ export const caseStudies = [
             { src: css3Logo, alt: 'CSS3 Logo' },
             { src: javascriptLogo, alt: 'JavaScript Logo' },
         ],
-        image: caseStudyCovers.kimsDragon,
+        image: kimsDragonCover,
         imageAlt: "Three mobile screens showing pages from the Kim's Dragon Mobile Ordering Webapp",
         layer: 1,
     },
@@ -96,7 +98,7 @@ export const caseStudies = [
             { src: css3Logo, alt: 'CSS3 Logo' },
             { src: javascriptLogo, alt: 'JavaScript Logo' },
         ],
-        image: caseStudyCovers.letterboxd,
+        image: letterboxdCover,
         imageAlt: 'Hand cursor shown interacting with a specific movie card on Letterboxd',
         layer: 2,
     },

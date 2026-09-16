@@ -1,54 +1,23 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { trackEvent } from '../utils/analytics';
+import CaseStudyCard from '../components/CaseStudyCard';
 import PhotoGrid from '../components/PhotoGrid';
 import { caseStudies } from '../data/caseStudyData';
-import { portraitureGroups, natureGroups } from '../data/photographyData';
+import { natureGroups } from '../data/photographyData';
+import { trackEvent } from '../utils/analytics';
 
 function Home() {
     const featuredStudies = caseStudies.slice(0, 4);
 
     return (
         <main id="main-content" aria-label="Site Main Content">
-
-            <section className="case-studies column container-fluid justify-content-center" aria-label="Featured Case Studies">
+            <section
+                className="case-studies column container-fluid justify-content-center"
+                aria-label="Featured Case Studies"
+            >
                 <h2 className="color-accent-red">RECENT WORK</h2>
                 <section className="card-container">
                     {featuredStudies.map((study) => (
-                        <Link
-                            key={study.title}
-                            className="card"
-                            to={study.route}
-                            onClick={() => trackEvent('Home', 'Clicked See Project', study.eventLabel)}
-                            aria-label={`Open ${study.title} case study`}
-                        >
-                            <figure
-                                className={`layer-${study.layer} card-body ${study.bgClass}`}
-                                aria-label="Project Details"
-                            >
-                                <h3 className="card-title">{study.title}</h3>
-                                <h4 className="card-text text-center">{study.subtitle}</h4>
-                                <div
-                                    className="d-flex justify-content-center align-items-center tools"
-                                    aria-label="Technologies used"
-                                >
-                                    {study.tools.map((tool) => (
-                                        <img key={tool.alt} src={tool.src} alt={tool.alt} />
-                                    ))}
-                                </div>
-                                <span className="card-hint" aria-hidden="true">
-                                    <span className="card-hint-arrow">→</span>
-                                    <span>View case study</span>
-                                </span>
-                            </figure>
-                            <img
-                                className="mx-auto d-block card-img-bottom"
-                                src={study.image}
-                                alt={study.imageAlt}
-                                loading="lazy"
-                                decoding="async"
-                            />
-                        </Link>
+                        <CaseStudyCard key={study.title} study={study} eventCategory="Home" />
                     ))}
                 </section>
             </section>
@@ -57,6 +26,13 @@ function Home() {
                 <div className="container-fluid">
                     <h2 className="color-accent-red">RECENT PHOTOGRAPHY</h2>
                 </div>
+                <a
+                    href="#home-photography-cta"
+                    className="skip-link home-gallery-skip-link color-accent-red-hover"
+                    aria-label="Skip past mini photography gallery"
+                >
+                    Skip Photography Gallery
+                </a>
                 <PhotoGrid
                     photos={natureGroups[0].photos}
                     galleryName="home-nature-preview"
@@ -64,7 +40,7 @@ function Home() {
                     delay={0.08}
                     aria-label="Nature preview gallery"
                 />
-                <div className="container-fluid home-photography-cta">
+                <div id="home-photography-cta" className="container-fluid home-photography-cta">
                     <Link
                         className="home-link bg-accent-blue color-tan"
                         to="/photography"

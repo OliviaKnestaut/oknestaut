@@ -20,45 +20,6 @@ h1.photog-title {
     line-height: 14vw;
 }
 
-.photo-button-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-template-areas: "nature architechture portrait";
-    justify-items: center;
-    align-items: center;
-    padding: 1rem;
-}
-
-.photo-button-grid a {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 28vw;
-    border-radius: 50vw;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-y: center;
-}
-
-.photo-button-grid a p {
-    color: var(--background);
-    font-family: var(--Montserrat);
-    font-size: 3vw;
-    font-weight: 800;
-    text-align: center;
-}
-.portrait-btn:hover,
-.nature-btn:hover,
-.arch-btn:hover,
-.portrait-btn:active,
-.nature-btn:active,
-.arch-btn:active {
-    border: var(--background) 0px solid;
-    text-decoration: none;
-}
-
 .photo-grid-left {
     display: grid;
     grid-template-columns: 44.87vw 44.87vw;
@@ -170,47 +131,7 @@ nav.contents {
     }
 }
 
-@media (min-width: 670px) {
-    .photo-button-grid {
-        margin: 0 15vw;
-    }
-
-    .photo-button-grid a {
-        width: 20vw;
-    }
-
-    .photo-button-grid a p {
-        font-size: 2.05vw;
-    }
-}
-
 @media (min-width: 768px) {
-    .photo-button-grid a {
-        margin-top: 10px;
-        margin-bottom: 0px;
-    }
-
-    .photo-button-grid a p {
-        font-size: 2vw;
-    }
-
-    .photo-button-grid {
-        margin-top: 0;
-    }
-
-    .photo-button-grid img {
-        border-radius: 50vw;
-    }
-
-    .portrait-btn:hover,
-    .nature-btn:hover,
-    .arch-btn:hover,
-    .portrait-btn:active,
-    .nature-btn:active,
-    .arch-btn:active {
-        width: 22vw;
-    }
-
     .photo-grid-left {
         display: grid;
         grid-template-columns: 48.58vw 21.74vw 21.74vw;
@@ -243,6 +164,14 @@ nav.contents {
     font-size: 20px !important;
     color: var(--background) !important;
 }
+
+html[data-theme="dark"] .dimbox-sequence,
+html[data-theme="dark"] .dimbox-sequence-current,
+html[data-theme="dark"] .dimbox-sequence-total,
+html[data-theme="dark"] .dimbox-caption {
+    color: var(--text) !important;
+}
+
 .dimbox-btn-fullscreen,
 .dimbox-btn-close,
 .dimbox-btn-download,
@@ -250,6 +179,14 @@ nav.contents {
 .dimbox-btn-next {
     color: var(--background) !important;
     opacity: 1 !important;
+}
+
+html[data-theme="dark"] .dimbox-btn-fullscreen,
+html[data-theme="dark"] .dimbox-btn-close,
+html[data-theme="dark"] .dimbox-btn-download,
+html[data-theme="dark"] .dimbox-btn-prev,
+html[data-theme="dark"] .dimbox-btn-next {
+    color: var(--text) !important;
 }
 
 .dimbox-container *:active,

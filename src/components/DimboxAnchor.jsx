@@ -1,6 +1,6 @@
 import React from 'react';
-import { trackLightboxOpen } from '../utils/analytics';
 import useDimbox from '../hooks/useDimbox';
+import { trackLightboxOpen } from '../utils/analytics';
 
 function DimboxAnchor({ children, href, 'aria-label': ariaLabel, ...props }) {
     const { openWhenReady } = useDimbox();

@@ -6,9 +6,21 @@ import { architectureGroups, natureGroups, portraitureGroups } from '../data/pho
 import useDimbox from '../hooks/useDimbox';
 
 const sections = [
-    { id: 'portraiture', title: 'PORTRAITURE', groups: portraitureGroups, next: 'nature' },
-    { id: 'nature', title: 'NATURE', groups: natureGroups, next: 'architecture' },
-    { id: 'architecture', title: 'ARCHITECHTURE', groups: architectureGroups, next: 'footer' },
+    {
+        id: 'portraiture',
+        title: 'PORTRAITURE',
+        galleryName: 'portrait-gallery',
+        groups: portraitureGroups,
+        next: 'nature',
+    },
+    { id: 'nature', title: 'NATURE', galleryName: 'nature-gallery', groups: natureGroups, next: 'architecture' },
+    {
+        id: 'architecture',
+        title: 'ARCHITECHTURE',
+        galleryName: 'architecture-gallery',
+        groups: architectureGroups,
+        next: 'footer',
+    },
 ];
 
 const contentsLinks = sections.map((section) => ({
@@ -46,9 +58,7 @@ function Photography() {
                                 <PhotoGrid
                                     key={key}
                                     photos={group.photos}
-                                    galleryName={
-                                        section.id === 'portraiture' ? 'portrait-gallery' : `${section.id}-gallery`
-                                    }
+                                    galleryName={section.galleryName}
                                     layout={group.layout}
                                     delay={index * 0.08}
                                     disableReveal

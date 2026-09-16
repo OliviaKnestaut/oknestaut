@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { trackEvent } from '../utils/analytics';
 import backToTopIcon from '../images/icons/back-to-top.svg';
+import { trackEvent } from '../utils/analytics';
 
 function BackToTop() {
     const [isVisible, setIsVisible] = useState(false);

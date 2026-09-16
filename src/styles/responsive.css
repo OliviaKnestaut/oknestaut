@@ -150,8 +150,7 @@
         height: 800px;
     }
 
-    picture,
-    .abstract-img {
+    picture {
         width: 100%;
         height: auto;
         padding: 0.5rem 0;
@@ -160,8 +159,12 @@
     .name-header {
         flex-direction: column;
         justify-content: center;
-        margin-top: 6vw;
-        margin-bottom: 5vw;
+        margin-top: 8vw;
+        margin-bottom: 6vw;
+    }
+
+    header .tagline {
+        margin: 6vw 0;
     }
 
     .first-name {
@@ -298,8 +301,12 @@
     }
 
     .name-header {
-        margin-top: 1vw;
+        margin-top: 4vw;
         margin-bottom: 4vw;
+    }
+
+    header .tagline {
+        margin: 4vw 0;
     }
 
     .contact-icon {

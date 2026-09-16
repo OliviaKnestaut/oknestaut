@@ -1,7 +1,8 @@
 import React from 'react';
 import PhotoGrid from '../components/PhotoGrid';
 import ScrollReveal from '../components/ScrollReveal';
-import { openTrackedLink, trackEvent } from '../utils/analytics';
+import TrackedLink from '../components/TrackedLink';
+import { useTheme } from '../context/ThemeContext';
 import useDimbox from '../hooks/useDimbox';
 import githubIcon from '../images/about/github_icon_blue.svg';
 import instagramIcon from '../images/about/instagram_icon_blue.svg';
@@ -10,6 +11,7 @@ import locationIcon from '../images/about/location_icon_purple.svg';
 import mailIcon from '../images/about/mail_icon_blue.svg';
 import aboutContact from '../images/about/ok-about-2.jpg';
 import aboutPortrait from '../images/about/ok-about.jpg';
+import { trackEvent } from '../utils/analytics';
 
 const involvementLogos = [
     {
@@ -54,6 +56,7 @@ const previousJobs = [
     {
         href: 'https://www.intealth.org/',
         src: require('../images/about/logo-intealth.png'),
+        srcDark: require('../images/about/logo-intealth-dark.png'),
         alt: 'Intealth Logo',
         label: 'Intealth Website',
         className: 'invert-img2',
@@ -61,6 +64,7 @@ const previousJobs = [
     {
         href: 'https://www.newcastlede.gov/2423/Libraries',
         src: require('../images/about/NCC_Libraries.png'),
+        srcDark: require('../images/about/NCC_Libraries-dark.png'),
         alt: 'New Castle County Libraries Logo',
         label: 'New Castle County Libraries Website',
         className: 'invert-img',
@@ -75,6 +79,7 @@ const previousJobs = [
     {
         href: 'https://www.amazon.com/',
         src: require('../images/about/Amazon_logo.png'),
+        srcDark: require('../images/about/Amazon_logo-dark.png'),
         alt: 'Amazon Logo',
         label: 'Amazon Website',
         className: 'invert-img',
@@ -138,6 +143,7 @@ const recentActivities = [
 
 function About() {
     useDimbox();
+    const { theme } = useTheme();
 
     return (
         <main aria-label="About Main Content">
@@ -189,30 +195,26 @@ function About() {
                 </a>
                 <div className="d-flex flex-wrap justify-content-center align-items-center bigger-icons">
                     {involvementLogos.slice(0, 3).map((logo) => (
-                        <a
+                        <TrackedLink
                             key={logo.label}
                             href={logo.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            label={logo.label}
                             aria-label={`${logo.label} — opens in a new tab`}
-                            onClick={(event) => openTrackedLink(event, logo.href, logo.label)}
                         >
                             <img src={logo.src} alt={logo.alt} />
-                        </a>
+                        </TrackedLink>
                     ))}
                 </div>
                 <div className="d-flex flex-wrap justify-content-center align-items-center">
                     {involvementLogos.slice(3).map((logo) => (
-                        <a
+                        <TrackedLink
                             key={logo.label}
                             href={logo.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            label={logo.label}
                             aria-label={`${logo.label} — opens in a new tab`}
-                            onClick={(event) => openTrackedLink(event, logo.href, logo.label)}
                         >
                             <img src={logo.src} alt={logo.alt} />
-                        </a>
+                        </TrackedLink>
                     ))}
                 </div>
             </ScrollReveal>
@@ -253,16 +255,18 @@ function About() {
                 </a>
                 <div className="d-flex flex-wrap justify-content-center align-items-center bigger-icons">
                     {previousJobs.map((job) => (
-                        <a
+                        <TrackedLink
                             key={job.label}
                             href={job.href}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            label={job.label}
                             aria-label={`${job.label} — opens in a new tab`}
-                            onClick={(event) => openTrackedLink(event, job.href, job.label)}
                         >
-                            <img className={job.className} src={job.src} alt={job.alt} />
-                        </a>
+                            <img
+                                className={job.className}
+                                src={theme === 'dark' && job.srcDark ? job.srcDark : job.src}
+                                alt={job.alt}
+                            />
+                        </TrackedLink>
                     ))}
                 </div>
             </ScrollReveal>
@@ -295,21 +299,13 @@ function About() {
                             >
                                 Skip Contact Links
                             </a>
-                            <a
+                            <TrackedLink
                                 href="https://www.instagram.com/ollywhelmed/"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                label="Instagram Contact"
                                 aria-label="@ollywhelmed on Instagram — opens in a new tab"
-                                onClick={(event) =>
-                                    openTrackedLink(
-                                        event,
-                                        'https://www.instagram.com/ollywhelmed/',
-                                        'Instagram Contact',
-                                    )
-                                }
                             >
                                 <img className="contact-icon" src={instagramIcon} alt="instagram icon" />
-                            </a>
+                            </TrackedLink>
                             <a
                                 href="mailto:olivia.knestaut@gmail.com"
                                 aria-label="Email olivia.knestaut@gmail.com"
@@ -317,32 +313,20 @@ function About() {
                             >
                                 <img className="contact-icon" src={mailIcon} alt="email icon" />
                             </a>
-                            <a
+                            <TrackedLink
                                 href="https://github.com/OliviaKnestaut"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                label="GitHub Contact"
                                 aria-label="OliviaKnestaut on GitHub — opens in a new tab"
-                                onClick={(event) =>
-                                    openTrackedLink(event, 'https://github.com/OliviaKnestaut', 'GitHub Contact')
-                                }
                             >
                                 <img className="contact-icon" src={githubIcon} alt="github icon" />
-                            </a>
-                            <a
+                            </TrackedLink>
+                            <TrackedLink
                                 href="https://www.linkedin.com/in/oliviaknestaut/"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                label="LinkedIn Contact"
                                 aria-label="Olivia Knestaut on LinkedIn — opens in a new tab"
-                                onClick={(event) =>
-                                    openTrackedLink(
-                                        event,
-                                        'https://www.linkedin.com/in/oliviaknestaut/',
-                                        'LinkedIn Contact',
-                                    )
-                                }
                             >
                                 <img className="contact-icon" src={linkedinIcon} alt="linkedin icon" />
-                            </a>
+                            </TrackedLink>
                         </figure>
                     </article>
                 </div>

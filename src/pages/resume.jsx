@@ -61,13 +61,13 @@ const affiliations = [
 ];
 
 const awards = [
-    'Drexel University Undergraduate Student Leader of the Year | 2025',
-    'Zscaler Fundamentals of Cybersecurity Certification | 2025',
-    'Apollo Graph Developer Associate Certification | 2025',
-    'PHS Flower Show Photography Honorable Mention | 2025',
-    'SNC Women in STEM Scholarship | 2024 & 2025',
-    'Amazon Future Engineer Scholar | 2022, 2023, 2024, & 2025',
-    'Merchandise Design Winner for Westphal BRIDGE | 2023',
+    { name: 'Drexel University Undergraduate Student Leader of the Year', year: '2025' },
+    { name: 'Zscaler Fundamentals of Cybersecurity Certification', year: '2025' },
+    { name: 'Apollo Graph Developer Associate Certification', year: '2025' },
+    { name: 'PHS Flower Show Photography Honorable Mention', year: '2025' },
+    { name: 'SNC Women in STEM Scholarship', year: '2024 & 2025' },
+    { name: 'Amazon Future Engineer Scholar', year: '2022, 2023, 2024, & 2025' },
+    { name: 'Merchandise Design Winner for Westphal BRIDGE', year: '2023' },
 ];
 
 function Resume() {
@@ -208,8 +208,8 @@ function Resume() {
             <ScrollReveal as="section" className="resume-section" delay={0.05} aria-label="Awards Section">
                 <h2 className="color-accent-red">AWARDS</h2>
                 {awards.map((award) => (
-                    <h6 key={award}>
-                        <b>{award.split(' | ')[0]} |</b> {award.split(' | ')[1]}
+                    <h6 key={award.name}>
+                        <b>{award.name} |</b> {award.year}
                     </h6>
                 ))}
             </ScrollReveal>

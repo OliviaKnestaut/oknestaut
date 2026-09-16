@@ -2,7 +2,7 @@ import React from 'react';
 import DimboxAnchor from '../components/DimboxAnchor';
 import FadeImage from '../components/FadeImage';
 import ScrollReveal from '../components/ScrollReveal';
-import { openTrackedLink } from '../utils/analytics';
+import TrackedLink from '../components/TrackedLink';
 import useDimbox from '../hooks/useDimbox';
 
 const collections = [
@@ -231,14 +231,9 @@ function Design() {
                 <div className="video-section d-flex" aria-label="Video Gallery">
                     {videos.map((video) => (
                         <article key={video.title} aria-label={`${video.title} Video`}>
-                            <a
-                                href={video.url}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={(event) => openTrackedLink(event, video.url, video.title)}
-                            >
+                            <TrackedLink href={video.url} label={video.title} aria-label={null}>
                                 <img src={video.thumb} alt="" />
-                            </a>
+                            </TrackedLink>
                             <figcaption className={`${video.color} d-flex flex-column align-items-center`}>
                                 <h3>{video.title}</h3>
                                 <h4>{video.course}</h4>

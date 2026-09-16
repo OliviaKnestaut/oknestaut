@@ -1,34 +1,34 @@
-import React, { useEffect, Suspense } from 'react';
+import React, { Suspense, useEffect, useMemo, useState } from 'react';
 import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import BackToTop from './components/BackToTop';
 import CursorCompanion from './components/CursorCompanion';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Navigation from './components/Navigation';
 import PageLoader from './components/PageLoader';
-import Footer from './components/footer';
-import Header from './components/header';
-import Navigation from './components/navigation';
+import ThemeToggle from './components/ThemeToggle';
+import { ThemeProvider } from './context/ThemeContext';
+import { caseStudyMeta, caseStudyRoutes, pageTitles } from './data/siteMeta';
 import useImageFade from './hooks/useImageFade';
 
 import './styles/main.css';
 import './styles/responsive.css';
 
-import Home from './pages/home';
-
 import ReactGA from 'react-ga4';
-// Initialize with your actual Measurement ID
+
 ReactGA.initialize('G-TD8B7D7VZZ');
 
-const CaseStudies = React.lazy(() => import('./pages/caseStudies'));
-const About = React.lazy(() => import('./pages/about'));
-const Resume = React.lazy(() => import('./pages/resume'));
-const Photography = React.lazy(() => import('./pages/photography'));
-const Design = React.lazy(() => import('./pages/design'));
+const Home = React.lazy(() => import('./pages/Home'));
+const CaseStudies = React.lazy(() => import('./pages/CaseStudies'));
+const About = React.lazy(() => import('./pages/About'));
+const Resume = React.lazy(() => import('./pages/Resume'));
+const Photography = React.lazy(() => import('./pages/Photography'));
+const Design = React.lazy(() => import('./pages/Design'));
 const Accessibility = React.lazy(() => import('./pages/Accessibility'));
 const RightOn = React.lazy(() => import('./pages/RightOn'));
 const KimsDragon = React.lazy(() => import('./pages/KimsDragon'));
 const Letterboxd = React.lazy(() => import('./pages/Letterboxd'));
 const Intealth = React.lazy(() => import('./pages/Intealth'));
-
-const caseStudyRoutes = ['/accessibility', '/righton', '/kims-dragon', '/letterboxd', '/intealth'];
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -39,10 +39,11 @@ function ScrollToTop() {
     return null;
 }
 
-function usePageViews() {
+function useRouteMeta() {
     const location = useLocation();
 
     useEffect(() => {
+        document.title = pageTitles[location.pathname] ?? 'Olivia Knestaut | Portfolio';
         ReactGA.send({
             hitType: 'pageview',
             page: location.pathname + location.search,
@@ -51,44 +52,60 @@ function usePageViews() {
     }, [location]);
 }
 
-const pageTitles = {
-    '/': 'Olivia Knestaut | Portfolio',
-    '/case-studies': 'Case Studies | Olivia Knestaut',
-    '/about': 'About | Olivia Knestaut',
-    '/resume': 'Resume | Olivia Knestaut',
-    '/photography': 'Photography | Olivia Knestaut',
-    '/design': 'Design & Media | Olivia Knestaut',
-    '/accessibility': 'Accessible Portfolio Case Study | Olivia Knestaut',
-    '/righton': 'RightOn Education Case Study | Olivia Knestaut',
-    '/kims-dragon': "Kim's Dragon Case Study | Olivia Knestaut",
-    '/letterboxd': 'Microinteraction Design Case Study | Olivia Knestaut',
-    '/intealth': 'Intealth Modern Apps Case Study | Olivia Knestaut',
-};
-
-function usePageTitle() {
+function PageTransition({ children }) {
     const location = useLocation();
-    useEffect(() => {
-        document.title = pageTitles[location.pathname] ?? 'Olivia Knestaut | Portfolio';
+    const [displayLocation, setDisplayLocation] = useState(location);
+    const [transitionState, setTransitionState] = useState('idle');
+    const transitionColor = useMemo(() => {
+        return caseStudyMeta[location.pathname]?.color ?? 'var(--accent-red)';
     }, [location.pathname]);
+
+    useEffect(() => {
+        if (location.pathname === displayLocation.pathname) return;
+
+        setTransitionState('out');
+        const timeout = setTimeout(() => {
+            setDisplayLocation(location);
+            setTransitionState('in');
+            window.scrollTo(0, 0);
+        }, 450);
+
+        return () => clearTimeout(timeout);
+    }, [location, displayLocation]);
+
+    useEffect(() => {
+        if (transitionState === 'in') {
+            const timeout = setTimeout(() => setTransitionState('idle'), 450);
+            return () => clearTimeout(timeout);
+        }
+    }, [transitionState]);
+
+    return (
+        <>
+            <div
+                className={`page-transition-curtain page-transition-curtain--${transitionState}`}
+                style={{ '--transition-color': transitionColor }}
+                aria-hidden="true"
+            />
+            <div
+                key={displayLocation.pathname}
+                className={`page-transition-content page-transition-content--${transitionState}`}
+            >
+                {children}
+            </div>
+        </>
+    );
 }
 
 function AppContent() {
     const location = useLocation();
     const isCaseStudy = caseStudyRoutes.includes(location.pathname);
 
-    const headerTitles = {
-        '/photography': { title: 'PHOTOGRAPHY', className: 'photog-title' },
-    };
-    const headerTitle = headerTitles[location.pathname];
+    const headerTitle =
+        location.pathname === '/photography' ? { title: 'PHOTOGRAPHY', className: 'photog-title' } : null;
 
-    usePageTitle();
-    usePageViews();
+    useRouteMeta();
     useImageFade();
-
-    // biome-ignore lint/correctness/useExhaustiveDependencies: scroll on route change
-    useEffect(() => {
-        window.scrollTo(0, 0);
-    }, [location.pathname]);
 
     return (
         <>
@@ -96,7 +113,7 @@ function AppContent() {
             <Navigation />
             {!isCaseStudy && <Header title={headerTitle?.title} titleClassName={headerTitle?.className} />}
             <Suspense fallback={<PageLoader />}>
-                <div key={location.pathname} className="page-transition">
+                <PageTransition>
                     <Routes location={location}>
                         <Route path="/" element={<Home />} />
                         <Route path="/case-studies" element={<CaseStudies />} />
@@ -110,10 +127,11 @@ function AppContent() {
                         <Route path="/letterboxd" element={<Letterboxd />} />
                         <Route path="/intealth" element={<Intealth />} />
                     </Routes>
-                </div>
+                </PageTransition>
             </Suspense>
             <Footer />
             <BackToTop />
+            <ThemeToggle />
         </>
     );
 }
@@ -121,8 +139,10 @@ function AppContent() {
 function App() {
     return (
         <Router>
-            <ScrollToTop />
-            <AppContent />
+            <ThemeProvider>
+                <ScrollToTop />
+                <AppContent />
+            </ThemeProvider>
         </Router>
     );
 }

@@ -104,17 +104,7 @@ function useDimbox() {
         });
     }, []);
 
-    const onClick = useCallback(
-        (event) => {
-            if (!ready) {
-                event.preventDefault();
-                openWhenReady(event.currentTarget);
-            }
-        },
-        [ready, openWhenReady],
-    );
-
-    return { ready, dimbox: window.dimbox, openWhenReady, onClick };
+    return { ready, dimbox: window.dimbox, openWhenReady };
 }
 
 export default useDimbox;
