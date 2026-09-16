@@ -436,6 +436,7 @@ footer .abstract-float {
     flex: 1 1 auto;
     min-width: 0;
     display: block;
+    width: calc(100% / 7);
     opacity: 0;
     transform: translateX(var(--load-x, 0)) translateY(18px) scale(0.9) rotate(var(--load-rotate, -4deg));
     transform-origin: center center;
@@ -446,6 +447,7 @@ footer .abstract-float {
 .abstract-symbol {
     width: 100%;
     height: auto;
+    max-width: 100%;
     margin: 0;
     padding: 0;
     animation: symbol-float 5s ease-in-out infinite;
@@ -467,6 +469,10 @@ html[data-theme="dark"] .abstract-symbol {
 @media (max-width: 575.98px) {
     .abstract-symbol-row__desktop {
         display: none;
+    }
+
+    .abstract-symbol-wrapper {
+        width: 25%;
     }
 }
 

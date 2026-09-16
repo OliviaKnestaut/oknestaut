@@ -31,7 +31,13 @@
     <style>
       /* Prevent abstract symbols from flashing at natural size before CSS loads */
       .abstract-symbol-wrapper {
+        width: calc(100% / 7);
         opacity: 0;
+      }
+      @media (max-width: 575.98px) {
+        .abstract-symbol-wrapper {
+          width: 25%;
+        }
       }
     </style>
   </head>

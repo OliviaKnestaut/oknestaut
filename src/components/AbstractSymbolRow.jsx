@@ -77,6 +77,8 @@ function AbstractSymbol({ num, index, total, direction }) {
                 src={SYMBOLS[num]}
                 alt=""
                 className="abstract-symbol"
+                width="200"
+                height="200"
                 style={{
                     animationDelay: `${floatDelay}s`,
                     animationDuration: `${floatDuration}s`,
