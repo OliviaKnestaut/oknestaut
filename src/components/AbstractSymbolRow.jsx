@@ -52,21 +52,38 @@ const VARIANTS = {
     },
 };
 
-function AbstractSymbol({ num, index }) {
-    const delay = (index * -0.7).toFixed(2);
-    const duration = (4.5 + (index % 3) * 0.5).toFixed(2);
+function AbstractSymbol({ num, index, total, direction }) {
+    const floatDelay = (index * -0.7).toFixed(2);
+    const floatDuration = (4.5 + (index % 3) * 0.5).toFixed(2);
+
+    const loadRotate = (index % 2 === 0 ? -4 : 4).toFixed(0);
+    const loadX = direction === 'left' ? '-30px' : '30px';
+    const loadDelay =
+        direction === 'left'
+            ? (index * 0.08).toFixed(2)
+            : ((total - 1 - index) * 0.08).toFixed(2);
 
     return (
-        <img
-            src={SYMBOLS[num]}
-            alt=""
-            className="abstract-symbol"
+        <span
+            className="abstract-symbol-wrapper"
             style={{
-                animationDelay: `${delay}s`,
-                animationDuration: `${duration}s`,
+                '--load-delay': `${loadDelay}s`,
+                '--load-rotate': `${loadRotate}deg`,
+                '--load-x': loadX,
             }}
             aria-hidden="true"
-        />
+        >
+            <img
+                src={SYMBOLS[num]}
+                alt=""
+                className="abstract-symbol"
+                style={{
+                    animationDelay: `${floatDelay}s`,
+                    animationDuration: `${floatDuration}s`,
+                }}
+                aria-hidden="true"
+            />
+        </span>
     );
 }
 
@@ -74,11 +91,19 @@ function AbstractSymbolRow({ variant = 'upper', className = '' }) {
     const config = VARIANTS[variant];
     if (!config) return null;
 
+    const direction = variant === 'upper' ? 'left' : 'right';
+
     return (
         <div className={`abstract-symbol-row ${className}`.trim()} aria-hidden="true">
             <div className="abstract-symbol-row__desktop">
                 {config.desktop.map((num, index) => (
-                    <AbstractSymbol key={`desktop-${num}`} num={num} index={index} />
+                    <AbstractSymbol
+                        key={`desktop-${num}`}
+                        num={num}
+                        index={index}
+                        total={config.desktop.length}
+                        direction={direction}
+                    />
                 ))}
             </div>
             <div className="abstract-symbol-row__mobile">
@@ -88,7 +113,9 @@ function AbstractSymbolRow({ variant = 'upper', className = '' }) {
                             <AbstractSymbol
                                 key={`mobile-${rowIndex}-${num}`}
                                 num={num}
-                                index={rowIndex * row.length + index}
+                                index={index}
+                                total={row.length}
+                                direction={direction}
                             />
                         ))}
                     </div>
