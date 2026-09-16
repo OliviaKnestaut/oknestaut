@@ -437,7 +437,9 @@ footer .abstract-float {
     min-width: 0;
     display: block;
     opacity: 0;
-    animation: symbol-load 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    transform: translateX(var(--load-x, 0)) translateY(18px) scale(0.9) rotate(var(--load-rotate, -4deg));
+    transform-origin: center center;
+    animation: symbol-load 0.7s cubic-bezier(0.22, 1, 0.36, 1) both;
     animation-delay: var(--load-delay, 0s);
 }
 
@@ -476,6 +478,7 @@ html[data-theme="dark"] .abstract-symbol {
     .abstract-symbol-wrapper {
         animation: none;
         opacity: 1;
+        transform: none;
     }
 }
 
