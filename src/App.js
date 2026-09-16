@@ -18,12 +18,12 @@ import ReactGA from 'react-ga4';
 
 ReactGA.initialize('G-TD8B7D7VZZ');
 
-const Home = React.lazy(() => import('./pages/Home'));
-const CaseStudies = React.lazy(() => import('./pages/CaseStudies'));
-const About = React.lazy(() => import('./pages/About'));
-const Resume = React.lazy(() => import('./pages/Resume'));
+const Home = React.lazy(() => import('./pages/home'));
+const CaseStudies = React.lazy(() => import('./pages/caseStudies'));
+const About = React.lazy(() => import('./pages/about'));
+const Resume = React.lazy(() => import('./pages/resume'));
 const Photography = React.lazy(() => import('./pages/photography'));
-const Design = React.lazy(() => import('./pages/Design'));
+const Design = React.lazy(() => import('./pages/design'));
 const Accessibility = React.lazy(() => import('./pages/Accessibility'));
 const RightOn = React.lazy(() => import('./pages/RightOn'));
 const KimsDragon = React.lazy(() => import('./pages/KimsDragon'));
