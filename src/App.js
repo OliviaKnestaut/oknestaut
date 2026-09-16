@@ -22,7 +22,7 @@ const Home = React.lazy(() => import('./pages/Home'));
 const CaseStudies = React.lazy(() => import('./pages/CaseStudies'));
 const About = React.lazy(() => import('./pages/About'));
 const Resume = React.lazy(() => import('./pages/Resume'));
-const Photography = React.lazy(() => import('./pages/Photography'));
+const Photography = React.lazy(() => import('./pages/photography'));
 const Design = React.lazy(() => import('./pages/Design'));
 const Accessibility = React.lazy(() => import('./pages/Accessibility'));
 const RightOn = React.lazy(() => import('./pages/RightOn'));
