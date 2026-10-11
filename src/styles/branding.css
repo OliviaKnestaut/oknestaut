@@ -1,0 +1,223 @@
+.branding-page {
+    padding: 0 0 7rem;
+}
+
+.branding-hero,
+.branding-section {
+    padding: clamp(2rem, 4vw, 4rem) clamp(1.25rem, 6vw, 7rem);
+}
+
+.branding-hero {
+    text-align: center;
+}
+
+.branding-eyebrow,
+.branding-kicker {
+    margin: 0 0 1.5rem;
+    font-weight: 700;
+}
+
+.branding-hero h1 {
+    font-size: clamp(3rem, 12vw, 10rem);
+    line-height: 0.95;
+}
+.branding-hero p {
+    text-align: left;
+}
+
+.branding-tagline {
+    margin: 1.5rem 0 0;
+    font-size: clamp(1.25rem, 3vw, 2.5rem);
+    letter-spacing: clamp(0.05rem, 0.8vw, 0.65rem);
+    text-transform: uppercase;
+    text-align: center !important;
+}
+
+.branding-introduction {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(2rem, 8vw, 10rem);
+    align-items: end;
+}
+
+.branding-introduction h3,
+.branding-section > h3 {
+    margin: 0 0 2.5rem;
+    text-align: left;
+}
+
+.branding-introduction h3 {
+    margin-bottom: 0;
+}
+
+.branding-introduction p:last-child,
+.branding-board-row p {
+    margin: 0;
+}
+
+.branding-board-list {
+    display: grid;
+    border-top: 1px solid var(--background-dark);
+}
+
+.branding-board-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 4rem;
+}
+
+.branding-board-row {
+    display: grid;
+    grid-template-columns: minmax(7rem, 0.45fr) 1fr;
+    gap: 1.5rem;
+    min-height: 8rem;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid var(--background-dark);
+}
+
+.branding-board-row h3 {
+    margin: 0;
+    font-size: clamp(1rem, 1rem + 0.3vw, 1.3rem);
+    line-height: 1.2;
+    text-align: left;
+}
+
+.branding-color-list {
+    display: flex;
+    gap: 1rem;
+    align-items: start;
+}
+
+.branding-color-row {
+    flex: 1 1 0;
+}
+
+.branding-color-sample {
+    width: 100%;
+    aspect-ratio: 1;
+    background: var(--text);
+}
+
+.branding-color-sample--accent-red {
+    background: var(--accent-red);
+}
+.branding-color-sample--accent-blue {
+    background: var(--accent-blue);
+}
+.branding-color-sample--accent-purple {
+    background: var(--accent-purple);
+}
+.branding-color-sample--accent-green {
+    background: var(--accent-green);
+}
+.branding-color-sample--background {
+    background: var(--background);
+    border: 1px solid var(--background-dark);
+}
+
+.branding-color-row span,
+.branding-type-list > div > span {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.branding-type-list {
+    display: grid;
+    gap: 3rem;
+}
+
+.branding-type-list > div {
+    border-top: 1px solid var(--background-dark);
+    padding-top: 1rem;
+}
+
+.branding-type-list h1,
+.branding-type-list h2,
+.branding-type-list h3,
+.branding-type-list h4,
+.branding-type-list h5,
+.branding-type-list h6,
+.branding-type-list p {
+    margin: 1rem 0 0;
+    text-align: left;
+}
+
+.branding-symbols {
+    width: 100vw;
+    margin: 0 0 3rem 50%;
+    transform: translateX(-50%);
+}
+
+.branding-symbols .abstract-symbol-wrapper {
+    flex: 0 0 14%;
+    width: 14%;
+}
+
+.branding-icon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.branding-icon-list img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+    filter: brightness(0) saturate(100%) invert(34%) sepia(15%) saturate(1114%) hue-rotate(227deg) brightness(88%)
+        contrast(88%);
+}
+
+.branding-icon-list img:nth-child(n + 9) {
+    width: 6rem;
+    height: 6rem;
+    filter: none;
+}
+
+.branding-icon-list .branding-system-icon {
+    filter: brightness(0) saturate(100%) invert(34%) sepia(15%) saturate(1114%) hue-rotate(227deg) brightness(88%)
+        contrast(88%);
+}
+
+html[data-theme="dark"] .branding-icon-list .branding-system-icon {
+    filter: none;
+}
+
+.branding-theme-icon {
+    width: 4rem;
+    height: 4rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+}
+
+@media (max-width: 760px) {
+    .branding-introduction,
+    .branding-board-list {
+        grid-template-columns: 1fr;
+    }
+
+    .branding-color-list {
+        flex-wrap: wrap;
+    }
+
+    .branding-color-row {
+        flex-basis: calc(25% - 0.5rem);
+    }
+}
+
+@media (max-width: 575px) {
+    .branding-type-list h1 {
+        max-width: 100%;
+        font-size: clamp(1.75rem, 12vw, 6rem);
+        line-height: 1.05;
+        overflow-wrap: anywhere;
+    }
+
+    .branding-symbols .abstract-symbol-wrapper {
+        flex-basis: 22%;
+        width: 22%;
+    }
+}

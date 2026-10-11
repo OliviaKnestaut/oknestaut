@@ -2,11 +2,11 @@ import React, { Suspense, useEffect, useMemo, useState } from 'react';
 import { Route, BrowserRouter as Router, Routes, useLocation } from 'react-router-dom';
 import BackToTop from './components/BackToTop';
 import CursorCompanion from './components/CursorCompanion';
+import PageLoader from './components/PageLoader';
+import ThemeToggle from './components/ThemeToggle';
 import Footer from './components/footer';
 import Header from './components/header';
 import Navigation from './components/navigation';
-import PageLoader from './components/PageLoader';
-import ThemeToggle from './components/ThemeToggle';
 import { ThemeProvider } from './context/ThemeContext';
 import { caseStudyMeta, caseStudyRoutes, pageTitles } from './data/siteMeta';
 import useImageFade from './hooks/useImageFade';
@@ -29,6 +29,7 @@ const RightOn = React.lazy(() => import('./pages/RightOn'));
 const KimsDragon = React.lazy(() => import('./pages/KimsDragon'));
 const Letterboxd = React.lazy(() => import('./pages/Letterboxd'));
 const Intealth = React.lazy(() => import('./pages/Intealth'));
+const Branding = React.lazy(() => import('./pages/branding'));
 
 function ScrollToTop() {
     const { pathname } = useLocation();
@@ -126,6 +127,7 @@ function AppContent() {
                         <Route path="/kims-dragon" element={<KimsDragon />} />
                         <Route path="/letterboxd" element={<Letterboxd />} />
                         <Route path="/intealth" element={<Intealth />} />
+                        <Route path="/branding" element={<Branding />} />
                     </Routes>
                 </PageTransition>
             </Suspense>

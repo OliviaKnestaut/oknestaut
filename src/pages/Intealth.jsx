@@ -248,10 +248,10 @@ function Intealth() {
                         endpoint URL for an Intealth platform, compares the live implementation to DESIGN.md, and
                         returns specific design gaps and recommendations. The agent does not invent brand rules or make
                         significant code changes. It reads an agreed document and reports where a page diverges in
-                        contrast, type scale, component usage, and spacing, so designers and developers can correct against
-                        the same checklist. New work on Modern Apps systems like Pathways, EFDO, and CVHP can point at
-                        one system design definition instead of reconstructing patterns and themes across multiple
-                        repositories.
+                        contrast, type scale, component usage, and spacing, so designers and developers can correct
+                        against the same checklist. New work on Modern Apps systems like Pathways, EFDO, and CVHP can
+                        point at one system design definition instead of reconstructing patterns and themes across
+                        multiple repositories.
                     </p>
                     <figure aria-label="Style Guide and DESIGN.md">
                         <figcaption>
@@ -389,8 +389,8 @@ function Intealth() {
                         The legacy public and subscription sites held the correct information, but the presentation and
                         facilitation had grown outdated especially in the backend, styles, and interaction patterns.
                         With plans to migrate WDOMS Search and Subscription functionality away from the legacy backend
-                        implementation, the frontend design was also looking for a refresh. Accessing school records, and
-                        subscription flows felt like an older generation of the product. The directory is one of the
+                        implementation, the frontend design was also looking for a refresh. Accessing school records,
+                        and subscription flows felt like an older generation of the product. The directory is one of the
                         most publicly visible Intealth properties, so the gap between Intealth&apos;s current brand and
                         the live site was especially noticeable.
                     </p>

@@ -277,9 +277,9 @@ h2 {
     font-size: clamp(1.75rem, 3.5vw, 3.5rem);
     text-align: center;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     line-height: clamp(2.4rem, 6.6vw, 6.6rem);
-    letter-spacing: clamp(0.25rem, 1vw, 1rem);
+    letter-spacing: clamp(0.25rem, 0.5vw, .5rem);
     margin: 1rem auto 0;
     color: var(--text);
 }

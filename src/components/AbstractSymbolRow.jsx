@@ -58,10 +58,7 @@ function AbstractSymbol({ num, index, total, direction }) {
 
     const loadRotate = (index % 2 === 0 ? -4 : 4).toFixed(0);
     const loadX = direction === 'left' ? '-30px' : '30px';
-    const loadDelay =
-        direction === 'left'
-            ? (index * 0.08).toFixed(2)
-            : ((total - 1 - index) * 0.08).toFixed(2);
+    const loadDelay = direction === 'left' ? (index * 0.08).toFixed(2) : ((total - 1 - index) * 0.08).toFixed(2);
 
     return (
         <span

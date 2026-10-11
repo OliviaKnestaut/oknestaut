@@ -10,6 +10,7 @@ export const pageTitles = {
     '/kims-dragon': "Kim's Dragon Case Study | Olivia Knestaut",
     '/letterboxd': 'Microinteraction Design Case Study | Olivia Knestaut',
     '/intealth': 'Intealth Modern Apps Case Study | Olivia Knestaut',
+    '/branding': 'Brand Board | Olivia Knestaut',
 };
 
 export const caseStudyMeta = {
